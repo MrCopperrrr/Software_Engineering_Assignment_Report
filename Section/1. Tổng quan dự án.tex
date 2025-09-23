@@ -112,3 +112,59 @@ Quá trình thiết kế và phát triển hệ thống phải tuân thủ nghi�
     \item \textbf{Tuân thủ Quy định về sử dụng Generative AI:} Nhóm cam kết tuân thủ các quy định về đạo đức học thuật, đặc biệt là việc khai báo minh bạch và có trách nhiệm về mức độ và phạm vi sử dụng các công cụ AI tạo sinh trong suốt quá trình thực hiện dự án.
 
 \end{itemize}
+
+%========================================================================================
+
+\section*{1.3. Tài liệu tham khảo}
+\addcontentsline{toc}{section}{1.3. Tài liệu tham khảo liên quan}
+Để đảm bảo hệ thống được xây dựng không chỉ đáp ứng yêu cầu mà còn hiệu quả và phù hợp với thực tiễn, nhóm đã tiến hành một quá trình nghiên cứu và tham chiếu (benchmarking) các nền tảng hỗ trợ học tập và quản lý lịch hẹn tương tự đang vận hành thành công trên thị trường. Việc phân tích này giúp chúng tôi đúc kết những bài học giá trị, từ đó định hình các tính năng cốt lõi cho hệ thống.
+
+%========================================================================================
+
+\subsection*{1.3.1. Các nền tảng tương tự}
+\addcontentsline{toc}{subsection}{1.3.1. Các nền tảng tương tự}
+Nhóm đã tập trung phân tích ba nhóm nền tảng chính, mỗi nhóm đại diện cho một khía cạnh quan trọng của hệ thống cần xây dựng:
+
+\begin{itemize}
+    \item \textbf{Nền tảng Gia sư Trực tuyến (Online Tutoring Platforms):} Các dịch vụ thương mại như Chegg, TutorMe, và Preply là những ví dụ tiêu biểu. Chúng nổi bật với hệ thống tìm kiếm và bộ lọc mạnh mẽ, cho phép người dùng tìm kiếm gia sư theo môn học, chuyên ngành, khung giờ và mức đánh giá. Đặc biệt, hồ sơ (profile) của gia sư được xây dựng rất chi tiết, tạo sự tin cậy thông qua việc trình bày kinh nghiệm, trình độ học vấn và các nhận xét xác thực từ học viên.
+    \item \textbf{Hệ thống Quản lý Sinh viên Chuyên dụng:} Các giải pháp phần mềm như Navigate và Starfish được nhiều trường đại học trên thế giới tin dùng để hỗ trợ sự thành công của sinh viên. Điểm mạnh cốt lõi của chúng là khả năng tích hợp sâu rộng với cơ sở dữ liệu của nhà trường, cho phép theo dõi toàn diện tiến trình học tập. Các hệ thống này không chỉ đơn thuần hỗ trợ đặt lịch hẹn với cố vấn học tập mà còn có khả năng gửi cảnh báo sớm khi nhận diện các sinh viên có dấu hiệu sa sút.
+    \item \textbf{Nền tảng Đặt lịch hẹn Chuyên dụng:} Các công cụ như Calendly và Doodle là minh chứng cho hiệu quả của sự đơn giản và tập trung. Chúng giải quyết triệt để bài toán sắp xếp lịch hẹn bằng cách loại bỏ hoàn toàn các bước trao đổi thủ công. Người dùng chỉ cần thiết lập các khung giờ khả dụng và chia sẻ một liên kết duy nhất; hệ thống sẽ tự động xử lý việc đặt lịch, kiểm tra trùng lặp và gửi thông báo xác nhận, nhắc nhở.
+
+\end{itemize}
+
+%========================================================================================
+
+\subsection*{1.3.2. Bài học rút ra}
+\addcontentsline{toc}{subsection}{1.3.2. Bài học rút ra}
+Từ việc phân tích các giải pháp trên, nhóm đã đúc kết được những bài học kinh nghiệm sâu sắc, đóng vai trò kim chỉ nam cho quá trình thiết kế hệ thống:
+\begin{itemize}
+    \item \textbf{Trải nghiệm người dùng (UX) là yếu tố quyết định:} Quy trình từ tìm kiếm Tutor đến đặt lịch thành công phải được thiết kế tối giản, nhanh chóng và trực quan. Bất kỳ sự phức tạp nào trong luồng thao tác đều có thể làm giảm tỷ lệ sử dụng của sinh viên.
+    \item \textbf{Hiệu quả của tìm kiếm và bộ lọc là giá trị cốt lõi:}  Chức năng quan trọng nhất đối với sinh viên là khả năng tìm được đúng người hướng dẫn mình cần. Do đó, hệ thống bắt buộc phải có các bộ lọc cơ bản và hiệu quả như khoa, môn học và lịch rảnh.
+
+    \item \textbf{Tự động hóa là chìa khóa của sự hiệu quả:}  Toàn bộ quy trình đặt, hủy và nhắc lịch cần được tự động hóa. Điều này không chỉ giúp tiết kiệm thời gian cho cả Tutor và sinh viên mà còn giảm thiểu đáng kể các sai sót do con người.
+
+    \item \textbf{Sự tin cậy được vun đắp từ cơ chế đánh giá:}  Việc cho phép sinh viên để lại nhận xét và đánh giá sau mỗi buổi học là phương thức minh bạch và hiệu quả nhất để xây dựng một cộng đồng chất lượng, đồng thời cung cấp thông tin tham khảo giá trị cho những người dùng khác.
+
+    \item \textbf{Quản lý tập trung tạo ra hiệu quả vận hành:}  Thay vì các quy trình rời rạc, một bảng điều khiển (dashboard) quản lý tập trung sẽ cung cấp cho các bên liên quan một cái nhìn tổng thể, giúp việc theo dõi và đánh giá hiệu quả chương trình trở nên dễ dàng và chính xác hơn.
+
+\end{itemize}
+
+%========================================================================================
+
+\subsection*{1.3.3. Tính năng tổng hợp cho hệ thống}
+\addcontentsline{toc}{subsection}{1.3.3. Tính năng tổng hợp cho hệ thống}
+Dựa trên những bài học đúc kết và các yêu cầu đặc thù của Trường Đại học Bách khoa TP.HCM, nhóm đã tổng hợp và đề xuất các nhóm tính năng trọng tâm cho hệ thống như sau:
+\begin{itemize}
+    \item \textbf{Nền tảng Quản lý Người dùng và Hồ sơ chuyên nghiệp:}  Mỗi người dùng sẽ sở hữu một không gian hồ sơ riêng, nơi Tutor có thể trình bày một cách chuyên nghiệp về chuyên môn, kinh nghiệm và thành tích của mình.
+
+    \item \textbf{Module Tìm kiếm và Gợi ý Ghép cặp thông minh:}  Cho phép sinh viên tìm kiếm Tutor theo các tiêu chí linh hoạt, đồng thời tích hợp chức năng gợi ý cơ bản dựa trên môn học và lịch trình tương thích.
+
+    \item \textbf{Module Quản lý Lịch hẹn Tinh gọn:}  Lấy cảm hứng từ sự đơn giản của Calendly, module này cho phép Tutor thiết lập lịch rảnh một cách trực quan, giúp sinh viên đặt lịch chỉ với vài thao tác. Toàn bộ quy trình thông báo xác nhận và nhắc nhở sẽ được tự động hóa.
+
+    \item \textbf{Cơ chế Đánh giá và Phản hồi hai chiều:}  Sau mỗi buổi học, hệ thống sẽ chủ động mời sinh viên đánh giá, từ đó tạo ra một nguồn dữ liệu quý giá, tạo một vòng lặp cải tiến liên tục cho chất lượng chương trình.
+
+    \item \textbf{Module Báo cáo và Thống kê Trực quan:}  Cung cấp các bảng điều khiển cho phép ban quản lý, các khoa và phòng ban dễ dàng theo dõi các chỉ số hiệu suất quan trọng (KPIs) như số lượng buổi học, tỷ lệ tham gia và mức độ hài lòng của sinh viên.
+
+    \item \textbf{Khả năng Tích hợp sâu với Hạ tầng Công nghệ HCMUT:}  Đây là yếu tố khác biệt và mang tính nền tảng, đảm bảo dữ liệu được đồng bộ, nhất quán và bảo mật thông qua việc kết nối chặt chẽ với các hệ thống lõi của nhà trường như HCMUT\_SSO và HCMUT\_DATACORE.
+\end{itemize}
+%========================================================================================
