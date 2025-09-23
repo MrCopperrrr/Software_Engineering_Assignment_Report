@@ -1,5 +1,93 @@
 \part*{2. Phân tích yêu cầu dự án}
 \addcontentsline{toc}{part}{2. Phân tích yêu cầu dự án}
+Trong chương này, chúng tôi sẽ tiến hành xác định và phân tích các yêu cầu của hệ thống. Trước hết, việc nhận diện các tác nhân (Actors) tương tác với hệ thống là bước nền tảng để hiểu rõ các luồng chức năng và mục tiêu mà phần mềm cần đáp ứng.
+
 %========================================================================================
+
 \section*{2.1. Tác nhân}
 \addcontentsline{toc}{section}{2.1. Tác nhân}
+Tác nhân (Actor) là một thực thể bên ngoài, có thể là người dùng hoặc một hệ thống khác, tương tác trực tiếp với hệ thống để thực hiện một mục tiêu cụ thể. Dựa trên vai trò và cách thức tương tác, các tác nhân của "Hệ thống hỗ trợ Tutor" được phân loại thành tác nhân chính và tác nhân phụ.
+
+%========================================================================================
+
+\subsection*{2.1.1. Tác nhân chính}
+\addcontentsline{toc}{subsection}{2.1.1. Tác nhân chính}
+\subsubsection*{2.1.1.1. Tutor}
+Tutor có thể là sinh viên giỏi, NCS, hoặc giảng viên, được đăng ký vào hệ thống để hỗ trợ học tập. Họ có trách nhiệm quản lý hồ sơ, lịch rảnh, tổ chức buổi học và theo dõi tiến độ của sinh viên.
+\begin{itemize}
+    \item \textbf{Tạo và cập nhật lịch rảnh:}
+    \item \textbf{Mở (oneline/offline), hủy, đổi buổi học:}
+    \item \textbf{Nhận thông báo + nhắc nhở giờ dạy:}
+    \item \textbf{Theo dõi tiến bộ sinh viên:}
+    \item \textbf{Điểm danh và record:}
+    \item \textbf{Cập nhật trạng thái buổi học:}
+    \item \textbf{Đăng nội dung bài học:}
+\end{itemize}
+
+%========================================================================================
+
+\subsubsection*{2.1.1.2. Sinh viên}
+\begin{itemize}
+    \item \textbf{Tạo tài khoản, hồ sơ cá nhân:}
+    \item \textbf{Đăng ký chương trình học:}
+    \item \textbf{Lựa chọn Tutor / được ghép tự động:}
+    \item \textbf{Đặt lịch học (cảnh báo trùng lịch):}
+    \item \textbf{Nhận thông báo và nhắc nhở giờ học:}
+    \item \textbf{Phản hồi và đánh giá chất lượng buổi học:}
+\end{itemize}
+
+%========================================================================================
+
+\subsection*{2.1.2. Tác nhân phụ}
+\addcontentsline{toc}{subsection}{2.1.2. Tác nhân phụ}
+
+%========================================================================================
+
+\subsubsection*{2.1.2.1. Khoa/Bộ môn}
+\begin{itemize}
+    \item \textbf{Nhận đánh giá và tổng hợp kết quả của sinh viên:}
+    \item \textbf{Quản lý chất lượng Tutor và SV:}
+    \item \textbf{Theo dõi tiến độ học tập của sinh viên:}
+\end{itemize}
+
+%========================================================================================
+
+\subsubsection*{2.1.2.2. Phòng Công tác sinh viên}
+\begin{itemize}
+    \item \textbf{Nắm bắt GPA sinh viên trước và sau khi tham gia:}
+    \item \textbf{Tổng hợp kết quả tham gia:}
+    \item \textbf{Ghi nhận kết quả tham gia để xét điểm rèn luyện / học bổng:}
+\end{itemize}
+
+%========================================================================================
+
+\subsubsection*{2.1.2.3. Phòng Đào tạo}
+\begin{itemize}
+    \item \textbf{Quản lý và theo dõi hồ sơ Tutor:}
+    \item \textbf{Theo dõi số lượng buổi học:}
+    \item \textbf{Tối ưu phân bổ nguồn lực giữa Tutor và SV:}
+\end{itemize}
+
+
+%========================================================================================
+
+\section*{2.2. Yêu cầu chức năng}
+\addcontentsline{toc}{section}{2.2. Yêu cầu chức năng}
+
+
+%========================================================================================
+
+\section*{2.3. Yêu cầu phi chức năng}
+\addcontentsline{toc}{section}{2.3. Yêu cầu phi chức năng}
+
+
+%========================================================================================
+
+\section*{2.4. Sơ đồ usecase toàn hệ thống}
+\addcontentsline{toc}{section}{2.4. Sơ đồ usecase toàn hệ thống}
+
+
+%========================================================================================
+
+\section*{2.5. Đặc tả usecase}
+\addcontentsline{toc}{section}{2.5. Đặc tả usecase}
