@@ -58,3 +58,57 @@ Kết thúc dự án, nhóm sẽ bàn giao các sản phẩm sau:
     \item \textbf{Slide thuyết trình và video demo sản phẩm:} Trình bày tổng quan về dự án, các chức năng chính của hệ thống và demo cách thức hoạt động.
     \item \textbf{Báo cáo cuối kỳ:} Tổng hợp toàn bộ quá trình thực hiện dự án, từ việc phân tích yêu cầu, thiết kế, triển khai cho đến kết quả đạt được và những bài học kinh nghiệm.
 \end{itemize}
+
+%========================================================================================
+
+\section*{1.2. Phạm vi dự án}
+\addcontentsline{toc}{section}{1.2. Phạm vi dự án}
+Để đảm bảo tính khả thi và sự tập trung của dự án, việc xác định rõ ràng ranh giới là vô cùng quan trọng. Phần này sẽ trình bày cụ thể các chức năng sẽ được xây dựng, những hạng mục nằm ngoài khuôn khổ, cùng các ràng buộc về kỹ thuật và nghiệp vụ mà hệ thống phải tuân thủ.
+
+%========================================================================================
+
+\subsection*{1.2.1. Trong phạm vi}
+\addcontentsline{toc}{subsection}{1.2.1. Trong phạm vi}
+Phạm vi của dự án được xác định rõ ràng, tập trung vào việc phát triển một bộ chức năng cốt lõi, đủ mạnh để quản lý và vận hành chương trình Tutor một cách toàn diện. Các nhóm chức năng chính của hệ thống bao gồm:
+\begin{itemize}
+    \item \textbf{Nền tảng Quản lý Tài khoản và Hồ sơ:} Cung cấp một không gian tập trung để người dùng (Sinh viên, Tutor) khởi tạo và quản lý thông tin cá nhân. Chức năng này cho phép cập nhật hồ sơ, năng lực chuyên môn và các nhu cầu hỗ trợ cụ thể.
+    \item \textbf{Module Đăng ký và Ghép cặp:} Hệ thống sẽ cung cấp một module linh hoạt, hỗ trợ sinh viên đăng ký tham gia các chương trình học và được ghép cặp với Tutor thông qua hai hình thức:
+    \begin{itemize}
+        \item \textbf{Thủ công:} Cho phép sinh viên chủ động tìm kiếm, xem xét hồ sơ và gửi yêu cầu đến Tutor mà họ cho là phù hợp nhất.
+        \item \textbf{Tự động:} Cung cấp cơ chế gợi ý Tutor dựa trên các tiêu chí cơ bản như môn học và sự trùng khớp về lịch rảnh.
+    \end{itemize}
+    \item \textbf{Hệ thống Quản lý Lịch và Buổi học:} Đây là chức năng quan trọng, giúp tự động hóa toàn bộ quy trình sắp xếp và quản lý các buổi học. Các tính năng bao gồm việc Tutor thiết lập lịch rảnh, sinh viên đặt lịch, hệ thống tự động gửi thông báo khi có thay đổi, và Tutor thực hiện các tác vụ như điểm danh, cập nhật trạng thái buổi học.
+    \item \textbf{Không gian Quản lý Tài liệu:} Hỗ trợ Tutor tải lên và chia sẻ các tài liệu học tập liên quan (như slide, bài tập, đề cương) đến sinh viên trong nhóm của mình, đồng thời cho phép sinh viên dễ dàng truy cập và tải xuống.
+    \item \textbf{Cơ chế Đánh giá, Phản hồi và Báo cáo:} Nhằm đảm bảo và không ngừng nâng cao chất lượng, hệ thống tích hợp một cơ chế thu thập phản hồi từ sinh viên sau mỗi buổi học. Dữ liệu này sẽ được tổng hợp thành các báo cáo đa chiều, phục vụ cho từng đối tượng người dùng, từ sinh viên, Tutor cho đến các cấp quản lý của nhà trường.
+\end{itemize}
+
+%========================================================================================
+
+\subsection*{1.2.2. Ngoài phạm vi}
+\addcontentsline{toc}{subsection}{1.2.2. Ngoài phạm vi}
+Nhằm đảm bảo đội ngũ phát triển có thể tập trung vào các giá trị cốt lõi và hoàn thành dự án đúng tiến độ, phạm vi đã được giới hạn một cách có chủ đích. Các chức năng nâng cao sau đây sẽ được xem xét cho các giai đoạn phát triển trong tương lai và không nằm trong khuôn khổ của phiên bản hiện tại:
+\begin{itemize}
+    \item \textbf{Các thuật toán Ghép cặp thông minh (AI-based Matching):} Việc ứng dụng Trí tuệ Nhân tạo để phân tích sâu hồ sơ và tự động tối ưu hóa việc ghép cặp sẽ không được triển khai.
+    \item \textbf{Xây dựng Cộng đồng Trực tuyến:} Các tính năng mang tính mạng xã hội như diễn đàn (forum) hay nhóm trò chuyện (chat groups) để mở rộng tương tác sẽ không được phát triển.
+    \item \textbf{Hỗ trợ các chương trình Tutor phi học thuật:} Hệ thống chỉ tập trung vào việc hỗ trợ học thuật. Các hoạt động tư vấn khác như hướng nghiệp, kỹ năng mềm hay tâm lý học đường đều nằm ngoài phạm vi.
+    \item \textbf{Module cá nhân hóa:}  Các tính năng sử dụng Trí tuệ Nhân tạo (AI) để phân tích quá trình học tập của từng sinh viên, từ đó tự động đề xuất lộ trình học tập riêng biệt hoặc gợi ý các tài liệu phù hợp sẽ không được triển khai. Lý do là các chức năng này đòi hỏi thuật toán phức tạp và một khối lượng lớn dữ liệu lịch sử để có thể hoạt động hiệu quả. Trong giai đoạn đầu, dự án sẽ ưu tiên tập trung vào việc hoàn thiện nền tảng cốt lõi là kết nối Tutor và sinh viên một cách hiệu quả nhất.
+\end{itemize}
+
+%========================================================================================
+
+\subsection*{1.2.3. Ràng buộc hệ thống}
+\addcontentsline{toc}{subsection}{1.2.3. Ràng buộc hệ thống}
+Quá trình thiết kế và phát triển hệ thống phải tuân thủ nghiêm ngặt các ràng buộc quan trọng sau:
+\begin{itemize}
+    \item \textbf{Tích hợp với Hạ tầng Công nghệ của HCMUT:} Đây là một ràng buộc mang tính nền tảng, đòi hỏi hệ thống phải có khả năng kết nối và giao tiếp hiệu quả với các dịch vụ hiện có của trường, cụ thể là:
+
+    \begin{itemize}
+        \item Sử dụng dịch vụ xác thực tập trung HCMUT\_SSO cho việc đăng nhập
+        \item Đồng bộ dữ liệu cá nhân từ hệ thống lõi HCMUT\_DATACORE
+        \item Liên kết với kho tài nguyên của thư viện số HCMUT\_LIBRARY.
+    \end{itemize}
+    \item \textbf{Cơ chế Phân quyền Dựa trên Vai trò Tập trung:} Hệ thống không tự định nghĩa vai trò người dùng mà phải tự động gán quyền truy cập dựa trên thông tin vai trò (sinh viên, tutor, điều phối viên...) được cung cấp từ hệ thống trung tâm của nhà trường.
+    \item \textbf{Yêu cầu về Cơ sở dữ liệu cho Phiên bản MVP:} Theo đặc tả của đề bài, phiên bản MVP (Minimum Viable Product) không bắt buộc phải triển khai một hệ quản trị cơ sở dữ liệu hoàn chỉnh ở tầng backend. Dữ liệu có thể được mã hóa cứng (hard-coded) trong mã nguồn để phục vụ mục đích trình diễn.
+    \item \textbf{Tuân thủ Quy định về sử dụng Generative AI:} Nhóm cam kết tuân thủ các quy định về đạo đức học thuật, đặc biệt là việc khai báo minh bạch và có trách nhiệm về mức độ và phạm vi sử dụng các công cụ AI tạo sinh trong suốt quá trình thực hiện dự án.
+
+\end{itemize}
