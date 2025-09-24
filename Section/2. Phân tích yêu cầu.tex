@@ -21,20 +21,18 @@ Tutor có thể là sinh viên giỏi, NCS, hoặc giảng viên, được đăn
         \item \textbf{Process:} Hệ thống lưu lại khung giờ rảnh, đồng bộ với module đặt lịch.
         \item \textbf{Output:} Lịch rảnh hiển thị cho sinh viên để chọn.
         \item \textbf{Constraints:} Không được nhập trùng khung giờ.
-
         \item \textbf{Acceptance:} Sinh viên có thể đặt lịch học trong khung rảnh của Tutor.
-
         \item \textbf{Error handling:} Nếu nhập sai định dạng hoặc trùng lịch thì hệ thống báo lỗi.
     \end{itemize}
     
     \item \textbf{Mở (oneline/offline), hủy, đổi buổi học:}
     \begin{itemize}
-        \item \textbf{Input:}
-        \item \textbf{Process:}
-        \item \textbf{Output:}
-        \item \textbf{Constraints:}
-        \item \textbf{Acceptance:}
-        \item \textbf{Error handling:}
+        \item \textbf{Input:} Yêu cầu mở buổi học, hoặc yêu cầu huỷ/đổi.
+        \item \textbf{Process:} Hệ thống kiểm tra lịch đã có sinh viên đặt chưa, xử lý cập nhật.
+        \item \textbf{Output:} Buổi học được thêm/sửa/xoá trong hệ thống.
+        \item \textbf{Constraints:} Hủy/đổi $\geq$ 3h trước giờ học
+        \item \textbf{Acceptance:} Sinh viên và Tutor đều nhận được thông báo cập nhật.
+        \item \textbf{Error handling:} Nếu yêu cầu đổi sát giờ hệ thống từ chối, báo lỗi.
     \end{itemize}
     
     \item \textbf{Nhận thông báo + nhắc nhở giờ dạy:}
