@@ -308,9 +308,16 @@ Tutor có thể là sinh viên giỏi, NCS, hoặc giảng viên, được đăn
 \subsection*{2.4.2. Bảo mật (Security Requirements)}
 \addcontentsline{toc}{subsection}{2.4.2. Hiệu năng (Performance Requirements)}
 \begin{itemize}
-    \item \textbf{Mô tả:}
+    \item \textbf{Mô tả:} Bảo vệ thông tin người dùng và dữ liệu hệ thống khỏi truy cập trái phép.
     \item \textbf{Constraints:}
-    \item \textbf{Acceptance:}
+    \begin{itemize}
+        \item Mã hóa toàn bộ giao tiếp bằng HTTPS (TLS 1.3).
+        \item Lưu mật khẩu bằng bcrypt/Argon2.
+        \item Xác thực 2FA áp dụng cho Tutor và Admin. 
+        \item Khóa tài khoản sau 5 lần nhập sai mật khẩu.
+        \item Phân quyền theo role (SV, Tutor, Khoa, PCTSV, PĐT, Admin).
+    \end{itemize}
+    \item \textbf{Acceptance:} Thử nghiệm penetration test không phát hiện lỗ hổng nghiêm trọng.
 \end{itemize}
 
 %========================================================================================
