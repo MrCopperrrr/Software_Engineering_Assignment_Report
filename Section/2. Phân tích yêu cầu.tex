@@ -325,9 +325,15 @@ Tutor có thể là sinh viên giỏi, NCS, hoặc giảng viên, được đăn
 \subsection*{2.4.3. Tính tin cậy \& sẵn sàng (Reliability \& Availability)}
 \addcontentsline{toc}{subsection}{2.4.3. Tính tin cậy \& sẵn sàng (Reliability \& Availability)}
 \begin{itemize}
-    \item \textbf{Mô tả:}
-    \item \textbf{Constraints:}
-    \item \textbf{Acceptance:}
+    \item \textbf{Mô tả:} Hệ thống phải đảm bảo tính liên tục và phục hồi khi có sự cố.
+    \item \textbf{Constraints:} 
+    \begin{itemize}
+        \item Thời gian uptime $\geq$ 99.5\%/tháng.
+        \item Backup dữ liệu hàng ngày, phục hồi $\leq$ 2h.
+        \item Retry khi gửi thông báo thất bại.
+        \item Log toàn bộ giao dịch quan trọng.
+    \end{itemize}
+    \item \textbf{Acceptance:} DRP (Disaster Recovery Plan) kiểm thử thành công, phục hồi dữ liệu $\leq$ 2h.
 \end{itemize}
 
 %========================================================================================
