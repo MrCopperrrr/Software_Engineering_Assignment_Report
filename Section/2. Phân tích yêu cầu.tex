@@ -293,9 +293,14 @@ Tutor có thể là sinh viên giỏi, NCS, hoặc giảng viên, được đăn
 \subsection*{2.4.1. Hiệu năng (Performance Requirements)}
 \addcontentsline{toc}{subsection}{2.4.1. Hiệu năng (Performance Requirements)}
 \begin{itemize}
-    \item \textbf{Mô tả:}
+    \item \textbf{Mô tả:} Hệ thống phải xử lý nhanh và ổn định cho nhiều người dùng đồng thời.
     \item \textbf{Constraints:}
-    \item \textbf{Acceptance:}
+    \begin{itemize}
+        \item Hỗ trợ tối thiểu 500 người dùng đồng thời.
+        \item Thời gian phản hồi cho thao tác chính $\leq$ 3 giây.
+        \item Thuật toán ghép cặp Tutor–SV chạy trong $\leq$ 5 giây.
+    \end{itemize}
+    \item \textbf{Acceptance:} Kiểm thử tải (load test) cho thấy hệ thống đáp ứng $\geq$ 95\% request trong 3 giây
 \end{itemize}
 
 %========================================================================================
