@@ -357,9 +357,15 @@ Tutor có thể là sinh viên giỏi, NCS, hoặc giảng viên, được đăn
 \subsection*{2.4.5. Tính bảo trì \& mở rộng (Maintainability \& Extensibility)}
 \addcontentsline{toc}{subsection}{2.4.5. Tính bảo trì \& mở rộng (Maintainability \& Extensibility)}
 \begin{itemize}
-    \item \textbf{Mô tả:}
+    \item \textbf{Mô tả:} Hệ thống dễ bảo trì, nâng cấp mà không ảnh hưởng đến chức năng hiện có.
     \item \textbf{Constraints:}
-    \item \textbf{Acceptance:}
+    \begin{itemize}
+        \item Tuân thủ mô hình MVC hoặc Microservices.
+        \item Code phải có comment, tuân thủ coding convention.
+        \item Thêm module mới không ảnh hưởng module cũ.
+        \item Bug critical sau release $\leq$ 2\%.
+    \end{itemize}
+    \item \textbf{Acceptance:} Regression test cho thấy chức năng cũ không bị ảnh hưởng sau khi thêm module mới.
 \end{itemize}
 
 %========================================================================================
