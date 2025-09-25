@@ -113,12 +113,16 @@ Tutor có thể là sinh viên giỏi, NCS, hoặc giảng viên, được đăn
 
     \item \textbf{Lựa chọn Tutor / được ghép tự động:}
     \begin{itemize}
-        \item \textbf{Input:}
-        \item \textbf{Process:}
-        \item \textbf{Output:}
-        \item \textbf{Constraints:}
-        \item \textbf{Acceptance:}
-        \item \textbf{Error handling:}
+        \item \textbf{Input:} Nhu cầu hỗ trợ (môn, lịch, hình thức).
+        \item \textbf{Process:} 
+        \begin{itemize}
+            \item \textbf{Thủ công:} SV chọn Tutor trong danh sách.
+            \item \textbf{Tự động: } Hệ thống so khớp theo khoa/ngành, lịch rảnh, AI ranking.
+        \end{itemize}
+        \item \textbf{Output:} Ghép cặp Tutor – SV được xác lập.
+        \item \textbf{Constraints:} Một SV chỉ có 1 Tutor chính tại một thời điểm.
+        \item \textbf{Acceptance:} SV thấy thông tin Tutor trong hồ sơ.
+        \item \textbf{Error handling:} Nếu lịch trùng thì yêu cầu chọn lại hoặc hệ thống gợi ý Tutor khác.
     \end{itemize}
 
     \item \textbf{Đặt lịch học (cảnh báo trùng lịch):}
