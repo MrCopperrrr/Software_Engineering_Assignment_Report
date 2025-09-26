@@ -1,0 +1,37 @@
+\newpage
+\subsubsection*{Use Case 01: Đăng ký tài khoản}
+\begin{samepage}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|lll|l}
+\cline{1-4}
+\textbf{ID}                              & \multicolumn{3}{l|}{UC-01}                                                                                                                                                                                                                &  \\ \cline{1-4}
+\textbf{Tên}                             & \multicolumn{3}{l|}{Đăng ký tài khoản}                                                                                                                                                                                                    &  \\ \cline{1-4}
+\textbf{Mô tả}                           & \multicolumn{3}{l|}{Người dùng (SV hoặc Tutor) đăng ký tài khoản mới để tham gia hệ thống.}                                                                                                                                               &  \\ \cline{1-4}
+\textbf{Actor chính}                     & \multicolumn{3}{l|}{Sinh viên, Tutor}                                                                                                                                                                                                     &  \\ \cline{1-4}
+\textbf{Actor phụ}                       & \multicolumn{3}{l|}{Hệ thống xác thực OTP (Email/SMS), Admin PĐT}                                                                                                                                                                         &  \\ \cline{1-4}
+\textbf{Tiền điều kiện}                  & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Người dùng chưa có tài khoản\\ Có email hoặc số điện thoại hợp lệ\end{tabular}}                                                                                                            &  \\ \cline{1-4}
+\textbf{Hậu điều kiện}                   & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Tài khoản hợp lệ được tạo, có ID duy nhất.\\ Hồ sơ người dùng được lưu trong cơ sở dữ liệu\end{tabular}}                                                                                   &  \\ \cline{1-4}
+\multirow{10}{*}{\textbf{Luồng sự kiện}} & \multicolumn{1}{l|}{\textbf{Bước}}      & \multicolumn{1}{l|}{\textbf{Thực hiện bởi}}     & \textbf{Mô tả}                                                                                                                                &  \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{1}                  & \multicolumn{1}{l|}{Người dùng}                 & Chọn chức năng “Đăng ký”.                                                                                                                     &  \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{2}                  & \multicolumn{1}{l|}{Người dùng}                 & \begin{tabular}[c]{@{}l@{}}Nhập thông tin cá nhân (SV: MSSV, GPA, khoa; \\ Tutor: chuyên môn, GPA $\geq$ 3.0 hoặc giấy xác minh).\end{tabular}     &  \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{3}                  & \multicolumn{1}{l|}{Hệ thống}                   & Kiểm tra định dạng dữ liệu.                                                                                                                   &  \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{4}                  & \multicolumn{1}{l|}{Hệ thống}                   & Gửi OTP xác thực qua email/SMS.                                                                                                               &  \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{5}                  & \multicolumn{1}{l|}{Người dùng}                 & Nhập OTP nhận được.                                                                                                                           &  \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{6}                  & \multicolumn{1}{l|}{Hệ thống}                   & Kiểm tra OTP.                                                                                                                                 &  \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{7}                  & \multicolumn{1}{l|}{Hệ thống}                   & Kiểm tra trùng MSSV/email.                                                                                                                    &  \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{8}                  & \multicolumn{1}{l|}{Hệ thống}                   & Lưu dữ liệu hợp lệ, gán UserID duy nhất.                                                                                                      &  \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{9}                  & \multicolumn{1}{l|}{Hệ thống}                   & Hiển thị thông báo “Đăng ký thành công”                                                                                                       &  \\ \cline{1-4}
+\multirow{4}{*}{\textbf{Luồng thay thế}} & \multicolumn{1}{l|}{\textbf{Bước}}      & \multicolumn{1}{l|}{\textbf{Thực hiện bởi}}     & \textbf{Mô tả}                                                                                                                                &  \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{3a}                 & \multicolumn{1}{l|}{Người dùng}                 & \begin{tabular}[c]{@{}l@{}}Nhập email không hợp lệ → Hệ thống báo lỗi, \\ yêu cầu nhập lại (quay về bước 2).\end{tabular}                     &  \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{5a}                 & \multicolumn{1}{l|}{Người dùng}                 & \begin{tabular}[c]{@{}l@{}}Người dùng nhập OTP sai → Hệ thống báo lỗi, \\ cho nhập lại tối đa 3 lần.\end{tabular}                             &  \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{7a}                 & \multicolumn{1}{l|}{Hệ thống}                   & \begin{tabular}[c]{@{}l@{}}Phát hiện MSSV/email đã tồn tại → hiển thị \\ “Tài khoản đã có”.\end{tabular}                                      &  \\ \cline{1-4}
+\textbf{Ngoại lệ}                        & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Hệ thống không gửi được OTP (lỗi server/email/SMS) \\ → hiển thị “Vui lòng thử lại sau”. \\ Hệ thống lỗi khi lưu dữ liệu vào DB \\ → rollback, hiển thị “Thao tác thất bại”.\end{tabular}} &  \\ \cline{1-4}
+\textbf{Business Rules}                  & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Một MSSV/email chỉ được dùng cho 1 tài khoản. \\ Tutor phải được xác minh bởi PĐT trước khi tài khoản kích hoạt.\end{tabular}}                                                             &  \\ \cline{1-4}
+\textbf{Data requirement}                & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Users(userID, role, email, password, MSSV, GPA, faculty)\\ TutorProfile(tutorID, chuyên môn, giấy xác minh)\end{tabular}}                                                                  &  \\ \cline{1-4}
+\end{tabular}
+\caption{Bảng đặc tả chức năng đăng ký tài khoản}
+\end{table}
+\end{samepage}
+
+%========================================================================================
