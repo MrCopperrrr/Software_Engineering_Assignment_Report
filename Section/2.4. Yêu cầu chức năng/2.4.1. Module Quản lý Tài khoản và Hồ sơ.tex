@@ -205,25 +205,41 @@
 \begin{table}[h!]
 \begin{tabular}{|l|lll|l}
 \cline{1-4}
-\textbf{ID}                              & \multicolumn{3}{l|}{UC-03}                                                                                                                                                                                &  \\ \cline{1-4}
-\textbf{Tên}                             & \multicolumn{3}{l|}{Cập nhật hồ sơ}                                                                                                                                                                       &  \\ \cline{1-4}
-\textbf{Mô tả}                           & \multicolumn{3}{l|}{Người dùng cập nhật thông tin hồ sơ cá nhân để đảm bảo dữ liệu mới nhất.}                                                                                                             &  \\ \cline{1-4}
-\textbf{Actor chính}                     & \multicolumn{3}{l|}{SV, Tutor}                                                                                                                                                                            &  \\ \cline{1-4}
-\textbf{Actor phụ}                       & \multicolumn{3}{l|}{Hệ thống, Admin (có quyền xem/sửa/kiểm tra Tutor profile) (PĐT, Khoa)}                                                                                                                &  \\ \cline{1-4}
-\textbf{Tiền điều kiện}                  & \multicolumn{3}{l|}{Người dùng đã đăng nhập hệ thống.}                                                                                                                                                    &  \\ \cline{1-4}
-\textbf{Hậu điều kiện}                   & \multicolumn{3}{l|}{Hồ sơ cập nhật thành công trong cơ sở dữ liệu.}                                                                                                                                       &  \\ \cline{1-4}
-\multirow{6}{*}{\textbf{Luồng sự kiện}}  & \multicolumn{1}{l|}{\textbf{Bước}} & \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} & \textbf{Mô tả}                                                                                                         &  \\ \cline{2-4}
-                                         & \multicolumn{1}{l|}{1}             & \multicolumn{1}{l|}{Người dùng}             & Đăng nhập, chọn “Cập nhật hồ sơ”.                                                                                      &  \\ \cline{2-4}
-                                         & \multicolumn{1}{l|}{2}             & \multicolumn{1}{l|}{Người dùng}             & \begin{tabular}[c]{@{}l@{}}Chỉnh sửa thông tin (SĐT, email, chuyên ngành, \\ mô tả năng lực…).\end{tabular}            &  \\ \cline{2-4}
-                                         & \multicolumn{1}{l|}{3}             & \multicolumn{1}{l|}{Hệ thống}               & Kiểm tra định dạng dữ liệu.                                                                                            &  \\ \cline{2-4}
-                                         & \multicolumn{1}{l|}{4}             & \multicolumn{1}{l|}{Hệ thống}               & Lưu thông tin mới vào DB.                                                                                              &  \\ \cline{2-4}
-                                         & \multicolumn{1}{l|}{5}             & \multicolumn{1}{l|}{Hệ thống}               & Hiển thị thông báo “Cập nhật thành công”.                                                                              &  \\ \cline{1-4}
-\multirow{3}{*}{\textbf{Luồng thay thế}} & \multicolumn{1}{l|}{\textbf{Bước}} & \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} & \textbf{Mô tả}                                                                                                         &  \\ \cline{2-4}
-                                         & \multicolumn{1}{l|}{2a}            & \multicolumn{1}{l|}{Người dùng}             & \begin{tabular}[c]{@{}l@{}}Bỏ trống trường bắt buộc (email, SĐT) \\ → Hệ thống báo lỗi, yêu cầu nhập lại.\end{tabular} &  \\ \cline{2-4}
-                                         & \multicolumn{1}{l|}{3a}            & \multicolumn{1}{l|}{Người dùng}             & \begin{tabular}[c]{@{}l@{}}Nhập email/SĐT sai định dạng \\ → Hệ thống báo lỗi, yêu cầu nhập lại.\end{tabular}          &  \\ \cline{1-4}
-\textbf{Ngoại lệ}                        & \multicolumn{3}{l|}{Hệ thống lỗi khi lưu dữ liệu vào DB → hiển thị “Cập nhật thất bại”.}                                                                                                                  &  \\ \cline{1-4}
-\textbf{Business Rules}                  & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Tutor phải cập nhật thông tin học thuật theo mẫu do PĐT quy định.\\ SV không được sửa MSSV.\end{tabular}}                                                  &  \\ \cline{1-4}
-\textbf{Data requirement}                & \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Users(userID, email, phone, faculty, GPA, updatedAt)\\ TutorProfile(tutorID, chuyên môn, kinh nghiệm, updatedAt)\end{tabular}}                             &  \\ \cline{1-4}
+\textbf{ID}                              & \multicolumn{3}{l|}{UC-03}                                                                                                   &  \\ \cline{1-4}
+\textbf{Tên}                             & \multicolumn{3}{l|}{Cập nhật hồ sơ}                                                                                          &  \\ \cline{1-4}
+\textbf{Mô tả}                           & \multicolumn{3}{l|}{Người dùng cập nhật thông tin hồ sơ cá nhân để đảm bảo dữ liệu mới nhất.}                                &  \\ \cline{1-4}
+\textbf{Actor chính}                     & \multicolumn{3}{l|}{SV, Tutor}                                                                                               &  \\ \cline{1-4}
+\textbf{Actor phụ}                       & \multicolumn{3}{l|}{Hệ thống, Admin (có quyền xem/sửa/kiểm tra Tutor profile) (PĐT, Khoa)}                                   &  \\ \cline{1-4}
+\textbf{Tiền điều kiện}                  & \multicolumn{3}{l|}{Người dùng đã đăng nhập hệ thống.}                                                                       &  \\ \cline{1-4}
+\textbf{Hậu điều kiện}                   & \multicolumn{3}{l|}{Hồ sơ cập nhật thành công trong cơ sở dữ liệu.}                                                          &  \\ \cline{1-4}
+\multirow{6}{*}{\textbf{Luồng sự kiện}}  & \multicolumn{1}{l|}{\textbf{Bước}} & \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} & \textbf{Mô tả}                            &  \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{1}             & \multicolumn{1}{l|}{Người dùng}             & Đăng nhập, chọn “Cập nhật hồ sơ”.         &  \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2} &
+  \multicolumn{1}{l|}{Người dùng} &
+  \begin{tabular}[c]{@{}l@{}}Chỉnh sửa thông tin (SĐT, email, chuyên ngành, \\ mô tả năng lực…).\end{tabular} &
+   \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{3}             & \multicolumn{1}{l|}{Hệ thống}               & Kiểm tra định dạng dữ liệu.               &  \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{4}             & \multicolumn{1}{l|}{Hệ thống}               & Lưu thông tin mới vào DB.                 &  \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{5}             & \multicolumn{1}{l|}{Hệ thống}               & Hiển thị thông báo “Cập nhật thành công”. &  \\ \cline{1-4}
+\multirow{3}{*}{\textbf{Luồng thay thế}} & \multicolumn{1}{l|}{\textbf{Bước}} & \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} & \textbf{Mô tả}                            &  \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2a} &
+  \multicolumn{1}{l|}{Người dùng} &
+  \begin{tabular}[c]{@{}l@{}}Bỏ trống trường bắt buộc (email, SĐT) \\ → Hệ thống báo lỗi, yêu cầu nhập lại.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3a} &
+  \multicolumn{1}{l|}{Người dùng} &
+  \begin{tabular}[c]{@{}l@{}}Nhập email/SĐT sai định dạng \\ → Hệ thống báo lỗi, yêu cầu nhập lại.\end{tabular} &
+   \\ \cline{1-4}
+\textbf{Ngoại lệ}                        & \multicolumn{3}{l|}{Hệ thống lỗi khi lưu dữ liệu vào DB → hiển thị “Cập nhật thất bại”.}                                     &  \\ \cline{1-4}
+\textbf{Business Rules} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Tutor phải cập nhật thông tin học thuật theo mẫu do PĐT quy định.\\ SV không được sửa MSSV.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Data requirement} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Users(userID, email, phone, faculty, GPA, updatedAt)\\ TutorProfile(tutorID, chuyên môn, kinh nghiệm, updatedAt)\end{tabular}} &
+   \\ \cline{1-4}
 \end{tabular}
 \caption{Bảng đặc tả chức năng cập nhật hồ sơ}
 \end{table}
