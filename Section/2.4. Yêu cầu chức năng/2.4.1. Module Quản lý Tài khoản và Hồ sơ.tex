@@ -1,6 +1,6 @@
 \newpage
 \subsubsection*{Use Case 01: Đăng ký tài khoản}
-\begin{samepage}
+\begin{samepage} 
 \begin{table}[h!]
 \begin{tabular}{|l|lll|l}
 \cline{1-4}
@@ -48,7 +48,7 @@
  &
   \multicolumn{1}{l|}{4} &
   \multicolumn{1}{l|}{Hệ thống} &
-  \begin{tabular}[c]{@{}l@{}}Kiểm tra trùng MSSV/email. \\ Nếu trùng → báo lỗi, dừng quy trình.\end{tabular} &
+  kiểm tra trùng MSSV/email. Nếu trùng → báo lỗi, dừng quy trình. &
    \\ \cline{2-4}
  &
   \multicolumn{1}{l|}{5} &
@@ -75,22 +75,22 @@
   \multicolumn{1}{l|}{Hệ thống} &
   Hiển thị thông báo “Đăng ký thành công” &
    \\ \cline{1-4}
-\textbf{Luồng thay thế} &
+\multirow{4}{*}{\textbf{Luồng thay thế}} &
   \multicolumn{1}{l|}{\textbf{Bước}} &
   \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
   \textbf{Mô tả} &
-   \\ \cline{1-4}
-\textbf{} &
+   \\ \cline{2-4}
+ &
   \multicolumn{1}{l|}{3a} &
   \multicolumn{1}{l|}{Người dùng} &
   \begin{tabular}[c]{@{}l@{}}Nhập email không hợp lệ → Hệ thống báo lỗi, \\ yêu cầu nhập lại (quay về bước 2).\end{tabular} &
-   \\ \cline{1-4}
-\textbf{} &
+   \\ \cline{2-4}
+ &
   \multicolumn{1}{l|}{5a} &
   \multicolumn{1}{l|}{Người dùng} &
   \begin{tabular}[c]{@{}l@{}}Người dùng nhập OTP sai → Hệ thống báo lỗi, \\ cho nhập lại tối đa 3 lần.\end{tabular} &
-   \\ \cline{1-4}
-\textbf{} &
+   \\ \cline{2-4}
+ &
   \multicolumn{1}{l|}{7a} &
   \multicolumn{1}{l|}{Hệ thống} &
   \begin{tabular}[c]{@{}l@{}}Phát hiện MSSV/email đã tồn tại → hiển thị \\ “Tài khoản đã có”.\end{tabular} &
