@@ -17,7 +17,7 @@
   \multicolumn{3}{l|}{Sinh viên, Tutor} &
    \\ \cline{1-4}
 \textbf{Actor phụ} &
-  \multicolumn{3}{l|}{Hệ thống xác thực OTP (Email/SMS), Admin PĐT} &
+  \multicolumn{3}{l|}{Hệ thống xác thực OTP (Email), Admin PĐT} &
    \\ \cline{1-4}
 \textbf{Tiền điều kiện} &
   \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Người dùng chưa có tài khoản\\ Có email hoặc số điện thoại hợp lệ\end{tabular}} &
@@ -53,7 +53,7 @@
  &
   \multicolumn{1}{l|}{5} &
   \multicolumn{1}{l|}{Hệ thống} &
-  Gửi OTP xác thực qua email/SMS. &
+  Gửi OTP xác thực qua email. &
    \\ \cline{2-4}
  &
   \multicolumn{1}{l|}{6} &
@@ -96,7 +96,7 @@
   \begin{tabular}[c]{@{}l@{}}Phát hiện MSSV/email đã tồn tại → hiển thị \\ “Tài khoản đã có”.\end{tabular} &
    \\ \cline{1-4}
 \textbf{Ngoại lệ} &
-  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Hệ thống không gửi được OTP (lỗi server/email/SMS) \\ → hiển thị “Vui lòng thử lại sau”. \\ Hệ thống lỗi khi lưu dữ liệu vào DB \\ → rollback, hiển thị “Thao tác thất bại”.\end{tabular}} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Hệ thống không gửi được OTP (lỗi server/email) \\ → hiển thị “Vui lòng thử lại sau”. \\ Hệ thống lỗi khi lưu dữ liệu vào DB \\ → rollback, hiển thị “Thao tác thất bại”.\end{tabular}} &
    \\ \cline{1-4}
 \textbf{Business Rules} &
   \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Một MSSV/email chỉ được dùng cho 1 tài khoản. \\ Tutor phải được xác minh bởi PĐT trước khi tài khoản kích hoạt.\end{tabular}} &
