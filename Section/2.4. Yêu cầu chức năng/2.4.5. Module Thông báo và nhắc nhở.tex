@@ -1,7 +1,77 @@
 \newpage
 \subsubsection*{Use Case 11: Gửi thông báo lịch học}
 \begin{samepage}
-
+\begin{table}[h!]
+\begin{tabular}{|l|lll|l}
+\cline{1-4}
+\textbf{ID} &
+  \multicolumn{3}{l|}{UC-11} &
+   \\ \cline{1-4}
+\textbf{Tên} &
+  \multicolumn{3}{l|}{Gửi thông báo lịch học} &
+   \\ \cline{1-4}
+\textbf{Mô tả} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Hệ thống gửi thông báo đến SV và Tutor khi có lịch học mới được đặt \\ hoặc thay đổi.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Actor chính} &
+  \multicolumn{3}{l|}{Hệ thống} &
+   \\ \cline{1-4}
+\textbf{Actor phụ} &
+  \multicolumn{3}{l|}{Sinh viên, Tutor} &
+   \\ \cline{1-4}
+\textbf{Tiền điều kiện} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Lịch học đã được tạo hoặc có thay đổi (UC-09, UC-10).\\ SV và Tutor đã kích hoạt tài khoản.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Hậu điều kiện} &
+  \multicolumn{3}{l|}{SV và Tutor nhận được thông báo về lịch học.} &
+   \\ \cline{1-4}
+\multirow{5}{*}{\textbf{Luồng sự kiện}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{1} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Phát hiện có lịch học mới/hủy/đổi. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Tạo thông báo gồm: ngày, giờ, môn học, trạng \\ thái (mới/hủy/đổi).\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Gửi thông báo qua email/app cho SV và Tutor. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4} &
+  \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Người dùng\\ (SV/Tutor)\end{tabular}} &
+  Nhận và đọc thông báo. &
+   \\ \cline{1-4}
+\multirow{2}{*}{\textbf{Luồng thay thế}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4a} &
+  \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Người dùng\\ (SV/Tutor)\end{tabular}} &
+  \begin{tabular}[c]{@{}l@{}}chưa mở app → Hệ thống lưu thông báo trong \\ mục “Thông báo” để xem sau.\end{tabular} &
+   \\ \cline{1-4}
+\textbf{Ngoại lệ} &
+  \multicolumn{3}{l|}{Hệ thống lỗi khi gửi email → chỉ lưu thông báo trong app.} &
+   \\ \cline{1-4}
+\textbf{Business Rules} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Tất cả thay đổi về lịch học phải được thông báo trong vòng 5 phút kể \\ từ khi cập nhật. \\ Nội dung thông báo phải có đủ thông tin: môn, ngày, giờ, hình thức học.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Data requirement} &
+  \multicolumn{3}{l|}{Notification(notifID, userID, type, content, createdAt, status)} &
+   \\ \cline{1-4}
+\end{tabular}
+\caption{Bảng đặc tả chức năng gửi thông báo lịch học}
+\end{table}
 \end{samepage}
 
 %========================================================================================
