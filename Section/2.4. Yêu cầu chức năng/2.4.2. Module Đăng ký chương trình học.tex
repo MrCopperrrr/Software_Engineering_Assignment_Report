@@ -1,7 +1,102 @@
 \newpage
 \subsubsection*{Use Case 04: Đăng ký môn học}
 \begin{samepage}
-
+\begin{table}[h!]
+\begin{tabular}{|l|lll|l}
+\cline{1-4}
+\textbf{ID} &
+  \multicolumn{3}{l|}{UC-04} &
+   \\ \cline{1-4}
+\textbf{Tên} &
+  \multicolumn{3}{l|}{Đăng ký môn học} &
+   \\ \cline{1-4}
+\textbf{Mô tả} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Sinh viên đăng ký môn học/lĩnh vực cần được Tutor hỗ trợ.\\ Mỗi lần đăng ký chỉ chọn 1 môn học, có thể lặp lại quy trình nhiều lần \\ (tối đa 4 môn).\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Actor chính} &
+  \multicolumn{3}{l|}{Sinh viên} &
+   \\ \cline{1-4}
+\textbf{Actor phụ} &
+  \multicolumn{3}{l|}{Hệ thống, Khoa/Bộ môn} &
+   \\ \cline{1-4}
+\textbf{Tiền điều kiện} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}SV đã đăng ký tài khoản, hồ sơ hợp lệ.\\ Hệ thống đã có danh mục môn học/lĩnh vực hỗ trợ.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Hậu điều kiện} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Thông tin chương trình học được lưu trong hồ sơ SV.\\ SV có thể tiếp tục đăng ký thêm môn khác, miễn là tổng số $\leq$ 4.\\ SV sẵn sàng cho bước ghép cặp với Tutor.\end{tabular}} &
+   \\ \cline{1-4}
+\multirow{9}{*}{\textbf{Luồng sự kiện}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{1} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  Đăng nhập hệ thống &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  Chọn chức năng “Đăng ký môn học”. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Hiển thị danh mục môn học khả dụng trong \\ kỳ.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  Chọn 1 môn học. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{5} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Kiểm tra SV đã đăng ký bao nhiêu môn? \\ ($\leq$ 3 trước đó → cho phép; = 4 → từ chối).\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{6} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Lưu thông tin đăng ký vào DB &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{7} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Hiển thị thông báo “Đăng ký thành công”. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{8} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  \begin{tabular}[c]{@{}l@{}}Có thể quay lại bước 2 để đăng ký thêm môn\\  khác\end{tabular} &
+   \\ \cline{1-4}
+\multirow{3}{*}{\textbf{Luồng thay thế}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3a} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Nếu danh sách môn học khả dụng trống \\ (chưa có Tutor nào đăng ký dạy) → \\ Hệ thống hiển thị “Hiện chưa có môn học \\ nào khả dụng để đăng ký”.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{5a} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  \begin{tabular}[c]{@{}l@{}}Nếu SV đã đăng ký đủ 4 môn → Hệ thống \\ hiển thị “Chỉ được đăng ký tối đa 4 môn”.\end{tabular} &
+   \\ \cline{1-4}
+\textbf{Ngoại lệ} &
+  \multicolumn{3}{l|}{Hệ thống lỗi khi lưu vào DB → hiển thị “Đăng ký thất bại, thử lại sau”.} &
+   \\ \cline{1-4}
+\textbf{Business Rules} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}SV chỉ có thể đăng ký tối đa 4 môn học cùng lúc.\\ Hệ thống chỉ hiển thị các môn học đã có ít nhất 1 Tutor đăng ký dạy.\\ SV có thể hủy môn học đã đăng ký (UC-05) để giải phóng slot trước khi \\ đăng ký mới.\\ Danh mục môn học khả dụng được Khoa/BM cập nhật theo từng kỳ học.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Data requirement} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}ProgramRegistration(regID, studentID, subjectID, purpose, regDate, \\ status)\end{tabular}} &
+   \\ \cline{1-4}
+\end{tabular}
+\caption{Bảng đặc tả chức năng đăng ký môn học}
+\end{table}
 \end{samepage}
 
 %========================================================================================
