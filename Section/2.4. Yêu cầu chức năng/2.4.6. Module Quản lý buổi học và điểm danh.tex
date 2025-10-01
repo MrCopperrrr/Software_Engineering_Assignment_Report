@@ -1,7 +1,87 @@
 \newpage
 \subsubsection*{Use Case 13: Điểm danh sinh viên}
 \begin{samepage}
-
+\begin{table}[h!]
+\begin{tabular}{|l|lll|l}
+\cline{1-4}
+\textbf{ID} &
+  \multicolumn{3}{l|}{UC-13} &
+   \\ \cline{1-4}
+\textbf{Tên} &
+  \multicolumn{3}{l|}{Điểm danh sinh viên} &
+   \\ \cline{1-4}
+\textbf{Mô tả} &
+  \multicolumn{3}{l|}{Tutor điểm danh sự tham gia của sinh viên trong buổi học.} &
+   \\ \cline{1-4}
+\textbf{Actor chính} &
+  \multicolumn{3}{l|}{Sinh viên, Tutor} &
+   \\ \cline{1-4}
+\textbf{Actor phụ} &
+  \multicolumn{3}{l|}{Hệ thống} &
+   \\ \cline{1-4}
+\textbf{Tiền điều kiện} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Buổi học đã được xác nhận và diễn ra đúng lịch.\\ SV và Tutor đã đăng nhập hệ thống.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Hậu điều kiện} &
+  \multicolumn{3}{l|}{Trạng thái điểm danh của SV được lưu trong DB.} &
+   \\ \cline{1-4}
+\multirow{7}{*}{\textbf{Luồng sự kiện}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{1} &
+  \multicolumn{1}{l|}{Tutor} &
+  Đăng nhập và mở danh sách buổi học trong ngày. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2} &
+  \multicolumn{1}{l|}{Tutor} &
+  Chọn buổi học cần điểm danh. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Hiển thị danh sách SV đã đăng ký buổi học. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4} &
+  \multicolumn{1}{l|}{Tutor} &
+  Đánh dấu SV có mặt/vắng mặt./đi trễ &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{5} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Lưu kết quả điểm danh vào DB. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{6} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Hiển thị thông báo “Điểm danh thành công”. &
+   \\ \cline{1-4}
+\multirow{2}{*}{\textbf{Luồng thay thế}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3a} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Nếu buổi học không có SV nào đăng ký \\ → Hệ thống hiển thị “Không có SV tham gia”.\end{tabular} &
+   \\ \cline{1-4}
+\textbf{Ngoại lệ} &
+  \multicolumn{3}{l|}{DB lỗi khi lưu → hiển thị “Điểm danh thất bại, thử lại sau} &
+   \\ \cline{1-4}
+\textbf{Business Rules} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Chỉ Tutor phụ trách buổi học mới có quyền điểm danh.\\ SV vắng mặt \textgreater 2 lần liên tiếp → hệ thống thông báo cho Khoa.\\ Điểm danh chỉ được thực hiện trong khoảng thời gian buổi học diễn ra.\\ Tutor không thể thay đổi điểm danh sau khi buổi học kết thúc \\ (trừ khi có xác nhận từ Khoa).\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Data requirement} &
+  \multicolumn{3}{l|}{Attendance(attID, scheduleID, studentID, status, attTime)} &
+   \\ \cline{1-4}
+\end{tabular}
+\caption{Bảng đặc tả chức năng điểm danh sinh viên}
+\end{table}
 \end{samepage}
 
 %========================================================================================
