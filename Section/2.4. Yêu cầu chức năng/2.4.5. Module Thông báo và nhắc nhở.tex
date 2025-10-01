@@ -79,7 +79,77 @@
 \newpage
 \subsubsection*{Use Case 12: Gửi nhắc nhở buổi học}
 \begin{samepage}
-
+\begin{table}[h!]
+\begin{tabular}{|l|lll|l}
+\cline{1-4}
+\textbf{ID} &
+  \multicolumn{3}{l|}{UC-12} &
+   \\ \cline{1-4}
+\textbf{Tên} &
+  \multicolumn{3}{l|}{Gửi thông báo lịch học} &
+   \\ \cline{1-4}
+\textbf{Mô tả} &
+  \multicolumn{3}{l|}{Hệ thống gửi nhắc nhở cho SV và Tutor trước khi buổi học bắt đầu.} &
+   \\ \cline{1-4}
+\textbf{Actor chính} &
+  \multicolumn{3}{l|}{Hệ thống} &
+   \\ \cline{1-4}
+\textbf{Actor phụ} &
+  \multicolumn{3}{l|}{Sinh viên, Tutor} &
+   \\ \cline{1-4}
+\textbf{Tiền điều kiện} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Lịch học đã được xác nhận (UC-09).\\ Buổi học chưa diễn ra.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Hậu điều kiện} &
+  \multicolumn{3}{l|}{SV và Tutor nhận được nhắc nhở kịp thời.} &
+   \\ \cline{1-4}
+\multirow{4}{*}{\textbf{Luồng sự kiện}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{1} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Quét DB tìm lịch học sắp diễn ra. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Tạo nhắc nhở (ngày, giờ, môn học, phòng học\\ /link online).\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Gửi nhắc nhở cho SV và Tutor. &
+   \\ \cline{1-4}
+\multirow{3}{*}{\textbf{Luồng thay thế}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2a} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Nếu buổi học đã bị hủy → Hệ thống không gửi \\ nhắc nhở.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4a} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Nếu SV/Tutor tắt thông báo → Hệ thống chỉ lưu \\ nhắc nhở trong mục “Thông báo” trên app.\end{tabular} &
+   \\ \cline{1-4}
+\textbf{Ngoại lệ} &
+  \multicolumn{3}{l|}{Hệ thống lỗi server vào thời điểm gửi → nhắc nhở không được gửi.} &
+   \\ \cline{1-4}
+\textbf{Business Rules} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Nhắc nhở gửi 2 lần: 24h trước và 1h trước buổi học.\\ Người dùng có thể tùy chỉnh kênh nhận nhắc nhở (email, dashboard).\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Data requirement} &
+  \multicolumn{3}{l|}{Reminder(reminderID, scheduleID, userID, type, sendTime, status)} &
+   \\ \cline{1-4}
+\end{tabular}
+\caption{Bảng đặc tả chức năng gửi nhắc nhở buổi học}
+\end{table}
 \end{samepage}
 
 %========================================================================================
