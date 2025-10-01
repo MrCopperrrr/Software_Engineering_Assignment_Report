@@ -89,7 +89,107 @@
 \newpage
 \subsubsection*{Use Case 09: Đặt lịch học (SV)}
 \begin{samepage}
-
+\begin{table}[h!]
+\begin{tabular}{|l|lll|l}
+\cline{1-4}
+\textbf{ID} &
+  \multicolumn{3}{l|}{UC-09} &
+   \\ \cline{1-4}
+\textbf{Tên} &
+  \multicolumn{3}{l|}{Đặt lịch học (SV)} &
+   \\ \cline{1-4}
+\textbf{Mô tả} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Sinh viên đặt lịch học cố định với Tutor đã được ghép cho môn học. \\ Lịch này được áp dụng xuyên suốt môn học cho đến khi kết thúc, không \\ cần đăng ký lại từng buổi.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Actor chính} &
+  \multicolumn{3}{l|}{Sinh viên} &
+   \\ \cline{1-4}
+\textbf{Actor phụ} &
+  \multicolumn{3}{l|}{Hệ thống} &
+   \\ \cline{1-4}
+\textbf{Tiền điều kiện} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}SV đã đăng ký chương trình học và đã được ghép Tutor cho môn học \\ (UC-06 hoặc UC-07). \\ Tutor đã khai báo lịch rảnh (UC-08).\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Hậu điều kiện} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Một lịch học cố định được lưu vào DB, gắn với cặp SV – Tutor – Môn \\ học. \\ Lịch này được lặp lại tự động trong suốt thời gian môn học diễn ra.\end{tabular}} &
+   \\ \cline{1-4}
+\multirow{9}{*}{\textbf{Luồng sự kiện}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{1} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  Đăng nhập, chọn chức năng “Đặt lịch học” &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Hiển thị danh sách môn học mà SV đã được \\ ghép Tutor.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  Chọn môn học. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Hiển thị danh sách slot rảnh của Tutor. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{5} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  \begin{tabular}[c]{@{}l@{}}Chọn 1 slot cố định (ngày trong tuần + \\ khung giờ) để học.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{6} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Kiểm tra: \\ Slot còn chỗ (\textless maxSV/slot). \\ SV không có lịch học khác trùng giờ.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{7} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Lưu lịch cố định này vào DB (gắn với môn \\ học+ Tutor + SV).\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{8} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Gửi thông báo xác nhận cho SV và Tutor. &
+   \\ \cline{1-4}
+\multirow{4}{*}{\textbf{Luồng thay thế}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4a} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Không có slot rảnh phù hợp \\ → báo “Chưa có lịch khả dụng”.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{6a} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Slot đã full → báo “Lịch không khả dụng, \\ vui lòng chọn slot khác”.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{6b} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}SV có lịch học khác trùng giờ → báo lỗi, \\ yêu cầu chọn lại.\end{tabular} &
+   \\ \cline{1-4}
+\textbf{Ngoại lệ} &
+  \multicolumn{3}{l|}{Hệ thống lỗi khi lưu DB → hiển thị “Đặt lịch thất bại, thử lại sau”.} &
+   \\ \cline{1-4}
+\textbf{Business Rules} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Mỗi môn học, SV chỉ được đặt 1 lịch học cố định với Tutor. \\ Lịch học cố định sẽ được lặp lại hàng tuần cho đến khi kết thúc môn. \\ SV phải đặt lịch trước ít nhất 1 tuần trước buổi học đầu tiên. \\ Tutor có thể dạy nhiều SV trong cùng slot, nhưng không vượt quá giới \\ hạn maxSV.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Data requirement} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Schedule(scheduleID, tutorID, studentID, subjectID, date, startTime, \\ endTime, status)\end{tabular}} &
+   \\ \cline{1-4}
+\end{tabular}
+\caption{Bảng đặc tả chức năng đặt lịch học (SV)}
+\end{table}
 \end{samepage}
 
 %========================================================================================
