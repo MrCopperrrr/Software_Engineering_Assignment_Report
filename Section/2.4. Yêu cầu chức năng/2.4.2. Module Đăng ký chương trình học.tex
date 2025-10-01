@@ -104,7 +104,102 @@
 \newpage
 \subsubsection*{Use Case 05: Hủy đăng ký môn học}
 \begin{samepage}
-
+\begin{table}[h!]
+\begin{tabular}{|l|lll|l}
+\cline{1-4}
+\textbf{ID} &
+  \multicolumn{3}{l|}{UC-05} &
+   \\ \cline{1-4}
+\textbf{Tên} &
+  \multicolumn{3}{l|}{Hủy đăng ký môn học} &
+   \\ \cline{1-4}
+\textbf{Mô tả} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Sinh viên hủy môn học đã đăng ký nếu không còn nhu cầu hoặc muốn \\ đổi môn khác.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Actor chính} &
+  \multicolumn{3}{l|}{Sinh viên} &
+   \\ \cline{1-4}
+\textbf{Actor phụ} &
+  \multicolumn{3}{l|}{Hệ thống} &
+   \\ \cline{1-4}
+\textbf{Tiền điều kiện} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Môn học chưa bắt đầu và còn ít nhất 1 tuần trước khi bắt đầu buổi \\ học đầu tiên\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Hậu điều kiện} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Thông tin đăng ký được cập nhật (status = Cancelled) trong DB. \\ Slot đăng ký được giải phóng, SV có thể đăng ký môn khác thay thế \\ (UC-04).\end{tabular}} &
+   \\ \cline{1-4}
+\multirow{9}{*}{\textbf{Luồng sự kiện}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{1} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  Đăng nhập hệ thống &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  Chọn chức năng “Hủy đăng ký môn học”. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Hiển thị danh sách môn học mà sinh viên đã \\ đăng ký\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  Chọn 1 môn học muốn hủy &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{5} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Yêu cầu xác nhận thao tác &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{6} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  Xác nhận hủy &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{7} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Cập nhật Database, đổi trạng thái đăng ký \\ thành "Cancelled"\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{8} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Hiển thị thông báo "Hủy đăng ký thành công" &
+   \\ \cline{1-4}
+\multirow{3}{*}{\textbf{Luồng thay thế}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3a} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Phát hiện SV chưa đăng ký môn nào \\ → hiển thị “Không có môn để hủy”.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{5a} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  \begin{tabular}[c]{@{}l@{}}Bấm “Không đồng ý” khi xác nhận hủy → Hệ \\ thống quay lại danh sách môn đã đăng ký. \\ ( quay lại bước 3.)\end{tabular} &
+   \\ \cline{1-4}
+\textbf{Ngoại lệ} &
+  \multicolumn{3}{l|}{Hệ thống lỗi khi cập nhật DB → hiển thị “Hủy thất bại, thử lại sau”.} &
+   \\ \cline{1-4}
+\textbf{Business Rules} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}SV chỉ có thể hủy môn học chưa bắt đầu trước 1 tuần. Sau khi hủy, \\ SV có thể đăng ký môn khác miễn tổng số môn $\leq$ 4 (UC-04).\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Data requirement} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}ProgramRegistration(regID, studentID, subjectID, purpose, regDate, \\ status) \\ (cập nhật status = “Cancelled”).\end{tabular}} &
+   \\ \cline{1-4}
+\end{tabular}
+\caption{Bảng đặc tả chức năng hủy đăng ký môn học}
+\end{table}
 \end{samepage}
 
 %========================================================================================
