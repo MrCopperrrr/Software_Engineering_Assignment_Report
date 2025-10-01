@@ -1,7 +1,87 @@
 \newpage
 \subsubsection*{Use Case 08: Tạo lịch rảnh (Tutor)}
 \begin{samepage}
-
+\begin{table}[h!]
+\begin{tabular}{|l|lll|l}
+\cline{1-4}
+\textbf{ID} &
+  \multicolumn{3}{l|}{UC-08} &
+   \\ \cline{1-4}
+\textbf{Tên} &
+  \multicolumn{3}{l|}{Tạo lịch rảnh (Tutor)} &
+   \\ \cline{1-4}
+\textbf{Mô tả} &
+  \multicolumn{3}{l|}{Tutor khai báo thời gian rảnh để sinh viên có thể đặt lịch học.} &
+   \\ \cline{1-4}
+\textbf{Actor chính} &
+  \multicolumn{3}{l|}{Tutor} &
+   \\ \cline{1-4}
+\textbf{Actor phụ} &
+  \multicolumn{3}{l|}{Hệ thống} &
+   \\ \cline{1-4}
+\textbf{Tiền điều kiện} &
+  \multicolumn{3}{l|}{Tutor đã đăng ký tài khoản và hồ sơ hợp lệ.} &
+   \\ \cline{1-4}
+\textbf{Hậu điều kiện} &
+  \multicolumn{3}{l|}{Lịch rảnh được lưu trong DB và hiển thị cho SV lựa chọn.} &
+   \\ \cline{1-4}
+\multirow{6}{*}{\textbf{Luồng sự kiện}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{1} &
+  \multicolumn{1}{l|}{Tutor} &
+  Đăng nhập, chọn chức năng “Tạo lịch rảnh”. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2} &
+  \multicolumn{1}{l|}{Tutor} &
+  Nhập ngày, giờ, hình thức học (online/offline). &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Kiểm tra định dạng dữ liệu và phát hiện trùng \\ lặp lịch.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Lưu lịch rảnh vào DB. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{5} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Hiển thị thông báo “Tạo lịch rảnh thành công”. &
+   \\ \cline{1-4}
+\multirow{3}{*}{\textbf{Luồng thay thế}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2a} &
+  \multicolumn{1}{l|}{Tutor} &
+  Bỏ trống ngày/giờ → Hệ thống yêu cầu nhập lại. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3a} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Phát hiện lịch rảnh đã tồn tại → hiển thị lỗi, \\ không lưu.\end{tabular} &
+   \\ \cline{1-4}
+\textbf{Ngoại lệ} &
+  \multicolumn{3}{l|}{Hệ thống lỗi DB khi lưu → hiển thị “Tạo lịch thất bại, thử lại sau”.} &
+   \\ \cline{1-4}
+\textbf{Business Rules} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Tutor chỉ có thể tạo lịch rảnh trong khung giờ hợp lệ của trường \\ (ví dụ 7h – 21h).\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Data requirement} &
+  \multicolumn{3}{l|}{Availability(availID, tutorID, date, startTime, endTime, mode, status)} &
+   \\ \cline{1-4}
+\end{tabular}
+\caption{Bảng đặc tả chức năng tạo lịch rảnh (Tutor)}
+\end{table}
 \end{samepage}
 
 %========================================================================================
