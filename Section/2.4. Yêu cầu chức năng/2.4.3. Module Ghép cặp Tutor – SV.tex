@@ -108,6 +108,8 @@
 \end{table}
 \end{samepage}
 
+\newpage
+\begin{samepage}
 \begin{table}[h!]
 \begin{tabular}{|l|lll|l}
 \textbf{Business Rules} &
@@ -119,12 +121,127 @@
 \end{tabular}
 \caption{Bảng đặc tả chức năng ghép thủ công (SV chọn Tutor cho từng môn học)}
 \end{table}
+\end{samepage}
+
 %========================================================================================
 
 \newpage
 \subsubsection*{Use Case 07: Ghép tự động (Hệ thống đề xuất Tutor)}
 \begin{samepage}
-
+\begin{table}[h!]
+\begin{tabular}{|l|lll|l}
+\cline{1-4}
+\textbf{ID} &
+  \multicolumn{3}{l|}{UC-07} &
+   \\ \cline{1-4}
+\textbf{Tên} &
+  \multicolumn{3}{l|}{Ghép tự động (hệ thống đề xuất Tutor theo từng môn học)} &
+   \\ \cline{1-4}
+\textbf{Mô tả} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Hệ thống tự động tìm và ghép Tutor phù hợp với SV cho từng môn học \\ dựa trên lịch rảnh của Tutor và ưu tiên mà SV chọn (VD: lịch 2-4-6, \\ buổi tối). \\ Một SV có thể được ghép với nhiều Tutor khác nhau, mỗi Tutor phụ \\ trách một môn riêng.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Actor chính} &
+  \multicolumn{3}{l|}{Sinh viên} &
+   \\ \cline{1-4}
+\textbf{Actor phụ} &
+  \multicolumn{3}{l|}{Tutor, hệ thống} &
+   \\ \cline{1-4}
+\textbf{Tiền điều kiện} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}SV đã đăng ký một hoặc nhiều môn học trong chương trình (UC-04). \\ Tutor đã cập nhật lịch rảnh và hồ sơ môn học (UC-08).\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Hậu điều kiện} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}SV được ghép thành công với ít nhất 1 Tutor cho môn học đã chọn.\\ Nếu SV học nhiều môn, hệ thống có thể ghép nhiều Tutor khác nhau \\ (mỗi môn 1 Tutor). \\ Kết quả lưu vào DB.\\ SV có thể hủy ghép với 1 môn cụ thể và thử lại mà không ảnh hưởng \\ các môn khác.\end{tabular}} &
+   \\ \cline{1-4}
+\multirow{11}{*}{\textbf{Luồng sự kiện}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{1} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  Đăng nhập, chọn chức năng “Ghép Tutor tự động”. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Hiển thị danh sách các môn học SV đã đăng ký. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  Chọn 1 môn để thực hiện ghép Tutor &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Hiển thị form để SV chọn ưu tiên cho môn đó:\\ Khung lịch mong muốn (VD: 2-4-6, 3-5-7, \\ buổi sáng/chiều/tối).\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{5} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  Xác nhận lựa chọn. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{6} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Lấy danh sách Tutor khả dụng từ DB theo tiêu chí:\\ Có lịch rảnh trùng với ưu tiên.\\ Có chuyên môn đúng môn học SV vừa chọn.\\ Còn slot trống.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{7} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Chạy thuật toán so khớp → chọn Tutor phù hợp \\ nhất cho môn học đó.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{8} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Lưu thông tin ghép cặp vào DB với subjectID \\ + tutorID.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{9} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Gửi thông báo kết quả ghép cho SV và Tutor. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{10} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  Muốn ghép thêm môn khác → lặp lại quy trình. &
+   \\ \cline{1-4}
+\multirow{3}{*}{\textbf{Luồng thay thế}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{6a} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Không tìm thấy Tutor phù hợp cho môn học → \\ hiển thị thông báo “Chưa có Tutor phù hợp, vui \\ lòng thử lại sau”.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{9a} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Nếu SV không hài lòng → chọn chức năng \\ “Hủy ghép” (UC-10) cho môn học đó, rồi \\ quay lại UC-07 để chạy lại matching.\end{tabular} &
+   \\ \cline{1-4}
+\end{tabular}
+% \caption{Bảng đặc tả chức năng ghép tự động (hệ thống đề xuất Tutor theo từng môn học)}
+\end{table}
 \end{samepage}
 
+\newpage
+\begin{samepage}
+\begin{table}[h!]
+\begin{tabular}{|l|lll|l}
+\textbf{Ngoại lệ} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Hệ thống lỗi kết nối khi gửi yêu cầu đến Tutor → hiển thị “Thao tác thất \\ bại, thử lại sau”.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Business Rules} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Một SV có thể được ghép với nhiều Tutor khác nhau cho các môn khác \\ nhau. \\ Với mỗi môn học, tại 1 thời điểm chỉ có 1 Tutor (manual hoặc auto).\\ Một SV không được ghép song song 2 Tutor cho cùng một môn (trừ \\ khi hủy ghép trước đó). \\ Tutor không thể vượt quá số lượng SV tối đa cho môn mình phụ trách. \\ SV chỉ được chọn lịch nằm trong slot rảnh do Tutor khai báo.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Data requirement} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Matching(matchID,studentID,tutorID,subjectID,method,status,createdAt\\ ,preferences) \\ method = "manual" hoặc "auto". \\ subjectID cho phép 1 SV có nhiều bản ghi ghép (mỗi môn 1 bản ghi, \\ mỗi bản ghi có 1 Tutor khác nhau).\end{tabular}} &
+   \\ \cline{1-4}
+\end{tabular}
+\caption{Bảng đặc tả chức năng ghép tự động (hệ thống đề xuất Tutor theo từng môn học)}
+\end{table}
+\end{samepage}
 %========================================================================================
