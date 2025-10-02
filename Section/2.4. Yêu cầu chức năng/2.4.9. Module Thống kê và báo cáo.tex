@@ -167,7 +167,82 @@
 \newpage
 \subsubsection*{Use Case 22: Báo cáo tổng hợp (Khoa, PCTSV, PĐT)}
 \begin{samepage}
-
+\begin{table}[h!]
+\begin{tabular}{|l|lll|l}
+\cline{1-4}
+\textbf{ID} &
+  \multicolumn{3}{l|}{UC-22} &
+   \\ \cline{1-4}
+\textbf{Tên} &
+  \multicolumn{3}{l|}{Báo cáo tổng hợp (Khoa, PCTSV, PĐT)} &
+   \\ \cline{1-4}
+\textbf{Mô tả} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Khoa, PCTSV và PĐT có thể xem báo cáo tổng hợp toàn hệ thống sau \\ khi dữ liệu từ các báo cáo con (SV, Tutor) đã được xác nhận.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Actor chính} &
+  \multicolumn{3}{l|}{Khoa / PCTSV / PĐT} &
+   \\ \cline{1-4}
+\textbf{Actor phụ} &
+  \multicolumn{3}{l|}{Hệ thống} &
+   \\ \cline{1-4}
+\textbf{Tiền điều kiện} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Các báo cáo học tập SV (UC-20) và chất lượng Tutor (UC-21) đã \\ được xác nhận.\\ Người dùng có quyền xem báo cáo tổng hợp.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Hậu điều kiện} &
+  \multicolumn{3}{l|}{Báo cáo tổng hợp hiển thị cho cấp quản lý, có thể xuất file.} &
+   \\ \cline{1-4}
+\multirow{6}{*}{\textbf{Luồng sự kiện}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{1} &
+  \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Người dùng \\ (Khoa/PCTSV\\ /PĐT)\end{tabular}} &
+  Đăng nhập, chọn “Báo cáo tổng hợp”. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Lấy dữ liệu từ các báo cáo đã xác nhận \\ (UC-20, UC-21).\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Tổng hợp theo phạm vi:\\ Khoa: theo môn/Tutor/SV trong khoa.\\ PCTSV: tình hình hỗ trợ SV toàn trường.\\ PĐT: hiệu quả chương trình, đề xuất cải tiến.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Hiển thị báo cáo dạng bảng và biểu đồ. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{5} &
+  \multicolumn{1}{l|}{Người dùng} &
+  Có thể export file Excel/PDF. &
+   \\ \cline{1-4}
+\multirow{2}{*}{\textbf{Luồng thay thế}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2a} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Nếu một số báo cáo chưa xác nhận → Hệ \\ thống hiển thị cảnh báo nhưng vẫn hiển thị \\ dữ liệu đã có.\end{tabular} &
+   \\ \cline{1-4}
+\textbf{Ngoại lệ} &
+  \multicolumn{3}{l|}{Lỗi khi truy xuất DB lớn → hiển thị “Không thể tạo báo cáo, thử lại sau”.} &
+   \\ \cline{1-4}
+\textbf{Business Rules} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Khoa chỉ thấy dữ liệu thuộc khoa.\\ PCTSV/PĐT thấy dữ liệu toàn trường.\\ Báo cáo tổng hợp được cập nhật theo kỳ (tuần/tháng) sau khi dữ liệu đã \\ được xác nhận.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Data requirement} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}StudentReport(reportID, studentID, subjectID, totalSessions,\\ attendedSessions, absentSessions, attendanceRate, tutorFeedback, \\ lastUpdated, approvedBy, approvedAt)\\ TutorReport(reportID, tutorID,totalSessions, completedSessions, \\ cancelledSessions, avgRating, totalFeedback, positiveRate, successRate, \\ lastUpdated, approvedBy, approvedAt )\\ SystemReport(reportID, type, scope, approvedBy, approvedAt, \\ generatedAt, filePath)\end{tabular}} &
+   \\ \cline{1-4}
+\end{tabular}
+\caption{Bảng đặc tả chức năng báo cáo tổng hợp (Khoa, PCTSV, PĐT)}
+\end{table}
 \end{samepage}
 
 %========================================================================================
