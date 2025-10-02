@@ -1,7 +1,92 @@
 \newpage
 \subsubsection*{Use Case 17: Sinh viên đánh giá Tutor}
 \begin{samepage}
-
+\begin{table}[h!]
+\begin{tabular}{|l|lll|l}
+\cline{1-4}
+\textbf{ID} &
+  \multicolumn{3}{l|}{UC-17} &
+   \\ \cline{1-4}
+\textbf{Tên} &
+  \multicolumn{3}{l|}{SV đánh giá Tutor} &
+   \\ \cline{1-4}
+\textbf{Mô tả} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Sau khi môn học kết thúc, sinh viên có thể đánh giá chất lượng Tutor để \\ phản hồi về hiệu quả hỗ trợ.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Actor chính} &
+  \multicolumn{3}{l|}{Sinh viên} &
+   \\ \cline{1-4}
+\textbf{Actor phụ} &
+  \multicolumn{3}{l|}{Tutor, Hệ thống, Khoa/BM} &
+   \\ \cline{1-4}
+\textbf{Tiền điều kiện} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Môn học đã hoàn tất.\\ SV đã tham gia (có điểm danh $\geq$ 1 buổi trong môn).\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Hậu điều kiện} &
+  \multicolumn{3}{l|}{Feedback được lưu vào hệ thống và gắn với hồ sơ Tutor.} &
+   \\ \cline{1-4}
+\multirow{7}{*}{\textbf{Luồng sự kiện}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{1} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  Đăng nhập và chọn “Đánh giá Tutor”. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Hiển thị danh sách môn học đã hoàn tất. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  Chọn môn học muốn đánh giá. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  Nhập rating (1–5, bắt buộc) và nhận xét (tùy chọn). &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{5} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Lưu đánh giá vào DB. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{6} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Hiển thị thông báo “Đánh giá thành công”. &
+   \\ \cline{1-4}
+\multirow{3}{*}{\textbf{Luồng thay thế}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2a} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Nếu không có môn học nào đã hoàn tất → hiển \\ thị “Chưa có môn học để đánh giá”.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4a} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  Nếu SV bỏ trống rating → hệ thống nhắc nhập. &
+   \\ \cline{1-4}
+\textbf{Ngoại lệ} &
+  \multicolumn{3}{l|}{Lỗi khi lưu DB → hiển thị “Đánh giá thất bại, thử lại sau”.} &
+   \\ \cline{1-4}
+\textbf{Business Rules} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Mỗi SV chỉ được đánh giá 1 lần cho mỗi môn.\\ Rating bắt buộc, nhận xét không bắt buộc.\\ Feedback SV gửi → Tutor \& Khoa đều xem được.\\ Không cho sửa sau khi gửi.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Data requirement} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Feedback(feedbackID, fromUserID, toUserID, subjectID, roleFrom,\\  roleTo, rating, comment, createdAt)\\  (roleFrom = "SV", roleTo = "Tutor")\end{tabular}} &
+   \\ \cline{1-4}
+\end{tabular}
+\caption{Bảng đặc tả chức năng sinh viên đánh giá Tutor}
+\end{table}
 \end{samepage}
 
 %========================================================================================
