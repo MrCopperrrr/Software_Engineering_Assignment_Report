@@ -84,7 +84,82 @@
 \newpage
 \subsubsection*{Use Case 21: Báo cáo chất lượng Tutor}
 \begin{samepage}
-
+\begin{table}[h!]
+\begin{tabular}{|l|lll|l}
+\cline{1-4}
+\textbf{ID} &
+  \multicolumn{3}{l|}{UC-21} &
+   \\ \cline{1-4}
+\textbf{Tên} &
+  \multicolumn{3}{l|}{Báo cáo chất lượng Tutor} &
+   \\ \cline{1-4}
+\textbf{Mô tả} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Khoa tổng hợp và xác nhận báo cáo chất lượng giảng dạy của Tutor dựa \\ trên feedback từ SV và dữ liệu buổi học.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Actor chính} &
+  \multicolumn{3}{l|}{Khoa} &
+   \\ \cline{1-4}
+\textbf{Actor phụ} &
+  \multicolumn{3}{l|}{Hệ thống, Tutor} &
+   \\ \cline{1-4}
+\textbf{Tiền điều kiện} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Tutor đã có ít nhất 1 buổi học hoàn tất.\\ Có feedback từ SV.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Hậu điều kiện} &
+  \multicolumn{3}{l|}{Báo cáo chất lượng được xác nhận và hiển thị cho Tutor.} &
+   \\ \cline{1-4}
+\multirow{6}{*}{\textbf{Luồng sự kiện}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{1} &
+  \multicolumn{1}{l|}{Khoa} &
+  Đăng nhập, chọn “Báo cáo chất lượng Tutor”. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Lấy dữ liệu feedback, điểm danh, trạng thái \\ buổi học.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Tổng hợp báo cáo sơ bộ (điểm trung bình, số \\ SV đánh giá, tỷ lệ buổi thành công).\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4} &
+  \multicolumn{1}{l|}{Khoa} &
+  Kiểm tra và xác nhận báo cáo. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{5} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Hiển thị báo cáo cho Tutor và cho phép SV xuất \\ file (PDF/Excel).\end{tabular} &
+   \\ \cline{1-4}
+\multirow{2}{*}{\textbf{Luồng thay thế}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2a} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Nếu không có feedback → Hệ thống hiển thị \\ “Chưa có dữ liệu đánh giá”.\end{tabular} &
+   \\ \cline{1-4}
+\textbf{Ngoại lệ} &
+  \multicolumn{3}{l|}{Lỗi khi truy xuất DB → hiển thị “Không thể tạo báo cáo”} &
+   \\ \cline{1-4}
+\textbf{Business Rules} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Tutor chỉ xem được báo cáo của chính mình.\\ Khoa có quyền xem báo cáo của tất cả Tutor trong khoa.\\ Báo cáo phải có trạng thái xác nhận trước khi công bố cho Tutor.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Data requirement} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Feedback(feedbackID, tutorID, rating, comment)\\ TutorReport(tutorID, avgRating, totalFeedback, successRate, \\ approvedBy, approvedAt, generatedAt)\end{tabular}} &
+   \\ \cline{1-4}
+\end{tabular}
+\caption{Bảng đặc tả chức năng báo cáo chất lượng Tutor}
+\end{table}
 \end{samepage}
 
 %========================================================================================
