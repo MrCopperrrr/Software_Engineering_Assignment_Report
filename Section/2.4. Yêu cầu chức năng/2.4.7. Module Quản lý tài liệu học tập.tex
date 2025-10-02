@@ -1,7 +1,87 @@
 \newpage
 \subsubsection*{Use Case 15: Quản lý tài liệu (Tutor)}
 \begin{samepage}
-
+\begin{table}[h!]
+\begin{tabular}{|l|lll|l}
+\cline{1-4}
+\textbf{ID} &
+  \multicolumn{3}{l|}{UC-15} &
+   \\ \cline{1-4}
+\textbf{Tên} &
+  \multicolumn{3}{l|}{Quản lý tài liệu (Tutor)} &
+   \\ \cline{1-4}
+\textbf{Mô tả} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Tutor quản lý tài liệu học tập (slide, đề cương, bài tập) cho môn học hoặc \\ buổi học: upload, chỉnh sửa, xóa.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Actor chính} &
+  \multicolumn{3}{l|}{Tutor} &
+   \\ \cline{1-4}
+\textbf{Actor phụ} &
+  \multicolumn{3}{l|}{Sinh viên, Hệ thống} &
+   \\ \cline{1-4}
+\textbf{Tiền điều kiện} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Tutor đã đăng nhập hệ thống.\\ Buổi học/chương trình học đã được xác nhận.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Hậu điều kiện} &
+  \multicolumn{3}{l|}{Tài liệu được lưu trữ trong hệ thống và hiển thị cho SV liên quan.} &
+   \\ \cline{1-4}
+\multirow{4}{*}{\textbf{Luồng sự kiện}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{1} &
+  \multicolumn{1}{l|}{Tutor} &
+  Đăng nhập và chọn “Quản lý tài liệu”. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2} &
+  \multicolumn{1}{l|}{Tutor} &
+  Chọn môn học/buổi học liên quan. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3} &
+  \multicolumn{1}{l|}{Tutor} &
+  \begin{tabular}[c]{@{}l@{}}Chọn thao tác:\\ Upload: chọn file (PDF, PPT, DOCX), nhập mô tả \\ → Hệ thống kiểm tra định dạng, dung lượng → \\ lưu file + metadata → hiển thị “Upload thành \\ công”.\\ Chỉnh sửa: chọn tài liệu → cập nhật tên/mô tả/file \\ mới → Hệ thống kiểm tra hợp lệ → cập nhật DB \\ → hiển thị “Cập nhật thành công”.\\ Xóa: chọn tài liệu → xác nhận → Hệ thống xóa \\ bản ghi và file → hiển thị “Xóa thành công”.\end{tabular} &
+   \\ \cline{1-4}
+\multirow{5}{*}{\textbf{Luồng thay thế}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3a} &
+  \multicolumn{1}{l|}{Tutor} &
+  \begin{tabular}[c]{@{}l@{}}Không nhập mô tả khi upload → Hệ thống nhắc \\ nhập lại.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3b} &
+  \multicolumn{1}{l|}{Tutor} &
+  File trùng tên → yêu cầu đổi tên &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3c} &
+  \multicolumn{1}{l|}{Tutor} &
+  File sai định dạng → báo lỗi. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3d} &
+  \multicolumn{1}{l|}{Tutor} &
+  \begin{tabular}[c]{@{}l@{}}File vượt dung lượng tối đa (ví dụ \textgreater 50MB) \\ → từ chối upload.\end{tabular} &
+   \\ \cline{1-4}
+\textbf{Ngoại lệ} &
+  \multicolumn{3}{l|}{Hệ thống lỗi khi lưu file/DB → hiển thị “Thao tác thất bại, thử lại sau”.} &
+   \\ \cline{1-4}
+\textbf{Business Rules} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Tài liệu phải gắn với một môn học hoặc buổi học cụ thể.\\ Tutor chỉ được chỉnh sửa/xóa tài liệu do chính mình upload.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Data requirement} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Materials(materialID, tutorID, subjectID, sessionID, fileName, filePath, \\ fileSize, description, uploadedAt, updatedAt)\end{tabular}} &
+   \\ \cline{1-4}
+\end{tabular}
+\caption{Bảng đặc tả chức năng quản lý tài liệu (Tutor)}
+\end{table}
 \end{samepage}
 
 %========================================================================================
