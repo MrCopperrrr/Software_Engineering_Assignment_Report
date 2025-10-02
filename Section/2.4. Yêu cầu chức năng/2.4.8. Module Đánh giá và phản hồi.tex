@@ -187,7 +187,87 @@
 \newpage
 \subsubsection*{Use Case 19: Khoa/BM tổng hợp đánh giá}
 \begin{samepage}
-
+\begin{table}[h!]
+\begin{tabular}{|l|lll|l}
+\cline{1-4}
+\textbf{ID} &
+  \multicolumn{3}{l|}{UC-19} &
+   \\ \cline{1-4}
+\textbf{Tên} &
+  \multicolumn{3}{l|}{Khoa/BM tổng hợp đánh giá} &
+   \\ \cline{1-4}
+\textbf{Mô tả} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Khoa/BM có thể xem báo cáo tổng hợp về đánh giá hai chiều:\\ SV đánh giá Tutor và Tutor đánh giá SV\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Actor chính} &
+  \multicolumn{3}{l|}{Khoa/BM} &
+   \\ \cline{1-4}
+\textbf{Actor phụ} &
+  \multicolumn{3}{l|}{Hệ thống, Tutor, SV} &
+   \\ \cline{1-4}
+\textbf{Tiền điều kiện} &
+  \multicolumn{3}{l|}{Người dùng có quyền Khoa/BM hoặc Admin.} &
+   \\ \cline{1-4}
+\textbf{Hậu điều kiện} &
+  \multicolumn{3}{l|}{Báo cáo tổng hợp được hiển thị trên giao diện hoặc xuất file.} &
+   \\ \cline{1-4}
+\multirow{7}{*}{\textbf{Luồng sự kiện}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{1} &
+  \multicolumn{1}{l|}{Khoa/BM} &
+  Đăng nhập hệ thống. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2} &
+  \multicolumn{1}{l|}{Khoa/BM} &
+  Chọn chức năng “Xem báo cáo đánh giá”. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Truy xuất dữ liệu feedback từ DB (theo từng \\ Tutor và SV).\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Tính toán các chỉ số:\\ Đối với Tutor: điểm trung bình, số lượt đánh giá, \\ \% SV hài lòng.\\ Đối với SV: điểm trung bình, số môn đã học, \\ tiêu chí chuyên cần/thái độ/hợp tác.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{5} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Hiển thị báo cáo dạng bảng/biểu đồ. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{6} &
+  \multicolumn{1}{l|}{Người dùng} &
+  Có thể chọn xuất file (Excel/PDF). &
+   \\ \cline{1-4}
+\multirow{2}{*}{\textbf{Luồng thay thế}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3a} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Nếu chưa có dữ liệu đánh giá (VD Tutor chưa \\ từng dạy, SV chưa từng học) → Hệ thống hiển \\ thị “Chưa có dữ liệu để báo cáo”.\end{tabular} &
+   \\ \cline{1-4}
+\textbf{Ngoại lệ} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Hệ thống lỗi khi truy vấn DB → hiển thị “Không thể lấy dữ liệu, thử \\ lại sau”\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Business Rules} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Chỉ Khoa/BM hoặc Admin mới được xem báo cáo.\\ Báo cáo phải hiển thị cả 2 chiều:\\ Đánh giá Tutor (từ SV) và đánh giá SV (từ Tutor).\\ Báo cáo cập nhật dữ liệu theo thời gian thực.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Data requirement} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}TutorReport(tutorID, avgRating, totalFeedback, positiveRate, \\ generatedAt)\\ StudentReport(studentID, avgRating, totalFeedback, criteriaStats, \\ generatedAt)\end{tabular}} &
+   \\ \cline{1-4}
+\end{tabular}
+\caption{Bảng đặc tả chức năng Khoa/BM tổng hợp đánh giá}
+\end{table}
 \end{samepage}
 
 %========================================================================================
