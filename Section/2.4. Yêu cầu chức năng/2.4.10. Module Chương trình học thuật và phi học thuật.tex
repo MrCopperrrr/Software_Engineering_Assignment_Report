@@ -172,7 +172,87 @@
 \newpage
 \subsubsection*{Use Case 25: SV đăng ký chương trình phi học thuật}
 \begin{samepage}
-
+\begin{table}[h!]
+\begin{tabular}{|l|lll|l}
+\cline{1-4}
+\textbf{ID} &
+  \multicolumn{3}{l|}{UC-25} &
+   \\ \cline{1-4}
+\textbf{Tên} &
+  \multicolumn{3}{l|}{SV đăng ký chương trình phi học thuật} &
+   \\ \cline{1-4}
+\textbf{Mô tả} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}SV đăng ký tham gia chương trình phi học thuật (kỹ năng mềm, hoạt \\ động ngoại khóa).\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Actor chính} &
+  \multicolumn{3}{l|}{Sinh viên} &
+   \\ \cline{1-4}
+\textbf{Actor phụ} &
+  \multicolumn{3}{l|}{Hệ thống, Tutor} &
+   \\ \cline{1-4}
+\textbf{Tiền điều kiện} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Tutor đã tạo chương trình phi học thuật.\\ SV đã có tài khoản hợp lệ.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Hậu điều kiện} &
+  \multicolumn{3}{l|}{SV được thêm vào danh sách tham gia của chương trình.} &
+   \\ \cline{1-4}
+\multirow{7}{*}{\textbf{Luồng sự kiện}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{1} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  \begin{tabular}[c]{@{}l@{}}Đăng nhập, chọn “Đăng ký chương trình phi học \\ thuật”.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Hiển thị danh sách chương trình phi học thuật khả \\ dụng.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  Chọn chương trình muốn tham gia &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Kiểm tra slot còn trống. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{5} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Lưu thông tin đăng ký và thêm SV vào danh sách. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{6} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Hiển thị thông báo “Đăng ký thành công”. &
+   \\ \cline{1-4}
+\textbf{Luồng thay thế} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{1-4}
+\textbf{} &
+  \multicolumn{1}{l|}{4a} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Phát hiện chương trình hết slot → hiển thị \\ “Chương trình đã đủ người”.\end{tabular} &
+   \\ \cline{1-4}
+\textbf{Ngoại lệ} &
+  \multicolumn{3}{l|}{Hệ thống lỗi khi lưu đăng ký → hiển thị “Thao tác thất bại, thử lại sau”.} &
+   \\ \cline{1-4}
+\textbf{Business Rules} &
+  \multicolumn{3}{l|}{SV có thể tham gia nhiều chương trình phi học thuật, tùy vào lịch học.} &
+   \\ \cline{1-4}
+\textbf{Data requirement} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}ProgramRegistration(regID, programID, studentID, registeredAt, status)\\ Liên kết với Program (type = phi học thuật).\end{tabular}} &
+   \\ \cline{1-4}
+\end{tabular}
+\caption{Bảng đặc tả chức năng SV đăng ký chương trình phi học thuật}
+\end{table}
 \end{samepage}
 
 %========================================================================================
