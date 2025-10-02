@@ -1,7 +1,82 @@
 \newpage
 \subsubsection*{Use Case 23: Tutor tạo chương trình học}
 \begin{samepage}
-
+\begin{table}[h!]
+\begin{tabular}{|l|lll|l}
+\cline{1-4}
+\textbf{ID} &
+  \multicolumn{3}{l|}{UC-23} &
+   \\ \cline{1-4}
+\textbf{Tên} &
+  \multicolumn{3}{l|}{Tutor tạo chương trình học} &
+   \\ \cline{1-4}
+\textbf{Mô tả} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Tutor tạo và công bố chương trình học mới (học thuật hoặc phi học thuật) \\ để SV đăng ký.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Actor chính} &
+  \multicolumn{3}{l|}{Tutor} &
+   \\ \cline{1-4}
+\textbf{Actor phụ} &
+  \multicolumn{3}{l|}{Hệ thống, SV} &
+   \\ \cline{1-4}
+\textbf{Tiền điều kiện} &
+  \multicolumn{3}{l|}{Tutor đã đăng nhập và được xác minh} &
+   \\ \cline{1-4}
+\textbf{Hậu điều kiện} &
+  \multicolumn{3}{l|}{Chương trình học được hiển thị cho SV.} &
+   \\ \cline{1-4}
+\multirow{6}{*}{\textbf{Luồng sự kiện}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{1} &
+  \multicolumn{1}{l|}{Tutor} &
+  Đăng nhập, chọn “Tạo chương trình học”. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2} &
+  \multicolumn{1}{l|}{Tutor} &
+  \begin{tabular}[c]{@{}l@{}}Nhập thông tin chương trình: loại (học thuật/phi \\ học thuật), tên, mô tả, thời lượng.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Kiểm tra thông tin hợp lệ &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Lưu và hiển thị chương trình trên hệ thống. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{5} &
+  \multicolumn{1}{l|}{Sinh viên} &
+  Có thể thấy chương trình để đăng ký. &
+   \\ \cline{1-4}
+\multirow{2}{*}{\textbf{Luồng thay thế}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2a} &
+  \multicolumn{1}{l|}{Tutor} &
+  \begin{tabular}[c]{@{}l@{}}Bỏ trống thông tin bắt buộc → Hệ thống nhắc \\ nhập lại.\end{tabular} &
+   \\ \cline{1-4}
+\textbf{Ngoại lệ} &
+  \multicolumn{3}{l|}{Hệ thống lỗi khi lưu → hiển thị “Tạo chương trình thất bại”.} &
+   \\ \cline{1-4}
+\textbf{Business Rules} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Tutor chỉ có thể tạo chương trình sau khi được Khoa phê duyệt.\\ Mỗi chương trình phải thuộc một loại: học thuật hoặc phi học thuật.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Data requirement} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Program(programID, tutorID, type, name, description, duration, slots, \\ createdAt, approvedBy, approvedAt, status)\end{tabular}} &
+   \\ \cline{1-4}
+\end{tabular}
+\caption{Bảng đặc tả chức năng báo cáo tổng hợp (Khoa, PCTSV, PĐT)}
+\end{table}
 \end{samepage}
 
 %========================================================================================
