@@ -89,7 +89,48 @@
 \newpage
 \subsubsection*{Use Case 16: Sinh viên tải tài liệu}
 \begin{samepage}
-
+\begin{table}[h!]
+\begin{tabular}{|l|lll|l}
+\cline{1-4}
+\textbf{ID}                              & \multicolumn{3}{l|}{UC-16}                                                                                                  &  \\ \cline{1-4}
+\textbf{Tên}                             & \multicolumn{3}{l|}{SV tải tài liệu}                                                                                        &  \\ \cline{1-4}
+\textbf{Mô tả}                           & \multicolumn{3}{l|}{Sinh viên tải tài liệu học tập do Tutor chia sẻ để phục vụ học tập.}                                    &  \\ \cline{1-4}
+\textbf{Actor chính}                     & \multicolumn{3}{l|}{Sinh viên}                                                                                              &  \\ \cline{1-4}
+\textbf{Actor phụ}                       & \multicolumn{3}{l|}{Tutor, Hệ thống}                                                                                        &  \\ \cline{1-4}
+\textbf{Tiền điều kiện} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}SV đã đăng nhập hệ thống.\\ Tutor đã upload ít nhất một tài liệu cho môn học. (UC-15).\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Hậu điều kiện}                   & \multicolumn{3}{l|}{SV tải xuống và sử dụng tài liệu học tập.}                                                              &  \\ \cline{1-4}
+\multirow{7}{*}{\textbf{Luồng sự kiện}}  & \multicolumn{1}{l|}{\textbf{Bước}} & \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} & \textbf{Mô tả}                           &  \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{1}             & \multicolumn{1}{l|}{Sinh viên}              & Đăng nhập, chọn môn học.                 &  \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{2}             & \multicolumn{1}{l|}{Hệ thống}               & Hiển thị danh sách tài liệu của môn học. &  \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{3}             & \multicolumn{1}{l|}{Sinh viên}              & Chọn file muốn tải.                      &  \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Kiểm tra quyền truy cập.\\ (SV thuộc lớp/buổi học đó).\end{tabular} &
+   \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{5}             & \multicolumn{1}{l|}{Hệ thống}               & Gửi file để SV tải về.                   &  \\ \cline{2-4}
+                                         & \multicolumn{1}{l|}{6}             & \multicolumn{1}{l|}{Sinh viên}              & Nhận và lưu file vào máy.                &  \\ \cline{1-4}
+\multirow{3}{*}{\textbf{Luồng thay thế}} & \multicolumn{1}{l|}{\textbf{Bước}} & \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} & \textbf{Mô tả}                           &  \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2a} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Nếu chưa có tài liệu → Hệ thống hiển thị “Chưa \\ có tài liệu được chia sẻ”.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4a} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Nếu SV không thuộc buổi học → Hệ thống hiển \\ thị “Bạn không có quyền tải tài liệu này”.\end{tabular} &
+   \\ \cline{1-4}
+\textbf{Ngoại lệ}                        & \multicolumn{3}{l|}{Hệ thống lỗi server khi gửi file → hiển thị “Tải xuống thất bại”.}                                      &  \\ \cline{1-4}
+\textbf{Business Rules} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}SV chỉ tải tài liệu thuộc môn học mình đã đăng ký.\\ Hệ thống ghi log mỗi lần SV tải tài liệu.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Data requirement}                & \multicolumn{3}{l|}{DownloadLog(logID, studentID, materialID, downloadTime, status)}                                        &  \\ \cline{1-4}
+\end{tabular}
+\caption{Bảng đặc tả chức năng sinh viên tải tài liệu}
+\end{table}
 \end{samepage}
 
 %========================================================================================
