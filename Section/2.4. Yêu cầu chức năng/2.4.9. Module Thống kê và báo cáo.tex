@@ -1,7 +1,82 @@
 \newpage
 \subsubsection*{Use Case 20: Báo cáo kết quả học tập SV}
 \begin{samepage}
-
+\begin{table}[h!]
+\begin{tabular}{|l|lll|l}
+\cline{1-4}
+\textbf{ID} &
+  \multicolumn{3}{l|}{UC-20} &
+   \\ \cline{1-4}
+\textbf{Tên} &
+  \multicolumn{3}{l|}{Báo cáo kết quả học tập SV} &
+   \\ \cline{1-4}
+\textbf{Mô tả} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Khoa tổng hợp và xác nhận kết quả học tập của SV sau khi môn học \\ kết thúc, sau đó hệ thống hiển thị cho SV.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Actor chính} &
+  \multicolumn{3}{l|}{Khoa} &
+   \\ \cline{1-4}
+\textbf{Actor phụ} &
+  \multicolumn{3}{l|}{Hệ thống, SV} &
+   \\ \cline{1-4}
+\textbf{Tiền điều kiện} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}SV đã tham gia ít nhất 1 buổi học có điểm danh.\\ Dữ liệu điểm danh, trạng thái buổi học, đánh giá Tutor đã được cập nhật.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Hậu điều kiện} &
+  \multicolumn{3}{l|}{Báo cáo đã được xác nhận bởi Khoa và hiển thị cho SV.} &
+   \\ \cline{1-4}
+\multirow{6}{*}{\textbf{Luồng sự kiện}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{1} &
+  \multicolumn{1}{l|}{Khoa} &
+  Đăng nhập, chọn “Tổng hợp kết quả học tập SV”. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Lấy dữ liệu điểm danh, trạng thái buổi học và \\ đánh giá Tutor.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Tạo báo cáo sơ bộ: số buổi đăng ký, số buổi tham \\ gia, số buổi vắng, \% tham gia, phản hồi từ Tutor.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4} &
+  \multicolumn{1}{l|}{Khoa} &
+  Kiểm tra và xác nhận báo cáo. &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{5} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Hiển thị báo cáo cho SV và cho phép SV xuất \\ file (PDF/Excel).\end{tabular} &
+   \\ \cline{1-4}
+\multirow{2}{*}{\textbf{Luồng thay thế}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2a} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Nếu SV chưa tham gia buổi học nào → Hệ \\ thống hiển thị “Chưa có dữ liệu để báo cáo”.\end{tabular} &
+   \\ \cline{1-4}
+\textbf{Ngoại lệ} &
+  \multicolumn{3}{l|}{Lỗi khi truy xuất DB → hiển thị “Không thể tạo báo cáo”.} &
+   \\ \cline{1-4}
+\textbf{Business Rules} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}SV chỉ xem được báo cáo của chính mình.\\ Khoa có quyền xem \& xác nhận báo cáo cho SV trong phạm vi \\ quản lý.\\ Báo cáo phải bao gồm: số buổi đăng ký, số buổi tham gia, số buổi \\ vắng, \% tham gia.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Data requirement} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Attendance(attID, scheduleID, studentID, status)\\ Session(sessionID, status)\\ StudentReport(studentID, totalSessions, attendedSessions, \\ attendanceRate, lastUpdated, approvedBy, approvedAt)\end{tabular}} &
+   \\ \cline{1-4}
+\end{tabular}
+\caption{Bảng đặc tả chức năng báo cáo kết quả học tập sinh viên}
+\end{table}
 \end{samepage}
 
 %========================================================================================
