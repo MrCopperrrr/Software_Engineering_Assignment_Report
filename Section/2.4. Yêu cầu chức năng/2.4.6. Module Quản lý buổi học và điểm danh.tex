@@ -89,7 +89,82 @@
 \newpage
 \subsubsection*{Use Case 14: Cập nhật trạng thái buổi học}
 \begin{samepage}
-
+\begin{table}[h!]
+\begin{tabular}{|l|lll|l}
+\cline{1-4}
+\textbf{ID} &
+  \multicolumn{3}{l|}{UC-14} &
+   \\ \cline{1-4}
+\textbf{Tên} &
+  \multicolumn{3}{l|}{Cập nhật trạng thái buổi học} &
+   \\ \cline{1-4}
+\textbf{Mô tả} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Tutor hoặc hệ thống cập nhật trạng thái buổi học (chưa diễn ra, đang \\ diễn ra, đã hoàn tất, bị hủy).\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Actor chính} &
+  \multicolumn{3}{l|}{Tutor, Hệ thống} &
+   \\ \cline{1-4}
+\textbf{Actor phụ} &
+  \multicolumn{3}{l|}{Sinh viên} &
+   \\ \cline{1-4}
+\textbf{Tiền điều kiện} &
+  \multicolumn{3}{l|}{Buổi học đã được xác nhận trong hệ thống.} &
+   \\ \cline{1-4}
+\textbf{Hậu điều kiện} &
+  \multicolumn{3}{l|}{Trạng thái buổi học được cập nhật chính xác trong DB.} &
+   \\ \cline{1-4}
+\multirow{5}{*}{\textbf{Luồng sự kiện}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{1} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  \begin{tabular}[c]{@{}l@{}}Trước giờ học, gán trạng thái buổi học là \\ “Sắp diễn ra”.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2} &
+  \multicolumn{1}{l|}{Tutor} &
+  \begin{tabular}[c]{@{}l@{}}Chọn “Bắt đầu buổi học” → hệ thống \\ cập nhật trạng thái = “Đang diễn ra”.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3} &
+  \multicolumn{1}{l|}{Tutor} &
+  \begin{tabular}[c]{@{}l@{}}Chọn “Hoàn tất buổi học” → hệ thống cập |\\ nhật trạng thái = “Đã hoàn tất”.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{4} &
+  \multicolumn{1}{l|}{Hệ thống} &
+  Lưu log thay đổi trạng thái vào DB. &
+   \\ \cline{1-4}
+\multirow{3}{*}{\textbf{Luồng thay thế}} &
+  \multicolumn{1}{l|}{\textbf{Bước}} &
+  \multicolumn{1}{l|}{\textbf{Thực hiện bởi}} &
+  \textbf{Mô tả} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{2a} &
+  \multicolumn{1}{l|}{Tutor} &
+  \begin{tabular}[c]{@{}l@{}}Nếu Tutor quên cập nhật → hệ thống tự động \\ đổi trạng thái sang “Đã hoàn tất” sau khi quá \\ giờ học.\end{tabular} &
+   \\ \cline{2-4}
+ &
+  \multicolumn{1}{l|}{3a} &
+  \multicolumn{1}{l|}{Tutor} &
+  \begin{tabular}[c]{@{}l@{}}Nếu buổi học bị hủy trước khi bắt đầu → Hệ \\ thống cập nhập trạng thái = “Đã hủy”.\end{tabular} &
+   \\ \cline{1-4}
+\textbf{Ngoại lệ} &
+  \multicolumn{3}{l|}{Hệ thống lỗi khi cập nhật DB → hiển thị “Thao tác thất bại, thử lại sau”.} &
+   \\ \cline{1-4}
+\textbf{Business Rules} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Trạng thái buổi học chỉ có thể thay đổi theo luồng hợp lệ:\\ “Sắp diễn ra” → “Đang diễn ra” → “Đã hoàn tất”\\ hoặc “Sắp diễn ra” → “Đã hủy”\\ SV chỉ xem được trạng thái, không được chỉnh sửa.\\ Nếu buổi học bị hủy, Hệ thống phải gửi thông báo ngay cho SV.\\ Trạng thái buổi học phải được cập nhật trong vòng 24h sau khi kết thúc.\end{tabular}} &
+   \\ \cline{1-4}
+\textbf{Data requirement} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Session(sessionID, tutorID, studentID, subjectID, date, startTime, \\ endTime, status, updatedAt)\end{tabular}} &
+   \\ \cline{1-4}
+\end{tabular}
+\caption{Bảng đặc tả chức năng cập nhật trạng thái buổi học}
+\end{table}
 \end{samepage}
 
 %========================================================================================
