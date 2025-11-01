@@ -36,7 +36,8 @@
 \usepackage{booktabs}
 \usepackage{adjustbox} % Để thu nhỏ bảng
 \usepackage{tcolorbox}
-\usepackage{tikz}
+\usepackage{subcaption}
+
 \usetikzlibrary{shapes.geometric, arrows, positioning}
 
 \tikzstyle{block} = [
@@ -98,8 +99,10 @@
 \AtBeginDocument{\renewcommand*\contentsname{Mục lục}}
 \AtBeginDocument{\renewcommand*\refname{References}}
 %\usepackage{fancyhdr}
-
-\setlength{\headheight}{40pt}
+\setlength{\topmargin}{-0.5in}      % hoặc -0.5in nếu muốn sát mép trên hơn   
+\setlength{\headsep}{1cm}        % tăng để header cách nội dung xa hơn
+\setlength{\textheight}{24cm}  % tăng lên để nội dung gần mép dưới
+\setlength{\headheight}{25pt}
 \pagestyle{fancy}
 \fancyhead{} % clear all header fields
 \fancyhead[L]{
@@ -141,6 +144,7 @@
 \makeatother
 
 %==============================================================================
+
 % BEGIN DOCUMENT
 \begin{document}
 
