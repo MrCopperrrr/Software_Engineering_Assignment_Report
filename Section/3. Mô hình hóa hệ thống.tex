@@ -467,7 +467,7 @@ Giao diện trang chủ của sinh viên
 
 \subsubsection*{Đăng ký môn học}
 \begin{itemize}
-    \item Sinh viên chọn chức năng đăng kí môn học từ trang chủ (Hình 54), giao diện hiện ra khác môn học khả dụng và và các môn học đã đăng ký.
+    \item Sinh viên chọn chức năng đăng kí môn học từ trang chủ (Hình 54), giao diện hiện ra các môn học khả dụng và và các môn học đã đăng ký.
     \begin{figure}[H]
     \centering
     \setlength{\fboxsep}{2pt}     
@@ -475,7 +475,7 @@ Giao diện trang chủ của sinh viên
     \fbox{\includegraphics[scale=0.24]{Picture/UI/Student_CourseRegistration.png}}
     \caption{Giao diện đăng ký môn học}
     \end{figure}
-    \item Sinh viên nhấn nút "Chi tiết" để mở thông tin chi tiết của môn học.
+    \item Sinh viên nhấn nút "Chi tiết" (Hình 55) để mở thông tin chi tiết của môn học.
     \begin{figure}[H]
     \centering
     \setlength{\fboxsep}{2pt}     
@@ -495,7 +495,7 @@ Giao diện trang chủ của sinh viên
     \fbox{\includegraphics[scale=0.24]{Picture/UI/Student_FindTutor.png}}
     \caption{Giao diện tìm và ghép cặp Tutor thủ công}
     \end{figure}
-    \item Sinh viên nhấn nút "Chi tiết" để hiển thị thông tin chi tiết Tutor ở chế độ thủ công.
+    \item Sinh viên nhấn nút "Chi tiết" (Hình 57) để hiển thị thông tin chi tiết Tutor ở chế độ thủ công.
     \begin{figure}[H]
     \centering
     \setlength{\fboxsep}{2pt}     
@@ -547,7 +547,7 @@ Giao diện trang chủ của sinh viên
     \fbox{\includegraphics[scale=0.24]{Picture/UI/Student_ScheduleMan_ChangeTime.png}}
     \caption{Giao diện đổi lịch học}
     \end{figure}
-    \item Nếu sinh viên hủy lịch học (Hình 62), hệ thống sẽ gửi cảnh báo, nếu chọn Đồng ý hệ thống sẽ loại bỏ lịch học khỏi Tab lịch học, nếu chọn Hủy hệ thống sẽ hoàn tác hành động.
+    \item Nếu sinh viên hủy lịch học (Hình 62), hệ thống sẽ gửi cảnh báo, nếu chọn Đồng ý hệ thống sẽ loại bỏ lịch học khỏi Tab lịch học, nếu chọn Hủy hệ thống sẽ hoàn tác hành động hủy lịch.
     \begin{figure}[H]
     \centering
     \setlength{\fboxsep}{2pt}     
@@ -569,7 +569,7 @@ Giao diện trang chủ của sinh viên
     \end{figure}
 \end{itemize}
 
-\subsubsection*{Đánh giả và phản hồi}
+\subsubsection*{Đánh giá và phản hồi}
 \begin{itemize}
     \item Sinh viên chọn chức năng tài liệu và buổi học (Hình 54), hệ thống hiển thị các môn học đã đăng ký, sinh viên chọn "Khảo sát" để đánh giá Tutor. 
     \begin{figure}[H]
@@ -594,3 +594,76 @@ Giao diện trang chủ của Tutor
     \fbox{\includegraphics[scale=0.24]{Picture/UI/HomePage_Tutor.png}}
     \caption{Giao diện trang chủ của Tutor}
 \end{figure}
+
+\subsubsection*{Thiết lập lịch dạy}
+\begin{itemize}
+    \item Tutor chọn chức năng thiết lập lịch dạy (Hình 67), giao diện hiện ra nút "Đăng ký" để Tutor đăng ký. 
+    \begin{figure}[H]
+    \centering
+    \setlength{\fboxsep}{2pt}     
+    \setlength{\fboxrule}{0.5pt}   
+    \fbox{\includegraphics[scale=0.24]{Picture/UI/Tutor_ScheduleMan_HomePage.png}}
+    \caption{Giao diện lịch trống}
+    \end{figure}
+    \item Hệ thống hiển thị ngày giờ và hình thức mặc định là Online, Tutor ấn nút "Đăng ký".
+    \begin{figure}[H]
+    \centering
+    \setlength{\fboxsep}{2pt}     
+    \setlength{\fboxrule}{0.5pt}   
+    \fbox{\includegraphics[scale=0.24]{Picture/UI/Tutor_ScheduleMan_SelectTimeOnline.png}}
+    \caption{Giao diện chọn ngày, giờ, hình thức Online}
+    \end{figure}
+    \item Nếu chọn hình thức Offline (Hình 69), Tutor phải nhập thêm số phòng, Tutor ấn nút "Đăng ký".
+    \begin{figure}[H]
+    \centering
+    \setlength{\fboxsep}{2pt}     
+    \setlength{\fboxrule}{0.5pt}   
+    \fbox{\includegraphics[scale=0.24]{Picture/UI/Tutor_ScheduleMan_SelectTimeOffline.png}}
+    \caption{Giao diện chọn ngày, giờ, hình thức Offine}
+    \end{figure}
+    \item Sau khi ấn nút đăng ký (Hình 69, 70), hệ thống gửi thông báo "Đã đăng ký thành công", chọn "Hủy" để tắt thông báo.
+    \begin{figure}[H]
+    \centering
+    \setlength{\fboxsep}{2pt}     
+    \setlength{\fboxrule}{0.5pt}   
+    \fbox{\includegraphics[scale=0.24]{Picture/UI/Tutor_ScheduleMan_Selected.png}}
+    \caption{Giao diện thông báo "Đã đăng ký thành công"}
+    \end{figure}
+    \item Hệ thống sẽ hiển thị các lịch mà Tutor đã đăng ký, có thể sửa hoặc xóa.
+    \begin{figure}[H]
+    \centering
+    \setlength{\fboxsep}{2pt}     
+    \setlength{\fboxrule}{0.5pt}   
+    \fbox{\includegraphics[scale=0.24]{Picture/UI/Tutor_ScheduleMan_HomePage_FilledSchedule.png}}
+    \caption{Giao diện lịch đã đăng ký}
+    \end{figure}    
+    \item Nếu chọn sửa lịch (Hình 72), hiển thị lại giao diện chọn lại ngày giờ và hình thức mặc định là Online (Hình 69), chọn đổi để xác nhận đổi lịch.
+    \begin{figure}[H]
+    \centering
+    \setlength{\fboxsep}{2pt}     
+    \setlength{\fboxrule}{0.5pt}   
+    \fbox{\includegraphics[scale=0.24]{Picture/UI/Tutor_ScheduleMan_ChangeTimeOnline.png}}
+    \caption{Giao diện sửa lịch đã đăng ký, hình thức Online}
+    \end{figure}
+    \item Nếu chọn sửa lịch (Hình 72), nếu chọn hình thức Offline thì Tutor nhập thêm số phòng, sau đó chọn "Đổi".
+    \begin{figure}[H]
+    \centering
+    \setlength{\fboxsep}{2pt}     
+    \setlength{\fboxrule}{0.5pt}   
+    \fbox{\includegraphics[scale=0.24]{Picture/UI/Tutor_ScheduleMan_ChangeTimeOffline.png}}
+    \caption{Giao diện sửa lịch đã đăng ký, hình thức Offline}
+    \end{figure}
+    \item Nếu chọn đổi xóa lịch (Hình 72), lịch sẽ tự động xóa khỏi danh sách lịch đã đăng ký.
+    \begin{figure}[H]
+    \centering
+    \setlength{\fboxsep}{2pt}     
+    \setlength{\fboxrule}{0.5pt}   
+    \fbox{\includegraphics[scale=0.24]{Picture/UI/Tutor_ScheduleMan_DeletePage.png}}
+    \caption{Giao diện sau khi xóa lịch đã đăng ký}
+    \end{figure}
+\end{itemize}
+\subsubsection*{Quản lý buổi học và điểm danh}
+
+\subsubsection*{Quản lý tài liệu học tập}
+
+\subsubsection*{Đánh giá sinh viên}
