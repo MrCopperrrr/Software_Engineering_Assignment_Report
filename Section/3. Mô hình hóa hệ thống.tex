@@ -10,6 +10,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 %========================================================================================
 \subsection*{3.1.1. Use Case 01: Đăng ký tài khoản}
 \addcontentsline{toc}{subsection}{3.1.1. Use Case 01: Đăng ký tài khoản}
+Quy trình này mô tả các bước người dùng (Sinh viên hoặc Tutor) thực hiện để tạo một tài khoản mới. Các sơ đồ sẽ minh họa luồng đi từ việc nhập thông tin, xác thực qua email (OTP), cho đến khi tài khoản được lưu thành công vào hệ thống.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -29,6 +30,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.2. Use Case 02: Đăng nhập}
 \addcontentsline{toc}{subsection}{3.1.2. Use Case 02: Đăng nhập}
+Use case này mô tả quy trình người dùng xác thực danh tính để truy cập hệ thống. Các sơ đồ sẽ minh họa cách hệ thống kiểm tra thông tin đăng nhập, xử lý các trường hợp thành công, thất bại (như sai mật khẩu) và tài khoản bị khóa.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -47,6 +49,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.3. Use Case 03: Cập nhật hồ sơ}
 \addcontentsline{toc}{subsection}{3.1.3. Use Case 03: Cập nhật hồ sơ}
+Quy trình này cho phép người dùng đã đăng nhập tự chỉnh sửa và cập nhật thông tin cá nhân. Các sơ đồ sẽ thể hiện luồng đi từ việc tải dữ liệu hồ sơ hiện tại, kiểm tra tính hợp lệ của thông tin mới, cho đến khi lưu lại thành công.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -65,6 +68,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.4. Use Case 04: Đăng ký môn học}
 \addcontentsline{toc}{subsection}{3.1.4. Use Case 04: Đăng ký môn học}
+Chức năng này mô tả cách sinh viên đăng ký các môn học cần hỗ trợ từ Tutor. Sơ đồ sẽ làm rõ các quy tắc nghiệp vụ như giới hạn tối đa 4 môn và việc hệ thống chỉ hiển thị các môn đã có Tutor đăng ký dạy.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -72,6 +76,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
     \includegraphics[scale=0.32 ]{Picture/ACUC04.png}
     \caption{Sơ đồ hoạt động Use Case 04: Đăng ký môn học}
     \end{figure}
+    \pagebreak
     \item Sơ đồ tuần tự
     \begin{figure}[H]
     \centering
@@ -83,6 +88,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.5. Use Case 05: Hủy đăng ký môn học}
 \addcontentsline{toc}{subsection}{3.1.5. Use Case 05: Hủy đăng ký môn học}
+Quy trình này cho phép sinh viên hủy một môn học đã đăng ký để thay đổi kế hoạch học tập. Các sơ đồ sẽ minh họa các bước kiểm tra điều kiện (ví dụ: thời hạn hủy) và cập nhật trạng thái đăng ký.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -90,6 +96,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
     \includegraphics[scale=0.3 ]{Picture/ACUC05.png}
     \caption{Sơ đồ hoạt động Use Case 05: Hủy đăng ký môn học}
     \end{figure}
+    \pagebreak
     \item Sơ đồ tuần tự
     \begin{figure}[H]
     \centering
@@ -101,6 +108,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.6. Use Case 06: Ghép thủ công (SV chọn Tutor)}
 \addcontentsline{toc}{subsection}{3.1.6. Use Case 06: Ghép thủ công (SV chọn Tutor)}
+Use case này mô tả cách sinh viên chủ động lựa chọn Tutor cho một môn học cụ thể từ danh sách đề xuất. Các sơ đồ sẽ thể hiện luồng hệ thống lọc và hiển thị Tutor phù hợp, cũng như kiểm tra số lượng sinh viên của Tutor trước khi ghép cặp.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -108,6 +116,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
     \includegraphics[scale=0.33 ]{Picture/ACUC06.png}
     \caption{Sơ đồ hoạt động Use Case 06: Ghép thủ công (SV chọn Tutor)}
     \end{figure}
+    \pagebreak
     \item Sơ đồ tuần tự
     \begin{figure}[H]
     \centering
@@ -119,6 +128,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.7. Use Case 07: Ghép tự động (Hệ thống đề xuất Tutor)}
 \addcontentsline{toc}{subsection}{3.1.7. Use Case 07: Ghép tự động (Hệ thống đề xuất Tutor)}
+Quy trình này mô tả chức năng ghép cặp thông minh, nơi hệ thống tự động tìm kiếm và đề xuất Tutor phù hợp nhất. Dựa trên tiêu chí do sinh viên cung cấp (môn học, lịch rảnh), hệ thống sẽ chạy thuật toán so khớp để đưa ra kết quả tối ưu.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -126,6 +136,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
     \includegraphics[scale=0.35 ]{Picture/ACUC07.png}
     \caption{Sơ đồ hoạt động Use Case 07: Ghép tự động (Hệ thống đề xuất Tutor)}
     \end{figure}
+    \pagebreak
     \item Sơ đồ tuần tự
     \begin{figure}[H]
     \centering
@@ -137,6 +148,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.8. Use Case 08: Tạo lịch rảnh (Tutor)}
 \addcontentsline{toc}{subsection}{3.1.8. Use Case 08: Tạo lịch rảnh (Tutor)}
+Chức năng này cho phép Tutor khai báo các khung thời gian rảnh của mình lên hệ thống. Các sơ đồ sẽ minh họa quy trình Tutor nhập thông tin và cách hệ thống kiểm tra, lưu trữ để làm cơ sở cho việc đặt lịch của sinh viên.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -144,6 +156,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
     \includegraphics[scale=0.3 ]{Picture/ACUC08.png}
     \caption{Sơ đồ hoạt động Use Case 08: Tạo lịch rảnh (Tutor)}
     \end{figure}
+    \pagebreak
     \item Sơ đồ tuần tự
     \begin{figure}[H]
     \centering
@@ -155,6 +168,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.9. Use Case 09: Đặt lịch học (SV)}
 \addcontentsline{toc}{subsection}{3.1.9. Use Case 09: Đặt lịch học (SV)}
+Quy trình này mô tả cách sinh viên đặt một lịch học cố định hàng tuần với Tutor đã được ghép. Sơ đồ sẽ thể hiện các bước hệ thống kiểm tra tính khả dụng của lịch (còn slot, không trùng lịch) trước khi xác nhận.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -174,6 +188,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.10. Use Case 10: Hủy/Đổi lịch học cố định}
 \addcontentsline{toc}{subsection}{3.1.10. Use Case 10: Hủy/Đổi lịch học cố định}
+Use case này cho phép sinh viên hủy hoặc thay đổi lịch học cố định đã đặt. Các sơ đồ sẽ làm rõ hai luồng xử lý riêng biệt là "Hủy" và "Đổi", bao gồm các bước kiểm tra điều kiện và gửi thông báo tới các bên liên quan.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -193,6 +208,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.11. Use Case 11: Gửi thông báo lịch học}
 \addcontentsline{toc}{subsection}{3.1.11. Use Case 11: Gửi thông báo lịch học}
+Đây là một quy trình tự động của hệ thống, được kích hoạt khi có bất kỳ thay đổi nào về lịch học (đặt mới, hủy, đổi). Sơ đồ sẽ minh họa cách hệ thống tạo và gửi thông báo tức thời đến cả sinh viên và Tutor.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -211,6 +227,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.12. Use Case 12: Gửi nhắc nhở buổi học}
 \addcontentsline{toc}{subsection}{3.1.12. Use Case 12: Gửi nhắc nhở buổi học}
+Quy trình này mô tả việc hệ thống tự động quét và gửi nhắc nhở cho sinh viên và Tutor trước mỗi buổi học. Sơ đồ sẽ thể hiện tính định kỳ của tác vụ và các mốc thời gian gửi nhắc nhở theo quy định.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -229,6 +246,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.13. Use Case 13: Điểm danh sinh viên}
 \addcontentsline{toc}{subsection}{3.1.13. Use Case 13: Điểm danh sinh viên}
+Chức năng này mô tả quy trình Tutor thực hiện điểm danh sinh viên trong một buổi học. Các sơ đồ sẽ thể hiện các bước từ việc chọn buổi học, hiển thị danh sách sinh viên, cho đến khi Tutor cập nhật trạng thái tham gia và hệ thống lưu lại.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -248,6 +266,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.14. Use Case 14: Cập nhật trạng thái buổi học}
 \addcontentsline{toc}{subsection}{3.1.14. Use Case 14: Cập nhật trạng thái buổi học}
+Use case này mô tả vòng đời của một buổi học và cách trạng thái của nó được cập nhật. Sơ đồ sẽ thể hiện cả hai kịch bản: Tutor chủ động thay đổi (bắt đầu/kết thúc) và hệ thống tự động cập nhật khi buổi học bị hủy hoặc quá giờ.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -266,6 +285,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.15. Use Case 15: Quản lý tài liệu (Tutor)}
 \addcontentsline{toc}{subsection}{3.1.15. Use Case 15: Quản lý tài liệu (Tutor)}
+Quy trình này mô tả các thao tác quản lý tài liệu của Tutor, bao gồm ba chức năng chính: tải lên, chỉnh sửa và xóa. Các sơ đồ sẽ làm rõ từng luồng xử lý và cách hệ thống kiểm tra, lưu trữ file và thông tin liên quan.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -285,6 +305,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.16. Use Case 16: SV tải tài liệu}
 \addcontentsline{toc}{subsection}{3.1.16. Use Case 16: SV tải tài liệu}
+Chức năng này cho phép sinh viên truy cập và tải về các tài liệu học tập do Tutor chia sẻ. Các sơ đồ sẽ minh họa cách hệ thống hiển thị danh sách tài liệu và kiểm tra quyền truy cập của sinh viên trước khi cho phép tải xuống.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -292,6 +313,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
     \includegraphics[scale=0.33 ]{Picture/ACUC16.png}
     \caption{Sơ đồ hoạt động Use Case 16: SV tải tài liệu}
     \end{figure}
+    \pagebreak
     \item Sơ đồ tuần tự
     \begin{figure}[H]
     \centering
@@ -303,6 +325,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.17. Use Case 17: SV đánh giá Tutor}
 \addcontentsline{toc}{subsection}{3.1.17. Use Case 17: SV đánh giá Tutor}
+Quy trình này mô tả cách sinh viên gửi phản hồi về chất lượng giảng dạy của Tutor sau khi môn học kết thúc. Sơ đồ sẽ thể hiện luồng sinh viên chọn môn học, nhập đánh giá và hệ thống lưu lại phản hồi đó.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -322,6 +345,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.18. Use Case 18: Tutor đánh giá sinh viên}
 \addcontentsline{toc}{subsection}{3.1.18. Use Case 18: Tutor đánh giá sinh viên}
+Tương tự UC-17, use case này cho phép Tutor đánh giá mức độ tham gia và thái độ học tập của sinh viên. Phản hồi này sẽ được lưu lại và chỉ hiển thị cho cấp quản lý (Khoa/BM) nhằm mục đích cải thiện chất lượng.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -341,6 +365,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.19. Use Case 19: Khoa/BM tổng hợp đánh giá}
 \addcontentsline{toc}{subsection}{3.1.19. Use Case 19: Khoa/BM tổng hợp đánh giá}
+Chức năng này dành cho cấp quản lý, cho phép xem báo cáo tổng hợp về đánh giá hai chiều (SV và Tutor). Các sơ đồ sẽ minh họa cách hệ thống truy xuất, tính toán các chỉ số và trình bày dữ liệu dưới dạng bảng hoặc biểu đồ.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -359,6 +384,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.20. Use Case 20: Báo cáo kết quả học tập SV}
 \addcontentsline{toc}{subsection}{3.1.20. Use Case 20: Báo cáo kết quả học tập SV}
+Quy trình này mô tả cách Khoa tổng hợp, kiểm tra và xác nhận báo cáo học tập cho từng sinh viên. Sau khi được Khoa xác nhận, báo cáo này sẽ được công khai để sinh viên có thể xem và theo dõi tiến độ của mình.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -366,6 +392,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
     \includegraphics[scale=0.35 ]{Picture/ACUC20.png}
     \caption{Sơ đồ hoạt động Use Case 20: Báo cáo kết quả học tập SV}
     \end{figure}
+    \pagebreak
     \item Sơ đồ tuần tự
     \begin{figure}[H]
     \centering
@@ -377,6 +404,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.21. Use Case 21: Báo cáo chất lượng Tutor}
 \addcontentsline{toc}{subsection}{3.1.21. Use Case 21: Báo cáo chất lượng Tutor}
+Tương tự UC-20, quy trình này tập trung vào việc Khoa tổng hợp và xác nhận báo cáo chất lượng giảng dạy của Tutor. Báo cáo sau khi xác nhận sẽ được gửi đến Tutor để họ nắm được phản hồi và có kế hoạch cải thiện.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -384,6 +412,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
     \includegraphics[scale=0.35 ]{Picture/ACUC21.png}
     \caption{Sơ đồ hoạt động Use Case 21: Báo cáo chất lượng Tutor}
     \end{figure}
+    \pagebreak
     \item Sơ đồ tuần tự
     \begin{figure}[H]
     \centering
@@ -395,6 +424,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.22. Use Case 22: Báo cáo tổng hợp (Khoa, PCTSV, PĐT)}
 \addcontentsline{toc}{subsection}{3.1.22. Use Case 22: Báo cáo tổng hợp (Khoa, PCTSV, PĐT)}
+Đây là chức năng báo cáo cấp cao nhất, cho phép các cấp quản lý xem bức tranh toàn cảnh về hoạt động của hệ thống. Sơ đồ sẽ mô tả cách hệ thống tổng hợp dữ liệu từ các báo cáo con đã được xác nhận và phân quyền hiển thị theo vai trò người dùng.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -413,6 +443,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.23. Use Case 23: Tutor tạo chương trình học}
 \addcontentsline{toc}{subsection}{3.1.23. Use Case 23: Tutor tạo chương trình học}
+Chức năng này cho phép Tutor tạo ra các chương trình học mới (cả học thuật và phi học thuật) để mở rộng nội dung giảng dạy. Sơ đồ sẽ minh họa quy trình Tutor nhập thông tin và hệ thống lưu lại để hiển thị cho sinh viên.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -420,6 +451,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
     \includegraphics[scale=0.4 ]{Picture/ACUC23.png}
     \caption{Sơ đồ hoạt động Use Case 23: Tutor tạo chương trình học}
     \end{figure}
+    \pagebreak
     \item Sơ đồ tuần tự
     \begin{figure}[H]
     \centering
@@ -431,6 +463,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.24. Use Case 24: SV đăng ký chương trình học thuật}
 \addcontentsline{toc}{subsection}{3.1.24. Use Case 24: SV đăng ký chương trình học thuật}
+Quy trình này mô tả cách sinh viên đăng ký tham gia các chương trình học thuật do Tutor tạo. Sơ đồ sẽ làm rõ các bước kiểm tra điều kiện, đặc biệt là quy tắc giới hạn mỗi sinh viên chỉ được tham gia tối đa 2 chương trình cùng lúc.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -449,6 +482,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 \pagebreak
 \subsection*{3.1.25. Use Case 25: SV đăng ký chương trình phi học thuật}
 \addcontentsline{toc}{subsection}{3.1.25. Use Case 25: SV đăng ký chương trình phi học thuật}
+Tương tự UC-24, use case này dành cho các chương trình phi học thuật. Tuy nhiên, quy trình này đơn giản hơn do không có quy tắc giới hạn số lượng chương trình mà sinh viên có thể tham gia.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
