@@ -10,7 +10,7 @@ Phần này trình bày chi tiết các quy trình nghiệp vụ của hệ th�
 %========================================================================================
 \subsection*{3.1.1. Use Case 01: Đăng ký tài khoản}
 \addcontentsline{toc}{subsection}{3.1.1. Use Case 01: Đăng ký tài khoản}
-Quy trình này mô tả các bước người dùng (Sinh viên hoặc Tutor) thực hiện để tạo một tài khoản mới. Các sơ đồ sẽ minh họa luồng đi từ việc nhập thông tin, xác thực qua email (OTP), cho đến khi tài khoản được lưu thành công vào hệ thống.
+Để bắt đầu sử dụng hệ thống, sinh viên và Tutor cần tạo một tài khoản cá nhân. Hệ thống sẽ hướng dẫn người dùng qua các bước nhập thông tin, đồng thời kiểm tra để đảm bảo dữ liệu là chính xác và duy nhất. Điểm nhấn của quy trình là bước xác thực bằng mã OTP qua email, một lớp bảo mật quan trọng giúp xác minh danh tính và bảo vệ tài khoản ngay từ đầu.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -30,7 +30,7 @@ Quy trình này mô tả các bước người dùng (Sinh viên hoặc Tutor) t
 \pagebreak
 \subsection*{3.1.2. Use Case 02: Đăng nhập}
 \addcontentsline{toc}{subsection}{3.1.2. Use Case 02: Đăng nhập}
-Use case này mô tả quy trình người dùng xác thực danh tính để truy cập hệ thống. Các sơ đồ sẽ minh họa cách hệ thống kiểm tra thông tin đăng nhập, xử lý các trường hợp thành công, thất bại (như sai mật khẩu) và tài khoản bị khóa.
+Khi cần truy cập vào các chức năng của hệ thống, người dùng sẽ sử dụng thông tin đã đăng ký để đăng nhập. Hệ thống sẽ xác thực thông tin này một cách nhanh chóng và kiểm tra trạng thái của tài khoản. Để tăng cường bảo mật, hệ thống cũng được thiết kế để tự động khóa tạm thời tài khoản nếu phát hiện có dấu hiệu đăng nhập sai quá nhiều lần.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -49,7 +49,7 @@ Use case này mô tả quy trình người dùng xác thực danh tính để tr
 \pagebreak
 \subsection*{3.1.3. Use Case 03: Cập nhật hồ sơ}
 \addcontentsline{toc}{subsection}{3.1.3. Use Case 03: Cập nhật hồ sơ}
-Quy trình này cho phép người dùng đã đăng nhập tự chỉnh sửa và cập nhật thông tin cá nhân. Các sơ đồ sẽ thể hiện luồng đi từ việc tải dữ liệu hồ sơ hiện tại, kiểm tra tính hợp lệ của thông tin mới, cho đến khi lưu lại thành công.
+Để đảm bảo thông tin cá nhân luôn chính xác, người dùng có thể dễ dàng chỉnh sửa hồ sơ của mình bất cứ lúc nào. Chức năng này cho phép họ cập nhật các thông tin như số điện thoại, email hay chuyên ngành. Hệ thống sẽ kiểm tra tính hợp lệ của dữ liệu mới trước khi lưu lại, giúp hồ sơ luôn được duy trì một cách toàn vẹn.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -68,7 +68,7 @@ Quy trình này cho phép người dùng đã đăng nhập tự chỉnh sửa v
 \pagebreak
 \subsection*{3.1.4. Use Case 04: Đăng ký môn học}
 \addcontentsline{toc}{subsection}{3.1.4. Use Case 04: Đăng ký môn học}
-Chức năng này mô tả cách sinh viên đăng ký các môn học cần hỗ trợ từ Tutor. Sơ đồ sẽ làm rõ các quy tắc nghiệp vụ như giới hạn tối đa 4 môn và việc hệ thống chỉ hiển thị các môn đã có Tutor đăng ký dạy.
+Khi có nhu cầu cần hỗ trợ, sinh viên có thể tìm và đăng ký các môn học ngay trên hệ thống. Hệ thống sẽ hiển thị một danh sách các môn học khả dụng, với điều kiện là các môn này đã có Tutor sẵn sàng giảng dạy. Không chỉ vậy, hệ thống còn giúp sinh viên quản lý kế hoạch học tập bằng cách giới hạn số môn có thể đăng ký cùng lúc.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -88,7 +88,7 @@ Chức năng này mô tả cách sinh viên đăng ký các môn học cần h�
 \pagebreak
 \subsection*{3.1.5. Use Case 05: Hủy đăng ký môn học}
 \addcontentsline{toc}{subsection}{3.1.5. Use Case 05: Hủy đăng ký môn học}
-Quy trình này cho phép sinh viên hủy một môn học đã đăng ký để thay đổi kế hoạch học tập. Các sơ đồ sẽ minh họa các bước kiểm tra điều kiện (ví dụ: thời hạn hủy) và cập nhật trạng thái đăng ký.
+Nếu kế hoạch thay đổi, sinh viên hoàn toàn có thể chủ động hủy đăng ký một môn học không còn phù hợp. Hệ thống sẽ xử lý yêu cầu này sau khi kiểm tra các điều kiện, chẳng hạn như việc hủy phải được thực hiện trước một thời hạn nhất định. Điều này mang lại sự linh hoạt cho sinh viên và giải phóng suất học cho người khác.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -108,7 +108,7 @@ Quy trình này cho phép sinh viên hủy một môn học đã đăng ký đ�
 \pagebreak
 \subsection*{3.1.6. Use Case 06: Ghép thủ công (SV chọn Tutor)}
 \addcontentsline{toc}{subsection}{3.1.6. Use Case 06: Ghép thủ công (SV chọn Tutor)}
-Use case này mô tả cách sinh viên chủ động lựa chọn Tutor cho một môn học cụ thể từ danh sách đề xuất. Các sơ đồ sẽ thể hiện luồng hệ thống lọc và hiển thị Tutor phù hợp, cũng như kiểm tra số lượng sinh viên của Tutor trước khi ghép cặp.
+Chức năng này cho sinh viên chủ động trong việc tìm kiếm người đồng hành học tập. Dựa trên môn học đã chọn, hệ thống sẽ gợi ý một danh sách các Tutor phù hợp về chuyên môn và lịch trình. Sinh viên có thể xem qua thông tin và lựa chọn Tutor mà mình tin tưởng nhất, miễn là Tutor đó vẫn còn suất trống.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -128,7 +128,7 @@ Use case này mô tả cách sinh viên chủ động lựa chọn Tutor cho m�
 \pagebreak
 \subsection*{3.1.7. Use Case 07: Ghép tự động (Hệ thống đề xuất Tutor)}
 \addcontentsline{toc}{subsection}{3.1.7. Use Case 07: Ghép tự động (Hệ thống đề xuất Tutor)}
-Quy trình này mô tả chức năng ghép cặp thông minh, nơi hệ thống tự động tìm kiếm và đề xuất Tutor phù hợp nhất. Dựa trên tiêu chí do sinh viên cung cấp (môn học, lịch rảnh), hệ thống sẽ chạy thuật toán so khớp để đưa ra kết quả tối ưu.
+Để tiết kiệm thời gian và công sức cho sinh viên, hệ thống cung cấp một cơ chế ghép cặp thông minh. Sinh viên chỉ cần đưa ra các tiêu chí mong muốn, chẳng hạn như khung giờ học, và hệ thống sẽ tự động phân tích để tìm ra Tutor phù hợp nhất. Đây là giải pháp tối ưu giúp kết nối nhanh chóng và hiệu quả.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -148,7 +148,7 @@ Quy trình này mô tả chức năng ghép cặp thông minh, nơi hệ thống
 \pagebreak
 \subsection*{3.1.8. Use Case 08: Tạo lịch rảnh (Tutor)}
 \addcontentsline{toc}{subsection}{3.1.8. Use Case 08: Tạo lịch rảnh (Tutor)}
-Chức năng này cho phép Tutor khai báo các khung thời gian rảnh của mình lên hệ thống. Các sơ đồ sẽ minh họa quy trình Tutor nhập thông tin và cách hệ thống kiểm tra, lưu trữ để làm cơ sở cho việc đặt lịch của sinh viên.
+Để hệ thống có thể sắp xếp các buổi học, Tutor cần cung cấp thông tin về các khung giờ mình có thể giảng dạy. Chức năng này cho phép Tutor dễ dàng thêm, sửa hoặc xóa các créneaux thời gian rảnh của mình. Dữ liệu này sẽ là nền tảng để sinh viên có thể tìm và đặt lịch học phù hợp.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -168,7 +168,7 @@ Chức năng này cho phép Tutor khai báo các khung thời gian rảnh của 
 \pagebreak
 \subsection*{3.1.9. Use Case 09: Đặt lịch học (SV)}
 \addcontentsline{toc}{subsection}{3.1.9. Use Case 09: Đặt lịch học (SV)}
-Quy trình này mô tả cách sinh viên đặt một lịch học cố định hàng tuần với Tutor đã được ghép. Sơ đồ sẽ thể hiện các bước hệ thống kiểm tra tính khả dụng của lịch (còn slot, không trùng lịch) trước khi xác nhận.
+Sau khi đã được ghép cặp, sinh viên có thể tiến hành đặt một lịch học cố định cho suốt môn học. Hệ thống sẽ hiển thị các khung giờ còn trống của Tutor để sinh viên lựa chọn. Để tránh xung đột, hệ thống cũng sẽ kiểm tra và đảm bảo lịch học mới không bị trùng với các lịch trình khác của sinh viên.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -188,7 +188,7 @@ Quy trình này mô tả cách sinh viên đặt một lịch học cố định
 \pagebreak
 \subsection*{3.1.10. Use Case 10: Hủy/Đổi lịch học cố định}
 \addcontentsline{toc}{subsection}{3.1.10. Use Case 10: Hủy/Đổi lịch học cố định}
-Use case này cho phép sinh viên hủy hoặc thay đổi lịch học cố định đã đặt. Các sơ đồ sẽ làm rõ hai luồng xử lý riêng biệt là "Hủy" và "Đổi", bao gồm các bước kiểm tra điều kiện và gửi thông báo tới các bên liên quan.
+Cuộc sống luôn có những thay đổi, vì vậy hệ thống cho phép sinh viên linh hoạt điều chỉnh lịch học cố định của mình. Sinh viên có thể chọn hủy hoàn toàn lịch của một môn hoặc đổi sang một khung giờ khác phù hợp hơn. Mọi thay đổi đều được xử lý và thông báo một cách minh bạch đến các bên.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -208,7 +208,7 @@ Use case này cho phép sinh viên hủy hoặc thay đổi lịch học cố đ
 \pagebreak
 \subsection*{3.1.11. Use Case 11: Gửi thông báo lịch học}
 \addcontentsline{toc}{subsection}{3.1.11. Use Case 11: Gửi thông báo lịch học}
-Đây là một quy trình tự động của hệ thống, được kích hoạt khi có bất kỳ thay đổi nào về lịch học (đặt mới, hủy, đổi). Sơ đồ sẽ minh họa cách hệ thống tạo và gửi thông báo tức thời đến cả sinh viên và Tutor.
+Mọi thay đổi về lịch học, dù là đặt mới, hủy hay điều chỉnh, đều cần được thông báo ngay lập tức. Vì vậy, hệ thống được thiết kế để tự động nhận diện các sự kiện này và ngay lập tức tạo ra thông báo. Thông báo này sẽ được gửi đồng thời đến cả sinh viên và Tutor, đảm bảo không ai bỏ lỡ thông tin quan trọng.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -227,7 +227,7 @@ Use case này cho phép sinh viên hủy hoặc thay đổi lịch học cố đ
 \pagebreak
 \subsection*{3.1.12. Use Case 12: Gửi nhắc nhở buổi học}
 \addcontentsline{toc}{subsection}{3.1.12. Use Case 12: Gửi nhắc nhở buổi học}
-Quy trình này mô tả việc hệ thống tự động quét và gửi nhắc nhở cho sinh viên và Tutor trước mỗi buổi học. Sơ đồ sẽ thể hiện tính định kỳ của tác vụ và các mốc thời gian gửi nhắc nhở theo quy định.
+Để giúp sinh viên và Tutor không bỏ lỡ các buổi học đã lên kế hoạch, hệ thống sẽ tự động gửi lời nhắc một cách thông minh. Các nhắc nhở này được gửi vào những thời điểm hợp lý, chẳng hạn như trước 24 giờ và 1 giờ, giúp mọi người luôn chủ động và chuẩn bị tốt nhất cho buổi học.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -246,7 +246,7 @@ Quy trình này mô tả việc hệ thống tự động quét và gửi nhắc
 \pagebreak
 \subsection*{3.1.13. Use Case 13: Điểm danh sinh viên}
 \addcontentsline{toc}{subsection}{3.1.13. Use Case 13: Điểm danh sinh viên}
-Chức năng này mô tả quy trình Tutor thực hiện điểm danh sinh viên trong một buổi học. Các sơ đồ sẽ thể hiện các bước từ việc chọn buổi học, hiển thị danh sách sinh viên, cho đến khi Tutor cập nhật trạng thái tham gia và hệ thống lưu lại.
+Việc ghi nhận sự tham gia của sinh viên là một phần quan trọng của quá trình học. Chức năng này cho phép Tutor dễ dàng điểm danh ngay trên hệ thống trong mỗi buổi học. Dữ liệu điểm danh không chỉ giúp theo dõi chuyên cần mà còn là cơ sở cho các báo cáo học tập sau này.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -266,7 +266,7 @@ Chức năng này mô tả quy trình Tutor thực hiện điểm danh sinh viê
 \pagebreak
 \subsection*{3.1.14. Use Case 14: Cập nhật trạng thái buổi học}
 \addcontentsline{toc}{subsection}{3.1.14. Use Case 14: Cập nhật trạng thái buổi học}
-Use case này mô tả vòng đời của một buổi học và cách trạng thái của nó được cập nhật. Sơ đồ sẽ thể hiện cả hai kịch bản: Tutor chủ động thay đổi (bắt đầu/kết thúc) và hệ thống tự động cập nhật khi buổi học bị hủy hoặc quá giờ.
+Mỗi buổi học sẽ có một vòng đời riêng, từ "Sắp diễn ra" cho đến "Đã hoàn tất". Hệ thống cho phép Tutor cập nhật trạng thái này một cách thủ công, đồng thời cũng có thể tự động thay đổi dựa trên thời gian thực. Điều này giúp tình trạng của tất cả các buổi học luôn được phản ánh một cách chính xác.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -285,7 +285,7 @@ Use case này mô tả vòng đời của một buổi học và cách trạng t
 \pagebreak
 \subsection*{3.1.15. Use Case 15: Quản lý tài liệu (Tutor)}
 \addcontentsline{toc}{subsection}{3.1.15. Use Case 15: Quản lý tài liệu (Tutor)}
-Quy trình này mô tả các thao tác quản lý tài liệu của Tutor, bao gồm ba chức năng chính: tải lên, chỉnh sửa và xóa. Các sơ đồ sẽ làm rõ từng luồng xử lý và cách hệ thống kiểm tra, lưu trữ file và thông tin liên quan.
+Để hỗ trợ tốt nhất cho sinh viên, Tutor có thể tải lên và quản lý các tài liệu học tập liên quan đến môn học. Chức năng này cho phép họ dễ dàng chia sẻ slide, bài tập hay tài liệu tham khảo. Tutor toàn quyền kiểm soát các tài liệu do mình đăng tải, bao gồm cả việc chỉnh sửa và xóa bỏ.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -305,7 +305,7 @@ Quy trình này mô tả các thao tác quản lý tài liệu của Tutor, bao 
 \pagebreak
 \subsection*{3.1.16. Use Case 16: SV tải tài liệu}
 \addcontentsline{toc}{subsection}{3.1.16. Use Case 16: SV tải tài liệu}
-Chức năng này cho phép sinh viên truy cập và tải về các tài liệu học tập do Tutor chia sẻ. Các sơ đồ sẽ minh họa cách hệ thống hiển thị danh sách tài liệu và kiểm tra quyền truy cập của sinh viên trước khi cho phép tải xuống.
+Sinh viên có thể dễ dàng truy cập vào kho tài liệu mà Tutor đã chia sẻ cho môn học của mình. Để đảm bảo tài liệu được chia sẻ đúng đối tượng, hệ thống sẽ kiểm tra quyền truy cập trước khi cho phép tải xuống. Mỗi lượt tải cũng sẽ được ghi nhận lại để phục vụ cho việc thống kê.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -325,7 +325,7 @@ Chức năng này cho phép sinh viên truy cập và tải về các tài liệ
 \pagebreak
 \subsection*{3.1.17. Use Case 17: SV đánh giá Tutor}
 \addcontentsline{toc}{subsection}{3.1.17. Use Case 17: SV đánh giá Tutor}
-Quy trình này mô tả cách sinh viên gửi phản hồi về chất lượng giảng dạy của Tutor sau khi môn học kết thúc. Sơ đồ sẽ thể hiện luồng sinh viên chọn môn học, nhập đánh giá và hệ thống lưu lại phản hồi đó.
+Phản hồi từ người học là nguồn thông tin vô giá. Sau khi kết thúc môn học, sinh viên được khuyến khích đưa ra những đánh giá về chất lượng giảng dạy của Tutor. Những góp ý này không chỉ giúp Tutor cải thiện mà còn cung cấp cho Khoa/BM cái nhìn sâu sắc về hiệu quả của chương trình.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -345,7 +345,7 @@ Quy trình này mô tả cách sinh viên gửi phản hồi về chất lượn
 \pagebreak
 \subsection*{3.1.18. Use Case 18: Tutor đánh giá sinh viên}
 \addcontentsline{toc}{subsection}{3.1.18. Use Case 18: Tutor đánh giá sinh viên}
-Tương tự UC-17, use case này cho phép Tutor đánh giá mức độ tham gia và thái độ học tập của sinh viên. Phản hồi này sẽ được lưu lại và chỉ hiển thị cho cấp quản lý (Khoa/BM) nhằm mục đích cải thiện chất lượng.
+Tương tự, Tutor cũng có thể đưa ra những nhận xét về quá trình học tập của sinh viên. Những đánh giá này tập trung vào thái độ, sự chuyên cần và tiến bộ của người học. Đây là một kênh thông tin tham khảo quan trọng, được bảo mật và chỉ dành cho cấp quản lý.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -365,7 +365,7 @@ Tương tự UC-17, use case này cho phép Tutor đánh giá mức độ tham g
 \pagebreak
 \subsection*{3.1.19. Use Case 19: Khoa/BM tổng hợp đánh giá}
 \addcontentsline{toc}{subsection}{3.1.19. Use Case 19: Khoa/BM tổng hợp đánh giá}
-Chức năng này dành cho cấp quản lý, cho phép xem báo cáo tổng hợp về đánh giá hai chiều (SV và Tutor). Các sơ đồ sẽ minh họa cách hệ thống truy xuất, tính toán các chỉ số và trình bày dữ liệu dưới dạng bảng hoặc biểu đồ.
+Để có một cái nhìn toàn diện, Khoa/BM có thể truy cập vào một báo cáo tổng hợp về tất cả các đánh giá hai chiều. Hệ thống sẽ tự động tính toán các chỉ số quan trọng và trình bày chúng một cách trực quan. Công cụ này giúp nhà quản lý dễ dàng nắm bắt và phân tích chất lượng tương tác trong toàn hệ thống.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -384,7 +384,7 @@ Chức năng này dành cho cấp quản lý, cho phép xem báo cáo tổng h�
 \pagebreak
 \subsection*{3.1.20. Use Case 20: Báo cáo kết quả học tập SV}
 \addcontentsline{toc}{subsection}{3.1.20. Use Case 20: Báo cáo kết quả học tập SV}
-Quy trình này mô tả cách Khoa tổng hợp, kiểm tra và xác nhận báo cáo học tập cho từng sinh viên. Sau khi được Khoa xác nhận, báo cáo này sẽ được công khai để sinh viên có thể xem và theo dõi tiến độ của mình.
+Vào cuối mỗi kỳ, hệ thống sẽ tổng hợp dữ liệu học tập của từng sinh viên thành một báo cáo sơ bộ. Báo cáo này sau đó sẽ được chuyển đến Khoa để xem xét và xác nhận. Một khi đã được phê duyệt, sinh viên có thể truy cập để xem kết quả chính thức của mình.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -404,7 +404,7 @@ Quy trình này mô tả cách Khoa tổng hợp, kiểm tra và xác nhận bá
 \pagebreak
 \subsection*{3.1.21. Use Case 21: Báo cáo chất lượng Tutor}
 \addcontentsline{toc}{subsection}{3.1.21. Use Case 21: Báo cáo chất lượng Tutor}
-Tương tự UC-20, quy trình này tập trung vào việc Khoa tổng hợp và xác nhận báo cáo chất lượng giảng dạy của Tutor. Báo cáo sau khi xác nhận sẽ được gửi đến Tutor để họ nắm được phản hồi và có kế hoạch cải thiện.
+Tương tự, chất lượng giảng dạy của mỗi Tutor cũng được tổng hợp thành một báo cáo chi tiết, dựa trên dữ liệu buổi học và phản hồi từ sinh viên. Báo cáo này cũng cần được Khoa xác nhận trước khi được gửi đến Tutor. Đây là cơ sở để ghi nhận và đề xuất các phương án phát triển cho đội ngũ Tutor.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -424,7 +424,7 @@ Tương tự UC-20, quy trình này tập trung vào việc Khoa tổng hợp v�
 \pagebreak
 \subsection*{3.1.22. Use Case 22: Báo cáo tổng hợp (Khoa, PCTSV, PĐT)}
 \addcontentsline{toc}{subsection}{3.1.22. Use Case 22: Báo cáo tổng hợp (Khoa, PCTSV, PĐT)}
-Đây là chức năng báo cáo cấp cao nhất, cho phép các cấp quản lý xem bức tranh toàn cảnh về hoạt động của hệ thống. Sơ đồ sẽ mô tả cách hệ thống tổng hợp dữ liệu từ các báo cáo con đã được xác nhận và phân quyền hiển thị theo vai trò người dùng.
+Chức năng này cung cấp cho các cấp quản lý cao nhất một bức tranh tổng thể về hoạt động của hệ thống. Dữ liệu từ các báo cáo con sẽ được tổng hợp và phân tích theo nhiều góc độ khác nhau. Báo cáo này đóng vai trò quan trọng trong việc đánh giá hiệu quả và định hướng chiến lược phát triển cho chương trình.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -443,7 +443,7 @@ Tương tự UC-20, quy trình này tập trung vào việc Khoa tổng hợp v�
 \pagebreak
 \subsection*{3.1.23. Use Case 23: Tutor tạo chương trình học}
 \addcontentsline{toc}{subsection}{3.1.23. Use Case 23: Tutor tạo chương trình học}
-Chức năng này cho phép Tutor tạo ra các chương trình học mới (cả học thuật và phi học thuật) để mở rộng nội dung giảng dạy. Sơ đồ sẽ minh họa quy trình Tutor nhập thông tin và hệ thống lưu lại để hiển thị cho sinh viên.
+Hệ thống trao quyền cho Tutor để có thể sáng tạo và mở thêm các chương trình học mới, từ ôn tập kiến thức chuyên sâu đến phát triển kỹ năng mềm. Tutor chỉ cần nhập các thông tin cần thiết, và sau khi được phê duyệt, chương trình sẽ xuất hiện trên hệ thống, sẵn sàng chào đón các sinh viên đăng ký.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -463,18 +463,18 @@ Chức năng này cho phép Tutor tạo ra các chương trình học mới (c�
 \pagebreak
 \subsection*{3.1.24. Use Case 24: SV đăng ký chương trình học thuật}
 \addcontentsline{toc}{subsection}{3.1.24. Use Case 24: SV đăng ký chương trình học thuật}
-Quy trình này mô tả cách sinh viên đăng ký tham gia các chương trình học thuật do Tutor tạo. Sơ đồ sẽ làm rõ các bước kiểm tra điều kiện, đặc biệt là quy tắc giới hạn mỗi sinh viên chỉ được tham gia tối đa 2 chương trình cùng lúc.
+Sinh viên có thể dễ dàng tìm thấy và đăng ký các chương trình bổ trợ kiến thức phù hợp với nhu cầu của mình. Để đảm bảo chất lượng và sự tập trung, hệ thống sẽ áp dụng một số quy tắc, chẳng hạn như giới hạn số lượng chương trình học thuật mà một sinh viên có thể tham gia trong cùng một thời điểm.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.35 ]{Picture/ACUC24.png}
+    \includegraphics[scale=0.33 ]{Picture/ACUC24.png}
     \caption{Sơ đồ hoạt động Use Case 24: SV đăng ký chương trình học thuật}
     \end{figure}
     \item Sơ đồ tuần tự
     \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.35 ]{Picture/SEUC24.png}
+    \includegraphics[scale=0.33 ]{Picture/SEUC24.png}
     \caption{Sơ đồ tuần tự Use Case 24: SV đăng ký chương trình học thuật}
     \end{figure}
 \end{itemize}
@@ -482,7 +482,7 @@ Quy trình này mô tả cách sinh viên đăng ký tham gia các chương trì
 \pagebreak
 \subsection*{3.1.25. Use Case 25: SV đăng ký chương trình phi học thuật}
 \addcontentsline{toc}{subsection}{3.1.25. Use Case 25: SV đăng ký chương trình phi học thuật}
-Tương tự UC-24, use case này dành cho các chương trình phi học thuật. Tuy nhiên, quy trình này đơn giản hơn do không có quy tắc giới hạn số lượng chương trình mà sinh viên có thể tham gia.
+Bên cạnh kiến thức chuyên môn, các hoạt động phát triển kỹ năng mềm cũng rất được khuyến khích. Sinh viên có thể tự do đăng ký tham gia các chương trình này mà không bị giới hạn về số lượng. Hệ thống chỉ cần đảm bảo rằng chương trình mà sinh viên chọn vẫn còn chỗ trống.
 \begin{itemize}
     \item Sơ đồ hoạt động
     \begin{figure}[H]
@@ -497,6 +497,8 @@ Tương tự UC-24, use case này dành cho các chương trình phi học thu�
     \caption{Sơ đồ tuần tự Use Case 25: SV đăng ký chương trình phi học thuật}
     \end{figure}
 \end{itemize}
+
+
 %========================================================================================
 \newpage
 \section*{3.2. Giao diện}
