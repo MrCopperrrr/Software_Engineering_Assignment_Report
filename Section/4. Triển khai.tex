@@ -131,4 +131,27 @@ Sơ đồ dưới đây minh họa cách mã nguồn được tổ chức thành
     \caption{Sơ đồ tổ chức các gói của hệ thống}
 \end{figure}
 
+\subsection*{4.2.3. Mô tả các gói}
+\addcontentsline{toc}{subsection}{4.2.3. Mô tả các gói}
+\begin{table}[H]
+\centering
+\caption{Chức năng của từng gói (package) trong kiến trúc phần mềm}
+\begin{tabular}{|c|p{4cm}|p{9cm}|}
+\hline
+\textbf{STT} & \textbf{Tên gói} & \textbf{Chức năng chính} \\
+\hline
+1 & Controller Layer & Chứa các lớp chịu trách nhiệm tiếp nhận yêu cầu HTTP từ client, gọi đến các Service tương ứng để xử lý và trả về phản hồi (response). \\
+\hline
+2 & Service Layer & Chứa toàn bộ logic nghiệp vụ của ứng dụng. Đây là nơi các quy trình như ghép cặp Tutor, xử lý đăng ký, tạo báo cáo được thực thi. Gói này điều phối hoạt động giữa Repositories và các thành phần khác. \\
+\hline
+3 & Repository Layer & Chứa các interface/lớp định nghĩa các phương thức để truy cập dữ liệu. Gói này trừu tượng hóa lớp truy cập dữ liệu, giúp Service không cần biết chi tiết về cách dữ liệu được lưu trữ. \\
+\hline
+4 & Domain (Entities) & Chứa các lớp thực thể (Entity) ánh xạ trực tiếp tới các bảng trong cơ sở dữ liệu, định nghĩa cấu trúc dữ liệu cốt lõi của hệ thống. \\
+\hline
+5 & DTOs (Data Transfer Objects) & Chứa các lớp dùng để truyền dữ liệu giữa các lớp, đặc biệt là giữa Controller và Service. Việc sử dụng DTO giúp che giấu cấu trúc của Domain và chỉ truyền đi những dữ liệu cần thiết. \\
+\hline
+-- & Các gói phụ trợ & Bao gồm Security, Integration, Config. Các gói này cung cấp các chức năng xuyên suốt và được sử dụng chủ yếu bởi Service Layer nhưng không được vẽ ra để giữ cho sơ đồ đơn giản. \\
+\hline
+\end{tabular}
+\end{table}
 %========================================================================================
