@@ -226,6 +226,7 @@ Sơ đồ được tổ chức thành các cụm chức năng chính để phả
 \section*{4.4. Mô tả các lớp chi tiết và phương thức}
 \addcontentsline{toc}{section}{4.4. Mô tả các lớp chi tiết và phương thức}
 \subsection{4.4.1. Cụm Quản lý Người dùng (User Management)}
+\addcontentsline{toc}{subsection}{4.4.1. Cụm Quản lý Người dùng (User Management)}
 
 Đây là cụm lõi, định nghĩa các đối tượng người dùng trong hệ thống. Việc sử dụng kế thừa từ một lớp trừu tượng \texttt{User} giúp tối ưu hóa cấu trúc và tránh lặp lại mã nguồn.
 
@@ -330,6 +331,98 @@ Sơ đồ được tổ chức thành các cụm chức năng chính để phả
 \hline
 + manageUsers() & user: User, action: String & boolean & Quản lý tài khoản người dùng: kích hoạt, khóa, hoặc phân quyền. \\
 + viewSystemReports() & reportType: String & Report & Xem các báo cáo tổng hợp về hoạt động của hệ thống, ví dụ như báo cáo chất lượng Tutor, báo cáo học tập của sinh viên (UC-19, UC-22). \\
+\hline
+\end{tabularx}
+\end{table}
+
+
+\subsection*{4.4.2. Cụm Chương trình và Đăng ký (Program \& Registration)}
+\addcontentsline{toc}{subsection}{4.4.2. Cụm Chương trình và Đăng ký (Program \& Registration)}
+
+Cụm này định nghĩa các lớp liên quan đến việc tổ chức các chương trình học và quản lý quá trình đăng ký của sinh viên, cũng như kết quả ghép cặp giữa sinh viên và Tutor.
+
+\textbf{Mô tả:} Đại diện cho một chương trình học thuật hoặc phi học thuật cụ thể được cung cấp trên hệ thống. Ví dụ: ``Phụ đạo môn Giải tích 1'', ``Luyện thi cuối kỳ môn Lập trình nâng cao'', hoặc ``Workshop kỹ năng thuyết trình''.
+
+\textbf{Thuộc tính (Attributes):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|l|X|}
+\hline
+\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
+\hline
+- programId & UUID & Khóa chính, mã định danh duy nhất cho mỗi chương trình. \\
+- name & String & Tên của chương trình (ví dụ: ``Cấu trúc dữ liệu và giải thuật''). \\
+- description & String & Mô tả chi tiết về nội dung, mục tiêu và đối tượng của chương trình. \\
+- type & String & Phân loại chương trình là ``ACADEMIC'' (học thuật) hay ``NON\_ACADEMIC'' (phi học thuật). \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{Phương thức (Methods):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|X|l|X|}
+\hline
+\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả} \\
+\hline
++ getRegisteredStudents() & (none) & List<Student> & Lấy danh sách tất cả sinh viên đã đăng ký tham gia chương trình này. \\
++ getAvailableTutors() & (none) & List<Tutor> & Lấy danh sách các Tutor có chuyên môn và đang nhận hướng dẫn cho chương trình này. \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{Mô tả:} Đây là một lớp liên kết, ghi lại thông tin về việc một \texttt{Student} đã đăng ký tham gia một \texttt{TutoringProgram}. Mỗi đối tượng của lớp này là một bản ghi đăng ký duy nhất.
+
+\textbf{Thuộc tính (Attributes):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|l|X|}
+\hline
+\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
+\hline
+- registrationId & UUID & Khóa chính, mã định danh duy nhất cho mỗi lượt đăng ký. \\
+- status & String & Trạng thái của việc đăng ký. Có thể là ``ACTIVE'' (đang hoạt động) hoặc ``CANCELLED'' (đã hủy). \\
+- registeredAt & LocalDateTime & Dấu thời gian ghi lại thời điểm sinh viên thực hiện đăng ký. \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{Phương thức (Methods):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|X|l|X|}
+\hline
+\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
+\hline
++ cancelRegistration() & (none) & void & Thay đổi trạng thái của đơn đăng ký thành ``CANCELLED''. Tương ứng với chức năng Hủy đăng ký môn học (UC-05). \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{Mô tả:} Ghi lại kết quả của việc ghép cặp thành công giữa một \texttt{Student} và một \texttt{Tutor} cho một \texttt{TutoringProgram} cụ thể. Lớp này giúp hệ thống quản lý các cặp Tutor-Mentee đang hoạt động.
+
+\textbf{Thuộc tính (Attributes):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|l|X|}
+\hline
+\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
+\hline
+- matchId & UUID & Khóa chính, mã định danh duy nhất cho mỗi cặp ghép. \\
+- method & String & Phương thức ghép cặp. Có thể là ``MANUAL'' (sinh viên tự chọn) hoặc ``AUTOMATIC'' (hệ thống tự động gợi ý). \\
+- status & String & Trạng thái của cặp ghép. Có thể là ``ACTIVE'' (đang hoạt động) hoặc ``INACTIVE'' (đã kết thúc hoặc bị hủy). \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{Phương thức (Methods):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|X|l|X|}
+\hline
+\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
+\hline
++ deactivateMatch() & (none) & void & Chuyển trạng thái của cặp ghép thành ``INACTIVE'', ví dụ như khi môn học kết thúc hoặc sinh viên hủy ghép cặp. \\
 \hline
 \end{tabularx}
 \end{table}
