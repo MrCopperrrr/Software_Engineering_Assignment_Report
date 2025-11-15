@@ -2,10 +2,10 @@
 \addcontentsline{toc}{part}{4. Triển khai hệ thống}
 
 %========================================================================================
-\section*{4.1. Sơ đồ triển khai (Deployment View)}
-\addcontentsline{toc}{section}{4.1. Sơ đồ triển khai (Deployment View)}
-\subsection*{4.1.1 Giới thiệu}
-\addcontentsline{toc}{subsection}{4.1.1 Giới thiệu}
+\section*{1.1. Sơ đồ triển khai (Deployment View)}
+\addcontentsline{toc}{section}{1.1. Sơ đồ triển khai (Deployment View)}
+\subsection*{1.1.1 Giới thiệu}
+\addcontentsline{toc}{subsection}{1.1.1 Giới thiệu}
 Sơ đồ triển khai (Deployment Diagram) mô tả kiến trúc vật lý của "Hệ thống hỗ trợ Tutor", thể hiện cách các thành phần phần mềm được phân bổ và vận hành trên các nút (node) phần cứng. Sơ đồ này cung cấp một cái nhìn tổng quan về môi trường thực thi của hệ thống, bao gồm các máy chủ, cơ sở dữ liệu, và sự tương tác giữa chúng cũng như với các hệ thống bên ngoài.
 Kiến trúc được lựa chọn là mô hình \textbf{client-server ba lớp (3-tier)} hiện đại, bao gồm:
 
@@ -17,8 +17,8 @@ Kiến trúc được lựa chọn là mô hình \textbf{client-server ba lớp 
 
 Mô hình này đảm bảo tính linh hoạt, khả năng mở rộng và bảo mật cho hệ thống.
 
-\subsection*{4.1.2. Sơ đồ triển khai hệ thống}
-\addcontentsline{toc}{subsection}{4.1.2. Sơ đồ triển khai hệ thống}
+\subsection*{1.1.2. Sơ đồ triển khai hệ thống}
+\addcontentsline{toc}{subsection}{1.1.2. Sơ đồ triển khai hệ thống}
 Sơ đồ dưới đây được tạo bằng PlantUML, mô tả chi tiết các thành phần và luồng tương tác.
 \begin{figure}[H]
     \centering
@@ -28,8 +28,8 @@ Sơ đồ dưới đây được tạo bằng PlantUML, mô tả chi tiết các
     \caption{Sơ đồ triển khai hệ thống hỗ trợ Tutor}
 \end{figure}
 
-\subsection*{4.1.3. Mô tả các thành phần}
-\addcontentsline{toc}{subsection}{4.1.3. Mô tả các thành phần}
+\subsection*{1.1.3. Mô tả các thành phần}
+\addcontentsline{toc}{subsection}{1.1.3. Mô tả các thành phần}
 
 \begin{table}[H]
 \centering
@@ -53,8 +53,8 @@ Sơ đồ dưới đây được tạo bằng PlantUML, mô tả chi tiết các
 \caption{Các thành phần trong sơ đồ triển khai hệ thống hỗ trợ Tutor}
 \end{table}
 
-\subsection*{4.1.4. Luồng hoạt động}
-\addcontentsline{toc}{subsection}{4.1.4. Luồng hoạt động}
+\subsection*{1.1.4. Luồng hoạt động}
+\addcontentsline{toc}{subsection}{1.1.4. Luồng hoạt động}
 Để làm rõ hơn sự tương tác giữa các thành phần, dưới đây là mô tả luồng hoạt động của hai kịch bản tiêu biểu:
 
 \begin{enumerate}[label=\Alph*.]
@@ -98,10 +98,10 @@ Sơ đồ dưới đây được tạo bằng PlantUML, mô tả chi tiết các
     \end{enumerate}
 \end{enumerate}
 %========================================================================================
-\section*{4.2. Sơ đồ phát triển (Development View)}
-\addcontentsline{toc}{section}{4.2. Sơ đồ phát triển (Development View)}
-\subsection*{4.2.1 Giới thiệu}
-\addcontentsline{toc}{subsection}{4.2.1 Giới thiệu}
+\section*{1.2. Sơ đồ phát triển (Development View)}
+\addcontentsline{toc}{section}{1.2. Sơ đồ phát triển (Development View)}
+\subsection*{1.2.1 Giới thiệu}
+\addcontentsline{toc}{subsection}{1.2.1 Giới thiệu}
 Sơ đồ phát triển, hay \textbf{Sơ đồ gói (Package Diagram)}, mô tả cấu trúc tĩnh và cách tổ chức mã nguồn của hệ thống từ góc nhìn của đội ngũ phát triển. Mục tiêu của sơ đồ này là trình bày một kiến trúc phần mềm có tính module hóa cao, rõ ràng và dễ bảo trì, tuân thủ nguyên tắc \textit{tách biệt các mối quan tâm (Separation of Concerns)}.
 
 \noindent Hệ thống được thiết kế theo kiến trúc \textbf{phân lớp (Layered Architecture)}, một mô hình phổ biến trong các ứng dụng web hiện đại. Các lớp chính bao gồm:
@@ -120,8 +120,8 @@ Ngoài ra, hệ thống còn có các gói hỗ trợ cho các chức năng xuy�
     \item \textbf{Integration}: Tích hợp với các hệ thống bên ngoài như HCMUT\_SSO, HCMUT\_DATACORE, Email Service,...
 \end{itemize}
 
-\subsection*{4.2.2. Sơ đồ gói (Package Diagram)}
-\addcontentsline{toc}{subsection}{4.2.2. Sơ đồ gói (Package Diagram)}
+\subsection*{1.2.2. Sơ đồ gói (Package Diagram)}
+\addcontentsline{toc}{subsection}{1.2.2. Sơ đồ gói (Package Diagram)}
 Sơ đồ dưới đây minh họa cách mã nguồn được tổ chức thành các gói logic và mối quan hệ phụ thuộc giữa chúng.
 \begin{figure}[H]
     \centering
@@ -131,8 +131,8 @@ Sơ đồ dưới đây minh họa cách mã nguồn được tổ chức thành
     \caption{Sơ đồ tổ chức các gói của hệ thống}
 \end{figure}
 
-\subsection*{4.2.3. Mô tả các gói}
-\addcontentsline{toc}{subsection}{4.2.3. Mô tả các gói}
+\subsection*{1.2.3. Mô tả các gói}
+\addcontentsline{toc}{subsection}{1.2.3. Mô tả các gói}
 Bảng dưới đây giải thích chức năng của từng gói (package) trong kiến trúc phần mềm.
 \begin{table}[H]
 \centering
@@ -156,8 +156,8 @@ Bảng dưới đây giải thích chức năng của từng gói (package) tron
 \caption{Chức năng của từng gói (package) trong kiến trúc phần mềm}
 \end{table}
 
-\subsection*{4.2.4. Luồng xử lý dữ liệu qua các lớp}
-\addcontentsline{toc}{subsection}{4.2.4. Luồng xử lý dữ liệu qua các lớp}
+\subsection*{1.2.4. Luồng xử lý dữ liệu qua các lớp}
+\addcontentsline{toc}{subsection}{1.2.4. Luồng xử lý dữ liệu qua các lớp}
 
 Để minh họa cách các gói tương tác với nhau, luồng xử lý cho chức năng ``Sinh viên đăng ký môn học'' (UC-04):
 
@@ -169,10 +169,10 @@ Bảng dưới đây giải thích chức năng của từng gói (package) tron
     \item \textbf{Response}: Sau khi xử lý xong, Service Layer trả về kết quả (thường dưới dạng một DTO khác) cho Controller Layer, và Controller sẽ tạo phản hồi HTTP gửi về cho client.
 \end{itemize}
 %========================================================================================
-\section*{4.3. Sơ đồ lớp chi tiết (Detailed Class Diagram)}
-\addcontentsline{toc}{section}{4.3. Sơ đồ lớp chi tiết (Detailed Class Diagram)}
-\subsection*{4.3.1. Giới thiệu}
-\addcontentsline{toc}{subsection}{4.3.1. Giới thiệu}
+\section*{1.3. Sơ đồ lớp chi tiết (Detailed Class Diagram)}
+\addcontentsline{toc}{section}{1.3. Sơ đồ lớp chi tiết (Detailed Class Diagram)}
+\subsection*{1.3.1. Giới thiệu}
+\addcontentsline{toc}{subsection}{1.3.1. Giới thiệu}
 Sơ đồ lớp là một sơ đồ cấu trúc tĩnh trong UML, mô tả chi tiết các lớp (\textit{class}), thuộc tính (\textit{attributes}), phương thức (\textit{methods}) và mối quan hệ giữa các lớp đó trong \textbf{Hệ thống hỗ trợ Tutor}. Sơ đồ này đóng vai trò là bản thiết kế chi tiết cho việc triển khai mã nguồn, đảm bảo hệ thống được xây dựng một cách nhất quán, có cấu trúc và dễ dàng bảo trì, mở rộng.
 
 Sơ đồ được tổ chức thành các cụm chức năng chính để phản ánh cấu trúc module của hệ thống:
@@ -184,8 +184,8 @@ Sơ đồ được tổ chức thành các cụm chức năng chính để phả
     \item \textbf{Cụm Đánh giá và Phản hồi (Feedback \& Support)}: Quản lý các chức năng hỗ trợ như đánh giá, tài liệu.
 \end{itemize}
 
-\subsection*{4.3.2. Sơ đồ lớp chi tiết của hệ thống}
-\addcontentsline{toc}{subsection}{4.3.2. Sơ đồ lớp chi tiết của hệ thống}
+\subsection*{1.3.2. Sơ đồ lớp chi tiết của hệ thống}
+\addcontentsline{toc}{subsection}{1.3.2. Sơ đồ lớp chi tiết của hệ thống}
 
 \begin{figure}[H]
     \centering
@@ -195,8 +195,8 @@ Sơ đồ được tổ chức thành các cụm chức năng chính để phả
     \caption{Sơ đồ lớp chi tiết của hệ thống}
 \end{figure}
 
-\subsection*{4.3.3. Mô tả cụm chức năng}
-\addcontentsline{toc}{subsection}{4.3.3. Mô tả cụm chức năng}
+\subsection*{1.3.3. Mô tả cụm chức năng}
+\addcontentsline{toc}{subsection}{1.3.3. Mô tả cụm chức năng}
 \begin{itemize}
     \item \textbf{Cụm Quản lý Người dùng (User Management):}
     \begin{itemize}
@@ -223,10 +223,10 @@ Sơ đồ được tổ chức thành các cụm chức năng chính để phả
 \end{itemize}
 
 %========================================================================================
-\section*{4.4. Mô tả các lớp chi tiết và phương thức}
-\addcontentsline{toc}{section}{4.4. Mô tả các lớp chi tiết và phương thức}
-\subsection*{4.4.1. Cụm Quản lý Người dùng (User Management)}
-\addcontentsline{toc}{subsection}{4.4.1. Cụm Quản lý Người dùng (User Management)}
+\section*{1.4. Mô tả các lớp chi tiết và phương thức}
+\addcontentsline{toc}{section}{1.4. Mô tả các lớp chi tiết và phương thức}
+\subsection*{1.4.1. Cụm Quản lý Người dùng (User Management)}
+\addcontentsline{toc}{subsection}{1.4.1. Cụm Quản lý Người dùng (User Management)}
 
 Đây là cụm lõi, định nghĩa các đối tượng người dùng trong hệ thống. Việc sử dụng kế thừa từ một lớp trừu tượng \texttt{User} giúp tối ưu hóa cấu trúc và tránh lặp lại mã nguồn.
 
@@ -336,8 +336,8 @@ Sơ đồ được tổ chức thành các cụm chức năng chính để phả
 \end{table}
 
 
-\subsection*{4.4.2. Cụm Chương trình và Đăng ký (Program \& Registration)}
-\addcontentsline{toc}{subsection}{4.4.2. Cụm Chương trình và Đăng ký (Program \& Registration)}
+\subsection*{1.4.2. Cụm Chương trình và Đăng ký (Program \& Registration)}
+\addcontentsline{toc}{subsection}{1.4.2. Cụm Chương trình và Đăng ký (Program \& Registration)}
 
 Cụm này định nghĩa các lớp liên quan đến việc tổ chức các chương trình học và quản lý quá trình đăng ký của sinh viên, cũng như kết quả ghép cặp giữa sinh viên và Tutor.
 
@@ -427,8 +427,8 @@ Cụm này định nghĩa các lớp liên quan đến việc tổ chức các c
 \end{tabularx}
 \end{table}
 
-\subsection*{4.4.3. Cụm Lịch trình và Buổi học (Scheduling \& Session)}
-\addcontentsline{toc}{subsection}{4.4.3. Cụm Lịch trình và Buổi học (Scheduling \& Session)}
+\subsection*{1.4.3. Cụm Lịch trình và Buổi học (Scheduling \& Session)}
+\addcontentsline{toc}{subsection}{1.4.3. Cụm Lịch trình và Buổi học (Scheduling \& Session)}
 
 Cụm này chịu trách nhiệm quản lý thời gian của Tutor, quá trình đặt lịch của sinh viên, và thông tin chi tiết của từng buổi học. Đây là trung tâm của các hoạt động tương tác trong hệ thống.
 
@@ -524,8 +524,8 @@ Cụm này chịu trách nhiệm quản lý thời gian của Tutor, quá trình
 \end{tabularx}
 \end{table}
 
-\subsection*{4.4.4. Cụm Đánh giá và Phản hồi (Feedback \& Support)}
-\addcontentsline{toc}{subsection}{4.4.4. Cụm Đánh giá và Phản hồi (Feedback \& Support)}
+\subsection*{1.4.4. Cụm Đánh giá và Phản hồi (Feedback \& Support)}
+\addcontentsline{toc}{subsection}{1.4.4. Cụm Đánh giá và Phản hồi (Feedback \& Support)}
 
 Cụm này bao gồm các lớp hỗ trợ cho quá trình dạy và học, cụ thể là quản lý tài liệu học tập và thu thập các phản hồi, đánh giá từ người dùng để cải thiện chất lượng chương trình.
 
