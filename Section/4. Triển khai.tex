@@ -52,6 +52,51 @@ Sơ đồ dưới đây được tạo bằng PlantUML, mô tả chi tiết các
 \end{tabular}
 \caption{Các thành phần trong sơ đồ triển khai hệ thống hỗ trợ Tutor}
 \end{table}
+
+\subsection*{4.1.4. Luồng hoạt động}
+\addcontentsline{toc}{subsection}{4.1.4. Luồng hoạt động}
+Để làm rõ hơn sự tương tác giữa các thành phần, dưới đây là mô tả luồng hoạt động của hai kịch bản tiêu biểu:
+
+\begin{enumerate}[label=\Alph*.]
+    \item \textbf{Kịch bản 1: Người dùng đăng nhập vào hệ thống}
+    \begin{enumerate}[label*=\arabic*.]
+        \item Người dùng mở trình duyệt, truy cập vào địa chỉ của hệ thống và nhấn nút đăng nhập thông qua \textbf{HCMUT\_SSO}.
+        \item Yêu cầu (\textit{HTTPS Request}) được gửi qua Internet đến \textbf{Web Server (Nginx)}.
+        \item \textbf{Nginx} giải mã SSL và chuyển tiếp yêu cầu đến \textbf{Application Server}.
+        \item \textbf{Application Server} nhận yêu cầu, chuyển hướng người dùng đến trang đăng nhập của \textbf{HCMUT\_SSO}.
+        \item Sau khi người dùng đăng nhập thành công trên \textbf{HCMUT\_SSO}, dịch vụ này sẽ trả về một \textit{token} xác thực cho \textbf{Application Server}.
+        \item \textbf{Application Server} sử dụng \textit{token} này để gọi API đến \textbf{HCMUT\_DATACORE}, lấy và đồng bộ thông tin cơ bản của người dùng (họ tên, MSSV, khoa, vai trò) vào \textbf{Database Server}.
+        \item Cuối cùng, \textbf{Application Server} trả về một phiên làm việc (\textit{session}) và giao diện trang chủ cho người dùng.
+    \end{enumerate}
+
+    \item \textbf{Kịch bản 2: Tutor tạo lịch rảnh mới}
+    \begin{enumerate}[label*=\arabic*.]
+        \item \textbf{Tutor} sau khi đăng nhập, truy cập chức năng ``Tạo lịch rảnh'' và điền thông tin (ngày, giờ).
+        \item Yêu cầu tạo lịch được gửi qua Internet, đi qua \textbf{Web Server} và đến \textbf{Application Server}.
+        \item \textbf{Application Server} xác thực quyền của Tutor, kiểm tra tính hợp lệ của dữ liệu (ví dụ: không trùng lịch đã có).
+        \item Nếu hợp lệ, \textbf{Application Server} sẽ thực hiện một câu lệnh ghi (\texttt{INSERT}) để lưu thông tin lịch rảnh mới vào bảng \texttt{Schedules} trong \textbf{Database Server}.
+        \item \textbf{Database Server} xác nhận ghi thành công.
+        \item \textbf{Application Server} gửi lại một thông báo ``Tạo lịch thành công'' cho giao diện của Tutor.
+    \end{enumerate}
+
+    \item \textbf{Kịch bản 3: Sinh viên đặt lịch học cố định với Tutor}
+    \begin{enumerate}[label*=\arabic*.]
+        \item Sinh viên, sau khi đăng nhập, chọn môn học và xem các khung giờ rảnh (\textit{availability}) mà Tutor đã thiết lập. Sinh viên chọn một khung giờ phù hợp và nhấn ``Đặt lịch''.
+        \item Yêu cầu đặt lịch (\textit{HTTPS Request}) được gửi qua Internet tới \textbf{Web Server (Nginx)}.
+        \item \textbf{Nginx} chuyển tiếp yêu cầu đến \textbf{Application Server}.
+        \item \textbf{Application Server} nhận yêu cầu và thực hiện các bước xác thực nghiệp vụ:
+        \begin{itemize}
+            \item \textbf{Bước 4a}: Truy vấn \textbf{Database Server} để kiểm tra lại xem khung giờ mà sinh viên chọn có còn trống không và có nằm trong lịch rảnh hợp lệ của Tutor không.
+            \item \textbf{Bước 4b}: Truy vấn \textbf{Database Server} để kiểm tra lịch trình của chính sinh viên đó, đảm bảo không bị trùng với các lịch học/lịch thi khác đã đăng ký.
+        \end{itemize}
+        \item Nếu tất cả các điều kiện đều hợp lệ, \textbf{Application Server} sẽ tạo một bản ghi lịch học cố định mới trong \textbf{Database Server}, liên kết sinh viên, Tutor, và môn học với khung giờ đã chọn. Trạng thái của lịch được đặt là ``Đã xác nhận'' (\textit{Confirmed}).
+        \item Sau khi \textbf{Database Server} xác nhận lưu thành công, \textbf{Application Server} thực hiện hai hành động song song:
+        \begin{itemize}
+            \item \textbf{Bước 6a}: Gửi một phản hồi thành công về cho trình duyệt của sinh viên, hiển thị thông báo ``Bạn đã đặt lịch thành công''.
+            \item \textbf{Bước 6b}: Kết nối đến \textbf{Email Service (SMTP Server)} để gửi email thông báo xác nhận lịch học cho cả sinh viên và Tutor.
+        \end{itemize}
+    \end{enumerate}
+\end{enumerate}
 %========================================================================================
 
 
