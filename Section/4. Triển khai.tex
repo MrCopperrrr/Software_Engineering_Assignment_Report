@@ -154,4 +154,17 @@ Sơ đồ dưới đây minh họa cách mã nguồn được tổ chức thành
 \hline
 \end{tabular}
 \end{table}
+
+\subsection*{4.2.4. Luồng xử lý dữ liệu qua các lớp}
+\addcontentsline{toc}{subsection}{4.2.4. Luồng xử lý dữ liệu qua các lớp}
+
+Để minh họa cách các gói tương tác với nhau, luồng xử lý cho chức năng ``Sinh viên đăng ký môn học'' (UC-04):
+
+\begin{itemize}
+    \item \textbf{Request}: Sinh viên gửi yêu cầu đăng ký môn học từ giao diện người dùng. Yêu cầu này được gửi đến một endpoint trong Controller Layer.
+    \item \textbf{Controller Layer}: Lớp \texttt{RegistrationController} nhận yêu cầu. Nó xác thực dữ liệu đầu vào (đóng gói trong một đối tượng \texttt{RegistrationRequestDto} từ gói DTOs) và gọi phương thức trong Service Layer.
+    \item \textbf{Service Layer}: Lớp \texttt{RegistrationService} thực thi logic nghiệp vụ. Nó sử dụng các lớp trong Repository Layer để kiểm tra các quy tắc nghiệp vụ (ví dụ: giới hạn số môn đăng ký).
+    \item \textbf{Repository Layer}: Các lớp như \texttt{UserRepository} và \texttt{RegistrationRepository} tương tác với cơ sở dữ liệu. Chúng làm việc với các đối tượng từ Domain Layer (ví dụ: \texttt{User}, \texttt{CourseRegistration}).
+    \item \textbf{Response}: Sau khi xử lý xong, Service Layer trả về kết quả (thường dưới dạng một DTO khác) cho Controller Layer, và Controller sẽ tạo phản hồi HTTP gửi về cho client.
+\end{itemize}
 %========================================================================================
