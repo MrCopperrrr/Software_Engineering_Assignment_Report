@@ -169,3 +169,17 @@ Bảng dưới đây giải thích chức năng của từng gói (package) tron
     \item \textbf{Response}: Sau khi xử lý xong, Service Layer trả về kết quả (thường dưới dạng một DTO khác) cho Controller Layer, và Controller sẽ tạo phản hồi HTTP gửi về cho client.
 \end{itemize}
 %========================================================================================
+\section*{4.3. Sơ đồ lớp chi tiết (Detailed Class Diagram)}
+\addcontentsline{toc}{section}{4.3. Sơ đồ lớp chi tiết (Detailed Class Diagram)}
+\subsection*{4.3.1. Giới thiệu}
+\addcontentsline{toc}{subsection}{4.3.1. Giới thiệu}
+Sơ đồ lớp là một sơ đồ cấu trúc tĩnh trong UML, mô tả chi tiết các lớp (\textit{class}), thuộc tính (\textit{attributes}), phương thức (\textit{methods}) và mối quan hệ giữa các lớp đó trong \textbf{Hệ thống hỗ trợ Tutor}. Sơ đồ này đóng vai trò là bản thiết kế chi tiết cho việc triển khai mã nguồn, đảm bảo hệ thống được xây dựng một cách nhất quán, có cấu trúc và dễ dàng bảo trì, mở rộng.
+
+Sơ đồ được tổ chức thành các cụm chức năng chính để phản ánh cấu trúc module của hệ thống:
+
+\begin{itemize}
+    \item \textbf{Cụm Quản lý Người dùng (User Management)}: Định nghĩa các loại người dùng và vai trò.
+    \item \textbf{Cụm Chương trình và Đăng ký (Program \& Registration)}: Quản lý các chương trình học và việc đăng ký của sinh viên.
+    \item \textbf{Cụm Lịch trình và Buổi học (Scheduling \& Session)}: Xử lý việc tạo lịch, đặt lịch và quản lý các buổi học.
+    \item \textbf{Cụm Đánh giá và Phản hồi (Feedback \& Support)}: Quản lý các chức năng hỗ trợ như đánh giá, tài liệu.
+\end{itemize}
