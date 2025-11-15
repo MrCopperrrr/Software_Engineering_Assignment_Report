@@ -225,7 +225,7 @@ Sơ đồ được tổ chức thành các cụm chức năng chính để phả
 %========================================================================================
 \section*{4.4. Mô tả các lớp chi tiết và phương thức}
 \addcontentsline{toc}{section}{4.4. Mô tả các lớp chi tiết và phương thức}
-\subsection{4.4.1. Cụm Quản lý Người dùng (User Management)}
+\subsection*{4.4.1. Cụm Quản lý Người dùng (User Management)}
 \addcontentsline{toc}{subsection}{4.4.1. Cụm Quản lý Người dùng (User Management)}
 
 Đây là cụm lõi, định nghĩa các đối tượng người dùng trong hệ thống. Việc sử dụng kế thừa từ một lớp trừu tượng \texttt{User} giúp tối ưu hóa cấu trúc và tránh lặp lại mã nguồn.
@@ -423,6 +423,103 @@ Cụm này định nghĩa các lớp liên quan đến việc tổ chức các c
 \textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
 \hline
 + deactivateMatch() & (none) & void & Chuyển trạng thái của cặp ghép thành ``INACTIVE'', ví dụ như khi môn học kết thúc hoặc sinh viên hủy ghép cặp. \\
+\hline
+\end{tabularx}
+\end{table}
+
+\subsection*{4.4.3. Cụm Lịch trình và Buổi học (Scheduling \& Session)}
+\addcontentsline{toc}{subsection}{4.4.3. Cụm Lịch trình và Buổi học (Scheduling \& Session)}
+
+Cụm này chịu trách nhiệm quản lý thời gian của Tutor, quá trình đặt lịch của sinh viên, và thông tin chi tiết của từng buổi học. Đây là trung tâm của các hoạt động tương tác trong hệ thống.
+
+\textbf{Mô tả:} Đại diện cho một khung thời gian cụ thể mà một \texttt{Tutor} đã đăng ký là rảnh và sẵn sàng để nhận lịch dạy. Đây là ``nguyên liệu'' đầu vào để sinh viên có thể đặt lịch.
+
+\textbf{Thuộc tính (Attributes):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|l|X|}
+\hline
+\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
+\hline
+- slotId & UUID & Khóa chính, mã định danh duy nhất cho mỗi khung giờ rảnh. \\
+- startTime & LocalDateTime & Thời điểm bắt đầu của khung giờ rảnh. \\
+- endTime & LocalDateTime & Thời điểm kết thúc của khung giờ rảnh. \\
+- mode & SessionMode & Hình thức học trong khung giờ này: ONLINE hoặc OFFLINE. \\
+- location & String & Địa điểm (nếu là OFFLINE) hoặc có thể để trống. \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{Phương thức (Methods):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|X|l|X|}
+\hline
+\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả} \\
+\hline
++ isSlotAvailable() & (none) & boolean & Kiểm tra xem khung giờ này còn chỗ trống để sinh viên đặt lịch hay không (dựa trên số lượng Session đã được tạo). \\
++ updateSlot() & slotDetails: Map & void & Cho phép Tutor chỉnh sửa thông tin của khung giờ rảnh (ví dụ: thay đổi thời gian, hình thức). \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{Mô tả:} Đại diện cho một buổi học thực tế đã được lên lịch, kết nối một \texttt{Tutor} với một hoặc nhiều \texttt{Student} tại một thời điểm cụ thể. Đây là kết quả của việc sinh viên đặt lịch thành công vào một \texttt{AvailabilitySlot}.
+
+\textbf{Thuộc tính (Attributes):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|l|X|}
+\hline
+\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
+\hline
+- sessionId & UUID & Khóa chính, mã định danh duy nhất cho mỗi buổi học. \\
+- startTime & LocalDateTime & Thời điểm bắt đầu thực tế của buổi học. \\
+- endTime & LocalDateTime & Thời điểm kết thúc thực tế của buổi học. \\
+- status & SessionStatus & Trạng thái của buổi học (SCHEDULED, COMPLETED, CANCELLED, IN\_PROGRESS). \\
+- mode & SessionMode & Hình thức của buổi học (ONLINE hoặc OFFLINE). \\
+- locationOrLink & String & Chứa địa điểm phòng học (nếu là OFFLINE) hoặc đường link phòng học trực tuyến (nếu là ONLINE). \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{Phương thức (Methods):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|X|l|X|}
+\hline
+\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
+\hline
++ cancelSession() & reason: String & boolean & Hủy một buổi học đã được lên lịch. Phương thức này sẽ cập nhật status thành CANCELLED (UC-10). \\
++ markAsCompleted() & (none) & void & Đánh dấu buổi học đã hoàn thành. Phương thức này cập nhật status thành COMPLETED (UC-14). \\
++ getAttendees() & (none) & List<Student> & Lấy danh sách tất cả sinh viên đã đăng ký tham gia buổi học này. \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{Mô tả:} Ghi lại thông tin điểm danh của một \texttt{Student} cụ thể cho một \texttt{Session} cụ thể. Lớp này giúp theo dõi sự chuyên cần của sinh viên.
+
+\textbf{Thuộc tính (Attributes):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|l|X|}
+\hline
+\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
+\hline
+- attendanceId & UUID & Khóa chính, mã định danh duy nhất cho mỗi lượt điểm danh. \\
+- status & String & Trạng thái điểm danh: ``PRESENT'' (có mặt), ``ABSENT'' (vắng mặt). \\
+- checkInTime & LocalDateTime & Thời điểm Tutor thực hiện điểm danh. \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{Phương thức (Methods):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|X|l|X|}
+\hline
+\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
+\hline
++ updateStatus() & newStatus: String & void & Cập nhật lại trạng thái điểm danh, ví dụ trong trường hợp cần điều chỉnh sau khi điểm danh ban đầu. \\
 \hline
 \end{tabularx}
 \end{table}
