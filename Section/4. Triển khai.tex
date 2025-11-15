@@ -28,6 +28,30 @@ Sơ đồ dưới đây được tạo bằng PlantUML, mô tả chi tiết các
     \caption{Sơ đồ triển khai hệ thống hỗ trợ Tutor}
 \end{figure}
 
+\subsection*{4.1.3. Mô tả các thành phần}
+\addcontentsline{toc}{subsection}{4.1.3. Mô tả các thành phần}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|p{3.5cm}|p{6cm}|p{3.5cm}|}
+\hline
+\textbf{STT} & \textbf{Tên thành phần} & \textbf{Mô tả} & \textbf{Công nghệ/Phần mềm} \\
+\hline
+1 & Người dùng & Các tác nhân (Sinh viên, Tutor, Admin) tương tác với hệ thống thông qua trình duyệt web trên các thiết bị như máy tính, điện thoại, máy tính bảng. & Trình duyệt Web (Chrome, Firefox, Safari) \\
+\hline
+2 & Web Server (Nginx) & Đóng vai trò là một Reverse Proxy và Load Balancer. Tiếp nhận tất cả các yêu cầu từ Internet, mã hóa/giải mã SSL (HTTPS), và chuyển tiếp yêu cầu đến Application Server. Việc này giúp tăng cường bảo mật và cho phép mở rộng hệ thống trong tương lai. & Nginx \\
+\hline
+3 & Application Server & Là "bộ não" của hệ thống, chứa toàn bộ logic nghiệp vụ như quản lý tài khoản, ghép cặp tutor, lên lịch, tạo báo cáo. Được đóng gói trong Docker container để đảm bảo tính nhất quán giữa các môi trường và dễ dàng triển khai. & Java Spring Boot / Node.js, Docker \\
+\hline
+4 & Database Server & Chịu trách nhiệm lưu trữ và quản lý toàn bộ dữ liệu của hệ thống (thông tin người dùng, lịch học, feedback, tài liệu,...). Cũng được triển khai trong Docker container. & PostgreSQL / MySQL, Docker \\
+\hline
+5 & Hệ thống của HCMUT & Các dịch vụ công nghệ thông tin tập trung của trường mà hệ thống cần tích hợp, bao gồm: HCMUT\_SSO (xác thực), HCMUT\_DATACORE (dữ liệu người dùng), HCMUT\_LIBRARY (tài liệu học tập). & API (REST/SOAP) \\
+\hline
+6 & Email Service & Dịch vụ bên ngoài chịu trách nhiệm gửi các thông báo và nhắc nhở qua email cho người dùng, ví dụ như thông báo đặt lịch thành công, nhắc nhở buổi học sắp tới. & SMTP Server (ví dụ: SendGrid, AWS SES) \\
+\hline
+\end{tabular}
+\caption{Các thành phần trong sơ đồ triển khai hệ thống hỗ trợ Tutor}
+\end{table}
 %========================================================================================
 
 
