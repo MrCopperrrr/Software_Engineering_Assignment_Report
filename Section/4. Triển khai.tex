@@ -191,6 +191,33 @@ Sơ đồ được tổ chức thành các cụm chức năng chính để phả
     \centering
     \setlength{\fboxsep}{2pt}     
     \setlength{\fboxrule}{0.5pt}   
-    \fbox{\includegraphics[scale=0.2]{Picture/ClassDiagram.png}}
+    \fbox{\includegraphics[scale=0.3]{Picture/ClassDiagram.png}}
     \caption{Sơ đồ lớp chi tiết của hệ thống}
 \end{figure}
+
+\subsection*{4.3.3. Mô tả cụm chức năng}
+\addcontentsline{toc}{subsection}{4.3.3. Mô tả cụm chức năng}
+\begin{itemize}
+    \item \textbf{Cụm Quản lý Người dùng (User Management):}
+    \begin{itemize}
+        \item Lớp trừu tượng User là lớp cha, chứa các thuộc tính và phương thức chung cho mọi người dùng.
+        \item Các lớp Student, Tutor, và Admin kế thừa từ User, bổ sung các thuộc tính và hành vi đặc thù cho từng vai trò. Thiết kế này giúp tái sử dụng mã nguồn và thể hiện rõ mối quan hệ "is-a" (là một).
+    \end{itemize}
+    \item \textbf{Cụm Chương trình và Đăng ký (Program \& Registration)}
+    \begin{itemize}
+        \item TutoringProgram đại diện cho một chương trình học (ví dụ: "Phụ đạo môn Cấu trúc dữ liệu").
+        \item CourseRegistration là một lớp liên kết (association class) thể hiện việc một Student đăng ký một TutoringProgram.
+        \item Matching ghi lại kết quả ghép cặp giữa Student và Tutor cho một chương trình cụ thể.
+    \end{itemize}
+    \item \textbf{Cụm Lịch trình và Buổi học (Scheduling \& Session):}
+    \begin{itemize}
+        \item AvailabilitySlot là các khung giờ rảnh mà Tutor đã tạo ra.
+        \item Session là một buổi học cụ thể được tạo ra khi một Student đặt lịch trong một AvailabilitySlot. Đây là lớp trung tâm, liên kết Tutor, Student, và TutoringProgram tại một thời điểm cụ thể.
+        \item Session là một buổi học cụ thể được tạo ra khi một Student đặt lịch trong một AvailabilitySlot. Đây là lớp trung tâm, liên kết Tutor, Student, và TutoringProgram tại một thời điểm cụ thể.
+    \end{itemize}
+    \item \textbf{Cụm Đánh giá và Phản hồi (Feedback \& Support):}
+    \begin{itemize}
+        \item Session là một buổi học cụ thể được tạo ra khi một Student đặt lịch trong một AvailabilitySlot. Đây là lớp trung tâm, liên kết Tutor, Student, và TutoringProgram tại một thời điểm cụ thể.
+        \item Feedback là một lớp linh hoạt, có thể ghi lại đánh giá từ Student đến Tutor hoặc ngược lại, được liên kết với một Session cụ thể để đảm bảo tính xác thực. Mối quan hệ giữa Feedback và User được định nghĩa rõ ràng qua hai vai trò "fromUser" và "toUser".
+    \end{itemize}
+\end{itemize}
