@@ -37,17 +37,17 @@ Sơ đồ dưới đây được tạo bằng PlantUML, mô tả chi tiết các
 \hline
 \textbf{STT} & \textbf{Tên thành phần} & \textbf{Mô tả} & \textbf{Công nghệ/Phần mềm} \\
 \hline
-1 & Người dùng & Các tác nhân (Sinh viên, Tutor, Admin) tương tác với hệ thống thông qua trình duyệt web trên các thiết bị như máy tính, điện thoại, máy tính bảng. & Trình duyệt Web (Chrome, Firefox, Safari) \\
+1 & Người dùng & Các tác nhân (Sinh viên, Tutor, Admin) tương tác với hệ thống thông qua trình duyệt web & Trình duyệt Web (Chrome, Firefox, Safari) \\
 \hline
-2 & Web Server (Nginx) & Đóng vai trò là một Reverse Proxy và Load Balancer. Tiếp nhận tất cả các yêu cầu từ Internet, mã hóa/giải mã SSL (HTTPS), và chuyển tiếp yêu cầu đến Application Server. Việc này giúp tăng cường bảo mật và cho phép mở rộng hệ thống trong tương lai. & Nginx \\
+2 & Web Server (Nginx) & Đóng vai trò là Reverse Proxy, tiếp nhận yêu cầu từ Internet và chuyển tiếp đến Application Server. Tăng cường bảo mật và cân bằng tải. & Nginx \\
 \hline
-3 & Application Server & Là "bộ não" của hệ thống, chứa toàn bộ logic nghiệp vụ như quản lý tài khoản, ghép cặp tutor, lên lịch, tạo báo cáo. Được đóng gói trong Docker container để đảm bảo tính nhất quán giữa các môi trường và dễ dàng triển khai. & Java Spring Boot / Node.js, Docker \\
+3 & Application Server & Chứa toàn bộ logic nghiệp vụ của hệ thống, được đóng gói trong Docker container để dễ dàng triển khai và quản lý. & Java Spring Boot / Node.js, Docker \\
 \hline
-4 & Database Server & Chịu trách nhiệm lưu trữ và quản lý toàn bộ dữ liệu của hệ thống (thông tin người dùng, lịch học, feedback, tài liệu,...). Cũng được triển khai trong Docker container. & PostgreSQL / MySQL, Docker \\
+4 & Database Server & Chịu trách nhiệm lưu trữ và quản lý toàn bộ dữ liệu của hệ thống, được triển khai trong Docker container. & PostgreSQL / MySQL, Docker \\
 \hline
-5 & Hệ thống của HCMUT & Các dịch vụ công nghệ thông tin tập trung của trường mà hệ thống cần tích hợp, bao gồm: HCMUT\_SSO (xác thực), HCMUT\_DATACORE (dữ liệu người dùng), HCMUT\_LIBRARY (tài liệu học tập). & API (REST/SOAP) \\
+5 & Hệ thống của HCMUT & Các dịch vụ công nghệ thông tin tập trung của trường mà hệ thống cần tích hợp, bao gồm: HCMUT\_SSO , HCMUT\_DATACORE, HCMUT\_LIBRARY . & API (REST/SOAP) \\
 \hline
-6 & Email Service & Dịch vụ bên ngoài chịu trách nhiệm gửi các thông báo và nhắc nhở qua email cho người dùng, ví dụ như thông báo đặt lịch thành công, nhắc nhở buổi học sắp tới. & SMTP Server (ví dụ: SendGrid, AWS SES) \\
+6 & Email Service & Dịch vụ bên ngoài chịu trách nhiệm gửi các thông báo và nhắc nhở qua email cho người dùng. & SMTP Server (ví dụ: SendGrid, AWS SES) \\
 \hline
 \end{tabular}
 \caption{Các thành phần trong sơ đồ triển khai hệ thống hỗ trợ Tutor}
@@ -130,4 +130,5 @@ Sơ đồ dưới đây minh họa cách mã nguồn được tổ chức thành
     \fbox{\includegraphics[scale=0.45]{Picture/Developmentview.png}}
     \caption{Sơ đồ tổ chức các gói của hệ thống}
 \end{figure}
+
 %========================================================================================
