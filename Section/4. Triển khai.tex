@@ -98,6 +98,25 @@ Sơ đồ dưới đây được tạo bằng PlantUML, mô tả chi tiết các
     \end{enumerate}
 \end{enumerate}
 %========================================================================================
+\section*{4.2. Sơ đồ phát triển (Development View)}
+\addcontentsline{toc}{section}{4.2. Sơ đồ phát triển (Development View)}
+\subsection*{4.2.1 Giới thiệu}
+\addcontentsline{toc}{subsection}{4.2.1 Giới thiệu}
+Sơ đồ phát triển, hay \textbf{Sơ đồ gói (Package Diagram)}, mô tả cấu trúc tĩnh và cách tổ chức mã nguồn của hệ thống từ góc nhìn của đội ngũ phát triển. Mục tiêu của sơ đồ này là trình bày một kiến trúc phần mềm có tính module hóa cao, rõ ràng và dễ bảo trì, tuân thủ nguyên tắc \textit{tách biệt các mối quan tâm (Separation of Concerns)}.
 
+\noindent Hệ thống được thiết kế theo kiến trúc \textbf{phân lớp (Layered Architecture)}, một mô hình phổ biến trong các ứng dụng web hiện đại. Các lớp chính bao gồm:
 
+\begin{itemize}
+    \item \textbf{Controller Layer}: Tiếp nhận và xử lý các yêu cầu HTTP từ người dùng.
+    \item \textbf{Service Layer}: Chứa đựng toàn bộ logic nghiệp vụ cốt lõi của hệ thống.
+    \item \textbf{Repository Layer}: Chịu trách nhiệm truy cập và tương tác với cơ sở dữ liệu.
+    \item \textbf{Domain/Model Layer}: Định nghĩa các đối tượng và thực thể dữ liệu.
+\end{itemize}
+
+Ngoài ra, hệ thống còn có các gói hỗ trợ cho các chức năng xuyên suốt như:
+\begin{itemize}
+    \item \textbf{Security}: Quản lý xác thực, phân quyền và bảo mật truy cập.
+    \item \textbf{Configuration}: Cấu hình hệ thống, môi trường và thông số hoạt động.
+    \item \textbf{Integration}: Tích hợp với các hệ thống bên ngoài như HCMUT\_SSO, HCMUT\_DATACORE, Email Service,...
+\end{itemize}
 %========================================================================================
