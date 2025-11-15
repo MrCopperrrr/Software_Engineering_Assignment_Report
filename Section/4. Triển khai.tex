@@ -523,3 +523,73 @@ Cụm này chịu trách nhiệm quản lý thời gian của Tutor, quá trình
 \hline
 \end{tabularx}
 \end{table}
+
+\subsection*{4.4.4. Cụm Đánh giá và Phản hồi (Feedback \& Support)}
+\addcontentsline{toc}{subsection}{4.4.4. Cụm Đánh giá và Phản hồi (Feedback \& Support)}
+
+Cụm này bao gồm các lớp hỗ trợ cho quá trình dạy và học, cụ thể là quản lý tài liệu học tập và thu thập các phản hồi, đánh giá từ người dùng để cải thiện chất lượng chương trình.
+
+\textbf{Mô tả:} Đại diện cho một phản hồi hoặc đánh giá mà một người dùng gửi cho một người dùng khác, liên quan đến một buổi học cụ thể. Lớp này được thiết kế linh hoạt để hỗ trợ cả hai chiều: sinh viên đánh giá Tutor và Tutor nhận xét về sinh viên.
+
+\textbf{Thuộc tính (Attributes):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|l|X|}
+\hline
+\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
+\hline
+- feedbackId & UUID & Khóa chính, mã định danh duy nhất cho mỗi phản hồi. \\
+- rating & int & Điểm số đánh giá (ví dụ: từ 1 đến 5 sao). \\
+- comment & String & Nội dung nhận xét, bình luận chi tiết. \\
+- createdAt & LocalDateTime & Dấu thời gian ghi lại thời điểm phản hồi được tạo. \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{Mối quan hệ đặc biệt:} \\
+Lớp này có hai mối quan hệ tới lớp \texttt{User}: \texttt{fromUser} (để xác định người gửi) và \texttt{toUser} (để xác định người nhận). \\
+Nó cũng có một mối quan hệ tới lớp \texttt{Session} để đảm bảo mỗi phản hồi đều gắn liền với một bối cảnh (buổi học) cụ thể.
+
+\textbf{Phương thức (Methods):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|X|l|X|}
+\hline
+\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
+\hline
++ saveFeedback() & (none) & boolean & Lưu thông tin phản hồi vào cơ sở dữ liệu. Được gọi khi sinh viên hoặc Tutor gửi đánh giá (UC-17, UC-18). \\
++ isValid() & (none) & boolean & Kiểm tra tính hợp lệ của phản hồi (ví dụ: điểm rating phải nằm trong khoảng cho phép). \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{Mô tả:} Đại diện cho một tài liệu học tập (ví dụ: slide bài giảng, bài tập, đề cương) mà \texttt{Tutor} tải lên hệ thống để chia sẻ với các sinh viên trong chương trình học của mình.
+
+\textbf{Thuộc tính (Attributes):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|l|X|}
+\hline
+\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
+\hline
+- materialId & UUID & Khóa chính, mã định danh duy nhất cho mỗi tài liệu. \\
+- fileName & String & Tên gốc của tệp tài liệu. \\
+- filePath & String & Đường dẫn lưu trữ tệp trên máy chủ hoặc dịch vụ lưu trữ đám mây. \\
+- uploadedAt & LocalDateTime & Dấu thời gian ghi lại thời điểm tài liệu được tải lên. \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{Phương thức (Methods):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|X|l|X|}
+\hline
+\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
+\hline
++ download() & (none) & File & Thực hiện chức năng cho phép người dùng (sinh viên) tải tài liệu về máy (UC-16). \\
++ delete() & (none) & void & Xóa tệp tài liệu khỏi hệ thống. Chỉ người tải lên (Tutor) mới có quyền này (UC-15). \\
++ updateInfo() & newName: String, newDesc: String & void & Cập nhật thông tin mô tả của tài liệu (UC-15). \\
+\hline
+\end{tabularx}
+\end{table}
