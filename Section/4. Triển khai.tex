@@ -191,7 +191,7 @@ Sơ đồ được tổ chức thành các cụm chức năng chính để phả
     \centering
     \setlength{\fboxsep}{2pt}     
     \setlength{\fboxrule}{0.5pt}   
-    \fbox{\includegraphics[scale=0.3]{Picture/ClassDiagram.png}}
+    \fbox{\includegraphics[scale=0.25]{Picture/ClassDiagram.png}}
     \caption{Sơ đồ lớp chi tiết của hệ thống}
 \end{figure}
 
@@ -221,3 +221,115 @@ Sơ đồ được tổ chức thành các cụm chức năng chính để phả
         \item Feedback là một lớp linh hoạt, có thể ghi lại đánh giá từ Student đến Tutor hoặc ngược lại, được liên kết với một Session cụ thể để đảm bảo tính xác thực. Mối quan hệ giữa Feedback và User được định nghĩa rõ ràng qua hai vai trò "fromUser" và "toUser".
     \end{itemize}
 \end{itemize}
+
+%========================================================================================
+\section*{4.4. Mô tả các lớp chi tiết và phương thức}
+\addcontentsline{toc}{section}{4.4. Mô tả các lớp chi tiết và phương thức}
+\subsection{4.4.1. Cụm Quản lý Người dùng (User Management)}
+
+Đây là cụm lõi, định nghĩa các đối tượng người dùng trong hệ thống. Việc sử dụng kế thừa từ một lớp trừu tượng \texttt{User} giúp tối ưu hóa cấu trúc và tránh lặp lại mã nguồn.
+
+\textbf{Mô tả:} Là lớp cơ sở (base class) cho tất cả các loại người dùng trong hệ thống. Lớp này chứa các thông tin và hành vi chung nhất như thông tin định danh, email, và các chức năng quản lý tài khoản cơ bản. Không thể tạo đối tượng trực tiếp từ lớp này.
+
+\textbf{Thuộc tính (Attributes):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|l|X|}
+\hline
+\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
+\hline
+- userId & UUID & Khóa chính, một mã định danh duy nhất cho mỗi người dùng trong hệ thống. \\
+- fullName & String & Họ và tên đầy đủ của người dùng. \\
+- email & String & Địa chỉ email của người dùng, được sử dụng để đăng nhập và nhận thông báo. \\
+- passwordHash & String & Chuỗi đã được băm (hash) từ mật khẩu của người dùng. Lưu ý: Hệ thống không bao giờ lưu mật khẩu ở dạng văn bản gốc. \\
+- role & Role & Vai trò của người dùng trong hệ thống (STUDENT, TUTOR, ADMIN), quyết định các quyền truy cập chức năng. \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{Phương thức (Methods):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|X|l|X|}
+\hline
+\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả} \\
+\hline
++ updateProfile() & profileData: Map & void & Cập nhật thông tin cá nhân chung như họ tên, email. \\
++ changePassword() & oldPass: String, newPass: String & boolean & Thay đổi mật khẩu của người dùng sau khi xác thực mật khẩu cũ. \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{Mô tả:} Đại diện cho một người dùng sinh viên. Lớp này kế thừa tất cả các thuộc tính và phương thức từ lớp \texttt{User}, đồng thời bổ sung các thông tin và hành vi đặc thù liên quan đến việc học tập và tham gia chương trình Tutor.
+
+\textbf{Thuộc tính (Attributes):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|l|X|}
+\hline
+\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
+\hline
+- studentId & String & Mã số sinh viên (MSSV). \\
+- gpa & double & Điểm trung bình tích lũy của sinh viên, có thể được dùng làm một tiêu chí gợi ý Tutor. \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{Phương thức (Methods):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|X|l|X|}
+\hline
+\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
+\hline
++ registerProgram() & program: TutoringProgram & boolean & Thực hiện chức năng đăng ký tham gia một chương trình học (UC-04, UC-24, UC-25). \\
++ bookSession() & slot: AvailabilitySlot & Session & Thực hiện chức năng đặt một buổi học cố định dựa trên lịch rảnh của Tutor (UC-09). \\
++ submitFeedback() & feedback: Feedback & boolean & Gửi đánh giá và phản hồi về chất lượng của một buổi học hoặc một Tutor (UC-17). \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{Mô tả:} Đại diện cho một người hướng dẫn (Tutor), có thể là giảng viên, sinh viên năm trên, hoặc nghiên cứu sinh. Lớp này kế thừa từ \texttt{User} và có thêm các thuộc tính về chuyên môn cũng như các hành vi liên quan đến việc giảng dạy.
+
+\textbf{Thuộc tính (Attributes):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|l|X|}
+\hline
+\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
+\hline
+- staffId & String & Mã số định danh của Tutor (có thể là mã nhân viên hoặc MSSV nếu là sinh viên). \\
+- bio & String & Một đoạn giới thiệu ngắn về chuyên môn, kinh nghiệm và thành tích của Tutor. \\
+- averageRating & double & Điểm đánh giá trung bình của Tutor, được tự động tính toán từ các Feedback của sinh viên. \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{Phương thức (Methods):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|X|l|X|}
+\hline
+\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
+\hline
++ createAvailability() & slotDetails: Map & AvailabilitySlot & Tạo ra các khung giờ rảnh để sinh viên có thể đặt lịch học (UC-08). \\
++ manageMaterials() & material: Material, action: String & boolean & Quản lý tài liệu học tập: tải lên, chỉnh sửa, hoặc xóa tài liệu (UC-15). \\
++ takeAttendance() & session: Session, student: Student & void & Thực hiện điểm danh sinh viên trong một buổi học (UC-13). \\
+\hline
+\end{tabularx}
+\end{table}
+
+\textbf{Mô tả:} Đại diện cho người dùng quản trị, bao gồm quản trị viên của Khoa/Bộ môn và quản trị viên hệ thống. Lớp này kế thừa từ \texttt{User} và có các quyền cao nhất để giám sát và quản lý toàn bộ hoạt động của hệ thống.
+
+\textbf{Phương thức (Methods):}
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|l|X|l|X|}
+\hline
+\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
+\hline
++ manageUsers() & user: User, action: String & boolean & Quản lý tài khoản người dùng: kích hoạt, khóa, hoặc phân quyền. \\
++ viewSystemReports() & reportType: String & Report & Xem các báo cáo tổng hợp về hoạt động của hệ thống, ví dụ như báo cáo chất lượng Tutor, báo cáo học tập của sinh viên (UC-19, UC-22). \\
+\hline
+\end{tabularx}
+\end{table}
