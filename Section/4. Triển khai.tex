@@ -2,8 +2,10 @@
 \addcontentsline{toc}{part}{4. Triển khai hệ thống}
 
 %========================================================================================
-\section*{4.1. Giới thiệu}
-\addcontentsline{toc}{section}{4.1. Giới thiệu}
+\section*{4.1. Sơ đồ triển khai (Deployment View)}
+\addcontentsline{toc}{section}{4.1. Sơ đồ triển khai (Deployment View)}
+\subsection*{4.1.1 Giới thiệu}
+\addcontentsline{toc}{subsection}{4.1.1 Giới thiệu}
 Sơ đồ triển khai (Deployment Diagram) mô tả kiến trúc vật lý của "Hệ thống hỗ trợ Tutor", thể hiện cách các thành phần phần mềm được phân bổ và vận hành trên các nút (node) phần cứng. Sơ đồ này cung cấp một cái nhìn tổng quan về môi trường thực thi của hệ thống, bao gồm các máy chủ, cơ sở dữ liệu, và sự tương tác giữa chúng cũng như với các hệ thống bên ngoài.
 Kiến trúc được lựa chọn là mô hình \textbf{client-server ba lớp (3-tier)} hiện đại, bao gồm:
 
@@ -15,9 +17,17 @@ Kiến trúc được lựa chọn là mô hình \textbf{client-server ba lớp 
 
 Mô hình này đảm bảo tính linh hoạt, khả năng mở rộng và bảo mật cho hệ thống.
 
-\begin{itemize}
-    \item 
-\end{itemize}
+\subsection*{4.1.2. Sơ đồ triển khai hệ thống}
+\addcontentsline{toc}{subsection}{4.1.2. Sơ đồ triển khai hệ thống}
+Sơ đồ dưới đây được tạo bằng PlantUML, mô tả chi tiết các thành phần và luồng tương tác.
+\begin{figure}[H]
+    \centering
+    \setlength{\fboxsep}{2pt}     
+    \setlength{\fboxrule}{0.5pt}   
+    \fbox{\includegraphics[scale=0.3]{Picture/Deploymentview.png}}
+    \caption{Sơ đồ triển khai hệ thống hỗ trợ Tutor}
+\end{figure}
+
 %========================================================================================
 
 
