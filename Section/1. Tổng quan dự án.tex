@@ -67,55 +67,56 @@ Kết thúc dự án, nhóm sẽ bàn giao các sản phẩm sau:
 
 %========================================================================================
 
+%========================================================================================
+
 \subsection*{1.2.1. Trong phạm vi}
 \addcontentsline{toc}{subsection}{1.2.1. Trong phạm vi}
-Phạm vi của dự án được xác định rõ ràng, tập trung vào việc phát triển một bộ chức năng cốt lõi, đủ mạnh để quản lý và vận hành chương trình Tutor một cách toàn diện. Các nhóm chức năng chính của hệ thống bao gồm:
+Phạm vi của dự án được xác định rõ ràng, tập trung vào việc phát triển một bộ chức năng cốt lõi, đủ mạnh để quản lý và vận hành chương trình Tutor một cách toàn diện trên nền tảng độc lập. Các nhóm chức năng chính bao gồm:
 \begin{itemize}
-    \item \textbf{Nền tảng Quản lý Tài khoản và Hồ sơ:} Cung cấp một không gian tập trung để người dùng (Sinh viên, Tutor) khởi tạo và quản lý thông tin cá nhân. Chức năng này cho phép cập nhật hồ sơ, năng lực chuyên môn và các nhu cầu hỗ trợ cụ thể.
-    \item \textbf{Module Đăng ký và Ghép cặp:} Hệ thống sẽ cung cấp một module linh hoạt, hỗ trợ sinh viên đăng ký tham gia các chương trình học và được ghép cặp với Tutor thông qua hai hình thức:
-    \begin{itemize}
-        \item \textbf{Thủ công:} Cho phép sinh viên chủ động tìm kiếm, xem xét hồ sơ và gửi yêu cầu đến Tutor mà họ cho là phù hợp nhất.
-        \item \textbf{Tự động:} Cung cấp cơ chế gợi ý Tutor dựa trên các tiêu chí cơ bản như môn học và sự trùng khớp về lịch rảnh.
-    \end{itemize}
-    \item \textbf{Hệ thống Quản lý Lịch và Buổi học:} Đây là chức năng quan trọng, giúp tự động hóa toàn bộ quy trình sắp xếp và quản lý các buổi học. Các tính năng bao gồm việc Tutor thiết lập lịch rảnh, sinh viên đặt lịch, hệ thống tự động gửi thông báo khi có thay đổi, và Tutor thực hiện các tác vụ như điểm danh, cập nhật trạng thái buổi học.
-    \item \textbf{Không gian Quản lý Tài liệu:} Hỗ trợ Tutor tải lên và chia sẻ các tài liệu học tập liên quan (như slide, bài tập, đề cương) đến sinh viên trong nhóm của mình, đồng thời cho phép sinh viên dễ dàng truy cập và tải xuống.
-    \item \textbf{Cơ chế Đánh giá, Phản hồi và Báo cáo:} Nhằm đảm bảo và không ngừng nâng cao chất lượng, hệ thống tích hợp một cơ chế thu thập phản hồi từ sinh viên sau mỗi buổi học. Dữ liệu này sẽ được tổng hợp thành các báo cáo đa chiều, phục vụ cho từng đối tượng người dùng, từ sinh viên, Tutor cho đến các cấp quản lý của nhà trường.
+	\item \textbf{Quản lý Tài khoản và Xác thực:} Xây dựng hệ thống định danh người dùng độc lập, bao gồm đăng ký, đăng nhập và xác thực bảo mật 2 lớp (2FA) thông qua Email OTP.
+	\item \textbf{Quản lý Dữ liệu Đào tạo (Giả lập):} Xây dựng cơ sở dữ liệu nội bộ lưu trữ thông tin Môn học, Sinh viên và Tutor theo chuẩn dữ liệu thực tế để phục vụ quy trình nghiệp vụ.
+	\item \textbf{Module Đăng ký và Ghép cặp:}
+	\begin{itemize}
+		\item \textbf{Đăng ký Môn học:} Sinh viên đăng ký nhu cầu học tập dựa trên danh mục môn học có sẵn trong hệ thống.
+		\item \textbf{Ghép cặp Thủ công:} Hệ thống cung cấp công cụ tìm kiếm và lọc Tutor dựa trên chuyên môn và lịch mở lớp (Class Schedule), giúp sinh viên chủ động chọn người hướng dẫn.
+	\end{itemize}
+	\item \textbf{Quản lý Lớp học (Class Management):} Cho phép Tutor chủ động "mở lớp" (Open Class) với các thông tin chi tiết về thời gian, hình thức (Online/Offline) và địa điểm. Sinh viên đăng ký trực tiếp vào các lớp học này.
+	\item \textbf{Cơ chế Đánh giá và Phản hồi:} Thu thập và lưu trữ đánh giá hai chiều giữa Sinh viên và Tutor sau khi kết thúc khóa học/buổi học để xây dựng hồ sơ năng lực uy tín.
 \end{itemize}
 
 %========================================================================================
 
 \subsection*{1.2.2. Ngoài phạm vi}
 \addcontentsline{toc}{subsection}{1.2.2. Ngoài phạm vi}
-Nhằm đảm bảo đội ngũ phát triển có thể tập trung vào các giá trị cốt lõi và hoàn thành dự án đúng tiến độ, phạm vi đã được giới hạn một cách có chủ đích. Các chức năng nâng cao sau đây sẽ được xem xét cho các giai đoạn phát triển trong tương lai và không nằm trong khuôn khổ của phiên bản hiện tại:
+Để đảm bảo tiến độ và tính khả thi trong khuôn khổ đồ án, các hạng mục sau được xác định nằm ngoài phạm vi phiên bản hiện tại (MVP):
 \begin{itemize}
-    \item \textbf{Các thuật toán Ghép cặp thông minh (AI-based Matching):} Việc ứng dụng Trí tuệ Nhân tạo để phân tích sâu hồ sơ và tự động tối ưu hóa việc ghép cặp sẽ không được triển khai.
-    \item \textbf{Xây dựng Cộng đồng Trực tuyến:} Các tính năng mang tính mạng xã hội như diễn đàn (forum) hay nhóm trò chuyện (chat groups) để mở rộng tương tác sẽ không được phát triển.
-    \item \textbf{Hỗ trợ các chương trình Tutor phi học thuật:} Hệ thống chỉ tập trung vào việc hỗ trợ học thuật. Các hoạt động tư vấn khác như hướng nghiệp, kỹ năng mềm hay tâm lý học đường đều nằm ngoài phạm vi.
+	\item \textbf{Tích hợp trực tiếp hệ thống Nhà trường:} Việc đấu nối API thực tế với HCMUT\_SSO hay HCMUT\_DATACORE không được thực hiện do quy định bảo mật.
+	\item \textbf{Lưu trữ tài liệu vật lý:} Hệ thống quản lý thông tin (metadata) của tài liệu chia sẻ, nhưng không xây dựng server lưu trữ file vật lý (File Storage Server).
+	\item \textbf{Thuật toán Ghép cặp AI:} Các tính năng gợi ý thông minh dựa trên học máy (Machine Learning) chưa được triển khai.
+	\item \textbf{Tính năng Mạng xã hội:} Chat trực tuyến, diễn đàn thảo luận chưa được tích hợp.
 \end{itemize}
 
 %========================================================================================
 
 \subsection*{1.2.3. Ràng buộc hệ thống}
 \addcontentsline{toc}{subsection}{1.2.3. Ràng buộc hệ thống}
-Quá trình thiết kế và phát triển hệ thống phải tuân thủ nghiêm ngặt các ràng buộc quan trọng sau:
+Quá trình thiết kế và phát triển hệ thống phải tuân thủ nghiêm ngặt các ràng buộc quan trọng sau đây để đảm bảo tính khả thi và phù hợp với môi trường triển khai thực tế:
+
 \begin{itemize}
-    \item \textbf{Tích hợp với Hạ tầng Công nghệ của HCMUT:} Đây là một ràng buộc mang tính nền tảng, đòi hỏi hệ thống phải có khả năng kết nối và giao tiếp hiệu quả với các dịch vụ hiện có của trường, cụ thể là:
-
-    \begin{itemize}
-        \item Sử dụng dịch vụ xác thực tập trung HCMUT\_SSO cho việc đăng nhập
-        \item Đồng bộ dữ liệu cá nhân từ hệ thống lõi HCMUT\_DATACORE
-        \item Liên kết với kho tài nguyên của thư viện số HCMUT\_LIBRARY.
-    \end{itemize}
-    \item \textbf{Cơ chế Phân quyền Dựa trên Vai trò Tập trung:} Hệ thống không tự định nghĩa vai trò người dùng mà phải tự động gán quyền truy cập dựa trên thông tin vai trò (sinh viên, tutor, điều phối viên...) được cung cấp từ hệ thống trung tâm của nhà trường.
-    \item \textbf{Yêu cầu về Cơ sở dữ liệu cho Phiên bản MVP:} Theo đặc tả của đề bài, phiên bản MVP (Minimum Viable Product) không bắt buộc phải triển khai một hệ quản trị cơ sở dữ liệu hoàn chỉnh ở tầng backend. Dữ liệu có thể được mã hóa cứng (hard-coded) trong mã nguồn để phục vụ mục đích trình diễn.
-    \item \textbf{Tuân thủ Quy định về sử dụng Generative AI:} Nhóm cam kết tuân thủ các quy định về đạo đức học thuật, đặc biệt là việc khai báo minh bạch và có trách nhiệm về mức độ và phạm vi sử dụng các công cụ AI tạo sinh trong suốt quá trình thực hiện dự án.
-    \item \textbf{Khai báo sử dụng Generative AI:}
-    \begin{itemize}
-        \item Hỗ trợ liệt kệ các yêu cầu chức năng (Functional Requirements).
-        \item Đề xuất tên cho các usecase.
-        \item Hỗ trợ liệt kê các hành động chính cho từng Actors.
-    \end{itemize}
-
+	\item \textbf{Kiến trúc Hệ thống Độc lập (Standalone Architecture):} Do các quy định về bảo mật và hạn chế quyền truy cập vào hạ tầng công nghệ thực tế của nhà trường, hệ thống được thiết kế để vận hành hoàn toàn độc lập, không phụ thuộc vào các dịch vụ bên thứ ba của trường. Cụ thể:
+	\begin{itemize}
+		\item \textbf{Cơ chế Xác thực tự chủ:} Thay vì sử dụng HCMUT\_SSO, hệ thống tự xây dựng module xác thực bảo mật sử dụng JWT (JSON Web Token) để quản lý phiên làm việc. Đồng thời, tích hợp dịch vụ SendGrid để thực hiện xác thực hai yếu tố qua Email (OTP) nhằm đảm bảo danh tính người dùng.
+		\item \textbf{Quản lý Dữ liệu nội bộ:} Hệ thống không đồng bộ dữ liệu từ HCMUT\_DATACORE. Thay vào đó, nhóm phát triển xây dựng cơ sở dữ liệu riêng (MySQL) và sử dụng dữ liệu giả lập (Mock Data) chuẩn hóa theo format thực tế để mô phỏng các nghiệp vụ đăng ký và quản lý môn học.
+	\end{itemize}
+	
+	\item \textbf{Cơ chế Phân quyền và Bảo mật:} Hệ thống phải tự định nghĩa và quản lý các vai trò người dùng (Sinh viên, Tutor). Việc phân quyền (Authorization) được thực hiện chặt chẽ tại tầng Backend thông qua các GraphQL Resolvers, đảm bảo người dùng chỉ truy cập được các tài nguyên cho phép dựa trên thông tin được mã hóa trong Token.
+	
+	\item \textbf{Yêu cầu về Cơ sở dữ liệu và Giao thức:}
+	\begin{itemize}
+		\item Hệ thống sử dụng MySQL làm hệ quản trị cơ sở dữ liệu quan hệ để đảm bảo tính toàn vẹn dữ liệu giữa các thực thể phức tạp (User, Course, Class).
+		\item Sử dụng giao thức GraphQL (Apollo Server) thay vì REST API truyền thống để tối ưu hóa việc truy vấn dữ liệu từ phía Client.
+	\end{itemize}
+	
 \end{itemize}
 
 %========================================================================================
@@ -144,7 +145,7 @@ Nhóm đã tập trung phân tích ba nhóm nền tảng chính, mỗi nhóm đ�
 Từ việc phân tích các giải pháp trên, nhóm đã đúc kết được những bài học kinh nghiệm sâu sắc, đóng vai trò kim chỉ nam cho quá trình thiết kế hệ thống:
 \begin{itemize}
     \item \textbf{Trải nghiệm người dùng (UX) là yếu tố quyết định:} Quy trình từ tìm kiếm Tutor đến đặt lịch thành công phải được thiết kế tối giản, nhanh chóng và trực quan. Bất kỳ sự phức tạp nào trong luồng thao tác đều có thể làm giảm tỷ lệ sử dụng của sinh viên.
-    \item \textbf{Hiệu quả của tìm kiếm và bộ lọc là giá trị cốt lõi:}  Chức năng quan trọng nhất đối với sinh viên là khả năng tìm được đúng người hướng dẫn mình cần. Do đó, hệ thống bắt buộc phải có các bộ lọc cơ bản và hiệu quả như khoa, môn học và lịch rảnh.
+    \item \textbf{Hiệu quả của tìm kiếm và bộ lọc là giá trị cốt lõi:}  Chức năng quan trọng nhất đối với sinh viên là khả năng tìm được đúng người hướng dẫn mình cần. Do đó, hệ thống bắt buộc phải có các bộ lọc cơ bản và hiệu quả như khoa, môn học và lịch dạy.
 
     \item \textbf{Tự động hóa là chìa khóa của sự hiệu quả:}  Toàn bộ quy trình đặt, hủy và nhắc lịch cần được tự động hóa. Điều này không chỉ giúp tiết kiệm thời gian cho cả Tutor và sinh viên mà còn giảm thiểu đáng kể các sai sót do con người.
 
@@ -164,12 +165,11 @@ Dựa trên những bài học đúc kết và các yêu cầu đặc thù của
 
     \item \textbf{Module Tìm kiếm và Gợi ý Ghép cặp thông minh:}  Cho phép sinh viên tìm kiếm Tutor theo các tiêu chí linh hoạt, đồng thời tích hợp chức năng gợi ý cơ bản dựa trên môn học và lịch trình tương thích.
 
-    \item \textbf{Module Quản lý Lịch hẹn Tinh gọn:}  Lấy cảm hứng từ sự đơn giản của Calendly, module này cho phép Tutor thiết lập lịch rảnh một cách trực quan, giúp sinh viên đặt lịch chỉ với vài thao tác. Toàn bộ quy trình thông báo xác nhận và nhắc nhở sẽ được tự động hóa.
+    \item \textbf{Module Quản lý Lịch hẹn Tinh gọn:}  Lấy cảm hứng từ sự đơn giản của Calendly, module này cho phép Tutor thiết lập lịch dạy một cách trực quan, giúp sinh viên đặt lịch chỉ với vài thao tác. Toàn bộ quy trình thông báo xác nhận và nhắc nhở sẽ được tự động hóa.
 
     \item \textbf{Cơ chế Đánh giá và Phản hồi hai chiều:}  Sau mỗi buổi học, hệ thống sẽ chủ động mời sinh viên đánh giá, từ đó tạo ra một nguồn dữ liệu quý giá, tạo một vòng lặp cải tiến liên tục cho chất lượng chương trình.
 
     \item \textbf{Module Báo cáo và Thống kê Trực quan:}  Cung cấp các bảng điều khiển cho phép ban quản lý, các khoa và phòng ban dễ dàng theo dõi các chỉ số hiệu suất quan trọng (KPIs) như số lượng buổi học, tỷ lệ tham gia và mức độ hài lòng của sinh viên.
 
-    \item \textbf{Khả năng Tích hợp sâu với Hạ tầng Công nghệ HCMUT:}  Đây là yếu tố khác biệt và mang tính nền tảng, đảm bảo dữ liệu được đồng bộ, nhất quán và bảo mật thông qua việc kết nối chặt chẽ với các hệ thống lõi của nhà trường như HCMUT\_SSO và HCMUT\_DATACORE.
 \end{itemize}
 %========================================================================================

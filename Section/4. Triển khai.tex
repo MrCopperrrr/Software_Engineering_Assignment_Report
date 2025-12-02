@@ -4,592 +4,435 @@
 %========================================================================================
 \section*{4.1. Sơ đồ triển khai (Deployment View)}
 \addcontentsline{toc}{section}{4.1. Sơ đồ triển khai (Deployment View)}
+
 \subsection*{4.1.1 Giới thiệu}
 \addcontentsline{toc}{subsection}{4.1.1 Giới thiệu}
-Sơ đồ triển khai (Deployment Diagram) mô tả kiến trúc vật lý của "Hệ thống hỗ trợ Tutor", thể hiện cách các thành phần phần mềm được phân bổ và vận hành trên các nút (node) phần cứng. Sơ đồ này cung cấp một cái nhìn tổng quan về môi trường thực thi của hệ thống, bao gồm các máy chủ, cơ sở dữ liệu, và sự tương tác giữa chúng cũng như với các hệ thống bên ngoài.
-Kiến trúc được lựa chọn là mô hình \textbf{client-server ba lớp (3-tier)} hiện đại, bao gồm:
+Sơ đồ triển khai (Deployment Diagram) mô tả kiến trúc vật lý của "Hệ thống hỗ trợ Tutor", thể hiện cách các thành phần phần mềm được phân bổ và vận hành trên các nút (node) phần cứng. Sơ đồ này cung cấp một cái nhìn tổng quan về môi trường thực thi của hệ thống, bao gồm các máy chủ, cơ sở dữ liệu, và sự tương tác giữa chúng.
+
+Kiến trúc được lựa chọn là mô hình \textbf{client-server ba lớp (3-tier)} hiện đại, hoạt động hoàn toàn \textbf{độc lập (Standalone)}, bao gồm:
 
 \begin{itemize}
-    \item \textbf{Presentation Tier (Client)}: Giao diện người dùng trên trình duyệt web.
-    \item \textbf{Application Tier (Server)}: Máy chủ ứng dụng xử lý logic nghiệp vụ.
-    \item \textbf{Data Tier (Database)}: Máy chủ cơ sở dữ liệu để lưu trữ và quản lý dữ liệu.
+	\item \textbf{Presentation Tier (Client)}: Giao diện người dùng trên trình duyệt web.
+	\item \textbf{Application Tier (Server)}: Máy chủ ứng dụng xử lý logic nghiệp vụ và cung cấp API.
+	\item \textbf{Data Tier (Database)}: Máy chủ cơ sở dữ liệu lưu trữ toàn bộ thông tin hệ thống.
 \end{itemize}
-
-Mô hình này đảm bảo tính linh hoạt, khả năng mở rộng và bảo mật cho hệ thống.
 
 \subsection*{4.1.2. Sơ đồ triển khai hệ thống}
 \addcontentsline{toc}{subsection}{4.1.2. Sơ đồ triển khai hệ thống}
 Sơ đồ dưới đây được tạo bằng PlantUML, mô tả chi tiết các thành phần và luồng tương tác.
+
 \begin{figure}[H]
-    \centering
-    \setlength{\fboxsep}{2pt}     
-    \setlength{\fboxrule}{0.5pt}   
-    \fbox{\includegraphics[scale=0.3]{Picture/Deploymentview.png}}
-    \caption{Sơ đồ triển khai hệ thống hỗ trợ Tutor}
+	\centering
+	\setlength{\fboxsep}{2pt}     
+	\setlength{\fboxrule}{0.5pt}   
+	\fbox{\includegraphics[scale=0.3]{Picture/Deploymentview.png}}
+	\caption{Sơ đồ triển khai hệ thống hỗ trợ Tutor (Standalone)}
 \end{figure}
 
 \subsection*{4.1.3. Mô tả các thành phần}
 \addcontentsline{toc}{subsection}{4.1.3. Mô tả các thành phần}
 
 \begin{table}[H]
-\centering
-\begin{tabular}{|c|p{3.5cm}|p{6cm}|p{3.5cm}|}
-\hline
-\textbf{STT} & \textbf{Tên thành phần} & \textbf{Mô tả} & \textbf{Công nghệ/Phần mềm} \\
-\hline
-1 & Người dùng & Các tác nhân (Sinh viên, Tutor, Admin) tương tác với hệ thống thông qua trình duyệt web & Trình duyệt Web (Chrome, Firefox, Safari) \\
-\hline
-2 & Web Server (Nginx) & Đóng vai trò là Reverse Proxy, tiếp nhận yêu cầu từ Internet và chuyển tiếp đến Application Server. Tăng cường bảo mật và cân bằng tải. & Nginx \\
-\hline
-3 & Application Server & Chứa toàn bộ logic nghiệp vụ của hệ thống, được đóng gói trong Docker container để dễ dàng triển khai và quản lý. & Java Spring Boot / Node.js, Docker \\
-\hline
-4 & Database Server & Chịu trách nhiệm lưu trữ và quản lý toàn bộ dữ liệu của hệ thống, được triển khai trong Docker container. & PostgreSQL / MySQL, Docker \\
-\hline
-5 & Hệ thống của HCMUT & Các dịch vụ công nghệ thông tin tập trung của trường mà hệ thống cần tích hợp, bao gồm: HCMUT\_SSO , HCMUT\_DATACORE, HCMUT\_LIBRARY . & API (REST/SOAP) \\
-\hline
-6 & Email Service & Dịch vụ bên ngoài chịu trách nhiệm gửi các thông báo và nhắc nhở qua email cho người dùng. & SMTP Server (ví dụ: SendGrid, AWS SES) \\
-\hline
-\end{tabular}
-\caption{Các thành phần trong sơ đồ triển khai hệ thống hỗ trợ Tutor}
+	\centering
+	\begin{tabular}{|c|p{3.5cm}|p{6cm}|p{3.5cm}|}
+		\hline
+		\textbf{STT} & \textbf{Tên thành phần} & \textbf{Mô tả} & \textbf{Công nghệ/Phần mềm} \\
+		\hline
+		1 & Người dùng & Các tác nhân (Sinh viên, Tutor, Admin) tương tác với hệ thống thông qua trình duyệt web. & Trình duyệt Web (Chrome, Firefox, Safari) \\
+		\hline
+		2 & Web Server (Nginx) & Đóng vai trò là Reverse Proxy, tiếp nhận yêu cầu từ Internet và chuyển tiếp đến Application Server. & Nginx \\
+		\hline
+		3 & Application Server & Chứa toàn bộ logic nghiệp vụ, module xác thực và GraphQL Resolvers. Đóng gói trong Docker container. & \textbf{Node.js} (Express + Apollo Server) \\
+		\hline
+		4 & Database Server & Chịu trách nhiệm lưu trữ và quản lý toàn bộ dữ liệu của hệ thống (User, Course, Class). & \textbf{MySQL} (Thư viện mysql2 pool) \\
+		\hline
+		5 & Email Service & Dịch vụ bên ngoài dùng để gửi mã xác thực OTP qua email. & \textbf{SendGrid API} \\
+		\hline
+		6 & CI/CD Pipeline & Hệ thống tự động hóa quy trình kiểm thử và triển khai mã nguồn. & \textbf{Azure Pipelines} \\
+		\hline
+	\end{tabular}
+	\caption{Các thành phần trong sơ đồ triển khai hệ thống hỗ trợ Tutor}
 \end{table}
 
 \subsection*{4.1.4. Luồng hoạt động}
 \addcontentsline{toc}{subsection}{4.1.4. Luồng hoạt động}
-Để làm rõ hơn sự tương tác giữa các thành phần, dưới đây là mô tả luồng hoạt động của hai kịch bản tiêu biểu:
+Mô tả chi tiết luồng hoạt động cho các kịch bản tiêu biểu trong môi trường độc lập:
 
 \begin{enumerate}[label=\Alph*.]
-    \item \textbf{Kịch bản 1: Người dùng đăng nhập vào hệ thống}
-    \begin{enumerate}[label*=\arabic*.]
-        \item Người dùng mở trình duyệt, truy cập vào địa chỉ của hệ thống và nhấn nút đăng nhập thông qua \textbf{HCMUT\_SSO}.
-        \item Yêu cầu (\textit{HTTPS Request}) được gửi qua Internet đến \textbf{Web Server (Nginx)}.
-        \item \textbf{Nginx} giải mã SSL và chuyển tiếp yêu cầu đến \textbf{Application Server}.
-        \item \textbf{Application Server} nhận yêu cầu, chuyển hướng người dùng đến trang đăng nhập của \textbf{HCMUT\_SSO}.
-        \item Sau khi người dùng đăng nhập thành công trên \textbf{HCMUT\_SSO}, dịch vụ này sẽ trả về một \textit{token} xác thực cho \textbf{Application Server}.
-        \item \textbf{Application Server} sử dụng \textit{token} này để gọi API đến \textbf{HCMUT\_DATACORE}, lấy và đồng bộ thông tin cơ bản của người dùng (họ tên, MSSV, khoa, vai trò) vào \textbf{Database Server}.
-        \item Cuối cùng, \textbf{Application Server} trả về một phiên làm việc (\textit{session}) và giao diện trang chủ cho người dùng.
-    \end{enumerate}
-
-    \item \textbf{Kịch bản 2: Tutor tạo lịch rảnh mới}
-    \begin{enumerate}[label*=\arabic*.]
-        \item \textbf{Tutor} sau khi đăng nhập, truy cập chức năng ``Tạo lịch rảnh'' và điền thông tin (ngày, giờ).
-        \item Yêu cầu tạo lịch được gửi qua Internet, đi qua \textbf{Web Server} và đến \textbf{Application Server}.
-        \item \textbf{Application Server} xác thực quyền của Tutor, kiểm tra tính hợp lệ của dữ liệu (ví dụ: không trùng lịch đã có).
-        \item Nếu hợp lệ, \textbf{Application Server} sẽ thực hiện một câu lệnh ghi (\texttt{INSERT}) để lưu thông tin lịch rảnh mới vào bảng \texttt{Schedules} trong \textbf{Database Server}.
-        \item \textbf{Database Server} xác nhận ghi thành công.
-        \item \textbf{Application Server} gửi lại một thông báo ``Tạo lịch thành công'' cho giao diện của Tutor.
-    \end{enumerate}
-
-    \item \textbf{Kịch bản 3: Sinh viên đặt lịch học cố định với Tutor}
-    \begin{enumerate}[label*=\arabic*.]
-        \item Sinh viên, sau khi đăng nhập, chọn môn học và xem các khung giờ rảnh (\textit{availability}) mà Tutor đã thiết lập. Sinh viên chọn một khung giờ phù hợp và nhấn ``Đặt lịch''.
-        \item Yêu cầu đặt lịch (\textit{HTTPS Request}) được gửi qua Internet tới \textbf{Web Server (Nginx)}.
-        \item \textbf{Nginx} chuyển tiếp yêu cầu đến \textbf{Application Server}.
-        \item \textbf{Application Server} nhận yêu cầu và thực hiện các bước xác thực nghiệp vụ:
-        \begin{itemize}
-            \item \textbf{Bước 4a}: Truy vấn \textbf{Database Server} để kiểm tra lại xem khung giờ mà sinh viên chọn có còn trống không và có nằm trong lịch rảnh hợp lệ của Tutor không.
-            \item \textbf{Bước 4b}: Truy vấn \textbf{Database Server} để kiểm tra lịch trình của chính sinh viên đó, đảm bảo không bị trùng với các lịch học/lịch thi khác đã đăng ký.
-        \end{itemize}
-        \item Nếu tất cả các điều kiện đều hợp lệ, \textbf{Application Server} sẽ tạo một bản ghi lịch học cố định mới trong \textbf{Database Server}, liên kết sinh viên, Tutor, và môn học với khung giờ đã chọn. Trạng thái của lịch được đặt là ``Đã xác nhận'' (\textit{Confirmed}).
-        \item Sau khi \textbf{Database Server} xác nhận lưu thành công, \textbf{Application Server} thực hiện hai hành động song song:
-        \begin{itemize}
-            \item \textbf{Bước 6a}: Gửi một phản hồi thành công về cho trình duyệt của sinh viên, hiển thị thông báo ``Bạn đã đặt lịch thành công''.
-            \item \textbf{Bước 6b}: Kết nối đến \textbf{Email Service (SMTP Server)} để gửi email thông báo xác nhận lịch học cho cả sinh viên và Tutor.
-        \end{itemize}
-    \end{enumerate}
+	\item \textbf{Kịch bản 1: Người dùng đăng ký và xác thực tài khoản}
+	\begin{enumerate}[label*=\arabic*.]
+		\item Người dùng nhập email và thông tin đăng ký trên giao diện Client.
+		\item Yêu cầu gửi mã OTP (GraphQL Mutation) được gửi đến \textbf{Application Server}.
+		\item \textbf{Application Server} sinh mã OTP ngẫu nhiên, lưu tạm thời vào bộ nhớ RAM (In-memory) và gọi API đến \textbf{SendGrid} để gửi email cho người dùng.
+		\item Người dùng nhập mã OTP để xác thực. \textbf{Application Server} kiểm tra mã, nếu đúng sẽ tạo tài khoản mới trong \textbf{Database Server} và trả về JWT Token.
+	\end{enumerate}
+	
+	\item \textbf{Kịch bản 2: Tutor mở lớp học mới (Open Class)}
+	\begin{enumerate}[label*=\arabic*.]
+		\item \textbf{Tutor} đăng nhập, gọi API \texttt{openClass} với thông tin: Ngày, Giờ bắt đầu/kết thúc, Hình thức (Online/Offline).
+		\item \textbf{Application Server} xác thực Token của Tutor và kiểm tra tính hợp lệ của dữ liệu (ví dụ: giờ bắt đầu < giờ kết thúc).
+		\item Nếu hợp lệ, Server thực hiện câu lệnh \texttt{INSERT} vào bảng \texttt{Class} trong \textbf{Database Server}.
+		\item Hệ thống trả về thông tin lớp học vừa tạo để hiển thị lên giao diện Tutor.
+	\end{enumerate}
+	
+	\item \textbf{Kịch bản 3: Sinh viên đăng ký môn học}
+	\begin{enumerate}[label*=\arabic*.]
+		\item Sinh viên xem danh sách các môn học khả dụng (được lấy từ bảng \texttt{Course} trong Database).
+		\item Sinh viên chọn môn học và nhấn "Đăng ký". Client gửi Mutation \texttt{enrollCourse} đến Server.
+		\item \textbf{Application Server} thực hiện kiểm tra kép:
+		\begin{itemize}
+			\item Môn học có tồn tại không? (Query bảng \texttt{Course})
+			\item Sinh viên đã đăng ký môn này chưa? (Query bảng \texttt{CourseRegistration})
+		\end{itemize}
+		\item Nếu thỏa mãn, Server tạo bản ghi mới trong bảng \texttt{CourseRegistration} và trả về thông báo thành công.
+	\end{enumerate}
 \end{enumerate}
 %========================================================================================
 \section*{4.2. Sơ đồ phát triển (Development View)}
 \addcontentsline{toc}{section}{4.2. Sơ đồ phát triển (Development View)}
+
 \subsection*{4.2.1 Giới thiệu}
 \addcontentsline{toc}{subsection}{4.2.1 Giới thiệu}
-Sơ đồ phát triển, hay \textbf{Sơ đồ gói (Package Diagram)}, mô tả cấu trúc tĩnh và cách tổ chức mã nguồn của hệ thống từ góc nhìn của đội ngũ phát triển. Mục tiêu của sơ đồ này là trình bày một kiến trúc phần mềm có tính module hóa cao, rõ ràng và dễ bảo trì, tuân thủ nguyên tắc \textit{tách biệt các mối quan tâm (Separation of Concerns)}.
+Sơ đồ phát triển, hay \textbf{Sơ đồ gói (Package Diagram)}, mô tả cấu trúc tĩnh và cách tổ chức mã nguồn của hệ thống từ góc nhìn của đội ngũ phát triển.
 
-\noindent Hệ thống được thiết kế theo kiến trúc \textbf{phân lớp (Layered Architecture)}, một mô hình phổ biến trong các ứng dụng web hiện đại. Các lớp chính bao gồm:
+Hệ thống được thiết kế theo kiến trúc \textbf{phân lớp (Layered Architecture)} trên nền tảng \textbf{Node.js}, sử dụng giao thức \textbf{GraphQL}. Các lớp chính được ánh xạ vào cấu trúc thư mục của dự án như sau:
 
 \begin{itemize}
-    \item \textbf{Controller Layer}: Tiếp nhận và xử lý các yêu cầu HTTP từ người dùng.
-    \item \textbf{Service Layer}: Chứa đựng toàn bộ logic nghiệp vụ cốt lõi của hệ thống.
-    \item \textbf{Repository Layer}: Chịu trách nhiệm truy cập và tương tác với cơ sở dữ liệu.
-    \item \textbf{Domain/Model Layer}: Định nghĩa các đối tượng và thực thể dữ liệu.
+	\item \textbf{Interface Layer (GraphQL Resolvers)}: Tiếp nhận các truy vấn (Query) và thay đổi dữ liệu (Mutation) từ phía Client.
+	\item \textbf{Logic Layer (Services/Utils)}: Chứa các hàm xử lý logic nghiệp vụ như gửi mail, tạo OTP.
+	\item \textbf{Data Access Layer (Models)}: Chứa các hàm tương tác trực tiếp với cơ sở dữ liệu MySQL (thư mục \texttt{models/}).
+	\item \textbf{Data Objects}: Các đối tượng dữ liệu được định nghĩa trong GraphQL Schema (\texttt{typeDefs}).
 \end{itemize}
 
-Ngoài ra, hệ thống còn có các gói hỗ trợ cho các chức năng xuyên suốt như:
+Các gói hỗ trợ xuyên suốt:
 \begin{itemize}
-    \item \textbf{Security}: Quản lý xác thực, phân quyền và bảo mật truy cập.
-    \item \textbf{Configuration}: Cấu hình hệ thống, môi trường và thông số hoạt động.
-    \item \textbf{Integration}: Tích hợp với các hệ thống bên ngoài như HCMUT\_SSO, HCMUT\_DATACORE, Email Service,...
+	\item \textbf{Security}: Module xác thực JWT và mã hóa mật khẩu (\texttt{bcryptjs}).
+	\item \textbf{Configuration}: Cấu hình kết nối Database và biến môi trường (\texttt{dotenv}).
+	\item \textbf{Integration}: Module tích hợp gửi Email qua SendGrid (\texttt{MailSender}).
 \end{itemize}
 
 \subsection*{4.2.2. Sơ đồ gói (Package Diagram)}
 \addcontentsline{toc}{subsection}{4.2.2. Sơ đồ gói (Package Diagram)}
-Sơ đồ dưới đây minh họa cách mã nguồn được tổ chức thành các gói logic và mối quan hệ phụ thuộc giữa chúng.
+
 \begin{figure}[H]
-    \centering
-    \setlength{\fboxsep}{2pt}     
-    \setlength{\fboxrule}{0.5pt}   
-    \fbox{\includegraphics[scale=0.45]{Picture/Developmentview.png}}
-    \caption{Sơ đồ tổ chức các gói của hệ thống}
+	\centering
+	\setlength{\fboxsep}{2pt}     
+	\setlength{\fboxrule}{0.5pt}   
+	\fbox{\includegraphics[scale=0.45]{Picture/Developmentview.png}}
+	\caption{Sơ đồ tổ chức các gói của hệ thống (Logical View)}
 \end{figure}
 
 \subsection*{4.2.3. Mô tả các gói}
 \addcontentsline{toc}{subsection}{4.2.3. Mô tả các gói}
-Bảng dưới đây giải thích chức năng của từng gói (package) trong kiến trúc phần mềm.
+Bảng dưới đây giải thích chức năng của từng gói trong kiến trúc thực tế:
+
 \begin{table}[H]
-\centering
-\begin{tabular}{|c|p{4cm}|p{9cm}|}
-\hline
-\textbf{STT} & \textbf{Tên gói} & \textbf{Chức năng chính} \\
-\hline
-1 & Controller Layer & Chứa các lớp chịu trách nhiệm tiếp nhận yêu cầu HTTP từ client, gọi đến các Service tương ứng để xử lý và trả về phản hồi (response). \\
-\hline
-2 & Service Layer & Chứa toàn bộ logic nghiệp vụ của ứng dụng. Đây là nơi các quy trình như ghép cặp Tutor, xử lý đăng ký, tạo báo cáo được thực thi. Gói này điều phối hoạt động giữa Repositories và các thành phần khác. \\
-\hline
-3 & Repository Layer & Chứa các interface/lớp định nghĩa các phương thức để truy cập dữ liệu. Gói này trừu tượng hóa lớp truy cập dữ liệu, giúp Service không cần biết chi tiết về cách dữ liệu được lưu trữ. \\
-\hline
-4 & Domain (Entities) & Chứa các lớp thực thể (Entity) ánh xạ trực tiếp tới các bảng trong cơ sở dữ liệu, định nghĩa cấu trúc dữ liệu cốt lõi của hệ thống. \\
-\hline
-5 & DTOs (Data Transfer Objects) & Chứa các lớp dùng để truyền dữ liệu giữa các lớp, đặc biệt là giữa Controller và Service. Việc sử dụng DTO giúp che giấu cấu trúc của Domain và chỉ truyền đi những dữ liệu cần thiết. \\
-\hline
--- & Các gói phụ trợ & Bao gồm Security, Integration, Config. Các gói này cung cấp các chức năng xuyên suốt và được sử dụng chủ yếu bởi Service Layer nhưng không được vẽ ra để giữ cho sơ đồ đơn giản. \\
-\hline
-\end{tabular}
-\caption{Chức năng của từng gói (package) trong kiến trúc phần mềm}
+	\centering
+	\begin{tabular}{|c|p{4cm}|p{9cm}|}
+		\hline
+		\textbf{STT} & \textbf{Tên gói (Logic)} & \textbf{Ánh xạ trong Code (Thực tế)} \\
+		\hline
+		1 & Controller/Resolver Layer & Thư mục \texttt{resolvers/}: Chứa các hàm xử lý đầu vào từ GraphQL (Query/Mutation), gọi xuống tầng Model để lấy dữ liệu. \\
+		\hline
+		2 & Service/Utils Layer & Thư mục \texttt{MailSender/} và các hàm tiện ích: Xử lý logic nghiệp vụ đặc thù như sinh mã OTP, gửi email. \\
+		\hline
+		3 & Repository/Model Layer & Thư mục \texttt{models/} (\texttt{userModel.js}, \texttt{courseModel.js}...): Chứa các câu lệnh SQL để truy xuất và thao tác dữ liệu trực tiếp với MySQL. \\
+		\hline
+		4 & Domain/Schema Layer & Thư mục \texttt{schemas/} (\texttt{index.js}): Định nghĩa các Type, Input, Enum của GraphQL, đóng vai trò như hợp đồng dữ liệu giữa Client và Server. \\
+		\hline
+		-- & Các gói phụ trợ & \texttt{database.js} (kết nối DB), \texttt{server.mjs} (cấu hình Server, Middleware xác thực). \\
+		\hline
+	\end{tabular}
+	\caption{Chức năng của từng gói trong kiến trúc Node.js/GraphQL}
 \end{table}
 
 \subsection*{4.2.4. Luồng xử lý dữ liệu qua các lớp}
 \addcontentsline{toc}{subsection}{4.2.4. Luồng xử lý dữ liệu qua các lớp}
 
-Để minh họa cách các gói tương tác với nhau, luồng xử lý cho chức năng ``Sinh viên đăng ký môn học'' (UC-04):
+Minh họa luồng xử lý cho chức năng ``Sinh viên đăng ký môn học'' (UC-04):
 
 \begin{itemize}
-    \item \textbf{Request}: Sinh viên gửi yêu cầu đăng ký môn học từ giao diện người dùng. Yêu cầu này được gửi đến một endpoint trong Controller Layer.
-    \item \textbf{Controller Layer}: Lớp \texttt{RegistrationController} nhận yêu cầu. Nó xác thực dữ liệu đầu vào (đóng gói trong một đối tượng \texttt{RegistrationRequestDto} từ gói DTOs) và gọi phương thức trong Service Layer.
-    \item \textbf{Service Layer}: Lớp \texttt{RegistrationService} thực thi logic nghiệp vụ. Nó sử dụng các lớp trong Repository Layer để kiểm tra các quy tắc nghiệp vụ (ví dụ: giới hạn số môn đăng ký).
-    \item \textbf{Repository Layer}: Các lớp như \texttt{UserRepository} và \texttt{RegistrationRepository} tương tác với cơ sở dữ liệu. Chúng làm việc với các đối tượng từ Domain Layer (ví dụ: \texttt{User}, \texttt{CourseRegistration}).
-    \item \textbf{Response}: Sau khi xử lý xong, Service Layer trả về kết quả (thường dưới dạng một DTO khác) cho Controller Layer, và Controller sẽ tạo phản hồi HTTP gửi về cho client.
+	\item \textbf{Request}: Client gửi một \texttt{Mutation: enrollCourse} thông qua GraphQL API.
+	\item \textbf{Interface Layer (Resolver)}: Hàm \texttt{enrollCourse} trong \texttt{resolvers/index.js} nhận yêu cầu. Nó kiểm tra quyền truy cập (thông qua \texttt{context.userId}) và gọi các hàm kiểm tra logic.
+	\item \textbf{Data Access Layer (Model)}:
+	\begin{itemize}
+		\item Gọi \texttt{courseExists(id)} trong \texttt{models/courseModel.js} để kiểm tra môn học có tồn tại không.
+		\item Gọi \texttt{isCourseRegistered(...)} để đảm bảo sinh viên chưa đăng ký trùng.
+		\item Cuối cùng gọi \texttt{enrollCourse(...)} để thực hiện câu lệnh \texttt{INSERT} vào database.
+	\end{itemize}
+	\item \textbf{Response}: Kết quả (True/False hoặc Error Message) được trả về từ tầng Model -> Resolver -> Client theo định dạng JSON chuẩn của GraphQL.
 \end{itemize}
 %========================================================================================
 \section*{4.3. Sơ đồ lớp chi tiết (Detailed Class Diagram)}
 \addcontentsline{toc}{section}{4.3. Sơ đồ lớp chi tiết (Detailed Class Diagram)}
+
 \subsection*{4.3.1. Giới thiệu}
 \addcontentsline{toc}{subsection}{4.3.1. Giới thiệu}
 Sơ đồ lớp là một sơ đồ cấu trúc tĩnh trong UML, mô tả chi tiết các lớp (\textit{class}), thuộc tính (\textit{attributes}), phương thức (\textit{methods}) và mối quan hệ giữa các lớp đó trong \textbf{Hệ thống hỗ trợ Tutor}. Sơ đồ này đóng vai trò là bản thiết kế chi tiết cho việc triển khai mã nguồn, đảm bảo hệ thống được xây dựng một cách nhất quán, có cấu trúc và dễ dàng bảo trì, mở rộng.
 
-Sơ đồ được tổ chức thành các cụm chức năng chính để phản ánh cấu trúc module của hệ thống:
+Dựa trên kiến trúc mã nguồn thực tế, sơ đồ được tổ chức thành 4 cụm chức năng cốt lõi:
 
 \begin{itemize}
-    \item \textbf{Cụm Quản lý Người dùng (User Management)}: Định nghĩa các loại người dùng và vai trò.
-    \item \textbf{Cụm Chương trình và Đăng ký (Program \& Registration)}: Quản lý các chương trình học và việc đăng ký của sinh viên.
-    \item \textbf{Cụm Lịch trình và Buổi học (Scheduling \& Session)}: Xử lý việc tạo lịch, đặt lịch và quản lý các buổi học.
-    \item \textbf{Cụm Đánh giá và Phản hồi (Feedback \& Support)}: Quản lý các chức năng hỗ trợ như đánh giá, tài liệu.
+	\item \textbf{Cụm Quản lý Người dùng (User Management)}: Định nghĩa các thực thể người dùng và phân quyền trong hệ thống.
+	\item \textbf{Cụm Khóa học và Đăng ký (Course \& Registration)}: Quản lý danh mục môn học và các liên kết đăng ký từ cả hai phía Sinh viên và Tutor.
+	\item \textbf{Cụm Lịch trình và Lớp học (Scheduling \& Class)}: Quản lý việc mở lớp, thiết lập thời gian và hình thức dạy học.
+	\item \textbf{Cụm Đánh giá và Hỗ trợ (Feedback \& Support)}: Các chức năng mở rộng hỗ trợ quá trình vận hành lớp học như tài liệu, đánh giá và điểm danh.
 \end{itemize}
 
 \subsection*{4.3.2. Sơ đồ lớp chi tiết của hệ thống}
 \addcontentsline{toc}{subsection}{4.3.2. Sơ đồ lớp chi tiết của hệ thống}
 
 \begin{figure}[H]
-    \centering
-    \setlength{\fboxsep}{2pt}     
-    \setlength{\fboxrule}{0.5pt}   
-    \fbox{\includegraphics[scale=0.25]{Picture/ClassDiagram.png}}
-    \caption{Sơ đồ lớp chi tiết của hệ thống}
+	\centering
+	\setlength{\fboxsep}{2pt}     
+	\setlength{\fboxrule}{0.5pt}   
+	\fbox{\includegraphics[scale=0.48]{Picture/ClassDiagram.png}}
+	\caption{Sơ đồ lớp chi tiết của hệ thống (Refined)}
 \end{figure}
 
 \subsection*{4.3.3. Mô tả cụm chức năng}
 \addcontentsline{toc}{subsection}{4.3.3. Mô tả cụm chức năng}
+
 \begin{itemize}
-    \item \textbf{Cụm Quản lý Người dùng (User Management):}
-    \begin{itemize}
-        \item Lớp trừu tượng User là lớp cha, chứa các thuộc tính và phương thức chung cho mọi người dùng.
-        \item Các lớp Student, Tutor, và Admin kế thừa từ User, bổ sung các thuộc tính và hành vi đặc thù cho từng vai trò. Thiết kế này giúp tái sử dụng mã nguồn và thể hiện rõ mối quan hệ "is-a" (là một).
-    \end{itemize}
-    \item \textbf{Cụm Chương trình và Đăng ký (Program \& Registration)}
-    \begin{itemize}
-        \item TutoringProgram đại diện cho một chương trình học (ví dụ: "Phụ đạo môn Cấu trúc dữ liệu").
-        \item CourseRegistration là một lớp liên kết (association class) thể hiện việc một Student đăng ký một TutoringProgram.
-        \item Matching ghi lại kết quả ghép cặp giữa Student và Tutor cho một chương trình cụ thể.
-    \end{itemize}
-    \item \textbf{Cụm Lịch trình và Buổi học (Scheduling \& Session):}
-    \begin{itemize}
-        \item AvailabilitySlot là các khung giờ rảnh mà Tutor đã tạo ra.
-        \item Session là một buổi học cụ thể được tạo ra khi một Student đặt lịch trong một AvailabilitySlot. Đây là lớp trung tâm, liên kết Tutor, Student, và TutoringProgram tại một thời điểm cụ thể.
-        \item Session là một buổi học cụ thể được tạo ra khi một Student đặt lịch trong một AvailabilitySlot. Đây là lớp trung tâm, liên kết Tutor, Student, và TutoringProgram tại một thời điểm cụ thể.
-    \end{itemize}
-    \item \textbf{Cụm Đánh giá và Phản hồi (Feedback \& Support):}
-    \begin{itemize}
-        \item Session là một buổi học cụ thể được tạo ra khi một Student đặt lịch trong một AvailabilitySlot. Đây là lớp trung tâm, liên kết Tutor, Student, và TutoringProgram tại một thời điểm cụ thể.
-        \item Feedback là một lớp linh hoạt, có thể ghi lại đánh giá từ Student đến Tutor hoặc ngược lại, được liên kết với một Session cụ thể để đảm bảo tính xác thực. Mối quan hệ giữa Feedback và User được định nghĩa rõ ràng qua hai vai trò "fromUser" và "toUser".
-    \end{itemize}
+	\item \textbf{Cụm Quản lý Người dùng (User Management):}
+	\begin{itemize}
+		\item Lớp trừu tượng \texttt{User} là lớp cơ sở, chứa các thuộc tính chung (UserID, Email, PasswordHash, Phone) và phương thức xác thực.
+		\item Lớp \texttt{Student} kế thừa từ \texttt{User}, bổ sung thuộc tính đặc thù như \texttt{studentCode} (MSSV) và \texttt{gpa}.
+		\item Lớp \texttt{Tutor} kế thừa từ \texttt{User}, bổ sung thông tin về giới thiệu bản thân (\texttt{bio}) và điểm đánh giá trung bình (\texttt{averageRating}).
+	\end{itemize}
+	
+	\item \textbf{Cụm Khóa học và Đăng ký (Course \& Registration):}
+	\begin{itemize}
+		\item \texttt{Course} (thay thế cho TutoringProgram): Đại diện cho một môn học cụ thể được quản lý trong cơ sở dữ liệu (ví dụ: "Cấu trúc dữ liệu").
+		\item \texttt{CourseRegistration}: Ghi nhận việc Sinh viên đăng ký nhu cầu học một môn học cụ thể.
+		\item \texttt{TutorCourseRegistration}: Ghi nhận năng lực giảng dạy của Tutor, liên kết Tutor với các môn học (\texttt{Course}) mà họ có thể dạy. Đây là cơ sở dữ liệu để hệ thống thực hiện việc tìm kiếm và lọc Tutor phù hợp.
+	\end{itemize}
+	
+	\item \textbf{Cụm Lịch trình và Lớp học (Scheduling \& Class):}
+	\begin{itemize}
+		\item \texttt{Class}: Đây là thực thể trung tâm của hệ thống (thay thế cho \texttt{AvailabilitySlot} và \texttt{Session} cũ). Tutor sẽ trực tiếp "mở lớp" (\texttt{openClass}) với đầy đủ thông tin: Thời gian bắt đầu/kết thúc, Ngày trong tuần, Hình thức (Online/Offline) và Phòng học.
+		\item Lớp \texttt{Class} đóng vai trò kết nối giữa Tutor (người mở lớp) và Sinh viên (người tham gia lớp học).
+	\end{itemize}
+	
+	\item \textbf{Cụm Đánh giá và Hỗ trợ (Feedback \& Support):}
+	\begin{itemize}
+		\item \texttt{Feedback}: Cho phép lưu trữ đánh giá hai chiều giữa Sinh viên và Tutor. Mỗi phản hồi được gắn kết chặt chẽ với một \texttt{Class} cụ thể để đảm bảo tính xác thực.
+		\item \texttt{Material}: Quản lý các tài liệu học tập (Slide, Bài tập) được Tutor tải lên cho một lớp học.
+		\item \texttt{Attendance}: Hỗ trợ Tutor ghi nhận trạng thái tham gia (Có mặt/Vắng mặt) của sinh viên trong từng buổi học.
+	\end{itemize}
 \end{itemize}
 
 %========================================================================================
 \section*{4.4. Mô tả các lớp chi tiết và phương thức}
 \addcontentsline{toc}{section}{4.4. Mô tả các lớp chi tiết và phương thức}
+
 \subsection*{4.4.1. Cụm Quản lý Người dùng (User Management)}
 \addcontentsline{toc}{subsection}{4.4.1. Cụm Quản lý Người dùng (User Management)}
 
 Đây là cụm lõi, định nghĩa các đối tượng người dùng trong hệ thống. Việc sử dụng kế thừa từ một lớp trừu tượng \texttt{User} giúp tối ưu hóa cấu trúc và tránh lặp lại mã nguồn.
 
-\textbf{Mô tả:} Là lớp cơ sở (base class) cho tất cả các loại người dùng trong hệ thống. Lớp này chứa các thông tin và hành vi chung nhất như thông tin định danh, email, và các chức năng quản lý tài khoản cơ bản. Không thể tạo đối tượng trực tiếp từ lớp này.
+\textbf{Mô tả:} Là lớp cơ sở (base class) cho tất cả các loại người dùng trong hệ thống. Lớp này chứa các thông tin chung nhất.
 
 \textbf{Thuộc tính (Attributes):}
 \begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|l|X|}
-\hline
-\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
-\hline
-- userId & UUID & Khóa chính, một mã định danh duy nhất cho mỗi người dùng trong hệ thống. \\
-- fullName & String & Họ và tên đầy đủ của người dùng. \\
-- email & String & Địa chỉ email của người dùng, được sử dụng để đăng nhập và nhận thông báo. \\
-- passwordHash & String & Chuỗi đã được băm (hash) từ mật khẩu của người dùng. Lưu ý: Hệ thống không bao giờ lưu mật khẩu ở dạng văn bản gốc. \\
-- role & Role & Vai trò của người dùng trong hệ thống (STUDENT, TUTOR, ADMIN), quyết định các quyền truy cập chức năng. \\
-\hline
-\end{tabularx}
+	\centering
+	\begin{tabularx}{\textwidth}{|l|l|X|}
+		\hline
+		\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
+		\hline
+		- UserID & UUID & Khóa chính, mã định danh duy nhất cho mỗi người dùng. \\
+		- FullName & String & Họ và tên đầy đủ. \\
+		- Email & String & Địa chỉ email dùng để đăng nhập và nhận thông báo. \\
+		- Password & String & Mật khẩu đã được mã hóa. \\
+		- Role & Enum & Vai trò (STUDENT, TUTOR, ADMIN). \\
+		- Phone & String & Số điện thoại liên lạc. \\
+		- Introduce & String & Giới thiệu bản thân. \\
+		\hline
+	\end{tabularx}
 \end{table}
 
 \textbf{Phương thức (Methods):}
 \begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|X|l|X|}
-\hline
-\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả} \\
-\hline
-+ updateProfile() & profileData: Map & void & Cập nhật thông tin cá nhân chung như họ tên, email. \\
-+ changePassword() & oldPass: String, newPass: String & boolean & Thay đổi mật khẩu của người dùng sau khi xác thực mật khẩu cũ. \\
-\hline
-\end{tabularx}
+	\centering
+	\begin{tabularx}{\textwidth}{|l|X|l|X|}
+		\hline
+		\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả} \\
+		\hline
+		+ updateUser() & data: UserInput & User & Cập nhật thông tin cá nhân. \\
+		+ requestOtp() & email: String & Boolean & Gửi yêu cầu mã OTP để xác thực. \\
+		+ verifyOtp() & email: String, code: String & Boolean & Xác thực mã OTP người dùng nhập. \\
+		\hline
+	\end{tabularx}
 \end{table}
 
-\textbf{Mô tả:} Đại diện cho một người dùng sinh viên. Lớp này kế thừa tất cả các thuộc tính và phương thức từ lớp \texttt{User}, đồng thời bổ sung các thông tin và hành vi đặc thù liên quan đến việc học tập và tham gia chương trình Tutor.
+\textbf{Mô tả:} Lớp \texttt{Student} kế thừa từ \texttt{User}, đại diện cho sinh viên.
 
 \textbf{Thuộc tính (Attributes):}
 \begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|l|X|}
-\hline
-\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
-\hline
-- studentId & String & Mã số sinh viên (MSSV). \\
-- gpa & double & Điểm trung bình tích lũy của sinh viên, có thể được dùng làm một tiêu chí gợi ý Tutor. \\
-\hline
-\end{tabularx}
+	\centering
+	\begin{tabularx}{\textwidth}{|l|l|X|}
+		\hline
+		\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
+		\hline
+		- StudentCode & String & Mã số sinh viên (MSSV). \\
+		\hline
+	\end{tabularx}
 \end{table}
 
-\textbf{Phương thức (Methods):}
-\begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|X|l|X|}
-\hline
-\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
-\hline
-+ registerProgram() & program: TutoringProgram & boolean & Thực hiện chức năng đăng ký tham gia một chương trình học (UC-04, UC-24, UC-25). \\
-+ bookSession() & slot: AvailabilitySlot & Session & Thực hiện chức năng đặt một buổi học cố định dựa trên lịch rảnh của Tutor (UC-09). \\
-+ submitFeedback() & feedback: Feedback & boolean & Gửi đánh giá và phản hồi về chất lượng của một buổi học hoặc một Tutor (UC-17). \\
-\hline
-\end{tabularx}
-\end{table}
-
-\textbf{Mô tả:} Đại diện cho một người hướng dẫn (Tutor), có thể là giảng viên, sinh viên năm trên, hoặc nghiên cứu sinh. Lớp này kế thừa từ \texttt{User} và có thêm các thuộc tính về chuyên môn cũng như các hành vi liên quan đến việc giảng dạy.
+\textbf{Mô tả:} Lớp \texttt{Tutor} kế thừa từ \texttt{User}, đại diện cho người dạy.
 
 \textbf{Thuộc tính (Attributes):}
 \begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|l|X|}
-\hline
-\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
-\hline
-- staffId & String & Mã số định danh của Tutor (có thể là mã nhân viên hoặc MSSV nếu là sinh viên). \\
-- bio & String & Một đoạn giới thiệu ngắn về chuyên môn, kinh nghiệm và thành tích của Tutor. \\
-- averageRating & double & Điểm đánh giá trung bình của Tutor, được tự động tính toán từ các Feedback của sinh viên. \\
-\hline
-\end{tabularx}
+	\centering
+	\begin{tabularx}{\textwidth}{|l|l|X|}
+		\hline
+		\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
+		\hline
+		- Bio & String & Giới thiệu về kinh nghiệm và chuyên môn. \\
+		- AverageRating & Double & Điểm đánh giá trung bình. \\
+		\hline
+	\end{tabularx}
 \end{table}
 
-\textbf{Phương thức (Methods):}
-\begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|X|l|X|}
-\hline
-\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
-\hline
-+ createAvailability() & slotDetails: Map & AvailabilitySlot & Tạo ra các khung giờ rảnh để sinh viên có thể đặt lịch học (UC-08). \\
-+ manageMaterials() & material: Material, action: String & boolean & Quản lý tài liệu học tập: tải lên, chỉnh sửa, hoặc xóa tài liệu (UC-15). \\
-+ takeAttendance() & session: Session, student: Student & void & Thực hiện điểm danh sinh viên trong một buổi học (UC-13). \\
-\hline
-\end{tabularx}
-\end{table}
+\subsection*{4.4.2. Cụm Khóa học và Đăng ký (Course \& Registration)}
+\addcontentsline{toc}{subsection}{4.4.2. Cụm Khóa học và Đăng ký (Course \& Registration)}
 
-\textbf{Mô tả:} Đại diện cho người dùng quản trị, bao gồm quản trị viên của Khoa/Bộ môn và quản trị viên hệ thống. Lớp này kế thừa từ \texttt{User} và có các quyền cao nhất để giám sát và quản lý toàn bộ hoạt động của hệ thống.
+Cụm này quản lý danh mục môn học và các liên kết đăng ký từ cả hai phía.
 
-\textbf{Phương thức (Methods):}
-\begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|X|l|X|}
-\hline
-\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
-\hline
-+ manageUsers() & user: User, action: String & boolean & Quản lý tài khoản người dùng: kích hoạt, khóa, hoặc phân quyền. \\
-+ viewSystemReports() & reportType: String & Report & Xem các báo cáo tổng hợp về hoạt động của hệ thống, ví dụ như báo cáo chất lượng Tutor, báo cáo học tập của sinh viên (UC-19, UC-22). \\
-\hline
-\end{tabularx}
-\end{table}
-
-
-\subsection*{4.4.2. Cụm Chương trình và Đăng ký (Program \& Registration)}
-\addcontentsline{toc}{subsection}{4.4.2. Cụm Chương trình và Đăng ký (Program \& Registration)}
-
-Cụm này định nghĩa các lớp liên quan đến việc tổ chức các chương trình học và quản lý quá trình đăng ký của sinh viên, cũng như kết quả ghép cặp giữa sinh viên và Tutor.
-
-\textbf{Mô tả:} Đại diện cho một chương trình học thuật hoặc phi học thuật cụ thể được cung cấp trên hệ thống. Ví dụ: ``Phụ đạo môn Giải tích 1'', ``Luyện thi cuối kỳ môn Lập trình nâng cao'', hoặc ``Workshop kỹ năng thuyết trình''.
+\textbf{Mô tả:} Lớp \texttt{Course} đại diện cho một môn học cụ thể trong hệ thống.
 
 \textbf{Thuộc tính (Attributes):}
 \begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|l|X|}
-\hline
-\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
-\hline
-- programId & UUID & Khóa chính, mã định danh duy nhất cho mỗi chương trình. \\
-- name & String & Tên của chương trình (ví dụ: ``Cấu trúc dữ liệu và giải thuật''). \\
-- description & String & Mô tả chi tiết về nội dung, mục tiêu và đối tượng của chương trình. \\
-- type & String & Phân loại chương trình là ``ACADEMIC'' (học thuật) hay ``NON\_ACADEMIC'' (phi học thuật). \\
-\hline
-\end{tabularx}
+	\centering
+	\begin{tabularx}{\textwidth}{|l|l|X|}
+		\hline
+		\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
+		\hline
+		- Cid & String & Mã định danh môn học (ví dụ: CO3001). \\
+		- Cname & String & Tên môn học. \\
+		- Faculty & String & Khoa quản lý môn học. \\
+		\hline
+	\end{tabularx}
 \end{table}
 
 \textbf{Phương thức (Methods):}
 \begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|X|l|X|}
-\hline
-\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả} \\
-\hline
-+ getRegisteredStudents() & (none) & List<Student> & Lấy danh sách tất cả sinh viên đã đăng ký tham gia chương trình này. \\
-+ getAvailableTutors() & (none) & List<Tutor> & Lấy danh sách các Tutor có chuyên môn và đang nhận hướng dẫn cho chương trình này. \\
-\hline
-\end{tabularx}
+	\centering
+	\begin{tabularx}{\textwidth}{|l|X|l|X|}
+		\hline
+		\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả} \\
+		\hline
+		+ getAvailableCourses() & userId: UUID & List<Course> & Lấy danh sách các môn học sinh viên chưa đăng ký. \\
+		+ getRegisteredCourses() & userId: UUID & List<Course> & Lấy danh sách các môn học sinh viên đã đăng ký. \\
+		\hline
+	\end{tabularx}
 \end{table}
 
-\textbf{Mô tả:} Đây là một lớp liên kết, ghi lại thông tin về việc một \texttt{Student} đã đăng ký tham gia một \texttt{TutoringProgram}. Mỗi đối tượng của lớp này là một bản ghi đăng ký duy nhất.
+\textbf{Mô tả:} Lớp \texttt{CourseRegistration} liên kết Sinh viên với Môn học.
+
+\textbf{Phương thức (Methods):}
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{\textwidth}{|l|X|l|X|}
+		\hline
+		\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
+		\hline
+		+ enrollCourse() & userId: UUID, courseId: String & Boolean & Sinh viên đăng ký một môn học (UC-04). \\
+		+ cancelEnrollCourse() & userId: UUID, courseId: String & Boolean & Hủy đăng ký môn học (UC-05). \\
+		\hline
+	\end{tabularx}
+\end{table}
+
+\textbf{Mô tả:} Lớp \texttt{TutorCourseRegistration} liên kết Tutor với Môn học họ dạy.
+
+\textbf{Phương thức (Methods):}
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{\textwidth}{|l|X|l|X|}
+		\hline
+		\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả} \\
+		\hline
+		+ upsertTutorMajor() & tutorId: UUID, courses: List<String> & Boolean & Cập nhật danh sách các môn mà Tutor có thể dạy. \\
+		\hline
+	\end{tabularx}
+\end{table}
+
+\subsection*{4.4.3. Cụm Lịch trình và Lớp học (Scheduling \& Class)}
+\addcontentsline{toc}{subsection}{4.4.3. Cụm Lịch trình và Lớp học (Scheduling \& Class)}
+
+Cụm này quản lý việc mở lớp và thông tin chi tiết của lớp học.
+
+\textbf{Mô tả:} Lớp \texttt{Class} đại diện cho một lớp học do Tutor mở, bao gồm thông tin thời gian và hình thức. Đây là thực thể trung tâm thay thế cho AvailabilitySlot và Session cũ.
 
 \textbf{Thuộc tính (Attributes):}
 \begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|l|X|}
-\hline
-\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
-\hline
-- registrationId & UUID & Khóa chính, mã định danh duy nhất cho mỗi lượt đăng ký. \\
-- status & String & Trạng thái của việc đăng ký. Có thể là ``ACTIVE'' (đang hoạt động) hoặc ``CANCELLED'' (đã hủy). \\
-- registeredAt & LocalDateTime & Dấu thời gian ghi lại thời điểm sinh viên thực hiện đăng ký. \\
-\hline
-\end{tabularx}
+	\centering
+	\begin{tabularx}{\textwidth}{|l|l|X|}
+		\hline
+		\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
+		\hline
+		- ClassID & UUID & Khóa chính của lớp học. \\
+		- TutorID & UUID & ID của Tutor phụ trách lớp. \\
+		- StartTime & String & Giờ bắt đầu (ví dụ: "07:00"). \\
+		- EndTime & String & Giờ kết thúc (ví dụ: "09:00"). \\
+		- TeachingDay & String & Ngày dạy trong tuần (ví dụ: "2-4-6"). \\
+		- Method & String & Hình thức dạy (Online/Offline). \\
+		\hline
+	\end{tabularx}
 \end{table}
 
 \textbf{Phương thức (Methods):}
 \begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|X|l|X|}
-\hline
-\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
-\hline
-+ cancelRegistration() & (none) & void & Thay đổi trạng thái của đơn đăng ký thành ``CANCELLED''. Tương ứng với chức năng Hủy đăng ký môn học (UC-05). \\
-\hline
-\end{tabularx}
+	\centering
+	\begin{tabularx}{\textwidth}{|l|X|l|X|}
+		\hline
+		\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
+		\hline
+		+ openClass() & input: ClassInput & Class & Tutor mở một lớp học mới (UC-08). \\
+		+ updateClass() & input: ClassUpdateInput & Class & Cập nhật thông tin lớp học. \\
+		+ deleteClass() & classId: UUID & Boolean & Xóa một lớp học. \\
+		+ getClassesByTutor() & tutorId: UUID & List<Class> & Lấy danh sách các lớp do Tutor phụ trách. \\
+		\hline
+	\end{tabularx}
 \end{table}
 
-\textbf{Mô tả:} Ghi lại kết quả của việc ghép cặp thành công giữa một \texttt{Student} và một \texttt{Tutor} cho một \texttt{TutoringProgram} cụ thể. Lớp này giúp hệ thống quản lý các cặp Tutor-Mentee đang hoạt động.
+\subsection*{4.4.4. Cụm Đánh giá và Hỗ trợ (Feedback \& Support)}
+\addcontentsline{toc}{subsection}{4.4.4. Cụm Đánh giá và Hỗ trợ (Feedback \& Support)}
+
+Các lớp hỗ trợ (Feedback, Material, Attendance) được thiết kế để mở rộng tính năng cho lớp học.
+
+\textit{Lưu ý: Các lớp này đã được thiết kế trong Database Schema nhưng chưa được implement đầy đủ trong phiên bản hiện tại.}
+
+\textbf{Mô tả:} Lớp \texttt{Feedback} quản lý đánh giá giữa Sinh viên và Tutor.
 
 \textbf{Thuộc tính (Attributes):}
 \begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|l|X|}
-\hline
-\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
-\hline
-- matchId & UUID & Khóa chính, mã định danh duy nhất cho mỗi cặp ghép. \\
-- method & String & Phương thức ghép cặp. Có thể là ``MANUAL'' (sinh viên tự chọn) hoặc ``AUTOMATIC'' (hệ thống tự động gợi ý). \\
-- status & String & Trạng thái của cặp ghép. Có thể là ``ACTIVE'' (đang hoạt động) hoặc ``INACTIVE'' (đã kết thúc hoặc bị hủy). \\
-\hline
-\end{tabularx}
+	\centering
+	\begin{tabularx}{\textwidth}{|l|l|X|}
+		\hline
+		\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
+		\hline
+		- FeedbackID & UUID & Khóa chính. \\
+		- Rating & Integer & Điểm đánh giá (1-5 sao). \\
+		- Comment & String & Nội dung nhận xét. \\
+		- CreatedAt & DateTime & Thời gian tạo. \\
+		\hline
+	\end{tabularx}
 \end{table}
 
-\textbf{Phương thức (Methods):}
-\begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|X|l|X|}
-\hline
-\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
-\hline
-+ deactivateMatch() & (none) & void & Chuyển trạng thái của cặp ghép thành ``INACTIVE'', ví dụ như khi môn học kết thúc hoặc sinh viên hủy ghép cặp. \\
-\hline
-\end{tabularx}
-\end{table}
-
-\subsection*{4.4.3. Cụm Lịch trình và Buổi học (Scheduling \& Session)}
-\addcontentsline{toc}{subsection}{4.4.3. Cụm Lịch trình và Buổi học (Scheduling \& Session)}
-
-Cụm này chịu trách nhiệm quản lý thời gian của Tutor, quá trình đặt lịch của sinh viên, và thông tin chi tiết của từng buổi học. Đây là trung tâm của các hoạt động tương tác trong hệ thống.
-
-\textbf{Mô tả:} Đại diện cho một khung thời gian cụ thể mà một \texttt{Tutor} đã đăng ký là rảnh và sẵn sàng để nhận lịch dạy. Đây là ``nguyên liệu'' đầu vào để sinh viên có thể đặt lịch.
+\textbf{Mô tả:} Lớp \texttt{Material} quản lý tài liệu học tập.
 
 \textbf{Thuộc tính (Attributes):}
 \begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|l|X|}
-\hline
-\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
-\hline
-- slotId & UUID & Khóa chính, mã định danh duy nhất cho mỗi khung giờ rảnh. \\
-- startTime & LocalDateTime & Thời điểm bắt đầu của khung giờ rảnh. \\
-- endTime & LocalDateTime & Thời điểm kết thúc của khung giờ rảnh. \\
-- mode & SessionMode & Hình thức học trong khung giờ này: ONLINE hoặc OFFLINE. \\
-- location & String & Địa điểm (nếu là OFFLINE) hoặc có thể để trống. \\
-\hline
-\end{tabularx}
-\end{table}
-
-\textbf{Phương thức (Methods):}
-\begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|X|l|X|}
-\hline
-\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả} \\
-\hline
-+ isSlotAvailable() & (none) & boolean & Kiểm tra xem khung giờ này còn chỗ trống để sinh viên đặt lịch hay không (dựa trên số lượng Session đã được tạo). \\
-+ updateSlot() & slotDetails: Map & void & Cho phép Tutor chỉnh sửa thông tin của khung giờ rảnh (ví dụ: thay đổi thời gian, hình thức). \\
-\hline
-\end{tabularx}
-\end{table}
-
-\textbf{Mô tả:} Đại diện cho một buổi học thực tế đã được lên lịch, kết nối một \texttt{Tutor} với một hoặc nhiều \texttt{Student} tại một thời điểm cụ thể. Đây là kết quả của việc sinh viên đặt lịch thành công vào một \texttt{AvailabilitySlot}.
-
-\textbf{Thuộc tính (Attributes):}
-\begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|l|X|}
-\hline
-\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
-\hline
-- sessionId & UUID & Khóa chính, mã định danh duy nhất cho mỗi buổi học. \\
-- startTime & LocalDateTime & Thời điểm bắt đầu thực tế của buổi học. \\
-- endTime & LocalDateTime & Thời điểm kết thúc thực tế của buổi học. \\
-- status & SessionStatus & Trạng thái của buổi học (SCHEDULED, COMPLETED, CANCELLED, IN\_PROGRESS). \\
-- mode & SessionMode & Hình thức của buổi học (ONLINE hoặc OFFLINE). \\
-- locationOrLink & String & Chứa địa điểm phòng học (nếu là OFFLINE) hoặc đường link phòng học trực tuyến (nếu là ONLINE). \\
-\hline
-\end{tabularx}
-\end{table}
-
-\textbf{Phương thức (Methods):}
-\begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|X|l|X|}
-\hline
-\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
-\hline
-+ cancelSession() & reason: String & boolean & Hủy một buổi học đã được lên lịch. Phương thức này sẽ cập nhật status thành CANCELLED (UC-10). \\
-+ markAsCompleted() & (none) & void & Đánh dấu buổi học đã hoàn thành. Phương thức này cập nhật status thành COMPLETED (UC-14). \\
-+ getAttendees() & (none) & List<Student> & Lấy danh sách tất cả sinh viên đã đăng ký tham gia buổi học này. \\
-\hline
-\end{tabularx}
-\end{table}
-
-\textbf{Mô tả:} Ghi lại thông tin điểm danh của một \texttt{Student} cụ thể cho một \texttt{Session} cụ thể. Lớp này giúp theo dõi sự chuyên cần của sinh viên.
-
-\textbf{Thuộc tính (Attributes):}
-\begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|l|X|}
-\hline
-\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
-\hline
-- attendanceId & UUID & Khóa chính, mã định danh duy nhất cho mỗi lượt điểm danh. \\
-- status & String & Trạng thái điểm danh: ``PRESENT'' (có mặt), ``ABSENT'' (vắng mặt). \\
-- checkInTime & LocalDateTime & Thời điểm Tutor thực hiện điểm danh. \\
-\hline
-\end{tabularx}
-\end{table}
-
-\textbf{Phương thức (Methods):}
-\begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|X|l|X|}
-\hline
-\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
-\hline
-+ updateStatus() & newStatus: String & void & Cập nhật lại trạng thái điểm danh, ví dụ trong trường hợp cần điều chỉnh sau khi điểm danh ban đầu. \\
-\hline
-\end{tabularx}
-\end{table}
-
-\subsection*{4.4.4. Cụm Đánh giá và Phản hồi (Feedback \& Support)}
-\addcontentsline{toc}{subsection}{4.4.4. Cụm Đánh giá và Phản hồi (Feedback \& Support)}
-
-Cụm này bao gồm các lớp hỗ trợ cho quá trình dạy và học, cụ thể là quản lý tài liệu học tập và thu thập các phản hồi, đánh giá từ người dùng để cải thiện chất lượng chương trình.
-
-\textbf{Mô tả:} Đại diện cho một phản hồi hoặc đánh giá mà một người dùng gửi cho một người dùng khác, liên quan đến một buổi học cụ thể. Lớp này được thiết kế linh hoạt để hỗ trợ cả hai chiều: sinh viên đánh giá Tutor và Tutor nhận xét về sinh viên.
-
-\textbf{Thuộc tính (Attributes):}
-\begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|l|X|}
-\hline
-\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
-\hline
-- feedbackId & UUID & Khóa chính, mã định danh duy nhất cho mỗi phản hồi. \\
-- rating & int & Điểm số đánh giá (ví dụ: từ 1 đến 5 sao). \\
-- comment & String & Nội dung nhận xét, bình luận chi tiết. \\
-- createdAt & LocalDateTime & Dấu thời gian ghi lại thời điểm phản hồi được tạo. \\
-\hline
-\end{tabularx}
-\end{table}
-
-\textbf{Mối quan hệ đặc biệt:} \\
-Lớp này có hai mối quan hệ tới lớp \texttt{User}: \texttt{fromUser} (để xác định người gửi) và \texttt{toUser} (để xác định người nhận). \\
-Nó cũng có một mối quan hệ tới lớp \texttt{Session} để đảm bảo mỗi phản hồi đều gắn liền với một bối cảnh (buổi học) cụ thể.
-
-\textbf{Phương thức (Methods):}
-\begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|X|l|X|}
-\hline
-\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
-\hline
-+ saveFeedback() & (none) & boolean & Lưu thông tin phản hồi vào cơ sở dữ liệu. Được gọi khi sinh viên hoặc Tutor gửi đánh giá (UC-17, UC-18). \\
-+ isValid() & (none) & boolean & Kiểm tra tính hợp lệ của phản hồi (ví dụ: điểm rating phải nằm trong khoảng cho phép). \\
-\hline
-\end{tabularx}
-\end{table}
-
-\textbf{Mô tả:} Đại diện cho một tài liệu học tập (ví dụ: slide bài giảng, bài tập, đề cương) mà \texttt{Tutor} tải lên hệ thống để chia sẻ với các sinh viên trong chương trình học của mình.
-
-\textbf{Thuộc tính (Attributes):}
-\begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|l|X|}
-\hline
-\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
-\hline
-- materialId & UUID & Khóa chính, mã định danh duy nhất cho mỗi tài liệu. \\
-- fileName & String & Tên gốc của tệp tài liệu. \\
-- filePath & String & Đường dẫn lưu trữ tệp trên máy chủ hoặc dịch vụ lưu trữ đám mây. \\
-- uploadedAt & LocalDateTime & Dấu thời gian ghi lại thời điểm tài liệu được tải lên. \\
-\hline
-\end{tabularx}
-\end{table}
-
-\textbf{Phương thức (Methods):}
-\begin{table}[H]
-\centering
-\begin{tabularx}{\textwidth}{|l|X|l|X|}
-\hline
-\textbf{Tên phương thức} & \textbf{Tham số} & \textbf{Kiểu trả về} & \textbf{Mô tả (Liên kết với Use Case)} \\
-\hline
-+ download() & (none) & File & Thực hiện chức năng cho phép người dùng (sinh viên) tải tài liệu về máy (UC-16). \\
-+ delete() & (none) & void & Xóa tệp tài liệu khỏi hệ thống. Chỉ người tải lên (Tutor) mới có quyền này (UC-15). \\
-+ updateInfo() & newName: String, newDesc: String & void & Cập nhật thông tin mô tả của tài liệu (UC-15). \\
-\hline
-\end{tabularx}
+	\centering
+	\begin{tabularx}{\textwidth}{|l|l|X|}
+		\hline
+		\textbf{Tên thuộc tính} & \textbf{Kiểu dữ liệu} & \textbf{Mô tả} \\
+		\hline
+		- MaterialID & UUID & Khóa chính. \\
+		- FileName & String & Tên file. \\
+		- FilePath & String & Đường dẫn lưu trữ file. \\
+		- UploadedAt & DateTime & Thời gian tải lên. \\
+		\hline
+	\end{tabularx}
 \end{table}

@@ -48,7 +48,7 @@
  &
   \multicolumn{1}{l|}{4} &
   \multicolumn{1}{l|}{Hệ thống} &
-  \begin{tabular}[c]{@{}l@{}}Hiển thị danh sách Tutor phù hợp cho \\ môn học đó (theo lịch rảnh, slot còn trống, \\ chuyên môn).\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}Hiển thị danh sách Tutor phù hợp cho \\ môn học đó (theo lịch dạy, slot còn trống, \\ chuyên môn).\end{tabular} &
    \\ \cline{2-4}
  &
   \multicolumn{1}{l|}{5} &
@@ -138,7 +138,7 @@
   \multicolumn{3}{l|}{Ghép tự động (hệ thống đề xuất Tutor theo từng môn học)} &
    \\ \cline{1-4}
 \textbf{Mô tả} &
-  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Hệ thống tự động tìm và ghép Tutor phù hợp với SV cho từng môn học \\ dựa trên lịch rảnh của Tutor và ưu tiên mà SV chọn (VD: lịch 2-4-6, \\ buổi tối). \\ Một SV có thể được ghép với nhiều Tutor khác nhau, mỗi Tutor phụ \\ trách một môn riêng.\end{tabular}} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Hệ thống tự động tìm và ghép Tutor phù hợp với SV cho từng môn học \\ dựa trên lịch dạy của Tutor và ưu tiên mà SV chọn (VD: lịch 2-4-6, \\ buổi tối). \\ Một SV có thể được ghép với nhiều Tutor khác nhau, mỗi Tutor phụ \\ trách một môn riêng.\end{tabular}} &
    \\ \cline{1-4}
 \textbf{Actor chính} &
   \multicolumn{3}{l|}{Sinh viên} &
@@ -147,7 +147,7 @@
   \multicolumn{3}{l|}{Tutor, hệ thống} &
    \\ \cline{1-4}
 \textbf{Tiền điều kiện} &
-  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}SV đã đăng ký một hoặc nhiều môn học trong chương trình (UC-04). \\ Tutor đã cập nhật lịch rảnh và hồ sơ môn học (UC-08).\end{tabular}} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}SV đã đăng ký một hoặc nhiều môn học trong chương trình (UC-04). \\ Tutor đã cập nhật lịch dạy và hồ sơ môn học (UC-08).\end{tabular}} &
    \\ \cline{1-4}
 \textbf{Hậu điều kiện} &
   \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}SV được ghép thành công với ít nhất 1 Tutor cho môn học đã chọn.\\ Nếu SV học nhiều môn, hệ thống có thể ghép nhiều Tutor khác nhau \\ (mỗi môn 1 Tutor). \\ Kết quả lưu vào DB.\\ SV có thể hủy ghép với 1 môn cụ thể và thử lại mà không ảnh hưởng \\ các môn khác.\end{tabular}} &
@@ -185,7 +185,7 @@
  &
   \multicolumn{1}{l|}{6} &
   \multicolumn{1}{l|}{Hệ thống} &
-  \begin{tabular}[c]{@{}l@{}}Lấy danh sách Tutor khả dụng từ DB theo tiêu chí:\\ Có lịch rảnh trùng với ưu tiên.\\ Có chuyên môn đúng môn học SV vừa chọn.\\ Còn slot trống.\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}Lấy danh sách Tutor khả dụng từ DB theo tiêu chí:\\ Có lịch dạy trùng với ưu tiên.\\ Có chuyên môn đúng môn học SV vừa chọn.\\ Còn slot trống.\end{tabular} &
    \\ \cline{2-4}
  &
   \multicolumn{1}{l|}{7} &
@@ -235,7 +235,7 @@
   \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Hệ thống lỗi kết nối khi gửi yêu cầu đến Tutor → hiển thị “Thao tác thất \\ bại, thử lại sau”.\end{tabular}} &
    \\ \cline{1-4}
 \textbf{Business Rules} &
-  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Một SV có thể được ghép với nhiều Tutor khác nhau cho các môn khác \\ nhau. \\ Với mỗi môn học, tại 1 thời điểm chỉ có 1 Tutor (manual hoặc auto).\\ Một SV không được ghép song song 2 Tutor cho cùng một môn (trừ \\ khi hủy ghép trước đó). \\ Tutor không thể vượt quá số lượng SV tối đa cho môn mình phụ trách. \\ SV chỉ được chọn lịch nằm trong slot rảnh do Tutor khai báo.\end{tabular}} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Một SV có thể được ghép với nhiều Tutor khác nhau cho các môn khác \\ nhau. \\ Với mỗi môn học, tại 1 thời điểm chỉ có 1 Tutor (manual hoặc auto).\\ Một SV không được ghép song song 2 Tutor cho cùng một môn (trừ \\ khi hủy ghép trước đó). \\ Tutor không thể vượt quá số lượng SV tối đa cho môn mình phụ trách. \\ SV chỉ được chọn lịch nằm trong slot dạy do Tutor khai báo.\end{tabular}} &
    \\ \cline{1-4}
 \textbf{Data requirement} &
   \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Matching(matchID,studentID,tutorID,subjectID,method,status,createdAt\\ ,preferences) \\ method = "manual" hoặc "auto". \\ subjectID cho phép 1 SV có nhiều bản ghi ghép (mỗi môn 1 bản ghi, \\ mỗi bản ghi có 1 Tutor khác nhau).\end{tabular}} &

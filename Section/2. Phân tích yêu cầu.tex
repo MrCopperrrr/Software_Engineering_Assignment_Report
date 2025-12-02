@@ -14,15 +14,15 @@ Tác nhân (Actor) là một thực thể bên ngoài, có thể là người d�
 \addcontentsline{toc}{subsection}{2.1.1. Tác nhân chính}
 \subsubsection*{2.1.1.1. Tutor}
 % \addcontentsline{toc}{subsubsection}{2.1.1.1. Tutor}
-Tutor có thể là sinh viên giỏi, NCS, hoặc giảng viên, được đăng ký vào hệ thống để hỗ trợ học tập. Họ có trách nhiệm quản lý hồ sơ, lịch rảnh, tổ chức buổi học và theo dõi tiến độ của sinh viên.
+Tutor có thể là sinh viên giỏi, NCS, hoặc giảng viên, được đăng ký vào hệ thống để hỗ trợ học tập. Họ có trách nhiệm quản lý hồ sơ, lịch dạy, tổ chức buổi học và theo dõi tiến độ của sinh viên.
 \begin{itemize}
-    \item \textbf{Tạo và cập nhật lịch rảnh:}
+    \item \textbf{Tạo và cập nhật lịch dạy:}
     \begin{itemize}
         \item \textbf{Input:} Ngày, giờ, hình thức học (online/offline).
-        \item \textbf{Process:} Hệ thống lưu lại khung giờ rảnh, đồng bộ với module đặt lịch.
-        \item \textbf{Output:} Lịch rảnh hiển thị cho sinh viên để chọn.
+        \item \textbf{Process:} Hệ thống lưu lại khung giờ dạy, đồng bộ với module đặt lịch.
+        \item \textbf{Output:} Lịch dạy hiển thị cho sinh viên để chọn.
         \item \textbf{Constraints:} Không được nhập trùng khung giờ.
-        \item \textbf{Acceptance:} Sinh viên có thể đặt lịch học trong khung rảnh của Tutor.
+        \item \textbf{Acceptance:} Sinh viên có thể đặt lịch học trong khung dạy của Tutor.
         \item \textbf{Error handling:} Nếu nhập sai định dạng hoặc trùng lịch thì hệ thống báo lỗi.
     \end{itemize}
     
@@ -119,7 +119,7 @@ Tutor có thể là sinh viên giỏi, NCS, hoặc giảng viên, được đăn
         \item \textbf{Process:} 
         \begin{itemize}
             \item \textbf{Thủ công:} SV chọn Tutor trong danh sách.
-            \item \textbf{Tự động: } Hệ thống so khớp theo khoa/ngành, lịch rảnh, AI ranking.
+            \item \textbf{Tự động: } Hệ thống so khớp theo khoa/ngành, lịch dạy, AI ranking.
         \end{itemize}
         \item \textbf{Output:} Ghép cặp Tutor – SV được xác lập.
         \item \textbf{Constraints:} Một SV chỉ có 1 Tutor chính tại một thời điểm.
@@ -130,7 +130,7 @@ Tutor có thể là sinh viên giỏi, NCS, hoặc giảng viên, được đăn
     \item \textbf{Đặt lịch học (cảnh báo trùng lịch):}
     \begin{itemize}
         \item \textbf{Input:} Ngày, giờ, môn học.
-        \item \textbf{Process:} Hệ thống kiểm tra lịch rảnh của Tutor và lịch của SV.
+        \item \textbf{Process:} Hệ thống kiểm tra lịch dạy của Tutor và lịch của SV.
         \item \textbf{Output:} Lịch học mới được thêm.
         \item \textbf{Constraints:} Không được đặt trùng với lịch học hoặc lịch thi chính thức.
         \item \textbf{Acceptance:} Lịch hiển thị trong tài khoản SV và Tutor.
@@ -242,7 +242,7 @@ Tutor có thể là sinh viên giỏi, NCS, hoặc giảng viên, được đăn
 \begin{itemize}
     \item \textbf{Quản lý và theo dõi hồ sơ Tutor:}
     \begin{itemize}
-        \item \textbf{Input:} Hồ sơ cá nhân, chuyên môn, lịch rảnh của Tutor.
+        \item \textbf{Input:} Hồ sơ cá nhân, chuyên môn, lịch dạy của Tutor.
         \item \textbf{Process:} PĐT xem, kiểm tra và xác nhận hồ sơ Tutor.
         \item \textbf{Output:} Danh sách Tutor hợp lệ được duyệt.
         \item \textbf{Constraints:} Chỉ Tutor đủ điều kiện (ví dụ GPA $\geq$ 7.0, có chuyên môn rõ ràng) mới được phê duyệt.
@@ -263,7 +263,7 @@ Tutor có thể là sinh viên giỏi, NCS, hoặc giảng viên, được đăn
     \item \textbf{Tối ưu phân bổ nguồn lực giữa Tutor và SV:}
     \begin{itemize}
         \item \textbf{Input:} Danh sách Tutor, danh sách SV đăng ký, nhu cầu hỗ trợ.
-        \item \textbf{Process:} Hệ thống gợi ý phân bổ Tutor cho SV (theo ngành, lịch rảnh, số lượng tối đa).
+        \item \textbf{Process:} Hệ thống gợi ý phân bổ Tutor cho SV (theo ngành, lịch dạy, số lượng tối đa).
         \item \textbf{Output:} Bảng phân công Tutor – SV.
         \item \textbf{Constraints:} Một Tutor chỉ nhận tối đa số SV theo quy định (ví dụ $\leq$ 5 SV).
         \item \textbf{Acceptance:} Phân bổ hợp lý, không quá tải Tutor, đáp ứng nhu cầu SV.
@@ -279,7 +279,7 @@ Tutor có thể là sinh viên giỏi, NCS, hoặc giảng viên, được đăn
 \begin{figure}[H]
     \centering
     % \includegraphics[scale=0.4]{Picture/CNPM_Usecase-diagram.drawio.png}
-    \includegraphics[scale=0.49 ]{Picture/Usecase-diagram.png}
+    \includegraphics[scale=0.7 ]{Picture/Usecase-diagram.png}
     \caption{Sơ đồ Usecase toàn hệ thống}
 \end{figure}
 %========================================================================================
@@ -318,8 +318,8 @@ Là một sinh viên, tôi muốn hệ thống chọn tutor  dựa chuyên môn 
 
 \subsection*{2.3.4. Module Quản lý lịch học}
 % \addcontentsline{toc}{subsection}{2.3.4. Module Quản lý lịch học}
-\subsubsection*{US-08: Tạo lịch rảnh (Tutor)} 
-Là tutor, tôi muốn tạo lịch rảnh để sinh viên có thể xem,sắp xếp và đăng ký.
+\subsubsection*{US-08: Thiết lập lịch dạy (Tutor)} 
+Là tutor, tôi muốn thiết lập lịch dạy để sinh viên có thể xem, sắp xếp và đăng ký.
 \subsubsection*{US-09: Đặt lịch học (SV)} 
 Là sinh viên, tôi muốn đặt lịch học với tutor phù hợp thời gian biểu của bản thân.
 \subsubsection*{US-10: Hủy/Đổi lịch học} 
@@ -573,9 +573,9 @@ Là sinh viên, tôi muốn đăng ký tham gia chương trình phi học thuậ
     \item \textbf{Mô tả:} Các công nghệ, công cụ và nền tảng bắt buộc sử dụng.
     \item \textbf{Constraints:}
     \begin{itemize}
-        \item DB: MySQL hoặc PostgreSQL.
-        \item Backend: Java Spring Boot hoặc Node.js.
-        \item Frontend: ReactJS hoặc Angular.
+        \item Database: MySQL (Sử dụng thư viện mysql2 pool).
+        \item Backend: Node.js sử dụng framework Express.
+        \item Frontend: ReactJS (Build tool Vite, Styling TailwindCSS).
         \item Triển khai trên Docker/Kubernetes.
     \end{itemize}
     \item \textbf{Acceptance:} Cấu hình hệ thống triển khai thành công trên môi trường staging/production.

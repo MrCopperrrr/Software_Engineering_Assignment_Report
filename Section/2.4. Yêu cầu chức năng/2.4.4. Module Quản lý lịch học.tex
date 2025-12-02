@@ -1,5 +1,5 @@
 % \newpage
-\subsubsection*{Use Case 08: Tạo lịch rảnh (Tutor)}
+\subsubsection*{Use Case 08: Thiết lập lịch dạy (Tutor)}
 \begin{samepage}
 \begin{table}[h!]
 \begin{tabular}{|l|lll|l}
@@ -8,10 +8,10 @@
   \multicolumn{3}{l|}{UC-08} &
    \\ \cline{1-4}
 \textbf{Tên} &
-  \multicolumn{3}{l|}{Tạo lịch rảnh (Tutor)} &
+  \multicolumn{3}{l|}{Thiết lập lịch dạy} &
    \\ \cline{1-4}
 \textbf{Mô tả} &
-  \multicolumn{3}{l|}{Tutor khai báo thời gian rảnh để sinh viên có thể đặt lịch học.} &
+  \multicolumn{3}{l|}{Tutor khai báo thời gian dạy để sinh viên có thể đặt lịch học.} &
    \\ \cline{1-4}
 \textbf{Actor chính} &
   \multicolumn{3}{l|}{Tutor} &
@@ -23,7 +23,7 @@
   \multicolumn{3}{l|}{Tutor đã đăng ký tài khoản và hồ sơ hợp lệ.} &
    \\ \cline{1-4}
 \textbf{Hậu điều kiện} &
-  \multicolumn{3}{l|}{Lịch rảnh được lưu trong DB và hiển thị cho SV lựa chọn.} &
+  \multicolumn{3}{l|}{Lịch dạy được lưu trong DB và hiển thị cho SV lựa chọn.} &
    \\ \cline{1-4}
 \multirow{6}{*}{\textbf{Luồng sự kiện}} &
   \multicolumn{1}{l|}{\textbf{Bước}} &
@@ -33,7 +33,7 @@
  &
   \multicolumn{1}{l|}{1} &
   \multicolumn{1}{l|}{Tutor} &
-  Đăng nhập, chọn chức năng “Tạo lịch rảnh”. &
+  Đăng nhập, chọn chức năng “Tạo lịch dạy”. &
    \\ \cline{2-4}
  &
   \multicolumn{1}{l|}{2} &
@@ -48,12 +48,12 @@
  &
   \multicolumn{1}{l|}{4} &
   \multicolumn{1}{l|}{Hệ thống} &
-  Lưu lịch rảnh vào DB. &
+  Lưu lịch dạy vào DB. &
    \\ \cline{2-4}
  &
   \multicolumn{1}{l|}{5} &
   \multicolumn{1}{l|}{Hệ thống} &
-  Hiển thị thông báo “Tạo lịch rảnh thành công”. &
+  Hiển thị thông báo “Tạo lịch dạy thành công”. &
    \\ \cline{1-4}
 \multirow{3}{*}{\textbf{Luồng thay thế}} &
   \multicolumn{1}{l|}{\textbf{Bước}} &
@@ -68,19 +68,19 @@
  &
   \multicolumn{1}{l|}{3a} &
   \multicolumn{1}{l|}{Hệ thống} &
-  \begin{tabular}[c]{@{}l@{}}Phát hiện lịch rảnh đã tồn tại → hiển thị lỗi, \\ không lưu.\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}Phát hiện lịch dạy đã tồn tại → hiển thị lỗi, \\ không lưu.\end{tabular} &
    \\ \cline{1-4}
 \textbf{Ngoại lệ} &
   \multicolumn{3}{l|}{Hệ thống lỗi DB khi lưu → hiển thị “Tạo lịch thất bại, thử lại sau”.} &
    \\ \cline{1-4}
 \textbf{Business Rules} &
-  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Tutor chỉ có thể tạo lịch rảnh trong khung giờ hợp lệ của trường \\ (ví dụ 7h – 21h).\end{tabular}} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Tutor chỉ có thể thiết lập lịch dạy trong khung giờ hợp lệ của trường \\ (ví dụ 7h – 21h).\end{tabular}} &
    \\ \cline{1-4}
 \textbf{Data requirement} &
   \multicolumn{3}{l|}{Availability(availID, tutorID, date, startTime, endTime, mode, status)} &
    \\ \cline{1-4}
 \end{tabular}
-\caption{Bảng đặc tả chức năng tạo lịch rảnh (Tutor)}
+\caption{Bảng đặc tả chức năng thiết lập lịch dạy (Tutor)}
 \end{table}
 \end{samepage}
 
@@ -108,7 +108,7 @@
   \multicolumn{3}{l|}{Hệ thống} &
    \\ \cline{1-4}
 \textbf{Tiền điều kiện} &
-  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}SV đã đăng ký chương trình học và đã được ghép Tutor cho môn học \\ (UC-06 hoặc UC-07). \\ Tutor đã khai báo lịch rảnh (UC-08).\end{tabular}} &
+  \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}SV đã đăng ký chương trình học và đã được ghép Tutor cho môn học \\ (UC-06 hoặc UC-07). \\ Tutor đã khai báo lịch dạy (UC-08).\end{tabular}} &
    \\ \cline{1-4}
 \textbf{Hậu điều kiện} &
   \multicolumn{3}{l|}{\begin{tabular}[c]{@{}l@{}}Một lịch học cố định được lưu vào DB, gắn với cặp SV – Tutor – Môn \\ học. \\ Lịch này được lặp lại tự động trong suốt thời gian môn học diễn ra.\end{tabular}} &
@@ -136,7 +136,7 @@
  &
   \multicolumn{1}{l|}{4} &
   \multicolumn{1}{l|}{Hệ thống} &
-  Hiển thị danh sách slot rảnh của Tutor. &
+  Hiển thị danh sách slot dạy của Tutor. &
    \\ \cline{2-4}
  &
   \multicolumn{1}{l|}{5} &
@@ -166,7 +166,7 @@
  &
   \multicolumn{1}{l|}{4a} &
   \multicolumn{1}{l|}{Hệ thống} &
-  \begin{tabular}[c]{@{}l@{}}Không có slot rảnh phù hợp \\ → báo “Chưa có lịch khả dụng”.\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}Không có slot dạy phù hợp \\ → báo “Chưa có lịch khả dụng”.\end{tabular} &
    \\ \cline{2-4}
  &
   \multicolumn{1}{l|}{6a} &
@@ -249,7 +249,7 @@
  &
   \multicolumn{1}{l|}{5} &
   \multicolumn{1}{l|}{Sinh viên} &
-  \begin{tabular}[c]{@{}l@{}}Nếu đổi:\\ Hệ thống hiển thị danh sách rảnh khác của Tutor.\\ SV chọn 1 slot mới.\\ Hệ thống kiểm tra:\\     Slot chưa full.\\     Không trùng với lịch học khác của SV.\\ Nếu hợp lệ → Hệ thống cập nhật slot mới cho \\ toàn bộ môn học.\\ Hệ thống gửi thông báo cho cả SV và Tutor.\end{tabular} &
+  \begin{tabular}[c]{@{}l@{}}Nếu đổi:\\ Hệ thống hiển thị danh sách dạy khác của Tutor.\\ SV chọn 1 slot mới.\\ Hệ thống kiểm tra:\\     Slot chưa full.\\     Không trùng với lịch học khác của SV.\\ Nếu hợp lệ → Hệ thống cập nhật slot mới cho \\ toàn bộ môn học.\\ Hệ thống gửi thông báo cho cả SV và Tutor.\end{tabular} &
    \\ \cline{1-4}
 \multirow{3}{*}{\textbf{Luồng thay thế}} &
   \multicolumn{1}{l|}{\textbf{Bước}} &
