@@ -1,0 +1,2444 @@
+PWD d:\Github Repositories\Software_Engineering_Assignment_Report
+INPUT C:\Users\Admin\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT d:\Github Repositories\Software_Engineering_Assignment_Report\main.tex
+OUTPUT main.log
+INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\a4wide\a4wide.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\a4wide\a4wide.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\ntgclass\a4.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\ntgclass\a4.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amssymb.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\amsfonts.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\epsfig.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\epsfig.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\base\latexsym.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\base\latexsym.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\multicol.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\multicol.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\array.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\hhline.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\hhline.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\vntex\vntex.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\vntex\vntex.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\vntex\t5enc.def
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\vntex\t5enc.def
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\vntex\t5enc.def
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\vntex\t5enc.dfu
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\vntex\t5enc.dfu
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\vntex\t5enc.dfu
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\vntex\t5cmr.fd
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\vntex\t5cmr.fd
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\vntex\t5cmr.fd
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\tfm\vntex\vnr\vnr10.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\vntex\vncaps.tex
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\vntex\vncaps.tex
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\vntex\vncaps.tex
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amstext.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsgen.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsbsy.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\lastpage\lastpage.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\lastpage\lastpage.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\lastpage\lastpage2e.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\lastpage\lastpage2e.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\lastpage\lastpagemodern.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\lastpage\lastpagemodern.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\algorithm2e\algorithm2e.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\algorithm2e\algorithm2e.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\ifoddpage\ifoddpage.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\xspace.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\xspace.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\relsize\relsize.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\relsize\relsize.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\enumerate.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\enumerate.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\xcolor\xcolor.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\color.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\mathcolor.ltx
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\enumitem\enumitem.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\enumitem\enumitem.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\tabularx.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\tabularx.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\multirow\multirow.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\multirow\multirow.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\rotating.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\rotating.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\verbatim.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\verbatim.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\listings\listings.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstpatch.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstpatch.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstpatch.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\listings\lstmisc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\listings\listings.cfg
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\utilities\pgfrcs.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\utilities\pgfrcs.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfutil-common.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfutil-latex.def
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfrcs.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfrcs.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfrcs.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\pgf.revision.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\pgf.revision.tex
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\basiclayer\pgfcore.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\basiclayer\pgfcore.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\systemlayer\pgfsys.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\systemlayer\pgfsys.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsys.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsys.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsys.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfkeyslibraryfiltered.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgf.cfg
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsys-common-pdf.def
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsyssoftpath.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\systemlayer\pgfsysprotocol.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcore.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcore.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcore.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathutil.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathparser.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.basic.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.trigonometric.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.random.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.comparison.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.base.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.round.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.misc.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfunctions.integerarithmetics.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathcalc.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmathfloat.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfint.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepoints.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathconstruct.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathusage.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorescopes.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoregraphicstate.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransformations.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorequick.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreobjects.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepathprocessing.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorearrows.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreshade.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreimage.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoreexternal.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorelayers.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcoretransparency.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorepatterns.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\basiclayer\pgfcorerdf.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\modules\pgfmoduleshapes.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\modules\pgfmoduleplot.code.tex
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-0-65.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\compatibility\pgfcomp-version-1-18.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\utilities\pgffor.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\utilities\pgffor.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\utilities\pgfkeys.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\utilities\pgfkeys.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgfkeys.code.tex
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\math\pgfmath.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\pgf\math\pgfmath.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\math\pgfmath.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgffor.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgffor.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\utilities\pgffor.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\tikz.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibraryplothandlers.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\modules\pgfmodulematrix.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarytopaths.code.tex
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\xfrac\xfrac.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\xfrac\xfrac.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\bm.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\bm.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\biblatex.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\biblatex.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\logreq\logreq.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\logreq\logreq.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\logreq\logreq.def
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\logreq\logreq.def
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\logreq\logreq.def
+INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\blx-dm.def
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\blx-dm.def
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\blx-dm.def
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\blx-compat.def
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\blx-compat.def
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\blx-compat.def
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\biblatex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\biblatex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\biblatex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\bbx\numeric.bbx
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\bbx\numeric.bbx
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\bbx\numeric.bbx
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\bbx\standard.bbx
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\bbx\standard.bbx
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\bbx\standard.bbx
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\cbx\numeric.cbx
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\cbx\numeric.cbx
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\cbx\numeric.cbx
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\biblatex.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\biblatex.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\biblatex.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3kernel\expl3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\blx-case-expl3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\blx-case-expl3.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\adjustbox\adjustbox.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\adjustbox\adjustbox.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\xkeyval\xkeyval.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\xkeyval\xkvutils.tex
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\adjustbox\adjcalc.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\adjustbox\trimclip.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\adjustbox\trimclip.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\collectbox\collectbox.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\adjustbox\tc-pdftex.def
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\adjustbox\tc-pdftex.def
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\adjustbox\tc-pdftex.def
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\varwidth\varwidth.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\varwidth\varwidth.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\varwidth\varwidth.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tcolorbox\tcolorbox.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tcolorbox\tcolorbox.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\environ\environ.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\environ\environ.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\trimspaces\trimspaces.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\trimspaces\trimspaces.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.geometric.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryshapes.geometric.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\shapes\pgflibraryshapes.geometric.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\shapes\pgflibraryshapes.geometric.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryarrows.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryarrows.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibraryarrows.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\pgflibraryarrows.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarypositioning.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarypositioning.code.tex
+INPUT C:\Program Files\MiKTeX\tex\latex\tcolorbox\tcblistings.code.tex
+INPUT C:\Program Files\MiKTeX\tex\latex\tcolorbox\tcblistingscore.code.tex
+INPUT C:\Program Files\MiKTeX\tex\latex\tcolorbox\tcbprocessing.code.tex
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\stringenc\stringenc.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\stringenc\stringenc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\pd1enc.def
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\pd1enc.def
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Program Files\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\glossaries-extra\glossaries-extra.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\glossaries-extra\glossaries-extra.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\glossaries\base\glossaries.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\glossaries\base\glossaries.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\mfirstuc\mfirstuc.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\mfirstuc\mfirstuc.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\xfor\xfor.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\xfor\xfor.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\supertabular\supertabular.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\supertabular\supertabular.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\datatool\datatool-base.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\datatool\datatool-base.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\tracklang\tracklang.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\tracklang\tracklang.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\tracklang\tracklang.tex
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\tracklang\tracklang.tex
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\tracklang\tracklang.tex
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\tracklang\tracklang.tex
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\generic\tracklang\tracklang.tex
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\datatool\datatool-l3fp.def
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\datatool\datatool-l3fp.def
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\datatool\datatool-l3fp.def
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\datatool\datatool-utf8.ldf
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\datatool\datatool-utf8.ldf
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\datatool\datatool-utf8.ldf
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\glossaries\styles\glossary-hypernav.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\glossaries\styles\glossary-hypernav.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\glossaries\styles\glossary-list.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\glossaries\styles\glossary-list.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\glossaries\styles\glossary-long.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\glossaries\styles\glossary-long.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\longtable.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\tools\longtable.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\glossaries\styles\glossary-super.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\glossaries\styles\glossary-super.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\supertabular\supertabular.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\glossaries\styles\glossary-tree.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\glossaries\styles\glossary-tree.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\glossaries-extra\glossaries-extra-abbrstyles.def
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\glossaries-extra\glossaries-extra-abbrstyles.def
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\glossaries-extra\glossaries-extra-abbrstyles.def
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\glossaries-extra\glossaries-extra-stylemods.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\glossaries-extra\glossaries-extra-stylemods.sty
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarysnakes.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarysnakes.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.pathmorphing.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.pathmorphing.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\modules\pgfmoduledecorations.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pathmorphing.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pathmorphing.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.pathreplacing.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pathreplacing.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.pathreplacing.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.shapes.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarydecorations.shapes.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.shapes.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\libraries\decorations\pgflibrarydecorations.shapes.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarybackgrounds.code.tex
+INPUT C:\Program Files\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibrarybackgrounds.code.tex
+INPUT .\main.aux
+INPUT .\main.aux
+INPUT main.aux
+OUTPUT main.aux
+INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\caption\ltcaption.sty
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\caption\ltcaption.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\lbx\english.lbx
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\lbx\english.lbx
+INPUT C:\Program Files\MiKTeX\tex\latex\biblatex\lbx\english.lbx
+OUTPUT main.bcf
+INPUT main.bbl
+INPUT .\main.bbl
+INPUT .\main.bbl
+INPUT .\main.bbl
+INPUT main.bbl
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\color.sty
+INPUT .\main.out
+INPUT .\main.out
+INPUT main.out
+INPUT main.out
+OUTPUT main.pdf
+INPUT .\main.out
+INPUT .\main.out
+OUTPUT main.out
+INPUT .\Section\TitlePage.tex
+INPUT .\Section\TitlePage.tex
+INPUT .\Section\TitlePage.tex
+INPUT .\Section\TitlePage.tex
+INPUT Section\TitlePage.tex
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsa.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\amsfonts\umsb.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
+INPUT C:\Program Files\MiKTeX\tex\latex\base\ulasy.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\base\ulasy.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\base\ulasy.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\latex-fonts\lasy10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\latex-fonts\lasy7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\latex-fonts\lasy5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbx5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmmib5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy7.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy5.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\latex-fonts\lasyb10.tfm
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\tfm\vntex\vnr\vnbx10.tfm
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\tfm\vntex\vnr\vnbx12.tfm
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\tfm\vntex\vnr\vnbxti10.tfm
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\tfm\vntex\vnr\vnbxti10.tfm
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\tfm\vntex\vnr\vnti10.tfm
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\tfm\vntex\vnr\vnr8.tfm
+INPUT C:\Users\Admin\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT .\Section\TableOfContents.tex
+INPUT .\Section\TableOfContents.tex
+INPUT .\Section\TableOfContents.tex
+INPUT .\Section\TableOfContents.tex
+INPUT Section\TableOfContents.tex
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\tfm\vntex\vnr\vnr12.tfm
+INPUT .\main.toc
+INPUT .\main.toc
+INPUT main.toc
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\tfm\vntex\vnr\vnr12.tfm
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\tfm\vntex\vnr\vnbx12.tfm
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\vntex\t5cmtt.fd
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\vntex\t5cmtt.fd
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\tex\latex\vntex\t5cmtt.fd
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\tfm\vntex\vnr\vntt10.tfm
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\tfm\vntex\vnr\vnr5.tfm
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\tfm\vntex\vnr\vnbx5.tfm
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\tfm\vntex\vnr\vnr7.tfm
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\tfm\vntex\vnr\vntt8.tfm
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+OUTPUT main.toc
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\main.lof
+INPUT .\main.lof
+INPUT main.lof
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+OUTPUT main.lof
+INPUT .\main.lot
+INPUT .\main.lot
+INPUT main.lot
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+OUTPUT main.lot
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\Members.tex
+INPUT .\Section\Members.tex
+INPUT .\Section\Members.tex
+INPUT .\Section\Members.tex
+INPUT Section\Members.tex
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\1. Tổng quan dự án.tex
+INPUT .\Section\1. Tổng quan dự án.tex
+INPUT Section\1. Tổng quan dự án.tex
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\tfm\vntex\vnr\vnr17.tfm
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\tfm\vntex\vnr\vnbx12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\2. Phân tích yêu cầu.tex
+INPUT .\Section\2. Phân tích yêu cầu.tex
+INPUT Section\2. Phân tích yêu cầu.tex
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Usecase-diagram.png
+INPUT .\Picture\Usecase-diagram.png
+INPUT .\Picture\Usecase-diagram.png
+INPUT .\Picture\Usecase-diagram.png
+INPUT .\Picture\Usecase-diagram.png
+INPUT .\Picture\Usecase-diagram.png
+INPUT .\Picture\Usecase-diagram.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.1. Module Quản lý Tài khoản và Hồ sơ.tex
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.1. Module Quản lý Tài khoản và Hồ sơ.tex
+INPUT Section\2.4. Yêu cầu chức năng\2.4.1. Module Quản lý Tài khoản và Hồ sơ.tex
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.2. Module Đăng ký chương trình học.tex
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.2. Module Đăng ký chương trình học.tex
+INPUT Section\2.4. Yêu cầu chức năng\2.4.2. Module Đăng ký chương trình học.tex
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.3. Module Ghép cặp Tutor – SV.tex
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.3. Module Ghép cặp Tutor – SV.tex
+INPUT Section\2.4. Yêu cầu chức năng\2.4.3. Module Ghép cặp Tutor – SV.tex
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.4. Module Quản lý lịch học.tex
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.4. Module Quản lý lịch học.tex
+INPUT Section\2.4. Yêu cầu chức năng\2.4.4. Module Quản lý lịch học.tex
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.5. Module Thông báo và nhắc nhở.tex
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.5. Module Thông báo và nhắc nhở.tex
+INPUT Section\2.4. Yêu cầu chức năng\2.4.5. Module Thông báo và nhắc nhở.tex
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.6. Module Quản lý buổi học và điểm danh.tex
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.6. Module Quản lý buổi học và điểm danh.tex
+INPUT Section\2.4. Yêu cầu chức năng\2.4.6. Module Quản lý buổi học và điểm danh.tex
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.7. Module Quản lý tài liệu học tập.tex
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.7. Module Quản lý tài liệu học tập.tex
+INPUT Section\2.4. Yêu cầu chức năng\2.4.7. Module Quản lý tài liệu học tập.tex
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.8. Module Đánh giá và phản hồi.tex
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.8. Module Đánh giá và phản hồi.tex
+INPUT Section\2.4. Yêu cầu chức năng\2.4.8. Module Đánh giá và phản hồi.tex
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.9. Module Thống kê và báo cáo.tex
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.9. Module Thống kê và báo cáo.tex
+INPUT Section\2.4. Yêu cầu chức năng\2.4.9. Module Thống kê và báo cáo.tex
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.10. Module Chương trình học thuật và phi học thuật.tex
+INPUT .\Section\2.4. Yêu cầu chức năng\2.4.10. Module Chương trình học thuật và phi học thuật.tex
+INPUT Section\2.4. Yêu cầu chức năng\2.4.10. Module Chương trình học thuật và phi học thuật.tex
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\3. Mô hình hóa hệ thống.tex
+INPUT .\Section\3. Mô hình hóa hệ thống.tex
+INPUT Section\3. Mô hình hóa hệ thống.tex
+INPUT .\Picture\ACUC01.png
+INPUT .\Picture\ACUC01.png
+INPUT .\Picture\ACUC01.png
+INPUT .\Picture\ACUC01.png
+INPUT .\Picture\ACUC01.png
+INPUT .\Picture\ACUC01.png
+INPUT .\Picture\ACUC01.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\SEUC01.png
+INPUT .\Picture\SEUC01.png
+INPUT .\Picture\SEUC01.png
+INPUT .\Picture\SEUC01.png
+INPUT .\Picture\SEUC01.png
+INPUT .\Picture\SEUC01.png
+INPUT .\Picture\SEUC01.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC02.png
+INPUT .\Picture\ACUC02.png
+INPUT .\Picture\ACUC02.png
+INPUT .\Picture\ACUC02.png
+INPUT .\Picture\ACUC02.png
+INPUT .\Picture\ACUC02.png
+INPUT .\Picture\ACUC02.png
+INPUT .\Picture\SEUC02.png
+INPUT .\Picture\SEUC02.png
+INPUT .\Picture\SEUC02.png
+INPUT .\Picture\SEUC02.png
+INPUT .\Picture\SEUC02.png
+INPUT .\Picture\SEUC02.png
+INPUT .\Picture\SEUC02.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC03.png
+INPUT .\Picture\ACUC03.png
+INPUT .\Picture\ACUC03.png
+INPUT .\Picture\ACUC03.png
+INPUT .\Picture\ACUC03.png
+INPUT .\Picture\ACUC03.png
+INPUT .\Picture\ACUC03.png
+INPUT .\Picture\SEUC03.png
+INPUT .\Picture\SEUC03.png
+INPUT .\Picture\SEUC03.png
+INPUT .\Picture\SEUC03.png
+INPUT .\Picture\SEUC03.png
+INPUT .\Picture\SEUC03.png
+INPUT .\Picture\SEUC03.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC04.png
+INPUT .\Picture\ACUC04.png
+INPUT .\Picture\ACUC04.png
+INPUT .\Picture\ACUC04.png
+INPUT .\Picture\ACUC04.png
+INPUT .\Picture\ACUC04.png
+INPUT .\Picture\ACUC04.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\SEUC04.png
+INPUT .\Picture\SEUC04.png
+INPUT .\Picture\SEUC04.png
+INPUT .\Picture\SEUC04.png
+INPUT .\Picture\SEUC04.png
+INPUT .\Picture\SEUC04.png
+INPUT .\Picture\SEUC04.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC05.png
+INPUT .\Picture\ACUC05.png
+INPUT .\Picture\ACUC05.png
+INPUT .\Picture\ACUC05.png
+INPUT .\Picture\ACUC05.png
+INPUT .\Picture\ACUC05.png
+INPUT .\Picture\ACUC05.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\SEUC05.png
+INPUT .\Picture\SEUC05.png
+INPUT .\Picture\SEUC05.png
+INPUT .\Picture\SEUC05.png
+INPUT .\Picture\SEUC05.png
+INPUT .\Picture\SEUC05.png
+INPUT .\Picture\SEUC05.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC06.png
+INPUT .\Picture\ACUC06.png
+INPUT .\Picture\ACUC06.png
+INPUT .\Picture\ACUC06.png
+INPUT .\Picture\ACUC06.png
+INPUT .\Picture\ACUC06.png
+INPUT .\Picture\ACUC06.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\SEUC06.png
+INPUT .\Picture\SEUC06.png
+INPUT .\Picture\SEUC06.png
+INPUT .\Picture\SEUC06.png
+INPUT .\Picture\SEUC06.png
+INPUT .\Picture\SEUC06.png
+INPUT .\Picture\SEUC06.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC07.png
+INPUT .\Picture\ACUC07.png
+INPUT .\Picture\ACUC07.png
+INPUT .\Picture\ACUC07.png
+INPUT .\Picture\ACUC07.png
+INPUT .\Picture\ACUC07.png
+INPUT .\Picture\ACUC07.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\SEUC07.png
+INPUT .\Picture\SEUC07.png
+INPUT .\Picture\SEUC07.png
+INPUT .\Picture\SEUC07.png
+INPUT .\Picture\SEUC07.png
+INPUT .\Picture\SEUC07.png
+INPUT .\Picture\SEUC07.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC08.png
+INPUT .\Picture\ACUC08.png
+INPUT .\Picture\ACUC08.png
+INPUT .\Picture\ACUC08.png
+INPUT .\Picture\ACUC08.png
+INPUT .\Picture\ACUC08.png
+INPUT .\Picture\ACUC08.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\SEUC08.png
+INPUT .\Picture\SEUC08.png
+INPUT .\Picture\SEUC08.png
+INPUT .\Picture\SEUC08.png
+INPUT .\Picture\SEUC08.png
+INPUT .\Picture\SEUC08.png
+INPUT .\Picture\SEUC08.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC09.png
+INPUT .\Picture\ACUC09.png
+INPUT .\Picture\ACUC09.png
+INPUT .\Picture\ACUC09.png
+INPUT .\Picture\ACUC09.png
+INPUT .\Picture\ACUC09.png
+INPUT .\Picture\ACUC09.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\SEUC09.png
+INPUT .\Picture\SEUC09.png
+INPUT .\Picture\SEUC09.png
+INPUT .\Picture\SEUC09.png
+INPUT .\Picture\SEUC09.png
+INPUT .\Picture\SEUC09.png
+INPUT .\Picture\SEUC09.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC10.png
+INPUT .\Picture\ACUC10.png
+INPUT .\Picture\ACUC10.png
+INPUT .\Picture\ACUC10.png
+INPUT .\Picture\ACUC10.png
+INPUT .\Picture\ACUC10.png
+INPUT .\Picture\ACUC10.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\SEUC10.png
+INPUT .\Picture\SEUC10.png
+INPUT .\Picture\SEUC10.png
+INPUT .\Picture\SEUC10.png
+INPUT .\Picture\SEUC10.png
+INPUT .\Picture\SEUC10.png
+INPUT .\Picture\SEUC10.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC11.png
+INPUT .\Picture\ACUC11.png
+INPUT .\Picture\ACUC11.png
+INPUT .\Picture\ACUC11.png
+INPUT .\Picture\ACUC11.png
+INPUT .\Picture\ACUC11.png
+INPUT .\Picture\ACUC11.png
+INPUT .\Picture\SEUC11.png
+INPUT .\Picture\SEUC11.png
+INPUT .\Picture\SEUC11.png
+INPUT .\Picture\SEUC11.png
+INPUT .\Picture\SEUC11.png
+INPUT .\Picture\SEUC11.png
+INPUT .\Picture\SEUC11.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC12.png
+INPUT .\Picture\ACUC12.png
+INPUT .\Picture\ACUC12.png
+INPUT .\Picture\ACUC12.png
+INPUT .\Picture\ACUC12.png
+INPUT .\Picture\ACUC12.png
+INPUT .\Picture\ACUC12.png
+INPUT .\Picture\SEUC12.png
+INPUT .\Picture\SEUC12.png
+INPUT .\Picture\SEUC12.png
+INPUT .\Picture\SEUC12.png
+INPUT .\Picture\SEUC12.png
+INPUT .\Picture\SEUC12.png
+INPUT .\Picture\SEUC12.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC13.png
+INPUT .\Picture\ACUC13.png
+INPUT .\Picture\ACUC13.png
+INPUT .\Picture\ACUC13.png
+INPUT .\Picture\ACUC13.png
+INPUT .\Picture\ACUC13.png
+INPUT .\Picture\ACUC13.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\SEUC13.png
+INPUT .\Picture\SEUC13.png
+INPUT .\Picture\SEUC13.png
+INPUT .\Picture\SEUC13.png
+INPUT .\Picture\SEUC13.png
+INPUT .\Picture\SEUC13.png
+INPUT .\Picture\SEUC13.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC14.png
+INPUT .\Picture\ACUC14.png
+INPUT .\Picture\ACUC14.png
+INPUT .\Picture\ACUC14.png
+INPUT .\Picture\ACUC14.png
+INPUT .\Picture\ACUC14.png
+INPUT .\Picture\ACUC14.png
+INPUT .\Picture\SEUC14.png
+INPUT .\Picture\SEUC14.png
+INPUT .\Picture\SEUC14.png
+INPUT .\Picture\SEUC14.png
+INPUT .\Picture\SEUC14.png
+INPUT .\Picture\SEUC14.png
+INPUT .\Picture\SEUC14.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC15.png
+INPUT .\Picture\ACUC15.png
+INPUT .\Picture\ACUC15.png
+INPUT .\Picture\ACUC15.png
+INPUT .\Picture\ACUC15.png
+INPUT .\Picture\ACUC15.png
+INPUT .\Picture\ACUC15.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\SEUC15.png
+INPUT .\Picture\SEUC15.png
+INPUT .\Picture\SEUC15.png
+INPUT .\Picture\SEUC15.png
+INPUT .\Picture\SEUC15.png
+INPUT .\Picture\SEUC15.png
+INPUT .\Picture\SEUC15.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC16.png
+INPUT .\Picture\ACUC16.png
+INPUT .\Picture\ACUC16.png
+INPUT .\Picture\ACUC16.png
+INPUT .\Picture\ACUC16.png
+INPUT .\Picture\ACUC16.png
+INPUT .\Picture\ACUC16.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\SEUC16.png
+INPUT .\Picture\SEUC16.png
+INPUT .\Picture\SEUC16.png
+INPUT .\Picture\SEUC16.png
+INPUT .\Picture\SEUC16.png
+INPUT .\Picture\SEUC16.png
+INPUT .\Picture\SEUC16.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC17.png
+INPUT .\Picture\ACUC17.png
+INPUT .\Picture\ACUC17.png
+INPUT .\Picture\ACUC17.png
+INPUT .\Picture\ACUC17.png
+INPUT .\Picture\ACUC17.png
+INPUT .\Picture\ACUC17.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\SEUC17.png
+INPUT .\Picture\SEUC17.png
+INPUT .\Picture\SEUC17.png
+INPUT .\Picture\SEUC17.png
+INPUT .\Picture\SEUC17.png
+INPUT .\Picture\SEUC17.png
+INPUT .\Picture\SEUC17.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC18.png
+INPUT .\Picture\ACUC18.png
+INPUT .\Picture\ACUC18.png
+INPUT .\Picture\ACUC18.png
+INPUT .\Picture\ACUC18.png
+INPUT .\Picture\ACUC18.png
+INPUT .\Picture\ACUC18.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\SEUC18.png
+INPUT .\Picture\SEUC18.png
+INPUT .\Picture\SEUC18.png
+INPUT .\Picture\SEUC18.png
+INPUT .\Picture\SEUC18.png
+INPUT .\Picture\SEUC18.png
+INPUT .\Picture\SEUC18.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC19.png
+INPUT .\Picture\ACUC19.png
+INPUT .\Picture\ACUC19.png
+INPUT .\Picture\ACUC19.png
+INPUT .\Picture\ACUC19.png
+INPUT .\Picture\ACUC19.png
+INPUT .\Picture\ACUC19.png
+INPUT .\Picture\SEUC19.png
+INPUT .\Picture\SEUC19.png
+INPUT .\Picture\SEUC19.png
+INPUT .\Picture\SEUC19.png
+INPUT .\Picture\SEUC19.png
+INPUT .\Picture\SEUC19.png
+INPUT .\Picture\SEUC19.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC20.png
+INPUT .\Picture\ACUC20.png
+INPUT .\Picture\ACUC20.png
+INPUT .\Picture\ACUC20.png
+INPUT .\Picture\ACUC20.png
+INPUT .\Picture\ACUC20.png
+INPUT .\Picture\ACUC20.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\SEUC20.png
+INPUT .\Picture\SEUC20.png
+INPUT .\Picture\SEUC20.png
+INPUT .\Picture\SEUC20.png
+INPUT .\Picture\SEUC20.png
+INPUT .\Picture\SEUC20.png
+INPUT .\Picture\SEUC20.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC21.png
+INPUT .\Picture\ACUC21.png
+INPUT .\Picture\ACUC21.png
+INPUT .\Picture\ACUC21.png
+INPUT .\Picture\ACUC21.png
+INPUT .\Picture\ACUC21.png
+INPUT .\Picture\ACUC21.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\SEUC21.png
+INPUT .\Picture\SEUC21.png
+INPUT .\Picture\SEUC21.png
+INPUT .\Picture\SEUC21.png
+INPUT .\Picture\SEUC21.png
+INPUT .\Picture\SEUC21.png
+INPUT .\Picture\SEUC21.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC22.png
+INPUT .\Picture\ACUC22.png
+INPUT .\Picture\ACUC22.png
+INPUT .\Picture\ACUC22.png
+INPUT .\Picture\ACUC22.png
+INPUT .\Picture\ACUC22.png
+INPUT .\Picture\ACUC22.png
+INPUT .\Picture\SEUC22.png
+INPUT .\Picture\SEUC22.png
+INPUT .\Picture\SEUC22.png
+INPUT .\Picture\SEUC22.png
+INPUT .\Picture\SEUC22.png
+INPUT .\Picture\SEUC22.png
+INPUT .\Picture\SEUC22.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC23.png
+INPUT .\Picture\ACUC23.png
+INPUT .\Picture\ACUC23.png
+INPUT .\Picture\ACUC23.png
+INPUT .\Picture\ACUC23.png
+INPUT .\Picture\ACUC23.png
+INPUT .\Picture\ACUC23.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\SEUC23.png
+INPUT .\Picture\SEUC23.png
+INPUT .\Picture\SEUC23.png
+INPUT .\Picture\SEUC23.png
+INPUT .\Picture\SEUC23.png
+INPUT .\Picture\SEUC23.png
+INPUT .\Picture\SEUC23.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC24.png
+INPUT .\Picture\ACUC24.png
+INPUT .\Picture\ACUC24.png
+INPUT .\Picture\ACUC24.png
+INPUT .\Picture\ACUC24.png
+INPUT .\Picture\ACUC24.png
+INPUT .\Picture\ACUC24.png
+INPUT .\Picture\SEUC24.png
+INPUT .\Picture\SEUC24.png
+INPUT .\Picture\SEUC24.png
+INPUT .\Picture\SEUC24.png
+INPUT .\Picture\SEUC24.png
+INPUT .\Picture\SEUC24.png
+INPUT .\Picture\SEUC24.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ACUC25.png
+INPUT .\Picture\ACUC25.png
+INPUT .\Picture\ACUC25.png
+INPUT .\Picture\ACUC25.png
+INPUT .\Picture\ACUC25.png
+INPUT .\Picture\ACUC25.png
+INPUT .\Picture\ACUC25.png
+INPUT .\Picture\SEUC25.png
+INPUT .\Picture\SEUC25.png
+INPUT .\Picture\SEUC25.png
+INPUT .\Picture\SEUC25.png
+INPUT .\Picture\SEUC25.png
+INPUT .\Picture\SEUC25.png
+INPUT .\Picture\SEUC25.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\SignUp.png
+INPUT .\Picture\UI\SignUp.png
+INPUT .\Picture\UI\SignUp.png
+INPUT .\Picture\UI\SignUp.png
+INPUT .\Picture\UI\SignUp.png
+INPUT .\Picture\UI\SignUp.png
+INPUT .\Picture\UI\SignUp.png
+INPUT .\Picture\UI\SignIn.png
+INPUT .\Picture\UI\SignIn.png
+INPUT .\Picture\UI\SignIn.png
+INPUT .\Picture\UI\SignIn.png
+INPUT .\Picture\UI\SignIn.png
+INPUT .\Picture\UI\SignIn.png
+INPUT .\Picture\UI\SignIn.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\HomePage_Student.png
+INPUT .\Picture\UI\HomePage_Student.png
+INPUT .\Picture\UI\HomePage_Student.png
+INPUT .\Picture\UI\HomePage_Student.png
+INPUT .\Picture\UI\HomePage_Student.png
+INPUT .\Picture\UI\HomePage_Student.png
+INPUT .\Picture\UI\HomePage_Student.png
+INPUT .\Picture\UI\Student_CourseRegistration.png
+INPUT .\Picture\UI\Student_CourseRegistration.png
+INPUT .\Picture\UI\Student_CourseRegistration.png
+INPUT .\Picture\UI\Student_CourseRegistration.png
+INPUT .\Picture\UI\Student_CourseRegistration.png
+INPUT .\Picture\UI\Student_CourseRegistration.png
+INPUT .\Picture\UI\Student_CourseRegistration.png
+INPUT .\Picture\UI\Student_CourseRegistration_Detail.png
+INPUT .\Picture\UI\Student_CourseRegistration_Detail.png
+INPUT .\Picture\UI\Student_CourseRegistration_Detail.png
+INPUT .\Picture\UI\Student_CourseRegistration_Detail.png
+INPUT .\Picture\UI\Student_CourseRegistration_Detail.png
+INPUT .\Picture\UI\Student_CourseRegistration_Detail.png
+INPUT .\Picture\UI\Student_CourseRegistration_Detail.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Student_FindTutor.png
+INPUT .\Picture\UI\Student_FindTutor.png
+INPUT .\Picture\UI\Student_FindTutor.png
+INPUT .\Picture\UI\Student_FindTutor.png
+INPUT .\Picture\UI\Student_FindTutor.png
+INPUT .\Picture\UI\Student_FindTutor.png
+INPUT .\Picture\UI\Student_FindTutor.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Student_ManualPairing_Detail.png
+INPUT .\Picture\UI\Student_ManualPairing_Detail.png
+INPUT .\Picture\UI\Student_ManualPairing_Detail.png
+INPUT .\Picture\UI\Student_ManualPairing_Detail.png
+INPUT .\Picture\UI\Student_ManualPairing_Detail.png
+INPUT .\Picture\UI\Student_ManualPairing_Detail.png
+INPUT .\Picture\UI\Student_ManualPairing_Detail.png
+INPUT .\Picture\UI\Student_AutoPairing_Detail.png
+INPUT .\Picture\UI\Student_AutoPairing_Detail.png
+INPUT .\Picture\UI\Student_AutoPairing_Detail.png
+INPUT .\Picture\UI\Student_AutoPairing_Detail.png
+INPUT .\Picture\UI\Student_AutoPairing_Detail.png
+INPUT .\Picture\UI\Student_AutoPairing_Detail.png
+INPUT .\Picture\UI\Student_AutoPairing_Detail.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Student_ScheduleMan_ChooseCourse.png
+INPUT .\Picture\UI\Student_ScheduleMan_ChooseCourse.png
+INPUT .\Picture\UI\Student_ScheduleMan_ChooseCourse.png
+INPUT .\Picture\UI\Student_ScheduleMan_ChooseCourse.png
+INPUT .\Picture\UI\Student_ScheduleMan_ChooseCourse.png
+INPUT .\Picture\UI\Student_ScheduleMan_ChooseCourse.png
+INPUT .\Picture\UI\Student_ScheduleMan_ChooseCourse.png
+INPUT .\Picture\UI\Student_ScheduleMan_SelectTime.png
+INPUT .\Picture\UI\Student_ScheduleMan_SelectTime.png
+INPUT .\Picture\UI\Student_ScheduleMan_SelectTime.png
+INPUT .\Picture\UI\Student_ScheduleMan_SelectTime.png
+INPUT .\Picture\UI\Student_ScheduleMan_SelectTime.png
+INPUT .\Picture\UI\Student_ScheduleMan_SelectTime.png
+INPUT .\Picture\UI\Student_ScheduleMan_SelectTime.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Student_ScheduleMan_Selected.png
+INPUT .\Picture\UI\Student_ScheduleMan_Selected.png
+INPUT .\Picture\UI\Student_ScheduleMan_Selected.png
+INPUT .\Picture\UI\Student_ScheduleMan_Selected.png
+INPUT .\Picture\UI\Student_ScheduleMan_Selected.png
+INPUT .\Picture\UI\Student_ScheduleMan_Selected.png
+INPUT .\Picture\UI\Student_ScheduleMan_Selected.png
+INPUT .\Picture\UI\Student_ScheduleMan_ChangeTime.png
+INPUT .\Picture\UI\Student_ScheduleMan_ChangeTime.png
+INPUT .\Picture\UI\Student_ScheduleMan_ChangeTime.png
+INPUT .\Picture\UI\Student_ScheduleMan_ChangeTime.png
+INPUT .\Picture\UI\Student_ScheduleMan_ChangeTime.png
+INPUT .\Picture\UI\Student_ScheduleMan_ChangeTime.png
+INPUT .\Picture\UI\Student_ScheduleMan_ChangeTime.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Student_ScheduleMan_DiscardTime.png
+INPUT .\Picture\UI\Student_ScheduleMan_DiscardTime.png
+INPUT .\Picture\UI\Student_ScheduleMan_DiscardTime.png
+INPUT .\Picture\UI\Student_ScheduleMan_DiscardTime.png
+INPUT .\Picture\UI\Student_ScheduleMan_DiscardTime.png
+INPUT .\Picture\UI\Student_ScheduleMan_DiscardTime.png
+INPUT .\Picture\UI\Student_ScheduleMan_DiscardTime.png
+INPUT .\Picture\UI\Student_Materials.png
+INPUT .\Picture\UI\Student_Materials.png
+INPUT .\Picture\UI\Student_Materials.png
+INPUT .\Picture\UI\Student_Materials.png
+INPUT .\Picture\UI\Student_Materials.png
+INPUT .\Picture\UI\Student_Materials.png
+INPUT .\Picture\UI\Student_Materials.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Student_Rating.png
+INPUT .\Picture\UI\Student_Rating.png
+INPUT .\Picture\UI\Student_Rating.png
+INPUT .\Picture\UI\Student_Rating.png
+INPUT .\Picture\UI\Student_Rating.png
+INPUT .\Picture\UI\Student_Rating.png
+INPUT .\Picture\UI\Student_Rating.png
+INPUT .\Picture\UI\HomePage_Tutor.png
+INPUT .\Picture\UI\HomePage_Tutor.png
+INPUT .\Picture\UI\HomePage_Tutor.png
+INPUT .\Picture\UI\HomePage_Tutor.png
+INPUT .\Picture\UI\HomePage_Tutor.png
+INPUT .\Picture\UI\HomePage_Tutor.png
+INPUT .\Picture\UI\HomePage_Tutor.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_HomePage.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_HomePage.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_HomePage.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_HomePage.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_HomePage.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_HomePage.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_HomePage.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_SelectTimeOnline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_SelectTimeOnline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_SelectTimeOnline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_SelectTimeOnline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_SelectTimeOnline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_SelectTimeOnline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_SelectTimeOnline.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_SelectTimeOffline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_SelectTimeOffline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_SelectTimeOffline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_SelectTimeOffline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_SelectTimeOffline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_SelectTimeOffline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_SelectTimeOffline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_Selected.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_Selected.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_Selected.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_Selected.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_Selected.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_Selected.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_Selected.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_HomePage_FilledSchedule.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_HomePage_FilledSchedule.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_HomePage_FilledSchedule.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_HomePage_FilledSchedule.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_HomePage_FilledSchedule.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_HomePage_FilledSchedule.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_HomePage_FilledSchedule.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_ChangeTimeOnline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_ChangeTimeOnline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_ChangeTimeOnline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_ChangeTimeOnline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_ChangeTimeOnline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_ChangeTimeOnline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_ChangeTimeOnline.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_ChangeTimeOffline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_ChangeTimeOffline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_ChangeTimeOffline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_ChangeTimeOffline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_ChangeTimeOffline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_ChangeTimeOffline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_ChangeTimeOffline.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_DeletePage.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_DeletePage.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_DeletePage.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_DeletePage.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_DeletePage.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_DeletePage.png
+INPUT .\Picture\UI\Tutor_ScheduleMan_DeletePage.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Tutor_CourseMan_HomePage.png
+INPUT .\Picture\UI\Tutor_CourseMan_HomePage.png
+INPUT .\Picture\UI\Tutor_CourseMan_HomePage.png
+INPUT .\Picture\UI\Tutor_CourseMan_HomePage.png
+INPUT .\Picture\UI\Tutor_CourseMan_HomePage.png
+INPUT .\Picture\UI\Tutor_CourseMan_HomePage.png
+INPUT .\Picture\UI\Tutor_CourseMan_HomePage.png
+INPUT .\Picture\UI\Tutor_CourseMan_ChooseOnline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ChooseOnline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ChooseOnline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ChooseOnline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ChooseOnline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ChooseOnline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ChooseOnline.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Tutor_CourseMan_ListOfClassOnline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ListOfClassOnline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ListOfClassOnline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ListOfClassOnline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ListOfClassOnline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ListOfClassOnline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ListOfClassOnline.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_ChooseDate.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_ChooseDate.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_ChooseDate.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_ChooseDate.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_ChooseDate.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_ChooseDate.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_ChooseDate.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_ChooseStudent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_ChooseStudent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_ChooseStudent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_ChooseStudent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_ChooseStudent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_ChooseStudent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_ChooseStudent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_Absent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_Absent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_Absent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_Absent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_Absent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_Absent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_Absent.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_Make-upClasses.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_Make-upClasses.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_Make-upClasses.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_Make-upClasses.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_Make-upClasses.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_Make-upClasses.png
+INPUT .\Picture\UI\Tutor_CourseMan_Online_Make-upClasses.png
+INPUT .\Picture\UI\Tutor_CourseMan_ChooseOffline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ChooseOffline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ChooseOffline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ChooseOffline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ChooseOffline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ChooseOffline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ChooseOffline.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Tutor_CourseMan_ListOfClassOffline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ListOfClassOffline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ListOfClassOffline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ListOfClassOffline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ListOfClassOffline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ListOfClassOffline.png
+INPUT .\Picture\UI\Tutor_CourseMan_ListOfClassOffline.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_ChooseDate.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_ChooseDate.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_ChooseDate.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_ChooseDate.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_ChooseDate.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_ChooseDate.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_ChooseDate.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_ChooseStudent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_ChooseStudent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_ChooseStudent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_ChooseStudent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_ChooseStudent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_ChooseStudent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_ChooseStudent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_Absent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_Absent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_Absent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_Absent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_Absent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_Absent.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_Absent.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_Make-upClasses.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_Make-upClasses.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_Make-upClasses.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_Make-upClasses.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_Make-upClasses.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_Make-upClasses.png
+INPUT .\Picture\UI\Tutor_CourseMan_Offline_Make-upClasses.png
+INPUT .\Picture\UI\Tutor_CourseMan_OnlineOffline_Make-upClasses_Registered.png
+INPUT .\Picture\UI\Tutor_CourseMan_OnlineOffline_Make-upClasses_Registered.png
+INPUT .\Picture\UI\Tutor_CourseMan_OnlineOffline_Make-upClasses_Registered.png
+INPUT .\Picture\UI\Tutor_CourseMan_OnlineOffline_Make-upClasses_Registered.png
+INPUT .\Picture\UI\Tutor_CourseMan_OnlineOffline_Make-upClasses_Registered.png
+INPUT .\Picture\UI\Tutor_CourseMan_OnlineOffline_Make-upClasses_Registered.png
+INPUT .\Picture\UI\Tutor_CourseMan_OnlineOffline_Make-upClasses_Registered.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Tutor_Materials.png
+INPUT .\Picture\UI\Tutor_Materials.png
+INPUT .\Picture\UI\Tutor_Materials.png
+INPUT .\Picture\UI\Tutor_Materials.png
+INPUT .\Picture\UI\Tutor_Materials.png
+INPUT .\Picture\UI\Tutor_Materials.png
+INPUT .\Picture\UI\Tutor_Materials.png
+INPUT .\Picture\UI\Tutor_Materials_ChangeFileName.png
+INPUT .\Picture\UI\Tutor_Materials_ChangeFileName.png
+INPUT .\Picture\UI\Tutor_Materials_ChangeFileName.png
+INPUT .\Picture\UI\Tutor_Materials_ChangeFileName.png
+INPUT .\Picture\UI\Tutor_Materials_ChangeFileName.png
+INPUT .\Picture\UI\Tutor_Materials_ChangeFileName.png
+INPUT .\Picture\UI\Tutor_Materials_ChangeFileName.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Tutor_Materials_DeleteFile.png
+INPUT .\Picture\UI\Tutor_Materials_DeleteFile.png
+INPUT .\Picture\UI\Tutor_Materials_DeleteFile.png
+INPUT .\Picture\UI\Tutor_Materials_DeleteFile.png
+INPUT .\Picture\UI\Tutor_Materials_DeleteFile.png
+INPUT .\Picture\UI\Tutor_Materials_DeleteFile.png
+INPUT .\Picture\UI\Tutor_Materials_DeleteFile.png
+INPUT .\Picture\UI\Tutor_Materials_FileDeleted.png
+INPUT .\Picture\UI\Tutor_Materials_FileDeleted.png
+INPUT .\Picture\UI\Tutor_Materials_FileDeleted.png
+INPUT .\Picture\UI\Tutor_Materials_FileDeleted.png
+INPUT .\Picture\UI\Tutor_Materials_FileDeleted.png
+INPUT .\Picture\UI\Tutor_Materials_FileDeleted.png
+INPUT .\Picture\UI\Tutor_Materials_FileDeleted.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Tutor_Materials_ChangeRecordName.png
+INPUT .\Picture\UI\Tutor_Materials_ChangeRecordName.png
+INPUT .\Picture\UI\Tutor_Materials_ChangeRecordName.png
+INPUT .\Picture\UI\Tutor_Materials_ChangeRecordName.png
+INPUT .\Picture\UI\Tutor_Materials_ChangeRecordName.png
+INPUT .\Picture\UI\Tutor_Materials_ChangeRecordName.png
+INPUT .\Picture\UI\Tutor_Materials_ChangeRecordName.png
+INPUT .\Picture\UI\Tutor_Materials_DeleteRecord.png
+INPUT .\Picture\UI\Tutor_Materials_DeleteRecord.png
+INPUT .\Picture\UI\Tutor_Materials_DeleteRecord.png
+INPUT .\Picture\UI\Tutor_Materials_DeleteRecord.png
+INPUT .\Picture\UI\Tutor_Materials_DeleteRecord.png
+INPUT .\Picture\UI\Tutor_Materials_DeleteRecord.png
+INPUT .\Picture\UI\Tutor_Materials_DeleteRecord.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Tutor_Materials_RecordDeleted.png
+INPUT .\Picture\UI\Tutor_Materials_RecordDeleted.png
+INPUT .\Picture\UI\Tutor_Materials_RecordDeleted.png
+INPUT .\Picture\UI\Tutor_Materials_RecordDeleted.png
+INPUT .\Picture\UI\Tutor_Materials_RecordDeleted.png
+INPUT .\Picture\UI\Tutor_Materials_RecordDeleted.png
+INPUT .\Picture\UI\Tutor_Materials_RecordDeleted.png
+INPUT .\Picture\UI\Tutor_Rating_ListOfCourse.png
+INPUT .\Picture\UI\Tutor_Rating_ListOfCourse.png
+INPUT .\Picture\UI\Tutor_Rating_ListOfCourse.png
+INPUT .\Picture\UI\Tutor_Rating_ListOfCourse.png
+INPUT .\Picture\UI\Tutor_Rating_ListOfCourse.png
+INPUT .\Picture\UI\Tutor_Rating_ListOfCourse.png
+INPUT .\Picture\UI\Tutor_Rating_ListOfCourse.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\UI\Tutor_Rating_ListOfStudent.png
+INPUT .\Picture\UI\Tutor_Rating_ListOfStudent.png
+INPUT .\Picture\UI\Tutor_Rating_ListOfStudent.png
+INPUT .\Picture\UI\Tutor_Rating_ListOfStudent.png
+INPUT .\Picture\UI\Tutor_Rating_ListOfStudent.png
+INPUT .\Picture\UI\Tutor_Rating_ListOfStudent.png
+INPUT .\Picture\UI\Tutor_Rating_ListOfStudent.png
+INPUT .\Picture\UI\Tutor_Rating_StudentDetail.png
+INPUT .\Picture\UI\Tutor_Rating_StudentDetail.png
+INPUT .\Picture\UI\Tutor_Rating_StudentDetail.png
+INPUT .\Picture\UI\Tutor_Rating_StudentDetail.png
+INPUT .\Picture\UI\Tutor_Rating_StudentDetail.png
+INPUT .\Picture\UI\Tutor_Rating_StudentDetail.png
+INPUT .\Picture\UI\Tutor_Rating_StudentDetail.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\4. Triển khai.tex
+INPUT .\Section\4. Triển khai.tex
+INPUT Section\4. Triển khai.tex
+INPUT .\Picture\Deploymentview.png
+INPUT .\Picture\Deploymentview.png
+INPUT .\Picture\Deploymentview.png
+INPUT .\Picture\Deploymentview.png
+INPUT .\Picture\Deploymentview.png
+INPUT .\Picture\Deploymentview.png
+INPUT .\Picture\Deploymentview.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Developmentview.png
+INPUT .\Picture\Developmentview.png
+INPUT .\Picture\Developmentview.png
+INPUT .\Picture\Developmentview.png
+INPUT .\Picture\Developmentview.png
+INPUT .\Picture\Developmentview.png
+INPUT .\Picture\Developmentview.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ClassDiagram.png
+INPUT .\Picture\ClassDiagram.png
+INPUT .\Picture\ClassDiagram.png
+INPUT .\Picture\ClassDiagram.png
+INPUT .\Picture\ClassDiagram.png
+INPUT .\Picture\ClassDiagram.png
+INPUT .\Picture\ClassDiagram.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\5. Working Demo.tex
+INPUT .\Section\5. Working Demo.tex
+INPUT Section\5. Working Demo.tex
+INPUT .\Picture\Demo\signin.png
+INPUT .\Picture\Demo\signin.png
+INPUT .\Picture\Demo\signin.png
+INPUT .\Picture\Demo\signin.png
+INPUT .\Picture\Demo\signin.png
+INPUT .\Picture\Demo\signin.png
+INPUT .\Picture\Demo\signin.png
+INPUT .\Picture\Demo\login.png
+INPUT .\Picture\Demo\login.png
+INPUT .\Picture\Demo\login.png
+INPUT .\Picture\Demo\login.png
+INPUT .\Picture\Demo\login.png
+INPUT .\Picture\Demo\login.png
+INPUT .\Picture\Demo\login.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Demo\otp.png
+INPUT .\Picture\Demo\otp.png
+INPUT .\Picture\Demo\otp.png
+INPUT .\Picture\Demo\otp.png
+INPUT .\Picture\Demo\otp.png
+INPUT .\Picture\Demo\otp.png
+INPUT .\Picture\Demo\otp.png
+INPUT .\Picture\Demo\homepage.png
+INPUT .\Picture\Demo\homepage.png
+INPUT .\Picture\Demo\homepage.png
+INPUT .\Picture\Demo\homepage.png
+INPUT .\Picture\Demo\homepage.png
+INPUT .\Picture\Demo\homepage.png
+INPUT .\Picture\Demo\homepage.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Demo\profilepage.png
+INPUT .\Picture\Demo\profilepage.png
+INPUT .\Picture\Demo\profilepage.png
+INPUT .\Picture\Demo\profilepage.png
+INPUT .\Picture\Demo\profilepage.png
+INPUT .\Picture\Demo\profilepage.png
+INPUT .\Picture\Demo\profilepage.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Demo\profilepageupdating.png
+INPUT .\Picture\Demo\profilepageupdating.png
+INPUT .\Picture\Demo\profilepageupdating.png
+INPUT .\Picture\Demo\profilepageupdating.png
+INPUT .\Picture\Demo\profilepageupdating.png
+INPUT .\Picture\Demo\profilepageupdating.png
+INPUT .\Picture\Demo\profilepageupdating.png
+INPUT .\Picture\Demo\profilepageupdated.png
+INPUT .\Picture\Demo\profilepageupdated.png
+INPUT .\Picture\Demo\profilepageupdated.png
+INPUT .\Picture\Demo\profilepageupdated.png
+INPUT .\Picture\Demo\profilepageupdated.png
+INPUT .\Picture\Demo\profilepageupdated.png
+INPUT .\Picture\Demo\profilepageupdated.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Demo\courseregis.png
+INPUT .\Picture\Demo\courseregis.png
+INPUT .\Picture\Demo\courseregis.png
+INPUT .\Picture\Demo\courseregis.png
+INPUT .\Picture\Demo\courseregis.png
+INPUT .\Picture\Demo\courseregis.png
+INPUT .\Picture\Demo\courseregis.png
+INPUT .\Picture\Demo\courseregising.png
+INPUT .\Picture\Demo\courseregising.png
+INPUT .\Picture\Demo\courseregising.png
+INPUT .\Picture\Demo\courseregising.png
+INPUT .\Picture\Demo\courseregising.png
+INPUT .\Picture\Demo\courseregising.png
+INPUT .\Picture\Demo\courseregising.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Demo\courseregisdetail.png
+INPUT .\Picture\Demo\courseregisdetail.png
+INPUT .\Picture\Demo\courseregisdetail.png
+INPUT .\Picture\Demo\courseregisdetail.png
+INPUT .\Picture\Demo\courseregisdetail.png
+INPUT .\Picture\Demo\courseregisdetail.png
+INPUT .\Picture\Demo\courseregisdetail.png
+INPUT .\Picture\Demo\findtutor.png
+INPUT .\Picture\Demo\findtutor.png
+INPUT .\Picture\Demo\findtutor.png
+INPUT .\Picture\Demo\findtutor.png
+INPUT .\Picture\Demo\findtutor.png
+INPUT .\Picture\Demo\findtutor.png
+INPUT .\Picture\Demo\findtutor.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Demo\tutorfound.png
+INPUT .\Picture\Demo\tutorfound.png
+INPUT .\Picture\Demo\tutorfound.png
+INPUT .\Picture\Demo\tutorfound.png
+INPUT .\Picture\Demo\tutorfound.png
+INPUT .\Picture\Demo\tutorfound.png
+INPUT .\Picture\Demo\tutorfound.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Demo\findtutordetail.png
+INPUT .\Picture\Demo\findtutordetail.png
+INPUT .\Picture\Demo\findtutordetail.png
+INPUT .\Picture\Demo\findtutordetail.png
+INPUT .\Picture\Demo\findtutordetail.png
+INPUT .\Picture\Demo\findtutordetail.png
+INPUT .\Picture\Demo\findtutordetail.png
+INPUT .\Picture\Demo\signin2.png
+INPUT .\Picture\Demo\signin2.png
+INPUT .\Picture\Demo\signin2.png
+INPUT .\Picture\Demo\signin2.png
+INPUT .\Picture\Demo\signin2.png
+INPUT .\Picture\Demo\signin2.png
+INPUT .\Picture\Demo\signin2.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Demo\login2.png
+INPUT .\Picture\Demo\login2.png
+INPUT .\Picture\Demo\login2.png
+INPUT .\Picture\Demo\login2.png
+INPUT .\Picture\Demo\login2.png
+INPUT .\Picture\Demo\login2.png
+INPUT .\Picture\Demo\login2.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Demo\otp2.png
+INPUT .\Picture\Demo\otp2.png
+INPUT .\Picture\Demo\otp2.png
+INPUT .\Picture\Demo\otp2.png
+INPUT .\Picture\Demo\otp2.png
+INPUT .\Picture\Demo\otp2.png
+INPUT .\Picture\Demo\otp2.png
+INPUT .\Picture\Demo\homepage2.png
+INPUT .\Picture\Demo\homepage2.png
+INPUT .\Picture\Demo\homepage2.png
+INPUT .\Picture\Demo\homepage2.png
+INPUT .\Picture\Demo\homepage2.png
+INPUT .\Picture\Demo\homepage2.png
+INPUT .\Picture\Demo\homepage2.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Demo\profilepage2.png
+INPUT .\Picture\Demo\profilepage2.png
+INPUT .\Picture\Demo\profilepage2.png
+INPUT .\Picture\Demo\profilepage2.png
+INPUT .\Picture\Demo\profilepage2.png
+INPUT .\Picture\Demo\profilepage2.png
+INPUT .\Picture\Demo\profilepage2.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Demo\profilepageupdate2.png
+INPUT .\Picture\Demo\profilepageupdate2.png
+INPUT .\Picture\Demo\profilepageupdate2.png
+INPUT .\Picture\Demo\profilepageupdate2.png
+INPUT .\Picture\Demo\profilepageupdate2.png
+INPUT .\Picture\Demo\profilepageupdate2.png
+INPUT .\Picture\Demo\profilepageupdate2.png
+INPUT .\Picture\Demo\profilepageupdated2.png
+INPUT .\Picture\Demo\profilepageupdated2.png
+INPUT .\Picture\Demo\profilepageupdated2.png
+INPUT .\Picture\Demo\profilepageupdated2.png
+INPUT .\Picture\Demo\profilepageupdated2.png
+INPUT .\Picture\Demo\profilepageupdated2.png
+INPUT .\Picture\Demo\profilepageupdated2.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Demo\courseregis2.png
+INPUT .\Picture\Demo\courseregis2.png
+INPUT .\Picture\Demo\courseregis2.png
+INPUT .\Picture\Demo\courseregis2.png
+INPUT .\Picture\Demo\courseregis2.png
+INPUT .\Picture\Demo\courseregis2.png
+INPUT .\Picture\Demo\courseregis2.png
+INPUT .\Picture\Demo\courseregising2.png
+INPUT .\Picture\Demo\courseregising2.png
+INPUT .\Picture\Demo\courseregising2.png
+INPUT .\Picture\Demo\courseregising2.png
+INPUT .\Picture\Demo\courseregising2.png
+INPUT .\Picture\Demo\courseregising2.png
+INPUT .\Picture\Demo\courseregising2.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Demo\courseregisok.png
+INPUT .\Picture\Demo\courseregisok.png
+INPUT .\Picture\Demo\courseregisok.png
+INPUT .\Picture\Demo\courseregisok.png
+INPUT .\Picture\Demo\courseregisok.png
+INPUT .\Picture\Demo\courseregisok.png
+INPUT .\Picture\Demo\courseregisok.png
+INPUT .\Picture\Demo\changetime.png
+INPUT .\Picture\Demo\changetime.png
+INPUT .\Picture\Demo\changetime.png
+INPUT .\Picture\Demo\changetime.png
+INPUT .\Picture\Demo\changetime.png
+INPUT .\Picture\Demo\changetime.png
+INPUT .\Picture\Demo\changetime.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Demo\afterchangetime.png
+INPUT .\Picture\Demo\afterchangetime.png
+INPUT .\Picture\Demo\afterchangetime.png
+INPUT .\Picture\Demo\afterchangetime.png
+INPUT .\Picture\Demo\afterchangetime.png
+INPUT .\Picture\Demo\afterchangetime.png
+INPUT .\Picture\Demo\afterchangetime.png
+INPUT .\Picture\Demo\delete.png
+INPUT .\Picture\Demo\delete.png
+INPUT .\Picture\Demo\delete.png
+INPUT .\Picture\Demo\delete.png
+INPUT .\Picture\Demo\delete.png
+INPUT .\Picture\Demo\delete.png
+INPUT .\Picture\Demo\delete.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Demo\afterdelete.png
+INPUT .\Picture\Demo\afterdelete.png
+INPUT .\Picture\Demo\afterdelete.png
+INPUT .\Picture\Demo\afterdelete.png
+INPUT .\Picture\Demo\afterdelete.png
+INPUT .\Picture\Demo\afterdelete.png
+INPUT .\Picture\Demo\afterdelete.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\6. KIểm thử.tex
+INPUT .\Section\6. KIểm thử.tex
+INPUT Section\6. KIểm thử.tex
+INPUT .\Picture\Test\dangnhap.png
+INPUT .\Picture\Test\dangnhap.png
+INPUT .\Picture\Test\dangnhap.png
+INPUT .\Picture\Test\dangnhap.png
+INPUT .\Picture\Test\dangnhap.png
+INPUT .\Picture\Test\dangnhap.png
+INPUT .\Picture\Test\dangnhap.png
+INPUT .\Picture\Test\dangnhap1-5.png
+INPUT .\Picture\Test\dangnhap1-5.png
+INPUT .\Picture\Test\dangnhap1-5.png
+INPUT .\Picture\Test\dangnhap1-5.png
+INPUT .\Picture\Test\dangnhap1-5.png
+INPUT .\Picture\Test\dangnhap1-5.png
+INPUT .\Picture\Test\dangnhap1-5.png
+INPUT .\Picture\Test\dangnhap6-10.png
+INPUT .\Picture\Test\dangnhap6-10.png
+INPUT .\Picture\Test\dangnhap6-10.png
+INPUT .\Picture\Test\dangnhap6-10.png
+INPUT .\Picture\Test\dangnhap6-10.png
+INPUT .\Picture\Test\dangnhap6-10.png
+INPUT .\Picture\Test\dangnhap6-10.png
+INPUT .\Picture\Test\dangnhap11-16.png
+INPUT .\Picture\Test\dangnhap11-16.png
+INPUT .\Picture\Test\dangnhap11-16.png
+INPUT .\Picture\Test\dangnhap11-16.png
+INPUT .\Picture\Test\dangnhap11-16.png
+INPUT .\Picture\Test\dangnhap11-16.png
+INPUT .\Picture\Test\dangnhap11-16.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Test\dangnhap17-24.png
+INPUT .\Picture\Test\dangnhap17-24.png
+INPUT .\Picture\Test\dangnhap17-24.png
+INPUT .\Picture\Test\dangnhap17-24.png
+INPUT .\Picture\Test\dangnhap17-24.png
+INPUT .\Picture\Test\dangnhap17-24.png
+INPUT .\Picture\Test\dangnhap17-24.png
+INPUT .\Picture\Test\dangky.png
+INPUT .\Picture\Test\dangky.png
+INPUT .\Picture\Test\dangky.png
+INPUT .\Picture\Test\dangky.png
+INPUT .\Picture\Test\dangky.png
+INPUT .\Picture\Test\dangky.png
+INPUT .\Picture\Test\dangky.png
+INPUT .\Picture\Test\dangky1-5.png
+INPUT .\Picture\Test\dangky1-5.png
+INPUT .\Picture\Test\dangky1-5.png
+INPUT .\Picture\Test\dangky1-5.png
+INPUT .\Picture\Test\dangky1-5.png
+INPUT .\Picture\Test\dangky1-5.png
+INPUT .\Picture\Test\dangky1-5.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Test\dangky6-11.png
+INPUT .\Picture\Test\dangky6-11.png
+INPUT .\Picture\Test\dangky6-11.png
+INPUT .\Picture\Test\dangky6-11.png
+INPUT .\Picture\Test\dangky6-11.png
+INPUT .\Picture\Test\dangky6-11.png
+INPUT .\Picture\Test\dangky6-11.png
+INPUT .\Picture\Test\dangky12-15.png
+INPUT .\Picture\Test\dangky12-15.png
+INPUT .\Picture\Test\dangky12-15.png
+INPUT .\Picture\Test\dangky12-15.png
+INPUT .\Picture\Test\dangky12-15.png
+INPUT .\Picture\Test\dangky12-15.png
+INPUT .\Picture\Test\dangky12-15.png
+INPUT .\Picture\Test\tutor.png
+INPUT .\Picture\Test\tutor.png
+INPUT .\Picture\Test\tutor.png
+INPUT .\Picture\Test\tutor.png
+INPUT .\Picture\Test\tutor.png
+INPUT .\Picture\Test\tutor.png
+INPUT .\Picture\Test\tutor.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Test\tutor1-6.png
+INPUT .\Picture\Test\tutor1-6.png
+INPUT .\Picture\Test\tutor1-6.png
+INPUT .\Picture\Test\tutor1-6.png
+INPUT .\Picture\Test\tutor1-6.png
+INPUT .\Picture\Test\tutor1-6.png
+INPUT .\Picture\Test\tutor1-6.png
+INPUT .\Picture\Test\tutor7-12.png
+INPUT .\Picture\Test\tutor7-12.png
+INPUT .\Picture\Test\tutor7-12.png
+INPUT .\Picture\Test\tutor7-12.png
+INPUT .\Picture\Test\tutor7-12.png
+INPUT .\Picture\Test\tutor7-12.png
+INPUT .\Picture\Test\tutor7-12.png
+INPUT .\Picture\Test\student.png
+INPUT .\Picture\Test\student.png
+INPUT .\Picture\Test\student.png
+INPUT .\Picture\Test\student.png
+INPUT .\Picture\Test\student.png
+INPUT .\Picture\Test\student.png
+INPUT .\Picture\Test\student.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\Test\stu1-6.png
+INPUT .\Picture\Test\stu1-6.png
+INPUT .\Picture\Test\stu1-6.png
+INPUT .\Picture\Test\stu1-6.png
+INPUT .\Picture\Test\stu1-6.png
+INPUT .\Picture\Test\stu1-6.png
+INPUT .\Picture\Test\stu1-6.png
+INPUT .\Picture\Test\stu7.png
+INPUT .\Picture\Test\stu7.png
+INPUT .\Picture\Test\stu7.png
+INPUT .\Picture\Test\stu7.png
+INPUT .\Picture\Test\stu7.png
+INPUT .\Picture\Test\stu7.png
+INPUT .\Picture\Test\stu7.png
+INPUT .\Picture\Test\stu8-13.png
+INPUT .\Picture\Test\stu8-13.png
+INPUT .\Picture\Test\stu8-13.png
+INPUT .\Picture\Test\stu8-13.png
+INPUT .\Picture\Test\stu8-13.png
+INPUT .\Picture\Test\stu8-13.png
+INPUT .\Picture\Test\stu8-13.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\7. DevOps.tex
+INPUT .\Section\7. DevOps.tex
+INPUT Section\7. DevOps.tex
+INPUT .\Picture\sprint1.png
+INPUT .\Picture\sprint1.png
+INPUT .\Picture\sprint1.png
+INPUT .\Picture\sprint1.png
+INPUT .\Picture\sprint1.png
+INPUT .\Picture\sprint1.png
+INPUT .\Picture\sprint1.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\sprint2-1.png
+INPUT .\Picture\sprint2-1.png
+INPUT .\Picture\sprint2-1.png
+INPUT .\Picture\sprint2-1.png
+INPUT .\Picture\sprint2-1.png
+INPUT .\Picture\sprint2-1.png
+INPUT .\Picture\sprint2-1.png
+INPUT .\Picture\sprint2-2.png
+INPUT .\Picture\sprint2-2.png
+INPUT .\Picture\sprint2-2.png
+INPUT .\Picture\sprint2-2.png
+INPUT .\Picture\sprint2-2.png
+INPUT .\Picture\sprint2-2.png
+INPUT .\Picture\sprint2-2.png
+INPUT .\Picture\sprint2-3.png
+INPUT .\Picture\sprint2-3.png
+INPUT .\Picture\sprint2-3.png
+INPUT .\Picture\sprint2-3.png
+INPUT .\Picture\sprint2-3.png
+INPUT .\Picture\sprint2-3.png
+INPUT .\Picture\sprint2-3.png
+INPUT .\Picture\sprint2-4.png
+INPUT .\Picture\sprint2-4.png
+INPUT .\Picture\sprint2-4.png
+INPUT .\Picture\sprint2-4.png
+INPUT .\Picture\sprint2-4.png
+INPUT .\Picture\sprint2-4.png
+INPUT .\Picture\sprint2-4.png
+INPUT .\Picture\sprint2-5.png
+INPUT .\Picture\sprint2-5.png
+INPUT .\Picture\sprint2-5.png
+INPUT .\Picture\sprint2-5.png
+INPUT .\Picture\sprint2-5.png
+INPUT .\Picture\sprint2-5.png
+INPUT .\Picture\sprint2-5.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\sprint3-1.png
+INPUT .\Picture\sprint3-1.png
+INPUT .\Picture\sprint3-1.png
+INPUT .\Picture\sprint3-1.png
+INPUT .\Picture\sprint3-1.png
+INPUT .\Picture\sprint3-1.png
+INPUT .\Picture\sprint3-1.png
+INPUT .\Picture\sprint3-2.png
+INPUT .\Picture\sprint3-2.png
+INPUT .\Picture\sprint3-2.png
+INPUT .\Picture\sprint3-2.png
+INPUT .\Picture\sprint3-2.png
+INPUT .\Picture\sprint3-2.png
+INPUT .\Picture\sprint3-2.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\sprint4.png
+INPUT .\Picture\sprint4.png
+INPUT .\Picture\sprint4.png
+INPUT .\Picture\sprint4.png
+INPUT .\Picture\sprint4.png
+INPUT .\Picture\sprint4.png
+INPUT .\Picture\sprint4.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\tphat.png
+INPUT .\Picture\tphat.png
+INPUT .\Picture\tphat.png
+INPUT .\Picture\tphat.png
+INPUT .\Picture\tphat.png
+INPUT .\Picture\tphat.png
+INPUT .\Picture\tphat.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\quynh.png
+INPUT .\Picture\quynh.png
+INPUT .\Picture\quynh.png
+INPUT .\Picture\quynh.png
+INPUT .\Picture\quynh.png
+INPUT .\Picture\quynh.png
+INPUT .\Picture\quynh.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\ngoc.png
+INPUT .\Picture\ngoc.png
+INPUT .\Picture\ngoc.png
+INPUT .\Picture\ngoc.png
+INPUT .\Picture\ngoc.png
+INPUT .\Picture\ngoc.png
+INPUT .\Picture\ngoc.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\nphat.png
+INPUT .\Picture\nphat.png
+INPUT .\Picture\nphat.png
+INPUT .\Picture\nphat.png
+INPUT .\Picture\nphat.png
+INPUT .\Picture\nphat.png
+INPUT .\Picture\nphat.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\tien.png
+INPUT .\Picture\tien.png
+INPUT .\Picture\tien.png
+INPUT .\Picture\tien.png
+INPUT .\Picture\tien.png
+INPUT .\Picture\tien.png
+INPUT .\Picture\tien.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\huy.png
+INPUT .\Picture\huy.png
+INPUT .\Picture\huy.png
+INPUT .\Picture\huy.png
+INPUT .\Picture\huy.png
+INPUT .\Picture\huy.png
+INPUT .\Picture\huy.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\khiem-1.png
+INPUT .\Picture\khiem-1.png
+INPUT .\Picture\khiem-1.png
+INPUT .\Picture\khiem-1.png
+INPUT .\Picture\khiem-1.png
+INPUT .\Picture\khiem-1.png
+INPUT .\Picture\khiem-1.png
+INPUT .\Picture\khiem-2.png
+INPUT .\Picture\khiem-2.png
+INPUT .\Picture\khiem-2.png
+INPUT .\Picture\khiem-2.png
+INPUT .\Picture\khiem-2.png
+INPUT .\Picture\khiem-2.png
+INPUT .\Picture\khiem-2.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\duy.png
+INPUT .\Picture\duy.png
+INPUT .\Picture\duy.png
+INPUT .\Picture\duy.png
+INPUT .\Picture\duy.png
+INPUT .\Picture\duy.png
+INPUT .\Picture\duy.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\8. AI Declare.tex
+INPUT .\Section\8. AI Declare.tex
+INPUT Section\8. AI Declare.tex
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Section\9. Kết luận.tex
+INPUT .\Section\9. Kết luận.tex
+INPUT Section\9. Kết luận.tex
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT .\Picture\hcmut.png
+INPUT main.aux
+INPUT .\main.out
+INPUT .\main.out
+INPUT main.run.xml
+OUTPUT main.run.xml
+INPUT C:\Users\Admin\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
+INPUT C:\Users\Admin\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1000.pk
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\type1\vntex\vnr\vnbx10.pfb
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\type1\vntex\vnr\vnbx10.pfb
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\type1\vntex\vnr\vnbx12.pfb
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\type1\vntex\vnr\vnbx12.pfb
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\type1\vntex\vnr\vnbxti10.pfb
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\type1\vntex\vnr\vnbxti10.pfb
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\type1\vntex\vnr\vnr10.pfb
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\type1\vntex\vnr\vnr10.pfb
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\type1\vntex\vnr\vnr8.pfb
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\type1\vntex\vnr\vnr8.pfb
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\type1\vntex\vnr\vnti10.pfb
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\type1\vntex\vnr\vnti10.pfb
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\type1\vntex\vnr\vntt10.pfb
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\type1\vntex\vnr\vntt10.pfb
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\type1\vntex\vnr\vntt8.pfb
+INPUT C:\Users\Admin\AppData\Roaming\MiKTeX\fonts\type1\vntex\vnr\vntt8.pfb

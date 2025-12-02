@@ -1,0 +1,158 @@
+\contentsline {section}{Danh sách Ký hiệu}{5}{section*.4}%
+\contentsline {section}{Danh sách Từ viết tắt}{5}{section*.5}%
+\contentsline {section}{Danh sách Hình ảnh}{10}{section*.8}%
+\contentsline {section}{Danh sách Bảng}{10}{section*.8}%
+\contentsline {section}{Danh sách thành viên \& khối lượng công việc}{10}{section*.9}%
+\contentsline {part}{1. Tổng quan dự án}{11}{part*.11}%
+\contentsline {section}{1.1. Giới thiệu dự án}{11}{section*.12}%
+\contentsline {subsection}{1.1.1. Mục đích}{11}{section*.13}%
+\contentsline {subsection}{1.1.2. Bối cảnh và lý do cần hệ thống}{11}{section*.14}%
+\contentsline {subsection}{1.1.3. Kỳ vọng và mục tiêu}{11}{section*.15}%
+\contentsline {subsection}{1.1.4. Sản phẩm bàn giao}{12}{section*.16}%
+\contentsline {section}{1.2. Phạm vi dự án}{12}{section*.17}%
+\contentsline {subsection}{1.2.1. Trong phạm vi}{12}{section*.18}%
+\contentsline {subsection}{1.2.2. Ngoài phạm vi}{13}{section*.19}%
+\contentsline {subsection}{1.2.3. Ràng buộc hệ thống}{13}{section*.20}%
+\contentsline {section}{1.3. Tài liệu tham khảo liên quan}{14}{section*.21}%
+\contentsline {subsection}{1.3.1. Các nền tảng tương tự}{14}{section*.22}%
+\contentsline {subsection}{1.3.2. Bài học rút ra}{14}{section*.23}%
+\contentsline {subsection}{1.3.3. Tính năng tổng hợp cho hệ thống}{15}{section*.24}%
+\contentsline {part}{2. Phân tích yêu cầu dự án}{16}{part*.25}%
+\contentsline {section}{2.1. Tác nhân}{16}{section*.26}%
+\contentsline {subsection}{2.1.1. Tác nhân chính}{16}{section*.27}%
+\contentsline {subsection}{2.1.2. Tác nhân phụ}{18}{section*.30}%
+\contentsline {section}{2.2. Sơ đồ usecase toàn hệ thống}{21}{section*.34}%
+\contentsline {section}{2.3. User Stories}{22}{section*.36}%
+\contentsline {section}{2.4. Yêu cầu chức năng}{25}{section*.72}%
+\contentsline {subsection}{2.4.1. Module Quản lý Tài khoản và Hồ sơ}{25}{section*.73}%
+\contentsline {subsection}{2.4.2. Module Đăng ký chương trình học}{28}{section*.80}%
+\contentsline {subsection}{2.4.3. Module Ghép cặp Tutor – SV}{30}{section*.85}%
+\contentsline {subsection}{2.4.4. Module Quản lý lịch học}{33}{section*.91}%
+\contentsline {subsection}{2.4.5. Module Thông báo và nhắc nhở}{36}{section*.98}%
+\contentsline {subsection}{2.4.6. Module Quản lý buổi học và điểm danh}{38}{section*.103}%
+\contentsline {subsection}{2.4.7. Module Quản lý tài liệu học tập}{40}{section*.108}%
+\contentsline {subsection}{2.4.8. Module Đánh giá và phản hồi}{42}{section*.113}%
+\contentsline {subsection}{2.4.9. Module Thống kê và báo cáo}{45}{section*.120}%
+\contentsline {subsection}{2.4.10. Module Chương trình học thuật và phi học thuật}{48}{section*.127}%
+\contentsline {section}{2.5. Yêu cầu phi chức năng}{50}{section*.134}%
+\contentsline {subsection}{2.5.1. Hiệu năng (Performance Requirements)}{50}{section*.135}%
+\contentsline {subsection}{2.5.2. Hiệu năng (Performance Requirements)}{51}{section*.136}%
+\contentsline {subsection}{2.5.3. Tính tin cậy \& sẵn sàng (Reliability \& Availability)}{51}{section*.137}%
+\contentsline {subsection}{2.5.4. Khả năng sử dụng (Usability)}{51}{section*.138}%
+\contentsline {subsection}{2.5.5. Tính bảo trì \& mở rộng (Maintainability \& Extensibility)}{51}{section*.139}%
+\contentsline {subsection}{2.5.6. Khả năng tương thích (Compatibility)}{52}{section*.140}%
+\contentsline {subsection}{2.5.7. Ràng buộc kỹ thuật (Technical Constraints)}{52}{section*.141}%
+\contentsline {part}{3. Mô hình hóa hệ thống}{53}{part*.142}%
+\contentsline {section}{3.1. Sơ đồ hoạt động và sơ đồ tuần tự}{53}{section*.143}%
+\contentsline {subsection}{3.1.1. Use Case 01: Đăng ký tài khoản}{53}{section*.144}%
+\contentsline {subsection}{3.1.2. Use Case 02: Đăng nhập}{56}{section*.147}%
+\contentsline {subsection}{3.1.3. Use Case 03: Cập nhật hồ sơ}{57}{section*.150}%
+\contentsline {subsection}{3.1.4. Use Case 04: Đăng ký môn học}{59}{section*.153}%
+\contentsline {subsection}{3.1.5. Use Case 05: Hủy đăng ký môn học}{61}{section*.156}%
+\contentsline {subsection}{3.1.6. Use Case 06: Ghép thủ công (SV chọn Tutor)}{63}{section*.159}%
+\contentsline {subsection}{3.1.7. Use Case 07: Ghép tự động (Hệ thống đề xuất Tutor)}{65}{section*.162}%
+\contentsline {subsection}{3.1.8. Use Case 08: Thiết lập lịch dạy (Tutor)}{67}{section*.165}%
+\contentsline {subsection}{3.1.9. Use Case 09: Đặt lịch học (SV)}{69}{section*.168}%
+\contentsline {subsection}{3.1.10. Use Case 10: Hủy/Đổi lịch học cố định}{71}{section*.171}%
+\contentsline {subsection}{3.1.11. Use Case 11: Gửi thông báo lịch học}{73}{section*.174}%
+\contentsline {subsection}{3.1.12. Use Case 12: Gửi nhắc nhở buổi học}{74}{section*.177}%
+\contentsline {subsection}{3.1.13. Use Case 13: Điểm danh sinh viên}{75}{section*.180}%
+\contentsline {subsection}{3.1.14. Use Case 14: Cập nhật trạng thái buổi học}{77}{section*.183}%
+\contentsline {subsection}{3.1.15. Use Case 15: Quản lý tài liệu (Tutor)}{78}{section*.186}%
+\contentsline {subsection}{3.1.16. Use Case 16: SV tải tài liệu}{80}{section*.189}%
+\contentsline {subsection}{3.1.17. Use Case 17: SV đánh giá Tutor}{82}{section*.192}%
+\contentsline {subsection}{3.1.18. Use Case 18: Tutor đánh giá sinh viên}{84}{section*.195}%
+\contentsline {subsection}{3.1.19. Use Case 19: Khoa/BM tổng hợp đánh giá}{86}{section*.198}%
+\contentsline {subsection}{3.1.20. Use Case 20: Báo cáo kết quả học tập SV}{87}{section*.201}%
+\contentsline {subsection}{3.1.21. Use Case 21: Báo cáo chất lượng Tutor}{89}{section*.204}%
+\contentsline {subsection}{3.1.22. Use Case 22: Báo cáo tổng hợp (Khoa, PCTSV, PĐT)}{91}{section*.207}%
+\contentsline {subsection}{3.1.23. Use Case 23: Tutor tạo chương trình học}{92}{section*.210}%
+\contentsline {subsection}{3.1.24. Use Case 24: SV đăng ký chương trình học thuật}{94}{section*.213}%
+\contentsline {subsection}{3.1.25. Use Case 25: SV đăng ký chương trình phi học thuật}{95}{section*.216}%
+\contentsline {section}{3.2. Giao diện}{96}{section*.219}%
+\contentsline {subsection}{3.2.1. Đăng ký và đăng nhập}{96}{section*.220}%
+\contentsline {subsection}{3.2.2. Giao diện dành cho sinh viên}{97}{section*.223}%
+\contentsline {subsection}{3.2.3. Giao diện dành cho Tutor}{103}{section*.243}%
+\contentsline {part}{4. Triển khai hệ thống}{120}{part*.282}%
+\contentsline {section}{4.1. Sơ đồ triển khai (Deployment View)}{120}{section*.283}%
+\contentsline {subsection}{4.1.1 Giới thiệu}{120}{section*.284}%
+\contentsline {subsection}{4.1.2. Sơ đồ triển khai hệ thống}{120}{section*.285}%
+\contentsline {subsection}{4.1.3. Mô tả các thành phần}{121}{section*.287}%
+\contentsline {subsection}{4.1.4. Luồng hoạt động}{121}{section*.289}%
+\contentsline {section}{4.2. Sơ đồ phát triển (Development View)}{122}{section*.290}%
+\contentsline {subsection}{4.2.1 Giới thiệu}{122}{section*.291}%
+\contentsline {subsection}{4.2.2. Sơ đồ gói (Package Diagram)}{122}{section*.292}%
+\contentsline {subsection}{4.2.3. Mô tả các gói}{123}{section*.294}%
+\contentsline {subsection}{4.2.4. Luồng xử lý dữ liệu qua các lớp}{123}{section*.296}%
+\contentsline {section}{4.3. Sơ đồ lớp chi tiết (Detailed Class Diagram)}{123}{section*.297}%
+\contentsline {subsection}{4.3.1. Giới thiệu}{123}{section*.298}%
+\contentsline {subsection}{4.3.2. Sơ đồ lớp chi tiết của hệ thống}{125}{section*.299}%
+\contentsline {subsection}{4.3.3. Mô tả cụm chức năng}{126}{section*.301}%
+\contentsline {section}{4.4. Mô tả các lớp chi tiết và phương thức}{126}{section*.302}%
+\contentsline {subsection}{4.4.1. Cụm Quản lý Người dùng (User Management)}{126}{section*.303}%
+\contentsline {subsection}{4.4.2. Cụm Khóa học và Đăng ký (Course \& Registration)}{127}{section*.308}%
+\contentsline {subsection}{4.4.3. Cụm Lịch trình và Lớp học (Scheduling \& Class)}{128}{section*.313}%
+\contentsline {subsection}{4.4.4. Cụm Đánh giá và Hỗ trợ (Feedback \& Support)}{128}{section*.316}%
+\contentsline {section}{4.5. Kiến trúc hệ thống và Công nghệ sử dụng}{129}{section*.319}%
+\contentsline {subsection}{4.5.1. Tổng quan kiến trúc}{129}{section*.320}%
+\contentsline {subsection}{4.5.2. Frontend (Phía người dùng)}{129}{section*.321}%
+\contentsline {subsection}{4.5.3. Backend (Phía máy chủ)}{129}{section*.322}%
+\contentsline {subsection}{4.5.4. Hạ tầng (DevOps) và Quản lý mã nguồn}{129}{section*.323}%
+\contentsline {subsection}{4.5.5. Lưu ý về triển khai Monorepo}{130}{section*.324}%
+\contentsline {section}{4.6. Cấu trúc mã nguồn}{130}{section*.325}%
+\contentsline {subsection}{4.6.1. Thư mục webapp (Frontend)}{130}{section*.326}%
+\contentsline {subsection}{4.6.2. Thư mục webserver (Backend)}{130}{section*.327}%
+\contentsline {subsection}{4.6.3. Các chức năng chính đã triển khai}{131}{section*.328}%
+\contentsline {part}{5. Working Demonstration}{132}{part*.330}%
+\contentsline {section}{5.1. Luồng sử dụng của sinh viên}{132}{section*.331}%
+\contentsline {subsection}{5.1.1. Đăng ký/Đăng nhập tài khoản}{132}{section*.332}%
+\contentsline {subsection}{5.1.2. Xác thực Email}{133}{section*.335}%
+\contentsline {subsection}{5.1.3. Trang chủ}{134}{section*.337}%
+\contentsline {subsection}{5.1.4. Cập nhật hồ sơ}{134}{section*.339}%
+\contentsline {subsection}{5.1.5. Đăng ký môn học}{136}{section*.343}%
+\contentsline {subsection}{5.1.6. Tìm Tutor}{138}{section*.347}%
+\contentsline {section}{5.1. Luồng sử dụng của Tutor}{140}{section*.351}%
+\contentsline {subsection}{5.2.1. Đăng ký/Đăng nhập tài khoản}{140}{section*.352}%
+\contentsline {subsection}{5.2.2. Xác thực Email}{141}{section*.355}%
+\contentsline {subsection}{5.2.3. Trang chủ}{142}{section*.357}%
+\contentsline {subsection}{5.2.4. Cập nhật hồ sơ}{142}{section*.359}%
+\contentsline {subsection}{5.2.5. Thiết lập lịch dạy}{144}{section*.363}%
+\contentsline {part}{6. Kiểm thử phần mềm và triển khai trang web}{148}{part*.371}%
+\contentsline {section}{6.1. Kiểm thử chức năng đăng nhập}{148}{section*.372}%
+\contentsline {subsection}{6.1.1. Bảng tổng hợp}{148}{section*.373}%
+\contentsline {subsection}{6.1.2. Bảng chi tiết}{148}{section*.375}%
+\contentsline {section}{6.2. Kiểm thử chức năng đăng ký}{149}{section*.380}%
+\contentsline {subsection}{6.2.1. Bảng tổng hợp}{149}{section*.381}%
+\contentsline {subsection}{6.2.2. Bảng chi tiết}{150}{section*.383}%
+\contentsline {section}{6.3. Kiểm thử chức năng thiết lập lịch dạy}{151}{section*.387}%
+\contentsline {subsection}{6.3.1. Bảng tổng hợp}{151}{section*.388}%
+\contentsline {subsection}{6.3.2. Bảng chi tiết}{151}{section*.390}%
+\contentsline {section}{6.4. Kiểm thử chức năng đăng ký môn học, tìm và ghép cặp tutor, thiết lập hồ sơ}{152}{section*.393}%
+\contentsline {subsection}{6.4.1. Bảng tổng hợp}{152}{section*.394}%
+\contentsline {subsection}{6.4.2. Bảng chi tiết}{152}{section*.396}%
+\contentsline {section}{6.5. Quy trình triển khai}{153}{section*.400}%
+\contentsline {subsection}{6.5.1. Chiến lược triển khai}{153}{section*.401}%
+\contentsline {subsection}{6.5.2. Triển khai Backend}{153}{section*.402}%
+\contentsline {subsection}{6.5.3. Triển khai Frontend}{153}{section*.403}%
+\contentsline {subsection}{6.5.4. Kết quả}{153}{section*.404}%
+\contentsline {part}{7. Quá trình làm việc trên Azure DevOps}{154}{part*.405}%
+\contentsline {section}{7.1. Giới thiệu quy trình}{154}{section*.406}%
+\contentsline {section}{7.2. Báo cáo tình trạng theo Sprint 1}{154}{section*.407}%
+\contentsline {section}{7.3. Báo cáo tình trạng theo Sprint 2}{155}{section*.410}%
+\contentsline {section}{7.4. Báo cáo tình trạng theo Sprint 3}{158}{section*.417}%
+\contentsline {section}{7.5. Báo cáo tình trạng theo Sprint 4}{160}{section*.421}%
+\contentsline {section}{7.6. Báo cáo tình trạng theo thành viên: Nguyễn Tấn Phát}{161}{section*.424}%
+\contentsline {section}{7.7. Báo cáo tình trạng theo thành viên: Lê Diệu Quỳnh}{162}{section*.427}%
+\contentsline {section}{7.8. Báo cáo tình trạng theo thành viên: Vũ Hà Như Ngọc}{163}{section*.430}%
+\contentsline {section}{7.9. Báo cáo tình trạng theo thành viên: Nguyễn Ngọc Phát}{164}{section*.433}%
+\contentsline {section}{7.10. Báo cáo tình trạng theo thành viên: Mã Nhật Tiến}{165}{section*.436}%
+\contentsline {section}{7.11. Báo cáo tình trạng theo thành viên: Lương Đức Huy}{166}{section*.439}%
+\contentsline {section}{7.12. Báo cáo tình trạng theo thành viên: Văn Bá Trọng Khiêm}{167}{section*.442}%
+\contentsline {section}{7.13. Báo cáo tình trạng theo thành viên: Bùi Phan Khánh Duy}{168}{section*.446}%
+\contentsline {part}{8. Khai báo sử dụng Generative AI}{169}{part*.449}%
+\contentsline {section}{8.1. Thành phần}{169}{section*.450}%
+\contentsline {section}{8.2. Mức độ và phạm vi sử dụng Generative AI}{169}{section*.451}%
+\contentsline {part}{9. Kết luận}{170}{part*.452}%
+\contentsline {section}{9.1. Kết quả đạt được}{170}{section*.453}%
+\contentsline {section}{9.2. Bài học kinh nghiệm}{170}{section*.454}%
+\contentsline {section}{9.3. Hướng phát triển trong tương lai}{170}{section*.455}%

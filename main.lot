@@ -1,0 +1,42 @@
+\contentsline {table}{\numberline {1}{\ignorespaces Danh sách Từ viết tắt}}{5}{table.caption.6}%
+\contentsline {table}{\numberline {2}{\ignorespaces Danh sách thành viên \& khối lượng công việc}}{10}{table.caption.10}%
+\contentsline {table}{\numberline {3}{\ignorespaces Bảng đặc tả chức năng đăng ký tài khoản}}{25}{table.caption.75}%
+\contentsline {table}{\numberline {4}{\ignorespaces Bảng đặc tả chức năng đăng nhập}}{26}{table.caption.77}%
+\contentsline {table}{\numberline {5}{\ignorespaces Bảng đặc tả chức năng cập nhật hồ sơ}}{27}{table.caption.79}%
+\contentsline {table}{\numberline {6}{\ignorespaces Bảng đặc tả chức năng đăng ký môn học}}{28}{table.caption.82}%
+\contentsline {table}{\numberline {7}{\ignorespaces Bảng đặc tả chức năng hủy đăng ký môn học}}{29}{table.caption.84}%
+\contentsline {table}{\numberline {8}{\ignorespaces Bảng đặc tả chức năng ghép thủ công (SV chọn Tutor cho từng môn học)}}{30}{table.caption.87}%
+\contentsline {table}{\numberline {9}{\ignorespaces Bảng đặc tả chức năng ghép tự động (hệ thống đề xuất Tutor theo từng môn học)}}{32}{table.caption.90}%
+\contentsline {table}{\numberline {10}{\ignorespaces Bảng đặc tả chức năng thiết lập lịch dạy (Tutor)}}{33}{table.caption.93}%
+\contentsline {table}{\numberline {11}{\ignorespaces Bảng đặc tả chức năng đặt lịch học (SV)}}{34}{table.caption.95}%
+\contentsline {table}{\numberline {12}{\ignorespaces Bảng đặc tả chức năng hủy/đổi lịch học cố định}}{35}{table.caption.97}%
+\contentsline {table}{\numberline {13}{\ignorespaces Bảng đặc tả chức năng gửi thông báo lịch học}}{36}{table.caption.100}%
+\contentsline {table}{\numberline {14}{\ignorespaces Bảng đặc tả chức năng gửi nhắc nhở buổi học}}{37}{table.caption.102}%
+\contentsline {table}{\numberline {15}{\ignorespaces Bảng đặc tả chức năng điểm danh sinh viên}}{38}{table.caption.105}%
+\contentsline {table}{\numberline {16}{\ignorespaces Bảng đặc tả chức năng cập nhật trạng thái buổi học}}{39}{table.caption.107}%
+\contentsline {table}{\numberline {17}{\ignorespaces Bảng đặc tả chức năng quản lý tài liệu (Tutor)}}{40}{table.caption.110}%
+\contentsline {table}{\numberline {18}{\ignorespaces Bảng đặc tả chức năng sinh viên tải tài liệu}}{41}{table.caption.112}%
+\contentsline {table}{\numberline {19}{\ignorespaces Bảng đặc tả chức năng sinh viên đánh giá Tutor}}{42}{table.caption.115}%
+\contentsline {table}{\numberline {20}{\ignorespaces Bảng đặc tả chức năng Tutor đánh giá sinh viên}}{43}{table.caption.117}%
+\contentsline {table}{\numberline {21}{\ignorespaces Bảng đặc tả chức năng Khoa/BM tổng hợp đánh giá}}{44}{table.caption.119}%
+\contentsline {table}{\numberline {22}{\ignorespaces Bảng đặc tả chức năng báo cáo kết quả học tập sinh viên}}{45}{table.caption.122}%
+\contentsline {table}{\numberline {23}{\ignorespaces Bảng đặc tả chức năng báo cáo chất lượng Tutor}}{46}{table.caption.124}%
+\contentsline {table}{\numberline {24}{\ignorespaces Bảng đặc tả chức năng báo cáo tổng hợp (Khoa, PCTSV, PĐT)}}{47}{table.caption.126}%
+\contentsline {table}{\numberline {25}{\ignorespaces Bảng đặc tả chức năng Tutor tạo chương trình học}}{48}{table.caption.129}%
+\contentsline {table}{\numberline {26}{\ignorespaces Bảng đặc tả chức năng SV đăng ký chương trình học thuật}}{49}{table.caption.131}%
+\contentsline {table}{\numberline {27}{\ignorespaces Bảng đặc tả chức năng SV đăng ký chương trình phi học thuật}}{50}{table.caption.133}%
+\contentsline {table}{\numberline {28}{\ignorespaces Các thành phần trong sơ đồ triển khai hệ thống hỗ trợ Tutor}}{121}{table.caption.288}%
+\contentsline {table}{\numberline {29}{\ignorespaces Chức năng của từng gói trong kiến trúc Node.js/GraphQL}}{123}{table.caption.295}%
+\contentsline {table}{\numberline {30}{\ignorespaces Các chức năng chính đã triển khai và file liên quan}}{131}{table.caption.329}%
+\contentsline {table}{\numberline {31}{\ignorespaces Tổng hợp tình trạng tasks theo Sprint 1}}{154}{table.caption.408}%
+\contentsline {table}{\numberline {32}{\ignorespaces Tổng hợp tình trạng tasks theo Sprint 2}}{155}{table.caption.411}%
+\contentsline {table}{\numberline {33}{\ignorespaces Tổng hợp tình trạng tasks theo Sprint 3}}{158}{table.caption.418}%
+\contentsline {table}{\numberline {34}{\ignorespaces Tổng hợp tình trạng tasks theo Sprint 4}}{160}{table.caption.422}%
+\contentsline {table}{\numberline {35}{\ignorespaces Tổng hợp tình trạng tasks theo Nguyễn Tấn Phát}}{161}{table.caption.425}%
+\contentsline {table}{\numberline {36}{\ignorespaces Tổng hợp tình trạng tasks theo Lê Diệu Quỳnh}}{162}{table.caption.428}%
+\contentsline {table}{\numberline {37}{\ignorespaces Tổng hợp tình trạng tasks theo Vũ Hà Như Ngọc}}{163}{table.caption.431}%
+\contentsline {table}{\numberline {38}{\ignorespaces Tổng hợp tình trạng tasks theo Nguyễn Ngọc Phát}}{164}{table.caption.434}%
+\contentsline {table}{\numberline {39}{\ignorespaces Tổng hợp tình trạng tasks theo Mã Nhật Tiến}}{165}{table.caption.437}%
+\contentsline {table}{\numberline {40}{\ignorespaces Tổng hợp tình trạng tasks theo Lương Đức Huy}}{166}{table.caption.440}%
+\contentsline {table}{\numberline {41}{\ignorespaces Tổng hợp tình trạng tasks theo Văn Bá Trọng Khiêm}}{167}{table.caption.443}%
+\contentsline {table}{\numberline {42}{\ignorespaces Tổng hợp tình trạng tasks theo Bùi Phan Khánh Duy}}{168}{table.caption.447}%

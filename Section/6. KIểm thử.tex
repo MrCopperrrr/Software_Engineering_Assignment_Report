@@ -1,5 +1,5 @@
-\part*{6. Kiểm thử phần mềm}
-\addcontentsline{toc}{part}{6. Kiểm thử phần mềm}
+\part*{6. Kiểm thử phần mềm và triển khai trang web}
+\addcontentsline{toc}{part}{6. Kiểm thử phần mềm và triển khai trang web}
 
 %========================================================================================
 
@@ -167,3 +167,33 @@
 \end{figure}
 
 
+%========================================================================================
+\section*{6.5. Quy trình triển khai}
+\addcontentsline{toc}{section}{6.5. Quy trình triển khai}
+\subsection*{6.5.1. Chiến lược triển khai}
+\addcontentsline{toc}{subsection}{6.5.1. Chiến lược triển khai}
+Dự án đã được triển khai lên môi trường Internet sử dụng nền tảng Render với chiến lược tách biệt Frontend và Backend nhằm tối ưu hiệu năng và bảo mật.
+
+\subsection*{6.5.2. Triển khai Backend}
+\addcontentsline{toc}{subsection}{6.5.2. Triển khai Backend}
+\begin{itemize}
+    \item Thiết lập Web Service trên Render chạy môi trường Node.js.
+    \item Cấu hình biến môi trường (Environment Variables) để bảo mật thông tin Database và JWT Secret.
+    \item Cấu hình CORS trong \texttt{server.mjs} để chấp nhận các request từ domain Frontend.
+    \item Sử dụng UptimeRobot để gửi request định kỳ (5 phút/lần) nhằm ngăn chặn trạng thái ``sleep'' của server miễn phí.
+\end{itemize}
+
+\subsection*{6.5.3. Triển khai Frontend}
+\addcontentsline{toc}{subsection}{6.5.3. Triển khai Frontend}
+\begin{itemize}
+    \item Thiết lập Static Site trên Render.
+    \item Cấu hình Build Command: \texttt{npm install \&\& npm run build} (Sử dụng Vite để đóng gói).
+    \item Cấu hình Rewrite Rules: điều hướng tất cả request \texttt{/*} về \texttt{/index.html} để hỗ trợ Single Page Application (SPA) và khắc phục lỗi 404 khi tải lại trang.
+    \item Cập nhật API Endpoint trỏ về địa chỉ Backend trên Render thay vì \texttt{localhost}.
+\end{itemize}
+
+\subsection*{6.5.4. Kết quả}
+\addcontentsline{toc}{subsection}{6.5.4. Kết quả}
+Hệ thống hoạt động ổn định trên môi trường Production.\\
+Frontend URL: \texttt{https://mentorlinkweb.onrender.com}\\
+Backend URL: \texttt{https://mentor-link.onrender.com}

@@ -436,3 +436,109 @@ Các lớp hỗ trợ (Feedback, Material, Attendance) được thiết kế đ�
 		\hline
 	\end{tabularx}
 \end{table}
+
+%========================================================================================
+\section*{4.5. Kiến trúc hệ thống và Công nghệ sử dụng}
+\addcontentsline{toc}{section}{4.5. Kiến trúc hệ thống và Công nghệ sử dụng}
+\subsection*{4.5.1. Tổng quan kiến trúc}
+\addcontentsline{toc}{subsection}{4.5.1. Tổng quan kiến trúc}
+Dự án được tổ chức theo mô hình \textbf{Client-Server} trong một kho mã nguồn \textbf{Monorepo} (Frontend và Backend nằm chung một repository). Frontend và Backend là hai ứng dụng tách biệt về mặt runtime nhưng dùng chung quy trình CI/CD, quản lý mã nguồn và cấu hình môi trường.
+
+\subsection*{4.5.2. Frontend (Phía người dùng)}
+\addcontentsline{toc}{subsection}{4.5.2. Frontend (Phía người dùng)}
+Mô tả các công nghệ và cấu trúc chính bên Frontend:
+\begin{itemize}
+	\item Framework: \textbf{ReactJS} (khởi tạo bằng \texttt{Vite}).
+	\item Ngôn ngữ: \textbf{JavaScript (ES6+)}.
+	\item Quản lý trạng thái: \textbf{React Context API} (ví dụ: \texttt{AuthContext}).
+	\item Kiến trúc UI: Component-based architecture, reusable components và hooks.
+	\item Giao tiếp API: \textbf{GraphQL} (sử dụng \texttt{Apollo Client}) hoặc các request tùy biến bằng \texttt{fetch}/\texttt{axios} khi cần.
+	\item Build/Deploy: Frontend được đóng gói thành static assets và triển khai lên Render Static Site.
+\end{itemize}
+
+\subsection*{4.5.3. Backend (Phía máy chủ)}
+\addcontentsline{toc}{subsection}{4.5.3. Backend (Phía máy chủ)}
+Mô tả các công nghệ và thành phần chính bên Backend:
+\begin{itemize}
+	\item Runtime: \textbf{Node.js}.
+	\item API: \textbf{GraphQL} triển khai bằng \texttt{Apollo Server} theo mô hình \texttt{typeDefs} / \texttt{resolvers}.
+	\item Cơ sở dữ liệu: \textbf{MySQL} (kết nối qua module \texttt{database.js} và sử dụng pool connection, thư viện \texttt{mysql2}).
+	\item Xác thực \& Bảo mật: \textbf{JWT} cho session/auth token; cơ chế xác thực hai bước bằng \textbf{OTP qua Email} (SendGrid hay dịch vụ tương đương).
+	\item Cấu trúc mã nguồn: Tách rõ các lớp \texttt{schemas/}, \texttt{resolvers/}, \texttt{models/}, \texttt{services/} (MailSender, Auth, Utils).
+	\item Container/Runtime: Ứng dụng backend có thể chạy trong Docker hoặc dưới dạng Web Service trên Render.
+\end{itemize}
+
+\subsection*{4.5.4. Hạ tầng (DevOps) và Quản lý mã nguồn}
+\addcontentsline{toc}{subsection}{4.5.4. Hạ tầng (DevOps) và Quản lý mã nguồn}
+Các yếu tố hạ tầng và DevOps chính:
+\begin{itemize}
+	\item Hosting: \textbf{Render} cho cả Frontend (Static Site) và Backend (Web Service).
+	\item Source Control: \textbf{GitHub} (Monorepo chứa hai thư mục chính \texttt{frontend/} và \texttt{backend/}).
+	\item CI/CD: Pipeline tự động (ci build, test, deploy) tích hợp với GitHub (ví dụ GitHub Actions hoặc dịch vụ CI tương ứng).
+	\item Monitoring: \textbf{UptimeRobot} để giám sát trạng thái server và alert khi dịch vụ xuống.
+	\item Cấu hình môi trường: Biến môi trường quản lý bí mật (API keys, DB credentials, JWT secret) và file cấu hình chung (ví dụ \texttt{.env} cho từng service).
+\end{itemize}
+
+\subsection*{4.5.5. Lưu ý về triển khai Monorepo}
+\addcontentsline{toc}{subsection}{4.5.5. Lưu ý về triển khai Monorepo}
+\begin{itemize}
+	\item Monorepo giúp đồng bộ versioning và dễ dàng chia sẻ mã giữa Frontend và Backend (ví dụ mã mẫu, types, config).
+	\item Cần cấu hình rõ ràng cho CI để build/deploy độc lập từng phần (frontend/backend) khi có thay đổi tương ứng.
+	\item Quản lý dependency cẩn trọng (lockfile, workspace nếu dùng) để tránh xung đột giữa hai phần của repo.
+\end{itemize}
+
+
+%=======================================================================================
+
+\section*{4.6. Cấu trúc mã nguồn}
+\addcontentsline{toc}{section}{4.6. Cấu trúc mã nguồn}
+\subsection*{4.6.1. Thư mục webapp (Frontend)}
+\addcontentsline{toc}{subsection}{4.6.1. Thư mục webapp (Frontend)}
+Chứa toàn bộ giao diện và logic xử lý phía Client.
+\begin{itemize}
+    \item \textbf{src/Components}: Chứa các thành phần giao diện tái sử dụng.
+    \begin{itemize}
+        \item Core UI: các thành phần cơ bản như \texttt{button.jsx}, \texttt{card.jsx}, \texttt{badge.jsx}, \texttt{dialog.jsx}.
+        \item Feature Components: các khối chức năng đặc thù như \texttt{TutorFeatureGrid} (lưới hiển thị gia sư), \texttt{CoursePairing} (ghép cặp khóa học), \texttt{AutoResult} (kết quả ghép tự động).
+    \end{itemize}
+    \item \textbf{src/Page}: Các trang chính của ứng dụng (Routing).
+    \begin{itemize}
+        \item \texttt{Find\_tutor.jsx}: Trang tìm kiếm gia sư.
+        \item \texttt{Student\_CourseRegistration.jsx}: Trang đăng ký học phần cho sinh viên.
+        \item \texttt{TutorSchedule.jsx}: Quản lý lịch trình của gia sư.
+        \item \texttt{MyCourses.jsx}: Xem danh sách khóa học cá nhân.
+    \end{itemize}
+    \item \textbf{src/ContextAPI}: Quản lý trạng thái đăng nhập toàn cục (\texttt{AuthProvider}, \texttt{AuthContext}) và bảo vệ các Router riêng tư (\texttt{ProtectedRoute}).
+    \item \textbf{src/Utils}: Các hàm hỗ trợ xử lý logic như \texttt{request.js} (gọi API), \texttt{courseUtil.js}, \texttt{studentUtil.js}.
+\end{itemize}
+
+\subsection*{4.6.2. Thư mục webserver (Backend)}
+\addcontentsline{toc}{subsection}{4.6.2. Thư mục webserver (Backend)}
+Chứa logic xử lý nghiệp vụ và kết nối cơ sở dữ liệu.
+\begin{itemize}
+    \item \texttt{server.mjs}: Điểm khởi chạy server, cấu hình Apollo Server và CORS.
+    \item \textbf{schemas/ \& resolvers/}: Cấu trúc đặc thù của GraphQL.
+    \begin{itemize}
+        \item Schemas: định nghĩa kiểu dữ liệu (type definitions).
+        \item Resolvers: logic xử lý dữ liệu trả về cho Client.
+    \end{itemize}
+    \item \textbf{models/}: Tương tác trực tiếp với Database (MySQL), định nghĩa các đối tượng như \texttt{courseModel.js}, \texttt{studentModel.js}, \texttt{tutorModel.js}.
+    \item \textbf{MailSender/}: Module gửi email xác thực OTP (\texttt{otpVerify.js}).
+\end{itemize}
+
+\subsection*{4.6.3. Các chức năng chính đã triển khai}
+\addcontentsline{toc}{subsection}{4.6.3. Các chức năng chính đã triển khai}
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{6pt}
+    \begin{tabular}{|p{4cm}|p{6.5cm}|p{3.5cm}|}
+        \hline
+        \textbf{Chức năng} & \textbf{Mô tả chi tiết} & \textbf{File liên quan chính} \\ \hline
+        Xác thực người dùng & Đăng ký, Đăng nhập, Xác thực email bằng OTP, Phân quyền (Student/Tutor). & SignIn.jsx, SignUp.jsx, otpVerify.js \\ \hline
+        Quản lý khóa học & Hiển thị danh sách khóa học có sẵn (AvailableCourses), Khóa học đã đăng ký (RegisteredCourses). & MyCourses.jsx, courseModel.js \\ \hline
+        Tìm kiếm \& Ghép cặp & Tìm kiếm gia sư, Ghép cặp sinh viên - gia sư tự động hoặc thủ công. & Find\_turtor.jsx, CoursePairing.jsx, AutoResult.jsx \\ \hline
+        Lịch trình & Gia sư có thể xem và quản lý lịch dạy. & TutorSchedule.jsx \\ \hline
+        Hồ sơ cá nhân & Xem và chỉnh sửa thông tin cá nhân. & ProfilePage.jsx, userModel.js \\ \hline
+    \end{tabular}
+    \caption{Các chức năng chính đã triển khai và file liên quan}
+\end{table}

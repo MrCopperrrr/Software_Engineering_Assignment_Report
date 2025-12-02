@@ -1,0 +1,157 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Sơ đồ Usecase toàn hệ thống}}{21}{figure.caption.35}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Sơ đồ hoạt động Use Case 01: Đăng ký tài khoản}}{54}{figure.caption.145}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Sơ đồ tuần tự Use Case 01: Đăng ký tài khoản}}{55}{figure.caption.146}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Sơ đồ hoạt động Use Case 02: Đăng nhập}}{56}{figure.caption.148}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Sơ đồ tuần tự Use Case 02: Đăng nhập}}{56}{figure.caption.149}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Sơ đồ hoạt động Use Case 03: Cập nhật hồ sơ}}{57}{figure.caption.151}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Sơ đồ tuần tự Use Case 03: Cập nhật hồ sơ}}{58}{figure.caption.152}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Sơ đồ hoạt động Use Case 04: Đăng ký môn học}}{59}{figure.caption.154}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Sơ đồ tuần tự Use Case 04: Đăng ký môn học}}{60}{figure.caption.155}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Sơ đồ hoạt động Use Case 05: Hủy đăng ký môn học}}{61}{figure.caption.157}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Sơ đồ tuần tự Use Case 05: Hủy đăng ký môn học}}{62}{figure.caption.158}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Sơ đồ hoạt động Use Case 06: Ghép thủ công (SV chọn Tutor)}}{63}{figure.caption.160}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Sơ đồ tuần tự Use Case 06: Ghép thủ công (SV chọn Tutor)}}{64}{figure.caption.161}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Sơ đồ hoạt động Use Case 07: Ghép tự động (Hệ thống đề xuất Tutor)}}{65}{figure.caption.163}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Sơ đồ tuần tự Use Case 07: Ghép tự động (Hệ thống đề xuất Tutor)}}{66}{figure.caption.164}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Sơ đồ hoạt động Use Case 08: Thiết lập lịch dạy (Tutor)}}{67}{figure.caption.166}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Sơ đồ tuần tự Use Case 08: Thiết lập lịch dạy (Tutor)}}{68}{figure.caption.167}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Sơ đồ hoạt động Use Case 09: Đặt lịch học (SV)}}{69}{figure.caption.169}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Sơ đồ tuần tự Use Case 09: Đặt lịch học (SV)}}{70}{figure.caption.170}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Sơ đồ hoạt động Use Case 10: Hủy/Đổi lịch học cố định}}{71}{figure.caption.172}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Sơ đồ tuần tự Use Case 10: Hủy/Đổi lịch học cố định}}{72}{figure.caption.173}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Sơ đồ hoạt động Use Case 11: Gửi thông báo lịch học}}{73}{figure.caption.175}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Sơ đồ tuần tự Use Case 11: Gửi thông báo lịch học}}{73}{figure.caption.176}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Sơ đồ hoạt động Use Case 12: Gửi nhắc nhở buổi học}}{74}{figure.caption.178}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Sơ đồ tuần tự Use Case 12: Gửi nhắc nhở buổi học}}{74}{figure.caption.179}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Sơ đồ hoạt động Use Case 13: Điểm danh sinh viên}}{75}{figure.caption.181}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Sơ đồ tuần tự Use Case 13: Điểm danh sinh viên}}{76}{figure.caption.182}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Sơ đồ hoạt động Use Case 14: Cập nhật trạng thái buổi học}}{77}{figure.caption.184}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Sơ đồ tuần tự Use Case 14: Cập nhật trạng thái buổi học}}{77}{figure.caption.185}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Sơ đồ hoạt động Use Case 15: Quản lý tài liệu (Tutor)}}{78}{figure.caption.187}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Sơ đồ tuần tự Use Case 15: Quản lý tài liệu (Tutor)}}{79}{figure.caption.188}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Sơ đồ hoạt động Use Case 16: SV tải tài liệu}}{80}{figure.caption.190}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Sơ đồ tuần tự Use Case 16: SV tải tài liệu}}{81}{figure.caption.191}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Sơ đồ hoạt động Use Case 17: SV đánh giá Tutor}}{82}{figure.caption.193}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Sơ đồ tuần tự Use Case 17: SV đánh giá Tutor}}{83}{figure.caption.194}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Sơ đồ hoạt động Use Case 18: Tutor đánh giá sinh viên}}{84}{figure.caption.196}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Sơ đồ tuần tự Use Case 18: Tutor đánh giá sinh viên}}{85}{figure.caption.197}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Sơ đồ hoạt động Use Case 19: Khoa/BM tổng hợp đánh giá}}{86}{figure.caption.199}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Sơ đồ tuần tự Use Case 19: Khoa/BM tổng hợp đánh giá}}{86}{figure.caption.200}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Sơ đồ hoạt động Use Case 20: Báo cáo kết quả học tập SV}}{87}{figure.caption.202}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Sơ đồ tuần tự Use Case 20: Báo cáo kết quả học tập SV}}{88}{figure.caption.203}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Sơ đồ hoạt động Use Case 21: Báo cáo chất lượng Tutor}}{89}{figure.caption.205}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Sơ đồ tuần tự Use Case 21: Báo cáo chất lượng Tutor}}{90}{figure.caption.206}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Sơ đồ hoạt động Use Case 22: Báo cáo tổng hợp (Khoa, PCTSV, PĐT)}}{91}{figure.caption.208}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Sơ đồ tuần tự Use Case 22: Báo cáo tổng hợp (Khoa, PCTSV, PĐT)}}{91}{figure.caption.209}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Sơ đồ hoạt động Use Case 23: Tutor tạo chương trình học}}{92}{figure.caption.211}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Sơ đồ tuần tự Use Case 23: Tutor tạo chương trình học}}{93}{figure.caption.212}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Sơ đồ hoạt động Use Case 24: SV đăng ký chương trình học thuật}}{94}{figure.caption.214}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Sơ đồ tuần tự Use Case 24: SV đăng ký chương trình học thuật}}{94}{figure.caption.215}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Sơ đồ hoạt động Use Case 25: SV đăng ký chương trình phi học thuật}}{95}{figure.caption.217}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Sơ đồ tuần tự Use Case 25: SV đăng ký chương trình phi học thuật}}{95}{figure.caption.218}%
+\contentsline {figure}{\numberline {52}{\ignorespaces Giao diện đăng ký tài khoản}}{96}{figure.caption.221}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Giao diện đăng nhập tài khoản}}{96}{figure.caption.222}%
+\contentsline {figure}{\numberline {54}{\ignorespaces Giao diện trang chủ của sinh viên}}{97}{figure.caption.225}%
+\contentsline {figure}{\numberline {55}{\ignorespaces Giao diện đăng ký môn học}}{97}{figure.caption.227}%
+\contentsline {figure}{\numberline {56}{\ignorespaces Giao diện chi tiết môn học đã đăng ký}}{98}{figure.caption.228}%
+\contentsline {figure}{\numberline {57}{\ignorespaces Giao diện tìm và ghép cặp Tutor thủ công}}{98}{figure.caption.230}%
+\contentsline {figure}{\numberline {58}{\ignorespaces Giao diện tìm và ghép cặp Tutor thủ công}}{99}{figure.caption.231}%
+\contentsline {figure}{\numberline {59}{\ignorespaces Giao diện tìm và ghép cặp Tutor tự động}}{99}{figure.caption.232}%
+\contentsline {figure}{\numberline {60}{\ignorespaces Giao diện quản lý lịch học}}{100}{figure.caption.234}%
+\contentsline {figure}{\numberline {61}{\ignorespaces Giao diện đăng ký lịch học}}{100}{figure.caption.235}%
+\contentsline {figure}{\numberline {62}{\ignorespaces Giao diện chọn lịch học}}{101}{figure.caption.236}%
+\contentsline {figure}{\numberline {63}{\ignorespaces Giao diện đổi lịch học}}{101}{figure.caption.237}%
+\contentsline {figure}{\numberline {64}{\ignorespaces Giao diện hủy lịch học}}{102}{figure.caption.238}%
+\contentsline {figure}{\numberline {65}{\ignorespaces Giao diện tài liệu và record buổi học}}{102}{figure.caption.240}%
+\contentsline {figure}{\numberline {66}{\ignorespaces Giao diện đánh giá Tutor}}{103}{figure.caption.242}%
+\contentsline {figure}{\numberline {67}{\ignorespaces Giao diện trang chủ của Tutor}}{103}{figure.caption.245}%
+\contentsline {figure}{\numberline {68}{\ignorespaces Giao diện lịch trống}}{104}{figure.caption.247}%
+\contentsline {figure}{\numberline {69}{\ignorespaces Giao diện chọn ngày, giờ, hình thức Online}}{104}{figure.caption.248}%
+\contentsline {figure}{\numberline {70}{\ignorespaces Giao diện chọn ngày, giờ, hình thức Offine}}{105}{figure.caption.249}%
+\contentsline {figure}{\numberline {71}{\ignorespaces Giao diện thông báo "Đã đăng ký thành công"}}{105}{figure.caption.250}%
+\contentsline {figure}{\numberline {72}{\ignorespaces Giao diện lịch đã đăng ký}}{106}{figure.caption.251}%
+\contentsline {figure}{\numberline {73}{\ignorespaces Giao diện sửa lịch đã đăng ký, hình thức Online}}{106}{figure.caption.252}%
+\contentsline {figure}{\numberline {74}{\ignorespaces Giao diện sửa lịch đã đăng ký, hình thức Offline}}{107}{figure.caption.253}%
+\contentsline {figure}{\numberline {75}{\ignorespaces Giao diện sau khi xóa lịch đã đăng ký}}{107}{figure.caption.254}%
+\contentsline {figure}{\numberline {76}{\ignorespaces Giao diện quản lý môn học đã đăng ký dạy}}{108}{figure.caption.256}%
+\contentsline {figure}{\numberline {77}{\ignorespaces Giao diện chọn hình thức Online}}{108}{figure.caption.257}%
+\contentsline {figure}{\numberline {78}{\ignorespaces Giao diện danh sách các lớp Online và mã lớp}}{109}{figure.caption.258}%
+\contentsline {figure}{\numberline {79}{\ignorespaces Giao diện chọn buổi học Online của môn học}}{109}{figure.caption.259}%
+\contentsline {figure}{\numberline {80}{\ignorespaces Giao diện chọn sinh viên để điểm danh}}{110}{figure.caption.260}%
+\contentsline {figure}{\numberline {81}{\ignorespaces Giao diện thông tin vắng có phép/không phép}}{110}{figure.caption.261}%
+\contentsline {figure}{\numberline {82}{\ignorespaces Giao diện đăng ký dạy bù hình thức Online}}{111}{figure.caption.262}%
+\contentsline {figure}{\numberline {83}{\ignorespaces Giao diện chọn hình thức Offline}}{111}{figure.caption.263}%
+\contentsline {figure}{\numberline {84}{\ignorespaces Giao diện danh sách các lớp Offline và mã lớp}}{112}{figure.caption.264}%
+\contentsline {figure}{\numberline {85}{\ignorespaces Giao diện chọn buổi học Offline của môn học}}{112}{figure.caption.265}%
+\contentsline {figure}{\numberline {86}{\ignorespaces Giao diện chọn sinh viên để điểm danh}}{113}{figure.caption.266}%
+\contentsline {figure}{\numberline {87}{\ignorespaces Giao diện thông tin vắng có phép/không phép}}{113}{figure.caption.267}%
+\contentsline {figure}{\numberline {88}{\ignorespaces Giao diện đăng ký lịch dạy bù hình thức Offline}}{114}{figure.caption.268}%
+\contentsline {figure}{\numberline {89}{\ignorespaces Giao diện thông báo đăng ký dạy bù thành công}}{114}{figure.caption.269}%
+\contentsline {figure}{\numberline {90}{\ignorespaces Giao diện quản lý tài liệu và record}}{115}{figure.caption.271}%
+\contentsline {figure}{\numberline {91}{\ignorespaces Giao diện đổi tên tài liệu}}{115}{figure.caption.272}%
+\contentsline {figure}{\numberline {92}{\ignorespaces Giao diện cảnh báo khi xóa tài liệu}}{116}{figure.caption.273}%
+\contentsline {figure}{\numberline {93}{\ignorespaces Giao diện sau khi xóa thành công tài liệu}}{116}{figure.caption.274}%
+\contentsline {figure}{\numberline {94}{\ignorespaces Giao diện đổi tên record}}{117}{figure.caption.275}%
+\contentsline {figure}{\numberline {95}{\ignorespaces Giao diện cảnh báo xóa record}}{117}{figure.caption.276}%
+\contentsline {figure}{\numberline {96}{\ignorespaces Giao diện khi xóa thành công record}}{118}{figure.caption.277}%
+\contentsline {figure}{\numberline {97}{\ignorespaces Giao diện các môn học đã đăng ký để đánh giá sinh viên}}{118}{figure.caption.279}%
+\contentsline {figure}{\numberline {98}{\ignorespaces Giao diện danh sách sinh viên theo môn học}}{119}{figure.caption.280}%
+\contentsline {figure}{\numberline {99}{\ignorespaces Giao diện đánh giá chi tiết sinh viên}}{119}{figure.caption.281}%
+\contentsline {figure}{\numberline {100}{\ignorespaces Sơ đồ triển khai hệ thống hỗ trợ Tutor (Standalone)}}{120}{figure.caption.286}%
+\contentsline {figure}{\numberline {101}{\ignorespaces Sơ đồ tổ chức các gói của hệ thống (Logical View)}}{122}{figure.caption.293}%
+\contentsline {figure}{\numberline {102}{\ignorespaces Sơ đồ lớp chi tiết của hệ thống (Refined)}}{125}{figure.caption.300}%
+\contentsline {figure}{\numberline {103}{\ignorespaces Đăng ký tài khoản}}{132}{figure.caption.333}%
+\contentsline {figure}{\numberline {104}{\ignorespaces Đăng nhập tài khoản}}{133}{figure.caption.334}%
+\contentsline {figure}{\numberline {105}{\ignorespaces Xác thực Email bằng OTP}}{133}{figure.caption.336}%
+\contentsline {figure}{\numberline {106}{\ignorespaces Trang chủ của sinh viên}}{134}{figure.caption.338}%
+\contentsline {figure}{\numberline {107}{\ignorespaces Giao diện hồ sơ của sinh viên}}{135}{figure.caption.340}%
+\contentsline {figure}{\numberline {108}{\ignorespaces Cập nhật hồ sơ mới}}{135}{figure.caption.341}%
+\contentsline {figure}{\numberline {109}{\ignorespaces Sau khi cập nhật hồ sơ}}{136}{figure.caption.342}%
+\contentsline {figure}{\numberline {110}{\ignorespaces Giao diện đăng ký môn học}}{136}{figure.caption.344}%
+\contentsline {figure}{\numberline {111}{\ignorespaces Giao diện môn học đã đăng ký}}{137}{figure.caption.345}%
+\contentsline {figure}{\numberline {112}{\ignorespaces Giao diện chi tiết môn học}}{137}{figure.caption.346}%
+\contentsline {figure}{\numberline {113}{\ignorespaces Giao diện tìm và ghép cặp tutor}}{138}{figure.caption.348}%
+\contentsline {figure}{\numberline {114}{\ignorespaces Giao diện ghép thủ công}}{139}{figure.caption.349}%
+\contentsline {figure}{\numberline {115}{\ignorespaces Giao diện chi tiết tutor}}{139}{figure.caption.350}%
+\contentsline {figure}{\numberline {116}{\ignorespaces Đăng ký tài khoản}}{140}{figure.caption.353}%
+\contentsline {figure}{\numberline {117}{\ignorespaces Đăng nhập tài khoản}}{141}{figure.caption.354}%
+\contentsline {figure}{\numberline {118}{\ignorespaces Xác thực Email bằng OTP}}{141}{figure.caption.356}%
+\contentsline {figure}{\numberline {119}{\ignorespaces Trang chủ của tutor}}{142}{figure.caption.358}%
+\contentsline {figure}{\numberline {120}{\ignorespaces Giao diện hồ sơ của Tutor}}{143}{figure.caption.360}%
+\contentsline {figure}{\numberline {121}{\ignorespaces Cập nhật hồ sơ mới}}{143}{figure.caption.361}%
+\contentsline {figure}{\numberline {122}{\ignorespaces Sau khi cập nhật hồ sơ}}{144}{figure.caption.362}%
+\contentsline {figure}{\numberline {123}{\ignorespaces Thiết lập lịch dạy}}{144}{figure.caption.364}%
+\contentsline {figure}{\numberline {124}{\ignorespaces Chọn thứ, giờ, và hình thức học}}{145}{figure.caption.365}%
+\contentsline {figure}{\numberline {125}{\ignorespaces Đăng ký giờ dạy thành công}}{145}{figure.caption.366}%
+\contentsline {figure}{\numberline {126}{\ignorespaces Đổi thời gian dạy}}{146}{figure.caption.367}%
+\contentsline {figure}{\numberline {127}{\ignorespaces Đổi thời gian dạy thành công}}{146}{figure.caption.368}%
+\contentsline {figure}{\numberline {128}{\ignorespaces Xóa lịch dạy}}{147}{figure.caption.369}%
+\contentsline {figure}{\numberline {129}{\ignorespaces Xóa lịch dạy thành công}}{147}{figure.caption.370}%
+\contentsline {figure}{\numberline {130}{\ignorespaces Bảng tổng hợp kiểm thử đang nhập tài khoản}}{148}{figure.caption.374}%
+\contentsline {figure}{\numberline {131}{\ignorespaces Bảng chi tiết kiểm thử đăng nhập Test 1-5}}{148}{figure.caption.376}%
+\contentsline {figure}{\numberline {132}{\ignorespaces Bảng chi tiết kiểm thử đăng nhập Test 6-10}}{148}{figure.caption.377}%
+\contentsline {figure}{\numberline {133}{\ignorespaces Bảng chi tiết kiểm thử đăng nhập Test 11-16}}{149}{figure.caption.378}%
+\contentsline {figure}{\numberline {134}{\ignorespaces Bảng chi tiết kiểm thử đăng nhập Test 17-24}}{149}{figure.caption.379}%
+\contentsline {figure}{\numberline {135}{\ignorespaces Bảng tổng hợp kiểm thử đăng ký tài khoản}}{149}{figure.caption.382}%
+\contentsline {figure}{\numberline {136}{\ignorespaces Bảng chi tiết kiểm thử đăng ký Test 1-5}}{150}{figure.caption.384}%
+\contentsline {figure}{\numberline {137}{\ignorespaces Bảng chi tiết kiểm thử đăng ký Test 6-10}}{150}{figure.caption.385}%
+\contentsline {figure}{\numberline {138}{\ignorespaces Bảng chi tiết kiểm thử đăng ký Test 11-16}}{150}{figure.caption.386}%
+\contentsline {figure}{\numberline {139}{\ignorespaces Bảng tổng hợp kiểm thử thiết lập lịch dạy}}{151}{figure.caption.389}%
+\contentsline {figure}{\numberline {140}{\ignorespaces Bảng chi tiết kiểm thử thiết lập dạy Test 1-6}}{151}{figure.caption.391}%
+\contentsline {figure}{\numberline {141}{\ignorespaces Bảng chi tiết kiểm thử thiết lập dạy Test 7-12}}{151}{figure.caption.392}%
+\contentsline {figure}{\numberline {142}{\ignorespaces Bảng tổng hợp kiểm thử đăng ký môn học, tìm và ghép cặp tutor, thiết lập hồ sơ}}{152}{figure.caption.395}%
+\contentsline {figure}{\numberline {143}{\ignorespaces Bảng chi tiết kiểm thử đăng ký môn học Test 1-6}}{152}{figure.caption.397}%
+\contentsline {figure}{\numberline {144}{\ignorespaces Bảng chi tiết kiểm thử tìm và ghép cặp tutor Test 7}}{152}{figure.caption.398}%
+\contentsline {figure}{\numberline {145}{\ignorespaces Bảng chi tiết kiểm thử thiết lập hồ sơ Test 8-13}}{153}{figure.caption.399}%
+\contentsline {figure}{\numberline {146}{\ignorespaces Tổng hợp tình trạng tasks theo Sprint 1}}{154}{figure.caption.409}%
+\contentsline {figure}{\numberline {147}{\ignorespaces Tổng hợp tình trạng tasks theo Sprint 2}}{157}{figure.caption.416}%
+\contentsline {figure}{\numberline {148}{\ignorespaces Tổng hợp tình trạng tasks theo Sprint 3}}{159}{figure.caption.420}%
+\contentsline {figure}{\numberline {149}{\ignorespaces Tổng hợp tình trạng tasks theo Sprint 4}}{160}{figure.caption.423}%
+\contentsline {figure}{\numberline {150}{\ignorespaces Tổng hợp tình trạng tasks theo Nguyễn Tấn Phát}}{161}{figure.caption.426}%
+\contentsline {figure}{\numberline {151}{\ignorespaces Tổng hợp tình trạng tasks theo Lê Diệu Quỳnh}}{162}{figure.caption.429}%
+\contentsline {figure}{\numberline {152}{\ignorespaces Tổng hợp tình trạng tasks theo Vũ Hà Như Ngọc}}{163}{figure.caption.432}%
+\contentsline {figure}{\numberline {153}{\ignorespaces Tổng hợp tình trạng tasks theo Nguyễn Ngọc Phát}}{164}{figure.caption.435}%
+\contentsline {figure}{\numberline {154}{\ignorespaces Tổng hợp tình trạng tasks theo Mã Nhật Tiến}}{165}{figure.caption.438}%
+\contentsline {figure}{\numberline {155}{\ignorespaces Tổng hợp tình trạng tasks theo Lương Đức Huy}}{166}{figure.caption.441}%
+\contentsline {figure}{\numberline {156}{\ignorespaces Tổng hợp tình trạng tasks theo Văn Bá Trọng Khiêm}}{168}{figure.caption.445}%
+\contentsline {figure}{\numberline {157}{\ignorespaces Tổng hợp tình trạng tasks theo Bùi Phan Khánh Duy}}{169}{figure.caption.448}%
